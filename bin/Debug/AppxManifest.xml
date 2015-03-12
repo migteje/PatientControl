@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:build="http://schemas.microsoft.com/developer/appx/2012/build" IgnorableNamespaces="build">
+  <!--
+    ESTE ARCHIVO DE MANIFIESTO DEL PAQUETE SE GENERA MEDIANTE EL PROCESO DE COMPILACIÓN.
+
+    Los cambios realizados en el archivo se perderán al regenerarlo. Para corregir los errores de este archivo, edite el archivo de origen .appxmanifest.
+
+    Para obtener más información acerca de los archivos de manifiesto del paquete, vea http://go.microsoft.com/fwlink/?LinkID=241727
+  -->
+  <Identity Name="b089f9f2-2703-4b24-9eb2-86302f6c376b" Publisher="CN=Giro" Version="1.0.0.0" ProcessorArchitecture="neutral" />
+  <Properties>
+    <DisplayName>PatientControl</DisplayName>
+    <PublisherDisplayName>Giro</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="ES-ES" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="PatientControl.exe" EntryPoint="PatientControl.App">
+      <m2:VisualElements DisplayName="PatientControl" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="PatientControl" ForegroundText="light" BackgroundColor="#464646">
+        <m2:SplashScreen Image="Assets\SplashScreen.png" />
+      </m2:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+  <build:Metadata>
+    <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v4.5.1" />
+    <build:Item Name="VisualStudio" Version="12.0" />
+    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Premium 2013" />
+    <build:Item Name="OperatingSystem" Version="6.3.9600.16384 (winblue_rtm.130821-1623)" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="12.0.31101.0" />
+    <build:Item Name="ProjectGUID" Value="{15B6290C-F769-47BE-A89E-4B3BBC09AEDB}" />
+    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="12.0.30501.0" />
+    <build:Item Name="BehaviorsXamlSDKManaged" Version="12.0" />
+    <build:Item Name="MakePri.exe" Version="6.3.9600.17298 (winblue.141024-1500)" />
+  </build:Metadata>
+</Package>

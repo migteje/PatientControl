@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>GIRO_UVA</Machine>
+    <WindowsUser>Giro</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>b089f9f2-2703-4b24-9eb2-86302f6c376b</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\Debug\PatientControl.exe">
+      <PackagePath>PatientControl.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\BehaviorsXamlSDKManaged\12.0\References\CommonConfiguration\Neutral\Microsoft.Xaml.Interactions.dll">
+      <PackagePath>Microsoft.Xaml.Interactions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\BehaviorsXamlSDKManaged\12.0\References\CommonConfiguration\Neutral\Microsoft.Xaml.Interactivity.dll">
+      <PackagePath>Microsoft.Xaml.Interactivity.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\Prism.Mvvm.1.1.1\lib\windows8\Microsoft.Practices.Prism.Mvvm.dll">
+      <PackagePath>Microsoft.Practices.Prism.Mvvm.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\Prism.Mvvm.1.1.1\lib\windows8\Microsoft.Practices.Prism.Mvvm.Store.dll">
+      <PackagePath>Microsoft.Practices.Prism.Mvvm.Store.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\Prism.PubSubEvents.1.1.0\lib\portable-sl5+windowsphone8+windows8+net40+wpa81\Microsoft.Practices.Prism.PubSubEvents.dll">
+      <PackagePath>Microsoft.Practices.Prism.PubSubEvents.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\Prism.Mvvm.1.1.1\lib\windows8\Microsoft.Practices.Prism.SharedInterfaces.dll">
+      <PackagePath>Microsoft.Practices.Prism.SharedInterfaces.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\Prism.StoreApps.2.0.0\lib\windows8\Microsoft.Practices.Prism.StoreApps.dll">
+      <PackagePath>Microsoft.Practices.Prism.StoreApps.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\Prism.StoreApps.2.0.0\lib\windows8\Microsoft.Practices.Prism.StoreApps.Windows.dll">
+      <PackagePath>Microsoft.Practices.Prism.StoreApps.Windows.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\CommonServiceLocator.1.2\lib\portable-windows8+net40+sl5+windowsphone8\Microsoft.Practices.ServiceLocation.dll">
+      <PackagePath>Microsoft.Practices.ServiceLocation.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\Unity.3.5.1404.0\lib\win8\Microsoft.Practices.Unity.dll">
+      <PackagePath>Microsoft.Practices.Unity.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\Unity.3.5.1404.0\lib\win8\Microsoft.Practices.Unity.RegistrationByConvention.dll">
+      <PackagePath>Microsoft.Practices.Unity.RegistrationByConvention.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\Assets\StoreLogo.scale-180.png">
+      <PackagePath>Assets\StoreLogo.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\Debug\Themes\DataTemplates.xbf">
+      <PackagePath>Themes\DataTemplates.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\Debug\Themes\PControlStyles.xbf">
+      <PackagePath>Themes\PControlStyles.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\Debug\Views\EjercicioPage.xbf">
+      <PackagePath>Views\EjercicioPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\Debug\Views\MainPage.xbf">
+      <PackagePath>Views\MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\Debug\Views\LoginPage.xbf">
+      <PackagePath>Views\LoginPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\Debug\PatientControl.xr.xml">
+      <PackagePath>PatientControl.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

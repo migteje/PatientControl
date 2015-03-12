@@ -1,0 +1,120 @@
+﻿<controls:PageBase
+    x:Class="PatientControl.Views.MainPage"
+    x:Name="pageRoot"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
+    xmlns:core="using:Microsoft.Xaml.Interactions.Core"
+    xmlns:behaviors="using:PatientControl.Behaviors"
+    xmlns:controls="using:PatientControl.Controls"
+    xmlns:local="using:PatientControl.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    prism:ViewModelLocator.AutoWireViewModel="True"
+    xmlns:prism="using:Microsoft.Practices.Prism.Mvvm"
+    xmlns:designtime="using:PatientControl.DesignTime"
+    mc:Ignorable="d">
+
+    <d:Page.DataContext>
+        <designtime:MainPageViewModel />
+    </d:Page.DataContext>
+
+    <controls:PageBase.Resources>
+        <CollectionViewSource x:Name="groupedItemsViewSource"
+                              Source="{Binding RootCategories}"
+                              IsSourceGrouped="true"
+                              ItemsPath="Ejercicios" />
+    </controls:PageBase.Resources>
+    <Grid>
+
+        <Grid x:Name="titleGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" >
+            <TextBlock x:Name="rootTitle" Text="{Binding Title}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
+                        IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Top" Margin="0,0,30,40"/>
+            <Button Content="Datos" 
+                    VerticalAlignment="Top" 
+                    HorizontalAlignment="Right" 
+                    Margin="0,0,0,0"
+                    Command="{Binding VerDatosCommand}"
+                />
+        </Grid>
+        <controls:MultipleSizedGridView x:Name="itemsGridView"
+                  AutomationProperties.AutomationId="MainPageItemGridView"
+                  AutomationProperties.Name="Grouped Items"
+                  Margin="0,63,0,0"
+                  Padding="120,0,40,46"
+                  ItemsSource="{Binding Source={StaticResource groupedItemsViewSource}}"
+                  ItemTemplate="{StaticResource PControlItemTemplate}"
+                  SelectionMode="None"
+                  ScrollViewer.IsHorizontalScrollChainingEnabled="False"
+                  IsItemClickEnabled="True">
+            <interactivity:Interaction.Behaviors>
+                <core:EventTriggerBehavior EventName="ItemClick">
+                    <behaviors:NavigateWithEventArgsToPageAction TargetPage="PatientControl.Views.EjercicioPage"
+                                                                                EventArgsParameterPath="ClickedItem.Title" />
+                </core:EventTriggerBehavior>
+            </interactivity:Interaction.Behaviors>
+            <controls:MultipleSizedGridView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal" />
+                </ItemsPanelTemplate>
+            </controls:MultipleSizedGridView.ItemsPanel>
+            <controls:MultipleSizedGridView.PortraitItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Vertical" />
+                </ItemsPanelTemplate>
+            </controls:MultipleSizedGridView.PortraitItemsPanel>
+            <controls:MultipleSizedGridView.GroupStyle>
+                <GroupStyle>
+                    <GroupStyle.HeaderTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="{Binding Title}"/>
+                                <TextBlock 
+                                    FontFamily="{StaticResource SymbolThemeFontFamily}"
+                                    Margin="10,0"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </GroupStyle.HeaderTemplate>
+                    <GroupStyle.Panel>
+                        <ItemsPanelTemplate>
+                            <VariableSizedWrapGrid ItemWidth="250"
+                                                           ItemHeight="250"
+                                                           Orientation="Vertical"
+                                                           Margin="0,0,80,0" />
+                        </ItemsPanelTemplate>
+                    </GroupStyle.Panel>
+                </GroupStyle>
+            </controls:MultipleSizedGridView.GroupStyle>
+            <controls:MultipleSizedGridView.PortraitGroupStyle>
+                <GroupStyle>
+                    <GroupStyle.HeaderTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="{Binding Title}" />
+                                <TextBlock 
+                                    FontFamily="{StaticResource SymbolThemeFontFamily}"
+                                    Margin="10,0" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </GroupStyle.HeaderTemplate>
+                    <GroupStyle.Panel>
+                        <ItemsPanelTemplate>
+                            <VariableSizedWrapGrid ItemWidth="250"
+                                                           ItemHeight="250"
+                                                           Orientation="Horizontal"
+                                                           Margin="0,0,0,20" />
+                        </ItemsPanelTemplate>
+                    </GroupStyle.Panel>
+                </GroupStyle>
+            </controls:MultipleSizedGridView.PortraitGroupStyle>
+            <controls:MultipleSizedGridView.ItemContainerStyle>
+                <Style TargetType="Control">
+                    <Setter Property="HorizontalAlignment"
+                                    Value="Stretch" />
+                    <Setter Property="HorizontalContentAlignment"
+                                    Value="Left" />
+                </Style>
+            </controls:MultipleSizedGridView.ItemContainerStyle>
+        </controls:MultipleSizedGridView>
+    </Grid>
+</controls:PageBase>
