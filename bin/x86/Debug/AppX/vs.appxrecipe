@@ -7,7 +7,7 @@
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>PatientControl-Beta</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\Giro\Documents\Visual Studio 2013\Projects\PatientControl.App\PatientControl\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\obj\x86\Debug\</IntermediateOutputPath>
     <RegisteredManifestChecksum>37F23D183194D69D308047BB8CC5F16012B458D74477C4D18A1161DE3C926C65</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>PatientControl-Beta_1.0.0.0_x86__66yfckezvbf7a</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>PatientControl-Beta_66yfckezvbf7a!App</RegisteredUserModeAppID>
@@ -17,16 +17,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Giro\Documents\Visual Studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-03-12T12:51:34.581</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Giro\Documents\Visual Studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\PatientControl.exe">
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\PatientControl.exe">
       <PackagePath>PatientControl.exe</PackagePath>
-      <Modified>2015-03-12T13:46:17.918</Modified>
+      <Modified>2015-03-13T10:01:16.111</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.Kinect.Toolkit.Input\2.0\References\CommonConfiguration\neutral\Microsoft.Kinect.Toolkit.Input.winmd">
       <PackagePath>Microsoft.Kinect.Toolkit.Input.winmd</PackagePath>
@@ -44,39 +44,39 @@
       <PackagePath>Microsoft.Xaml.Interactivity.dll</PackagePath>
       <Modified>2014-04-29T12:23:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giro\Documents\Visual Studio 2013\Projects\PatientControl.App\packages\Prism.Mvvm.1.1.1\lib\windows8\Microsoft.Practices.Prism.Mvvm.dll">
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\Prism.Mvvm.1.1.1\lib\windows8\Microsoft.Practices.Prism.Mvvm.dll">
       <PackagePath>Microsoft.Practices.Prism.Mvvm.dll</PackagePath>
       <Modified>2015-01-07T08:07:05.748</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giro\Documents\Visual Studio 2013\Projects\PatientControl.App\packages\Prism.Mvvm.1.1.1\lib\windows8\Microsoft.Practices.Prism.Mvvm.Store.dll">
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\Prism.Mvvm.1.1.1\lib\windows8\Microsoft.Practices.Prism.Mvvm.Store.dll">
       <PackagePath>Microsoft.Practices.Prism.Mvvm.Store.dll</PackagePath>
       <Modified>2015-01-07T08:07:05.757</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giro\Documents\Visual Studio 2013\Projects\PatientControl.App\packages\Prism.PubSubEvents.1.1.0\lib\portable-sl5+windowsphone8+windows8+net40+wpa81\Microsoft.Practices.Prism.PubSubEvents.dll">
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\Prism.PubSubEvents.1.1.0\lib\portable-sl5+windowsphone8+windows8+net40+wpa81\Microsoft.Practices.Prism.PubSubEvents.dll">
       <PackagePath>Microsoft.Practices.Prism.PubSubEvents.dll</PackagePath>
       <Modified>2015-01-07T09:25:16.419</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giro\Documents\Visual Studio 2013\Projects\PatientControl.App\packages\Prism.Mvvm.1.1.1\lib\windows8\Microsoft.Practices.Prism.SharedInterfaces.dll">
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\Prism.Mvvm.1.1.1\lib\windows8\Microsoft.Practices.Prism.SharedInterfaces.dll">
       <PackagePath>Microsoft.Practices.Prism.SharedInterfaces.dll</PackagePath>
       <Modified>2015-01-07T08:07:05.768</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giro\Documents\Visual Studio 2013\Projects\PatientControl.App\packages\Prism.StoreApps.2.0.0\lib\windows8\Microsoft.Practices.Prism.StoreApps.dll">
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\Prism.StoreApps.2.0.0\lib\windows8\Microsoft.Practices.Prism.StoreApps.dll">
       <PackagePath>Microsoft.Practices.Prism.StoreApps.dll</PackagePath>
       <Modified>2015-01-07T08:07:05.826</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giro\Documents\Visual Studio 2013\Projects\PatientControl.App\packages\Prism.StoreApps.2.0.0\lib\windows8\Microsoft.Practices.Prism.StoreApps.Windows.dll">
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\Prism.StoreApps.2.0.0\lib\windows8\Microsoft.Practices.Prism.StoreApps.Windows.dll">
       <PackagePath>Microsoft.Practices.Prism.StoreApps.Windows.dll</PackagePath>
       <Modified>2015-01-07T08:07:05.836</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giro\Documents\Visual Studio 2013\Projects\PatientControl.App\packages\CommonServiceLocator.1.2\lib\portable-windows8+net40+sl5+windowsphone8\Microsoft.Practices.ServiceLocation.dll">
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\CommonServiceLocator.1.2\lib\portable-windows8+net40+sl5+windowsphone8\Microsoft.Practices.ServiceLocation.dll">
       <PackagePath>Microsoft.Practices.ServiceLocation.dll</PackagePath>
       <Modified>2015-01-07T09:10:56.255</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giro\Documents\Visual Studio 2013\Projects\PatientControl.App\packages\Unity.3.5.1404.0\lib\win8\Microsoft.Practices.Unity.dll">
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\Unity.3.5.1404.0\lib\win8\Microsoft.Practices.Unity.dll">
       <PackagePath>Microsoft.Practices.Unity.dll</PackagePath>
       <Modified>2015-01-07T09:10:56.335</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giro\Documents\Visual Studio 2013\Projects\PatientControl.App\packages\Unity.3.5.1404.0\lib\win8\Microsoft.Practices.Unity.RegistrationByConvention.dll">
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\Unity.3.5.1404.0\lib\win8\Microsoft.Practices.Unity.RegistrationByConvention.dll">
       <PackagePath>Microsoft.Practices.Unity.RegistrationByConvention.dll</PackagePath>
       <Modified>2015-01-07T09:10:56.346</Modified>
     </AppxPackagedFile>
@@ -108,70 +108,70 @@
       <PackagePath>Microsoft.Kinect.Xaml.Controls\SelectButtonPressingKinect.wav</PackagePath>
       <Modified>2014-10-19T13:43:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giro\Documents\Visual Studio 2013\Projects\PatientControl.App\PatientControl\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-09-23T21:37:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giro\Documents\Visual Studio 2013\Projects\PatientControl.App\PatientControl\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-09-23T21:37:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giro\Documents\Visual Studio 2013\Projects\PatientControl.App\PatientControl\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-09-23T21:37:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giro\Documents\Visual Studio 2013\Projects\PatientControl.App\PatientControl\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-09-23T21:37:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giro\Documents\Visual Studio 2013\Projects\PatientControl.App\PatientControl\Assets\StoreLogo.scale-180.png">
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\Assets\StoreLogo.scale-180.png">
       <PackagePath>Assets\StoreLogo.scale-180.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2014-11-28T08:30:07.669</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giro\Documents\Visual Studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
       <Modified>2015-01-16T09:44:40.004</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giro\Documents\Visual Studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\Themes\DataTemplates.xbf">
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\Themes\DataTemplates.xbf">
       <PackagePath>Themes\DataTemplates.xbf</PackagePath>
       <Modified>2015-03-12T13:46:17.667</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giro\Documents\Visual Studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\Themes\PControlStyles.xbf">
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\Themes\PControlStyles.xbf">
       <PackagePath>Themes\PControlStyles.xbf</PackagePath>
       <Modified>2015-01-16T09:44:40.008</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giro\Documents\Visual Studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\Views\EjercicioPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\Views\EjercicioPage.xbf">
       <PackagePath>Views\EjercicioPage.xbf</PackagePath>
-      <Modified>2015-03-12T13:46:17.670</Modified>
+      <Modified>2015-03-13T08:48:09.086</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giro\Documents\Visual Studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\Views\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\Views\MainPage.xbf">
       <PackagePath>Views\MainPage.xbf</PackagePath>
-      <Modified>2015-03-12T13:46:17.672</Modified>
+      <Modified>2015-03-13T08:33:20.016</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giro\Documents\Visual Studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\Views\LoginPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\Views\LoginPage.xbf">
       <PackagePath>Views\LoginPage.xbf</PackagePath>
       <Modified>2015-03-12T12:52:20.584</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giro\Documents\Visual Studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\Microsoft.Kinect.Xaml.Controls\Themes\Generic.xbf">
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\Microsoft.Kinect.Xaml.Controls\Themes\Generic.xbf">
       <PackagePath>Microsoft.Kinect.Xaml.Controls\Themes\Generic.xbf</PackagePath>
-      <Modified>2015-03-12T13:46:17.679</Modified>
+      <Modified>2015-03-13T10:01:15.877</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giro\Documents\Visual Studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\Microsoft.Kinect.Xaml.Controls\SpriteSheet.xbf">
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\Microsoft.Kinect.Xaml.Controls\SpriteSheet.xbf">
       <PackagePath>Microsoft.Kinect.Xaml.Controls\SpriteSheet.xbf</PackagePath>
-      <Modified>2015-03-12T13:46:17.680</Modified>
+      <Modified>2015-03-13T10:01:15.877</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giro\Documents\Visual Studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\PatientControl.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\PatientControl.xr.xml">
       <PackagePath>PatientControl.xr.xml</PackagePath>
-      <Modified>2015-03-12T13:34:57.527</Modified>
+      <Modified>2015-03-13T08:48:09.064</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giro\Documents\Visual Studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-03-12T13:46:18.215</Modified>
+      <Modified>2015-03-13T10:01:16.517</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

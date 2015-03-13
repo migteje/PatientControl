@@ -1,1 +1,1 @@
-C:\Users\Giro\Documents\Visual Studio 2013\Projects\PatientControl.App\PatientControl\PatientControl.csproj;x86
+C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\PatientControl.csproj;x86

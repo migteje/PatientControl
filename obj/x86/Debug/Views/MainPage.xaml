@@ -71,7 +71,7 @@
                                 <TextBlock Text="{Binding Title}"/>
                                 <TextBlock 
                                     FontFamily="{StaticResource SymbolThemeFontFamily}"
-                                    Margin="10,0" FontWeight="Bold" FontSize="18" />
+                                    Margin="10,0"/>
                             </StackPanel>
                         </DataTemplate>
                     </GroupStyle.HeaderTemplate>

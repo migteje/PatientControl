@@ -20,6 +20,7 @@
     <RootPropertyPathName Name="TotalNumberOfItems" />
     <RootPropertyPathName Name="KinectCanvas" />
     <RootPropertyPathName Name="Bitmap" />
+    <RootPropertyPathName Name="IsSelected" />
     <RootPropertyPathName Name="Angulo" />
     <RootPropertyPathName Name="PararCommand" />
     <RootPropertyPathName Name="PausarCommand" />
@@ -132,6 +133,7 @@
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
       <RootProperty Name="Mode" />
       <RootProperty Name="Converter" />
+      <RootProperty Name="Path" />
       <RootProperty Name="ElementName" />
       <RootProperty Name="Source" />
       <RootProperty Name="UpdateSourceTrigger" />
@@ -346,9 +348,8 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Width" />
       <RootProperty Name="FontSize" />
-      <RootProperty Name="Height" />
+      <RootProperty Name="IsChecked" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Documents.Run">
       <RootProperty Name="Text" />

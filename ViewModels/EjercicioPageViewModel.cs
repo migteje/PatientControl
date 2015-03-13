@@ -33,11 +33,12 @@ namespace PatientControl.ViewModels
         public DelegateCommand PausarCommand { get; private set; }
         public DelegateCommand PararCommand { get; private set; }
 
-        public string _Angulo = default(string);
+        private string _Angulo = default(string);
         public string Angulo { get { return _Angulo; } set { SetProperty(ref _Angulo, value);} }
-        public string _Title = default(string);
+        private string _Title = default(string);
         public string Title { get { return _Title; } set { SetProperty(ref _Title, value);} }
-
+        private bool _isSelected;
+        public bool IsSelected { get { return _isSelected; } set { SetProperty(ref _isSelected, value); OnPropertyChanged(null); } }
         /// <summary>
         /// Kinect DPI.
         /// </summary>
@@ -256,7 +257,7 @@ namespace PatientControl.ViewModels
 
                                         jointPoints[joint.JointType] = point;
 
-                                        DrawJoint(KinectCanvas, point);
+                                        if (IsSelected) DrawJoint(KinectCanvas, point);
                                     }
 
                                 }
@@ -274,7 +275,7 @@ namespace PatientControl.ViewModels
                                 UnderShoulder.Y = joints[JointType.SpineBase].Position.Y;
                                 UnderShoulderZ = joints[JointType.SpineBase].Position.Z;
                                 //DrawJoint(KinectCanvas, UnderShoulderDraw);
-                                DrawBody(joints, jointPoints, KinectCanvas);
+                                if (IsSelected) DrawBody(joints, jointPoints, KinectCanvas);
                                 if (comenzado)
                                 {
                                     angle = AngleBetweenJoints(joints[JointType.ElbowLeft], joints[JointType.ShoulderLeft], UnderShoulder, UnderShoulderZ);
