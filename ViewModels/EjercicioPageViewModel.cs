@@ -278,7 +278,19 @@ namespace PatientControl.ViewModels
                                 if (IsSelected) DrawBody(joints, jointPoints, KinectCanvas);
                                 if (comenzado)
                                 {
-                                    angle = AngleBetweenJoints(joints[JointType.ElbowLeft], joints[JointType.ShoulderLeft], UnderShoulder, UnderShoulderZ);
+                                    switch (Title) 
+                                    {
+                                        case "Abduccion":
+                                            angle = AngleBetweenJoints(joints[JointType.ElbowLeft], joints[JointType.ShoulderLeft], UnderShoulder, UnderShoulderZ);
+                                            break;
+                                        case "FlexoExtension":
+                                            angle = AngleBetweenJoints(joints[JointType.ElbowLeft], joints[JointType.ShoulderLeft], UnderShoulder, UnderShoulderZ);
+                                            break;
+                                        case "FlexExHorizontal":
+                                            angle = 90 - CalcularAnguloAlterno(joints[JointType.ElbowLeft], joints[JointType.ShoulderLeft], joints[JointType.ShoulderRight], UnderShoulder, UnderShoulderZ);
+                                            break;
+                                }
+
                                     myList.Add(angle);
                                     if (confra == 15)
                                     {
@@ -554,6 +566,40 @@ namespace PatientControl.ViewModels
                 element = Math.Round(element, MidpointRounding.AwayFromZero);
                 median = (double)query.ElementAt((int)(element - 1));
             }
+        }
+        
+        private double CalcularAnguloAlterno(Joint c, Joint h, Joint s, Point p, double pZ)
+        {
+            double Angulo = 0;
+
+            double AF = ((s.Position.Y * pZ) - (s.Position.Y * h.Position.Z) - (h.Position.Y * pZ) - (s.Position.Z * p.Y) + (s.Position.Z * h.Position.Y) + (h.Position.Z * p.Y));
+            double BF = ((s.Position.Z * p.X) - (s.Position.Z * h.Position.X) - (h.Position.Z * p.X) - (s.Position.X * pZ) + (s.Position.X * h.Position.Z) + (h.Position.X * pZ));
+            double CF = ((s.Position.X * p.Y) - (s.Position.X * h.Position.Y) - (h.Position.X * p.Y) - (s.Position.Y * p.X) + (s.Position.Y * h.Position.X) + (h.Position.Y * p.X));
+
+            double u1 = c.Position.X - h.Position.X;
+            double u2 = c.Position.Y - h.Position.Y;
+            double u3 = c.Position.Z - h.Position.Z;
+
+            double A = (CF * (p.Y - h.Position.Y)) - (BF * (pZ - h.Position.Z));
+            double B = (AF * (pZ - h.Position.Z)) - (CF * (p.X - h.Position.X));
+            double C = (BF * (p.X - h.Position.X)) - (AF * (p.Y - h.Position.Y));
+
+            double x = Math.Abs((A * u1) + (B * u2) + (C * u3)) / (vectorNorm(A, B, C) * vectorNorm(u1, u2, u3));
+
+            if (x != Double.NaN)
+            {
+                if (-1 <= x && x <= 1)
+                {
+                    double angleRad = Math.Asin(x);
+                    Angulo = angleRad * (180.0 / Math.PI);
+                }
+                else
+                    Angulo = 0;
+            }
+            else
+                Angulo = 0;
+            Debug.WriteLine(Math.Round(Angulo, 0));
+            return Math.Round(Angulo, 0);
         }
 
         private async Task Iniciar()

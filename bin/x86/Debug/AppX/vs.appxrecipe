@@ -26,7 +26,7 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\PatientControl.exe">
       <PackagePath>PatientControl.exe</PackagePath>
-      <Modified>2015-03-13T10:01:16.111</Modified>
+      <Modified>2015-03-17T09:13:19.442</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.Kinect.Toolkit.Input\2.0\References\CommonConfiguration\neutral\Microsoft.Kinect.Toolkit.Input.winmd">
       <PackagePath>Microsoft.Kinect.Toolkit.Input.winmd</PackagePath>
@@ -159,11 +159,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\Microsoft.Kinect.Xaml.Controls\Themes\Generic.xbf">
       <PackagePath>Microsoft.Kinect.Xaml.Controls\Themes\Generic.xbf</PackagePath>
-      <Modified>2015-03-13T10:01:15.877</Modified>
+      <Modified>2015-03-17T09:07:50.946</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\Microsoft.Kinect.Xaml.Controls\SpriteSheet.xbf">
       <PackagePath>Microsoft.Kinect.Xaml.Controls\SpriteSheet.xbf</PackagePath>
-      <Modified>2015-03-13T10:01:15.877</Modified>
+      <Modified>2015-03-17T09:07:50.946</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\PatientControl.xr.xml">
       <PackagePath>PatientControl.xr.xml</PackagePath>
@@ -171,7 +171,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-03-13T10:01:16.517</Modified>
+      <Modified>2015-03-17T09:13:20.129</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
