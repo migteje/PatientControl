@@ -95,6 +95,11 @@ C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientCo
 C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\obj\x86\Debug\Microsoft.Kinect.Xaml.Controls\Themes\Generic.xbf
 C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\obj\x86\Debug\Microsoft.Kinect.Xaml.Controls\SpriteSheet.xbf
 C:\Users\Giro\Documents\Visual Studio 2013\Projects\PatientControl.App\PatientControl\obj\x86\Debug\Themes\DataTemplates.xbf
+C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\Views\DatosPage.xbf
+C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\obj\x86\Debug\Views\DatosPage.g.i.cs
+C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\obj\x86\Debug\Views\DatosPage.g.cs
+C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\obj\x86\Debug\Views\DatosPage.xaml
+C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\obj\x86\Debug\Views\DatosPage.xbf
 C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\obj\x86\Debug\Microsoft.Practices.Prism.Mvvm\layout.resfiles
 C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\obj\x86\Debug\Microsoft.Practices.Prism.Mvvm\layout.resfiles.intermediate
 C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\obj\x86\Debug\Microsoft.Practices.Prism.Mvvm\Resources.resfiles

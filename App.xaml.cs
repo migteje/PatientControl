@@ -53,6 +53,7 @@ namespace PatientControl
             _container.RegisterType<IEjercicioPageViewModel, EjercicioPageViewModel>(new ContainerControlledLifetimeManager());
             _container.RegisterType<IMainPageViewModel, MainPageViewModel>(new ContainerControlledLifetimeManager());
             _container.RegisterType<ILoginPageViewModel, LoginPageViewModel>(new ContainerControlledLifetimeManager());
+            _container.RegisterType<IDatosPageViewModel, DatosPageViewModel>(new ContainerControlledLifetimeManager());
 
             return System.Threading.Tasks.Task.FromResult<object>(null);
         }
@@ -62,7 +63,7 @@ namespace PatientControl
             return _container.Resolve(type);
         }
 
-        public enum Experiences { Main, Login, Ejercicio }
+        public enum Experiences { Main, Login, Ejercicio, Datos }
 
         /// <summary>
         /// Se invoca cuando la aplicación la inicia normalmente el usuario final.  Se usarán otros puntos

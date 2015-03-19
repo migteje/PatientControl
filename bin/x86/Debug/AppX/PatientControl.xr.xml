@@ -18,6 +18,8 @@
     <RootPropertyPathName Name="DiscountedPrice" />
     <RootPropertyPathName Name="Group" />
     <RootPropertyPathName Name="TotalNumberOfItems" />
+    <RootPropertyPathName Name="Prueba" />
+    <RootPropertyPathName Name="GoBackCommand" />
     <RootPropertyPathName Name="KinectCanvas" />
     <RootPropertyPathName Name="Bitmap" />
     <RootPropertyPathName Name="IsSelected" />
@@ -25,7 +27,6 @@
     <RootPropertyPathName Name="PararCommand" />
     <RootPropertyPathName Name="PausarCommand" />
     <RootPropertyPathName Name="IniciarCommand" />
-    <RootPropertyPathName Name="GoBackCommand" />
     <RootPropertyPathName Name="Ejercicios" />
     <RootPropertyPathName Name="RootCategories" />
     <RootPropertyPathName Name="VerDatosCommand" />
@@ -123,8 +124,8 @@
       <RootProperty Name="Padding" />
       <RootProperty Name="Visibility" />
       <RootProperty Name="Opacity" />
-      <RootProperty Name="Inlines" />
       <RootProperty Name="IsHitTestVisible" />
+      <RootProperty Name="Inlines" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.Interactivity.Interaction">
       <RootMethod Name="GetBehaviors" />
@@ -133,8 +134,8 @@
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
       <RootProperty Name="Mode" />
       <RootProperty Name="Converter" />
-      <RootProperty Name="Path" />
       <RootProperty Name="ElementName" />
+      <RootProperty Name="Path" />
       <RootProperty Name="Source" />
       <RootProperty Name="UpdateSourceTrigger" />
     </RootType>
@@ -222,6 +223,8 @@
       <RootProperty Name="HorizontalContentAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Command" />
+      <RootProperty Name="Style" />
       <RootProperty Name="Content" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
@@ -229,8 +232,6 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
-      <RootProperty Name="Command" />
-      <RootProperty Name="Style" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
       <RootProperty Name="HorizontalScrollBarVisibility" />
@@ -343,6 +344,7 @@
       <RootMethod Name="SetAutoWireViewModel" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="PatientControl.Views.DatosPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.CheckBox">
       <RootProperty Name="Content" />
       <RootProperty Name="HorizontalAlignment" />

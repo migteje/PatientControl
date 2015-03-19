@@ -50,7 +50,7 @@
             <interactivity:Interaction.Behaviors>
                 <core:EventTriggerBehavior EventName="ItemClick">
                     <behaviors:NavigateWithEventArgsToPageAction TargetPage="PatientControl.Views.EjercicioPage"
-                                                                                EventArgsParameterPath="ClickedItem.Title" />
+                                                                                EventArgsParameterPath="ClickedItem" />
                 </core:EventTriggerBehavior>
             </interactivity:Interaction.Behaviors>
             <controls:MultipleSizedGridView.ItemsPanel>

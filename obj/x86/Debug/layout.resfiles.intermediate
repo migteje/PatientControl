@@ -9,6 +9,7 @@ Microsoft.Kinect.Xaml.Controls\Themes\Generic.xbf
 PatientControl.xr.xml
 Themes\DataTemplates.xbf
 Themes\PControlStyles.xbf
+Views\DatosPage.xbf
 Views\EjercicioPage.xbf
 Views\LoginPage.xbf
 Views\MainPage.xbf

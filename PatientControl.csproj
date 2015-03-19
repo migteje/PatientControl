@@ -119,11 +119,13 @@
     <Compile Include="Converters\NotNullToVisibleConverter.cs" />
     <Compile Include="Converters\NullToVisibleConverter.cs" />
     <Compile Include="Converters\TextToHeaderVisibilityConverter.cs" />
+    <Compile Include="DesignTime\DatosPageViewModel.cs" />
     <Compile Include="DesignTime\EjercicioPageViewModel.cs" />
     <Compile Include="DesignTime\LoginPageViewModel.cs" />
     <Compile Include="DesignTime\MainPageViewModel.cs" />
     <Compile Include="Events\Login.cs" />
     <Compile Include="Events\Logout.cs" />
+    <Compile Include="Interfaces\IDatosPageViewModel.cs" />
     <Compile Include="Interfaces\IDialogService.cs" />
     <Compile Include="Interfaces\IEjercicioPageViewModel.cs" />
     <Compile Include="Interfaces\ILoginPageViewModel.cs" />
@@ -132,9 +134,13 @@
     <Compile Include="Models\Ejercicio.cs" />
     <Compile Include="Models\Paciente.cs" />
     <Compile Include="ViewModels\CategoriaViewModel.cs" />
+    <Compile Include="ViewModels\DatosPageViewModel.cs" />
     <Compile Include="ViewModels\EjercicioPageViewModel.cs" />
     <Compile Include="ViewModels\EjercicioViewModel.cs" />
     <Compile Include="ViewModels\FormStatus.cs" />
+    <Compile Include="Views\DatosPage.xaml.cs">
+      <DependentUpon>DatosPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\EjercicioPage.xaml.cs">
       <DependentUpon>EjercicioPage.xaml</DependentUpon>
     </Compile>
@@ -176,6 +182,10 @@
     <Page Include="Themes\PControlStyles.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DatosPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\EjercicioPage.xaml">
       <SubType>Designer</SubType>

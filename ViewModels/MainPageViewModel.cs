@@ -12,7 +12,7 @@ using Windows.UI.Xaml.Navigation;
 
 namespace PatientControl.ViewModels
 {
-    class MainPageViewModel: ViewModel, Interfaces.IMainPageViewModel
+    public class MainPageViewModel: ViewModel, Interfaces.IMainPageViewModel
     {
         public IEnumerable<CategoriaViewModel> RootCategories { get; set; }
 
@@ -89,7 +89,7 @@ namespace PatientControl.ViewModels
             var navigationServiceReference = _navigationService;
             navigateAction = async () =>
                     {
-                       //_navigationService.Navigate(App.Experiences.Ejercicio.ToString(), null);
+                       _navigationService.Navigate(App.Experiences.Datos.ToString(), RootCategories);
                     };
             return navigateAction;
         }

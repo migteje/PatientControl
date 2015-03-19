@@ -39,6 +39,9 @@ namespace PatientControl.ViewModels
         public string Title { get { return _Title; } set { SetProperty(ref _Title, value);} }
         private bool _isSelected;
         public bool IsSelected { get { return _isSelected; } set { SetProperty(ref _isSelected, value); OnPropertyChanged(null); } }
+
+        private EjercicioViewModel ejerSelected;
+
         /// <summary>
         /// Kinect DPI.
         /// </summary>
@@ -118,7 +121,8 @@ namespace PatientControl.ViewModels
 
         public override void OnNavigatedTo(object navigationParameter, NavigationMode navigationMode, Dictionary<string, object> viewModelState)
         {
-            this.Title = navigationParameter as string;
+            this.ejerSelected = navigationParameter as EjercicioViewModel;
+            this.Title = ejerSelected.Title;
             this.Angulo = "";
 
             IniciarCommand = DelegateCommand.FromAsyncHandler(Iniciar);
