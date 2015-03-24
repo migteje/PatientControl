@@ -32,13 +32,21 @@ namespace PatientControl.ViewModels
         public DelegateCommand IniciarCommand { get; private set; }
         public DelegateCommand PausarCommand { get; private set; }
         public DelegateCommand PararCommand { get; private set; }
+        public DelegateCommand GrabarCommand { get; private set; }
+        public DelegateCommand<string> CheckedCommand { get; private set; }
 
         private string _Angulo = default(string);
         public string Angulo { get { return _Angulo; } set { SetProperty(ref _Angulo, value);} }
         private string _Title = default(string);
         public string Title { get { return _Title; } set { SetProperty(ref _Title, value);} }
         private bool _isSelected;
-        public bool IsSelected { get { return _isSelected; } set { SetProperty(ref _isSelected, value); OnPropertyChanged(null); } }
+        public bool IsSelected { get { return _isSelected; } set { SetProperty(ref _isSelected, value); OnPropertyChanged("IsSelected"); } }
+
+        private bool _derecho;
+        public bool Derecho { get { return _derecho; } set { SetProperty(ref _derecho, value); OnPropertyChanged("Derecho"); } }
+        private bool _izquierdo;
+        public bool Izquierdo { get { return _izquierdo; } set { SetProperty(ref _izquierdo, value); OnPropertyChanged("Izquierdo"); } }
+
 
         private EjercicioViewModel ejerSelected;
 
@@ -85,8 +93,6 @@ namespace PatientControl.ViewModels
 
         private Boolean comenzado;
 
-        private int pitch, yaw, roll;
-
         /// <summary>
         /// Reader for color frames
         /// </summary>
@@ -117,6 +123,12 @@ namespace PatientControl.ViewModels
         {
             _eventAggregator = eventAggregator;
             _navigationService = navigationService;
+
+            IniciarCommand = DelegateCommand.FromAsyncHandler(Iniciar);
+            PausarCommand = DelegateCommand.FromAsyncHandler(Pausar);
+            PararCommand = DelegateCommand.FromAsyncHandler(Parar);
+            GrabarCommand = DelegateCommand.FromAsyncHandler(Grabar);
+            this.CheckedCommand = new DelegateCommand<string>(Checked);
         }
 
         public override void OnNavigatedTo(object navigationParameter, NavigationMode navigationMode, Dictionary<string, object> viewModelState)
@@ -124,10 +136,6 @@ namespace PatientControl.ViewModels
             this.ejerSelected = navigationParameter as EjercicioViewModel;
             this.Title = ejerSelected.Title;
             this.Angulo = "";
-
-            IniciarCommand = DelegateCommand.FromAsyncHandler(Iniciar);
-            PausarCommand = DelegateCommand.FromAsyncHandler(Pausar);
-            PararCommand = DelegateCommand.FromAsyncHandler(Parar);
 
             KinectConect();
         }
@@ -266,33 +274,60 @@ namespace PatientControl.ViewModels
 
                                 }
                                 Point UnderShoulder = new Point();
-                                Point UnderShoulderDraw = new Point();
-                                double dr1 = Math.Sqrt(Math.Pow((jointPoints[JointType.SpineBase].X - jointPoints[JointType.ShoulderRight].X), 2) + Math.Pow((jointPoints[JointType.SpineBase].Y - jointPoints[JointType.ShoulderLeft].Y), 2));
-                                double dr2 = Math.Sqrt(Math.Pow((jointPoints[JointType.SpineBase].Y - jointPoints[JointType.ShoulderLeft].Y), 2));
-                                double drx = Math.Sqrt(Math.Pow(dr1, 2) - Math.Pow(dr2, 2));
-                                UnderShoulderDraw.X = jointPoints[JointType.SpineBase].X - drx;
-                                UnderShoulderDraw.Y = jointPoints[JointType.SpineBase].Y;
                                 double d1 = Math.Sqrt(Math.Pow((joints[JointType.SpineBase].Position.X - joints[JointType.ShoulderRight].Position.X), 2) + Math.Pow((joints[JointType.SpineBase].Position.Y - joints[JointType.ShoulderLeft].Position.Y), 2));
                                 double d2 = Math.Sqrt(Math.Pow((joints[JointType.SpineBase].Position.Y - joints[JointType.ShoulderLeft].Position.Y), 2));
                                 double dx = Math.Sqrt(Math.Pow(d1, 2) - Math.Pow(d2, 2));
-                                UnderShoulder.X = joints[JointType.SpineBase].Position.X - dx;
-                                UnderShoulder.Y = joints[JointType.SpineBase].Position.Y;
+                                /*Point UnderShoulderDraw = new Point();
+                                double dr1 = Math.Sqrt(Math.Pow((jointPoints[JointType.SpineBase].X - jointPoints[JointType.ShoulderRight].X), 2) + Math.Pow((jointPoints[JointType.SpineBase].Y - jointPoints[JointType.ShoulderLeft].Y), 2));
+                                double dr2 = Math.Sqrt(Math.Pow((jointPoints[JointType.SpineBase].Y - jointPoints[JointType.ShoulderLeft].Y), 2));
+                                double drx = Math.Sqrt(Math.Pow(dr1, 2) - Math.Pow(dr2, 2));*/
+                                if (Izquierdo)
+                                {
+                                    /*UnderShoulderDraw.X = jointPoints[JointType.SpineBase].X - drx;
+                                    UnderShoulderDraw.Y = jointPoints[JointType.SpineBase].Y;*/
+                                    UnderShoulder.X = joints[JointType.SpineBase].Position.X - dx;
+                                    UnderShoulder.Y = joints[JointType.SpineBase].Position.Y;
+
+                                }
+                                else
+                                {
+                                    /*UnderShoulderDraw.X = jointPoints[JointType.SpineBase].X + drx;
+                                    UnderShoulderDraw.Y = jointPoints[JointType.SpineBase].Y;*/
+                                    UnderShoulder.X = joints[JointType.SpineBase].Position.X + dx;
+                                    UnderShoulder.Y = joints[JointType.SpineBase].Position.Y;
+                                }
+
                                 UnderShoulderZ = joints[JointType.SpineBase].Position.Z;
                                 //DrawJoint(KinectCanvas, UnderShoulderDraw);
+
                                 if (IsSelected) DrawBody(joints, jointPoints, KinectCanvas);
                                 if (comenzado)
                                 {
                                     switch (Title) 
                                     {
                                         case "Abduccion":
-                                            angle = AngleBetweenJoints(joints[JointType.ElbowLeft], joints[JointType.ShoulderLeft], UnderShoulder, UnderShoulderZ);
+                                            if(Izquierdo)
+                                                angle = AngleBetweenJoints(joints[JointType.ElbowLeft], joints[JointType.ShoulderLeft], UnderShoulder, UnderShoulderZ);
+                                            else
+                                                angle = AngleBetweenJoints(joints[JointType.ElbowRight], joints[JointType.ShoulderRight], UnderShoulder, UnderShoulderZ);
                                             break;
                                         case "FlexoExtension":
-                                            angle = AngleBetweenJoints(joints[JointType.ElbowLeft], joints[JointType.ShoulderLeft], UnderShoulder, UnderShoulderZ);
+                                            if (Izquierdo)
+                                                angle = AngleBetweenJoints(joints[JointType.ElbowLeft], joints[JointType.ShoulderLeft], UnderShoulder, UnderShoulderZ);
+                                            else
+                                                angle = AngleBetweenJoints(joints[JointType.ElbowRight], joints[JointType.ShoulderRight], UnderShoulder, UnderShoulderZ);
                                             break;
                                         case "FlexExHorizontal":
-                                            angle = 90 - CalcularAnguloAlterno(joints[JointType.ElbowLeft], joints[JointType.ShoulderLeft], joints[JointType.ShoulderRight], UnderShoulder, UnderShoulderZ);
+                                            if (Izquierdo)
+                                                angle = 90 - CalcularAnguloAlterno(joints[JointType.ElbowLeft], joints[JointType.ShoulderLeft], joints[JointType.ShoulderRight], UnderShoulder, UnderShoulderZ);
+                                            else
+                                                angle = 90 - CalcularAnguloAlterno(joints[JointType.ElbowRight], joints[JointType.ShoulderRight], joints[JointType.ShoulderLeft], UnderShoulder, UnderShoulderZ);
                                             break;
+                                        case "CodoFlexoEx":
+                                            if (Izquierdo)
+                                                angle = AngleBetweenJoints(joints[JointType.WristLeft], joints[JointType.ElbowLeft], joints[JointType.ShoulderLeft]);
+                                            else
+                                                angle = AngleBetweenJoints(joints[JointType.WristRight], joints[JointType.ElbowRight], joints[JointType.ShoulderRight]);                                            break;
                                 }
 
                                     myList.Add(angle);
@@ -472,6 +507,41 @@ namespace PatientControl.ViewModels
         }
 
         /// <summary>
+        /// Regresa el ángulo interno dadas 3 Joints
+        /// </summary>
+        /// <param name="j1"></param>
+        /// <param name="j2"></param>
+        /// <param name="j3"></param>
+        /// <returns></returns>
+        public static double AngleBetweenJoints(Joint j1, Joint j2, Joint j3)
+        {
+            double Angulo = 0;
+            double shrhX = j1.Position.X - j2.Position.X;
+            double shrhY = j1.Position.Y - j2.Position.Y;
+            double shrhZ = j1.Position.Z - j2.Position.Z;
+            double hsl = vectorNorm(shrhX, shrhY, shrhZ);
+            double unrhX = j3.Position.X - j2.Position.X;
+            double unrhY = j3.Position.Y - j2.Position.Y;
+            double unrhZ = j3.Position.Z - j2.Position.Z;
+            double hul = vectorNorm(unrhX, unrhY, unrhZ);
+            double mhshu = shrhX * unrhX + shrhY * unrhY + shrhZ * unrhZ;
+            double x = mhshu / (hul * hsl);
+            if (x != Double.NaN)
+            {
+                if (-1 <= x && x <= 1)
+                {
+                    double angleRad = Math.Acos(x);
+                    Angulo = angleRad * (180.0 / Math.PI);
+                }
+                else
+                    Angulo = 0;
+            }
+            else
+                Angulo = 0;
+            return Math.Round(Angulo, 0);
+        }
+
+        /// <summary>
         /// Euclidean norm of 3-component Vector
         /// </summary>
         /// <param name="x"></param>
@@ -487,61 +557,6 @@ namespace PatientControl.ViewModels
         {
 
             this.Angulo = p.ToString();
-        }
-
-        private void WriteAngle(int pitch, int yaw, int roll)
-        {
-
-            this.Angulo = "JointYaw : " + yaw + "\n" +
-                        "JointPitch : " + pitch + "\n" +
-                        "JointRoll : " + roll + "\n";
-        }
-
-        /// <summary>
-        /// Draws face frame results
-        /// </summary>
-        /// <param name="faceIndex">the index of the face frame corresponding to a specific body in the FOV</param>
-        /// <param name="faceResult">container of all face frame results</param>
-        /// <param name="drawingContext">drawing context to render to</param>
-        private void RotationResults(JointType joint, Body bod, out int pitch, out int yaw, out int roll)
-        {
-            string jointText = string.Empty;
-            Vector4 quaternion = new Vector4();
-            IReadOnlyDictionary<JointType, JointOrientation> orientations = bod.JointOrientations;
-            quaternion.X = bod.JointOrientations[joint].Orientation.X;
-            quaternion.Y = bod.JointOrientations[joint].Orientation.Y;
-            quaternion.Z = bod.JointOrientations[joint].Orientation.Z;
-            quaternion.W = bod.JointOrientations[joint].Orientation.W;
-
-            ExtractRotationInDegrees(quaternion, out pitch, out yaw, out roll);
-        }
-
-        /// <summary>
-        /// Converts rotation quaternion to Euler angles 
-        /// And then maps them to a specified range of values to control the refresh rate
-        /// </summary>
-        /// <param name="rotQuaternion">face rotation quaternion</param>
-        /// <param name="pitch">rotation about the X-axis</param>
-        /// <param name="yaw">rotation about the Y-axis</param>
-        /// <param name="roll">rotation about the Z-axis</param>
-        private static void ExtractRotationInDegrees(Vector4 rotQuaternion, out int pitch, out int yaw, out int roll)
-        {
-            double x = rotQuaternion.X;
-            double y = rotQuaternion.Y;
-            double z = rotQuaternion.Z;
-            double w = rotQuaternion.W;
-
-            // convierte la rotacion a angulos de Euler, en grados
-            double yawD, pitchD, rollD;
-            pitchD = Math.Atan2(2 * ((y * z) + (w * x)), (w * w) - (x * x) - (y * y) + (z * z)) / Math.PI * 180.0;
-            yawD = Math.Asin(2 * ((w * y) - (x * z))) / Math.PI * 180.0;
-            rollD = Math.Atan2(2 * ((x * y) + (w * z)), (w * w) + (x * x) - (y * y) - (z * z)) / Math.PI * 180.0;
-
-            // limita los valores a un múltiplo de un incremento específico que controle el ratio de actualizaciones
-            double increment = 5.0;
-            pitch = (int)(Math.Floor((pitchD + ((increment / 2.0) * (pitchD > 0 ? 1.0 : -1.0))) / increment) * increment);
-            yaw = (int)(Math.Floor((yawD + ((increment / 2.0) * (yawD > 0 ? 1.0 : -1.0))) / increment) * increment);
-            roll = (int)(Math.Floor((rollD + ((increment / 2.0) * (rollD > 0 ? 1.0 : -1.0))) / increment) * increment);
         }
 
         /// <summary>
@@ -623,6 +638,26 @@ namespace PatientControl.ViewModels
         private async Task Pausar()
         {
             comenzado = false;
+        }
+
+        private async Task Grabar()
+        {
+            if (this.ejerSelected != null & this.Angulo != null)
+                ejerSelected.AnguloMedido = Angulo;
+        }
+
+        private void Checked(object parameter)
+        {
+            if (parameter.ToString() == "Izquierdo")
+            {
+                Derecho = false;
+                Izquierdo = true;
+            }
+            else
+            {
+                Derecho = true;
+                Izquierdo = false;
+            }
         }
     }
 }

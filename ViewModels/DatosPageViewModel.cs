@@ -5,6 +5,7 @@ using Microsoft.Practices.Prism.PubSubEvents;
 using PatientControl.Models;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,6 +25,9 @@ namespace PatientControl.ViewModels
         private string _Prueba = default(string);
         public string Prueba { get { return _Prueba; } set { SetProperty(ref _Prueba, value); } }
 
+        private string _Valor = default(string);
+        public string Valor { get { return _Valor; } set { SetProperty(ref _Valor, value); } }
+
         public IEnumerable<CategoriaViewModel> rootCategories;
 
         public DatosPageViewModel(INavigationService navigationService, IEventAggregator eventAggregator)
@@ -37,8 +41,10 @@ namespace PatientControl.ViewModels
             this.Title = "VerDatos";
             rootCategories = navigationParameter as IEnumerable<CategoriaViewModel>;
 
-            Prueba = rootCategories.First().Title;
-
+            Prueba = rootCategories.First().Ejercicios.First().Title;
+            Debug.WriteLine(Prueba);
+            Valor = rootCategories.First().Ejercicios.First().AnguloMedido;
+            Debug.WriteLine(Valor);
         }
 
     }

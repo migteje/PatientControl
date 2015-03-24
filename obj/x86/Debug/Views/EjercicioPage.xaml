@@ -66,10 +66,14 @@
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Height="24" Margin="12,36,0,0">
                     <TextBlock x:Name="angTitle" HorizontalAlignment="Left" TextWrapping="Wrap" Text="ÁNGULO FORMADO:" VerticalAlignment="Top" FontSize="18.667"/>
-                    <TextBlock x:Name="angulo" TextWrapping="Wrap" Text="{Binding Angulo}" FontSize="18.667" Margin="0" Width="39" Height="24" TextAlignment="Right"/>
+                    <TextBlock x:Name="angulo" TextWrapping="Wrap" Text="{Binding Angulo}" FontSize="25" Margin="0" Width="39" Height="24" TextAlignment="Right"/>
                 </StackPanel>
                 <CheckBox x:Name="SkeletonShow" Content="ESQUELETO" HorizontalAlignment="Right" Margin="0,30,92,0" VerticalAlignment="Center" FontSize="20" IsChecked="{Binding Path=IsSelected, Mode=TwoWay}"/>
-                <Button x:Name="Guardar" Content="GUARDAR" HorizontalAlignment="Center" Margin="0,52,0,0" VerticalAlignment="Top" FontSize="18.667" Height="46" Width="140"/>
+                <StackPanel x:Name="Lado" Height="100" Margin="92,31,30,0">
+                    <RadioButton x:Name="Derecho" VerticalAlignment="Stretch" Margin="0,0,0,0" Content="Derecho" Command="{Binding CheckedCommand, Mode=TwoWay}" CommandParameter="Derecho"/>
+                    <RadioButton x:Name="Izquierdo" Content="Izquierdo" VerticalAlignment="Stretch" Margin="0,0,0,0" Command="{Binding CheckedCommand, Mode=TwoWay}" CommandParameter="Izquierdo"/>
+                </StackPanel>
+                <Button x:Name="Grabar" Content="GRABAR" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Top" FontSize="18.667" Height="46" Width="140" Command="{Binding GrabarCommand}"/>
             </StackPanel>
             <Image Source="{Binding Bitmap}" Stretch="UniformToFill" Margin="333,0,0,0"/>
             <Canvas HorizontalAlignment="Right" Width="1013" Grid.Column="1">

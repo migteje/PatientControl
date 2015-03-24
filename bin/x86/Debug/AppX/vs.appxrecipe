@@ -26,7 +26,7 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\PatientControl.exe">
       <PackagePath>PatientControl.exe</PackagePath>
-      <Modified>2015-03-19T13:07:56.351</Modified>
+      <Modified>2015-03-24T13:06:53.778</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.Kinect.Toolkit.Input\2.0\References\CommonConfiguration\neutral\Microsoft.Kinect.Toolkit.Input.winmd">
       <PackagePath>Microsoft.Kinect.Toolkit.Input.winmd</PackagePath>
@@ -147,11 +147,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\Views\DatosPage.xbf">
       <PackagePath>Views\DatosPage.xbf</PackagePath>
-      <Modified>2015-03-19T13:07:56.107</Modified>
+      <Modified>2015-03-20T12:25:25.395</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\Views\EjercicioPage.xbf">
       <PackagePath>Views\EjercicioPage.xbf</PackagePath>
-      <Modified>2015-03-18T12:25:50.548</Modified>
+      <Modified>2015-03-24T13:00:09.062</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\Views\MainPage.xbf">
       <PackagePath>Views\MainPage.xbf</PackagePath>
@@ -163,19 +163,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\Microsoft.Kinect.Xaml.Controls\Themes\Generic.xbf">
       <PackagePath>Microsoft.Kinect.Xaml.Controls\Themes\Generic.xbf</PackagePath>
-      <Modified>2015-03-19T13:07:56.117</Modified>
+      <Modified>2015-03-24T13:06:53.529</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\Microsoft.Kinect.Xaml.Controls\SpriteSheet.xbf">
       <PackagePath>Microsoft.Kinect.Xaml.Controls\SpriteSheet.xbf</PackagePath>
-      <Modified>2015-03-19T13:07:56.118</Modified>
+      <Modified>2015-03-24T13:06:53.529</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\PatientControl.xr.xml">
       <PackagePath>PatientControl.xr.xml</PackagePath>
-      <Modified>2015-03-19T12:39:11.701</Modified>
+      <Modified>2015-03-24T12:58:08.387</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-03-19T13:07:56.672</Modified>
+      <Modified>2015-03-24T13:06:54.054</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

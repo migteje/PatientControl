@@ -45,7 +45,7 @@ namespace PatientControl.ViewModels
                         Title = "Ejercicios de Codo", 
                         Ejercicios = new List<Ejercicio>()
                             {
-                                new Ejercicio() {  Title = "FlexoExtension",  Description = "Doblar y extender el codo moviendo el antebrazo", ImageUri = new Uri("ms-appx:///Assets/StoreLogo.scale-180.png")},
+                                new Ejercicio() {  Title = "CodoFlexoEx",  Description = "Doblar y extender el codo moviendo el antebrazo", ImageUri = new Uri("ms-appx:///Assets/StoreLogo.scale-180.png")},
                                 new Ejercicio() {  Title = "abduccion",  Description = "Rotar el antebrazo respecto al codo", ImageUri = new Uri("ms-appx:///Assets/StoreLogo.scale-180.png")},
                             }
                     }, null),

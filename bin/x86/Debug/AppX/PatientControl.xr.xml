@@ -18,10 +18,13 @@
     <RootPropertyPathName Name="DiscountedPrice" />
     <RootPropertyPathName Name="Group" />
     <RootPropertyPathName Name="TotalNumberOfItems" />
+    <RootPropertyPathName Name="Valor" />
     <RootPropertyPathName Name="Prueba" />
     <RootPropertyPathName Name="GoBackCommand" />
     <RootPropertyPathName Name="KinectCanvas" />
     <RootPropertyPathName Name="Bitmap" />
+    <RootPropertyPathName Name="GrabarCommand" />
+    <RootPropertyPathName Name="CheckedCommand" />
     <RootPropertyPathName Name="IsSelected" />
     <RootPropertyPathName Name="Angulo" />
     <RootPropertyPathName Name="PararCommand" />
@@ -352,6 +355,13 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="IsChecked" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RadioButton">
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Command" />
+      <RootProperty Name="CommandParameter" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Documents.Run">
       <RootProperty Name="Text" />

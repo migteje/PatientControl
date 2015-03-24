@@ -18,11 +18,11 @@ namespace PatientControl.Models
 
         public int SubcategoryId { get; set; }
 
-        public double AnguloMedido { get; set; }
+        public string AnguloMedido { get; set; }
 
         public double Diferencia { get; set; }
 
-        public double Repeticiones { get; set; }
+        public int Repeticiones { get; set; }
 
 
     }

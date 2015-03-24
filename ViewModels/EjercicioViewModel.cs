@@ -24,6 +24,8 @@ namespace PatientControl.ViewModels
 
         public string NumeroEjercicio { get { return _ejercicio.NumeroEjercicio; } }
 
+        public string AnguloMedido { get { return _ejercicio.AnguloMedido; } set { _ejercicio.AnguloMedido = value; } }
+
         public Uri Image { get { return _ejercicio.ImageUri; } }
 
         public int ItemPosition { get; set; }

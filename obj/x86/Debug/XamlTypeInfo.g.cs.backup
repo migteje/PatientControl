@@ -177,7 +177,7 @@ namespace PatientControl.PatientControl_XamlTypeInfo
             _typeNameTable[25] = "Microsoft.Practices.Prism.Commands.DelegateCommand";
             _typeNameTable[26] = "Microsoft.Practices.Prism.Commands.DelegateCommandBase";
             _typeNameTable[27] = "Microsoft.Practices.Prism.Mvvm.ViewModelLocator";
-            _typeNameTable[28] = "PatientControl.Views.DatosEjerciciosPage";
+            _typeNameTable[28] = "PatientControl.Views.DatosPage";
             _typeNameTable[29] = "PatientControl.Views.EjercicioPage";
             _typeNameTable[30] = "PatientControl.Controls.MultipleSizedGridView";
             _typeNameTable[31] = "PatientControl.Controls.AutoRotatingGridView";
@@ -224,7 +224,7 @@ namespace PatientControl.PatientControl_XamlTypeInfo
             _typeTable[25] = typeof(global::Microsoft.Practices.Prism.Commands.DelegateCommand);
             _typeTable[26] = typeof(global::Microsoft.Practices.Prism.Commands.DelegateCommandBase);
             _typeTable[27] = typeof(global::Microsoft.Practices.Prism.Mvvm.ViewModelLocator);
-            _typeTable[28] = typeof(global::PatientControl.Views.DatosEjerciciosPage);
+            _typeTable[28] = typeof(global::PatientControl.Views.DatosPage);
             _typeTable[29] = typeof(global::PatientControl.Views.EjercicioPage);
             _typeTable[30] = typeof(global::PatientControl.Controls.MultipleSizedGridView);
             _typeTable[31] = typeof(global::PatientControl.Controls.AutoRotatingGridView);
@@ -286,7 +286,7 @@ namespace PatientControl.PatientControl_XamlTypeInfo
         private object Activate_12_TextToHeaderVisibilityConverter() { return new global::PatientControl.Converters.TextToHeaderVisibilityConverter(); }
         private object Activate_14_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
         private object Activate_17_IncrementalUpdateBehavior() { return new global::Microsoft.Xaml.Interactions.Core.IncrementalUpdateBehavior(); }
-        private object Activate_28_DatosEjerciciosPage() { return new global::PatientControl.Views.DatosEjerciciosPage(); }
+        private object Activate_28_DatosPage() { return new global::PatientControl.Views.DatosPage(); }
         private object Activate_29_EjercicioPage() { return new global::PatientControl.Views.EjercicioPage(); }
         private object Activate_30_MultipleSizedGridView() { return new global::PatientControl.Controls.MultipleSizedGridView(); }
         private object Activate_31_AutoRotatingGridView() { return new global::PatientControl.Controls.AutoRotatingGridView(); }
@@ -499,9 +499,9 @@ namespace PatientControl.PatientControl_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 28:   //  PatientControl.Views.DatosEjerciciosPage
+            case 28:   //  PatientControl.Views.DatosPage
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("PatientControl.Controls.PageBase"));
-                userType.Activator = Activate_28_DatosEjerciciosPage;
+                userType.Activator = Activate_28_DatosPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -1378,5 +1378,7 @@ namespace PatientControl.PatientControl_XamlTypeInfo
         }
     }
 }
+
+
 
 
