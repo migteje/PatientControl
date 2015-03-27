@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:build="http://schemas.microsoft.com/developer/appx/2012/build" IgnorableNamespaces="build">
+  <!--
+    ESTE ARCHIVO DE MANIFIESTO DEL PAQUETE SE GENERA MEDIANTE EL PROCESO DE COMPILACIÓN.
+
+    Los cambios realizados en el archivo se perderán al regenerarlo. Para corregir los errores de este archivo, edite el archivo de origen .appxmanifest.
+
+    Para obtener más información acerca de los archivos de manifiesto del paquete, vea http://go.microsoft.com/fwlink/?LinkID=241727
+  -->
+  <Identity Name="PatientControl-Beta" Publisher="CN=Giro" Version="1.0.0.0" ProcessorArchitecture="x86" />
+  <Properties>
+    <DisplayName>PatientControl</DisplayName>
+    <PublisherDisplayName>Giro</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="ES-ES" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="PatientControl.exe" EntryPoint="PatientControl.App">
+      <m2:VisualElements DisplayName="PatientControl" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="PatientControl" ForegroundText="light" BackgroundColor="#464646">
+        <m2:SplashScreen Image="Assets\SplashScreen.png" />
+      </m2:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <DeviceCapability Name="webcam" />
+    <DeviceCapability Name="microphone" />
+  </Capabilities>
+  <Dependencies>
+    <PackageDependency Name="Microsoft.VCLibs.120.00" MinVersion="12.0.21005.1" />
+    <PackageDependency Name="Microsoft.WindowsPreview.Kinect.8.1" MinVersion="2.0.1410.19000" />
+  </Dependencies>
+  <Extensions>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>Microsoft.Kinect.Toolkit.Input.dll</Path>
+        <ActivatableClass ActivatableClassId="Microsoft.Kinect.Toolkit.Input.InputPointerManager" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Kinect.Toolkit.Input.CursorSpriteSheetDefinition" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Kinect.Toolkit.Input.ManipulatableModel" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Kinect.Toolkit.Input.CursorModel" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Kinect.Toolkit.Input.HitTestResult" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Kinect.Toolkit.Input.CursorViewModel" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Kinect.Toolkit.Input.PressableModel" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>Microsoft.Kinect.Xaml.Controls.dll</Path>
+        <ActivatableClass ActivatableClassId="Microsoft.Kinect.Xaml.Controls.INTERNAL_Microsoft_Kinect_Xaml_Controls_8_1_XamlTypeInfo.XamlMetaDataProvider" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Kinect.Xaml.Controls.KinectUserViewer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Kinect.Xaml.Controls.KinectRegion" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Kinect.Xaml.Controls.SpriteSheet" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Kinect.Xaml.Controls.KinectSoundDefinition" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+  </Extensions>
+  <build:Metadata>
+    <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v4.5.1" />
+    <build:Item Name="VisualStudio" Version="12.0" />
+    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Premium 2013" />
+    <build:Item Name="OperatingSystem" Version="6.3.9600.16384 (winblue_rtm.130821-1623)" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="12.0.31101.0" />
+    <build:Item Name="ProjectGUID" Value="{15B6290C-F769-47BE-A89E-4B3BBC09AEDB}" />
+    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="12.0.30501.0" />
+    <build:Item Name="BehaviorsXamlSDKManaged" Version="12.0" />
+    <build:Item Name="Microsoft.Kinect.Toolkit.Input" Version="2.0" />
+    <build:Item Name="Microsoft.Kinect.Xaml.Controls" Version="2.0" />
+    <build:Item Name="MakePri.exe" Version="6.3.9600.17298 (winblue.141024-1500)" />
+  </build:Metadata>
+</Package>

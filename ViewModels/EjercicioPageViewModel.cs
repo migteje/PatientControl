@@ -33,20 +33,29 @@ namespace PatientControl.ViewModels
         public DelegateCommand PausarCommand { get; private set; }
         public DelegateCommand PararCommand { get; private set; }
         public DelegateCommand GrabarCommand { get; private set; }
+        public DelegateCommand MasCommand { get; private set; }
+        public DelegateCommand MenosCommand { get; private set; }
         public DelegateCommand<string> CheckedCommand { get; private set; }
 
-        private string _Angulo = default(string);
-        public string Angulo { get { return _Angulo; } set { SetProperty(ref _Angulo, value);} }
-        private string _Title = default(string);
-        public string Title { get { return _Title; } set { SetProperty(ref _Title, value);} }
+        private string _angulo = default(string);
+        public string Angulo { get { return _angulo; } set { SetProperty(ref _angulo, value);} }
+        private string _title = default(string);
+        public string Title { get { return _title; } set { SetProperty(ref _title, value);} }
         private bool _isSelected;
         public bool IsSelected { get { return _isSelected; } set { SetProperty(ref _isSelected, value); OnPropertyChanged("IsSelected"); } }
 
+        private bool _on;
+        public bool On { get { return _on; } set { SetProperty(ref _on, value); OnPropertyChanged("On"); } }
+        private string _activado = default(string);
+        public string Activado { get { return _activado; } set { SetProperty(ref _activado, value); } }
+        private string _desactivado = default(string);
+        public string Desactivado { get { return _desactivado; } set { SetProperty(ref _desactivado, value); } }
         private bool _derecho;
         public bool Derecho { get { return _derecho; } set { SetProperty(ref _derecho, value); OnPropertyChanged("Derecho"); } }
         private bool _izquierdo;
         public bool Izquierdo { get { return _izquierdo; } set { SetProperty(ref _izquierdo, value); OnPropertyChanged("Izquierdo"); } }
-
+        private int _repeticion = default(int);
+        public int Repeticion { get { return _repeticion; } set { SetProperty(ref _repeticion, value); } }
 
         private EjercicioViewModel ejerSelected;
 
@@ -119,6 +128,11 @@ namespace PatientControl.ViewModels
         /// </summary>
         private int displayHeight;
 
+
+        double anteriorZ=0;
+        double anteriorY=0;
+        double anteriorX=0;
+
         public EjercicioPageViewModel(INavigationService navigationService, IEventAggregator eventAggregator)
         {
             _eventAggregator = eventAggregator;
@@ -128,6 +142,8 @@ namespace PatientControl.ViewModels
             PausarCommand = DelegateCommand.FromAsyncHandler(Pausar);
             PararCommand = DelegateCommand.FromAsyncHandler(Parar);
             GrabarCommand = DelegateCommand.FromAsyncHandler(Grabar);
+            MasCommand = DelegateCommand.FromAsyncHandler(Mas);
+            MenosCommand = DelegateCommand.FromAsyncHandler(Menos);
             this.CheckedCommand = new DelegateCommand<string>(Checked);
         }
 
@@ -135,7 +151,18 @@ namespace PatientControl.ViewModels
         {
             this.ejerSelected = navigationParameter as EjercicioViewModel;
             this.Title = ejerSelected.Title;
+            if (this.Title == "Abduccion-Aduccion")
+            {
+                this.Activado = "Aduccion";
+                this.Desactivado = "Abduccion";
+            }
+            else
+            {
+                this.Activado = "Extension";
+                this.Desactivado = "Flexion";
+            }
             this.Angulo = "";
+            this.Repeticion = 0;
 
             KinectConect();
         }
@@ -277,56 +304,89 @@ namespace PatientControl.ViewModels
                                 double d1 = Math.Sqrt(Math.Pow((joints[JointType.SpineBase].Position.X - joints[JointType.ShoulderRight].Position.X), 2) + Math.Pow((joints[JointType.SpineBase].Position.Y - joints[JointType.ShoulderLeft].Position.Y), 2));
                                 double d2 = Math.Sqrt(Math.Pow((joints[JointType.SpineBase].Position.Y - joints[JointType.ShoulderLeft].Position.Y), 2));
                                 double dx = Math.Sqrt(Math.Pow(d1, 2) - Math.Pow(d2, 2));
-                                /*Point UnderShoulderDraw = new Point();
+                                Point UnderShoulderDraw = new Point();
                                 double dr1 = Math.Sqrt(Math.Pow((jointPoints[JointType.SpineBase].X - jointPoints[JointType.ShoulderRight].X), 2) + Math.Pow((jointPoints[JointType.SpineBase].Y - jointPoints[JointType.ShoulderLeft].Y), 2));
                                 double dr2 = Math.Sqrt(Math.Pow((jointPoints[JointType.SpineBase].Y - jointPoints[JointType.ShoulderLeft].Y), 2));
-                                double drx = Math.Sqrt(Math.Pow(dr1, 2) - Math.Pow(dr2, 2));*/
+                                double drx = Math.Sqrt(Math.Pow(dr1, 2) - Math.Pow(dr2, 2));
                                 if (Izquierdo)
                                 {
-                                    /*UnderShoulderDraw.X = jointPoints[JointType.SpineBase].X - drx;
-                                    UnderShoulderDraw.Y = jointPoints[JointType.SpineBase].Y;*/
+                                    UnderShoulderDraw.X = jointPoints[JointType.SpineBase].X - drx;
+                                    UnderShoulderDraw.Y = jointPoints[JointType.SpineBase].Y;
                                     UnderShoulder.X = joints[JointType.SpineBase].Position.X - dx;
                                     UnderShoulder.Y = joints[JointType.SpineBase].Position.Y;
 
                                 }
                                 else
                                 {
-                                    /*UnderShoulderDraw.X = jointPoints[JointType.SpineBase].X + drx;
-                                    UnderShoulderDraw.Y = jointPoints[JointType.SpineBase].Y;*/
+                                    UnderShoulderDraw.X = jointPoints[JointType.SpineBase].X + drx;
+                                    UnderShoulderDraw.Y = jointPoints[JointType.SpineBase].Y;
                                     UnderShoulder.X = joints[JointType.SpineBase].Position.X + dx;
                                     UnderShoulder.Y = joints[JointType.SpineBase].Position.Y;
                                 }
 
                                 UnderShoulderZ = joints[JointType.SpineBase].Position.Z;
-                                //DrawJoint(KinectCanvas, UnderShoulderDraw);
+                                DrawJoint(KinectCanvas, UnderShoulderDraw);
 
                                 if (IsSelected) DrawBody(joints, jointPoints, KinectCanvas);
                                 if (comenzado)
-                                {
+                                {                               
                                     switch (Title) 
                                     {
-                                        case "Abduccion":
-                                            if(Izquierdo)
-                                                angle = AngleBetweenJoints(joints[JointType.ElbowLeft], joints[JointType.ShoulderLeft], UnderShoulder, UnderShoulderZ);
-                                            else
-                                                angle = AngleBetweenJoints(joints[JointType.ElbowRight], joints[JointType.ShoulderRight], UnderShoulder, UnderShoulderZ);
+                                        case "Abduccion-Aduccion":
+                                            if (Izquierdo)
+                                            {
+                                                if (anteriorZ == 0) anteriorZ = joints[JointType.ElbowLeft].Position.Z;
+                                                //Debug.WriteLine(anteriorZ + " y " + joints[JointType.ElbowLeft].Position.Z);
+
+                                                if ((anteriorZ - 0.15 <= joints[JointType.ElbowLeft].Position.Z) && (joints[JointType.ElbowLeft].Position.Z <= anteriorZ + 0.15))
+                                                    angle = AngleBetweenJoints(joints[JointType.ElbowLeft], joints[JointType.ShoulderLeft], UnderShoulder, UnderShoulderZ);
+                                            }
+                                            if (Derecho)
+                                            {
+                                                if (anteriorZ == 0) anteriorZ = joints[JointType.ElbowRight].Position.Z;
+                                                if ((anteriorZ - 0.15 <= joints[JointType.ElbowRight].Position.Z) && (joints[JointType.ElbowRight].Position.Z <= anteriorZ + 0.15))
+                                                    angle = AngleBetweenJoints(joints[JointType.ElbowRight], joints[JointType.ShoulderRight], UnderShoulder, UnderShoulderZ);
+                                            }
                                             break;
                                         case "FlexoExtension":
                                             if (Izquierdo)
-                                                angle = AngleBetweenJoints(joints[JointType.ElbowLeft], joints[JointType.ShoulderLeft], UnderShoulder, UnderShoulderZ);
-                                            else
+                                            {
+                                                if (anteriorX == 0) anteriorX = joints[JointType.ElbowLeft].Position.X;
+                                                if ((anteriorX - 0.15 <= joints[JointType.ElbowLeft].Position.X) && (joints[JointType.ElbowLeft].Position.X <= anteriorX + 0.15))
+                                                    angle = AngleBetweenJoints(joints[JointType.ElbowLeft], joints[JointType.ShoulderLeft], UnderShoulder, UnderShoulderZ);
+                                            }
+                                            if (Derecho)
+                                            {
+                                                if (anteriorX == 0) anteriorX = joints[JointType.ElbowRight].Position.X;
+                                                if ((anteriorX - 0.15 <= joints[JointType.ElbowRight].Position.X) && (joints[JointType.ElbowRight].Position.X <= anteriorX + 0.15))
                                                 angle = AngleBetweenJoints(joints[JointType.ElbowRight], joints[JointType.ShoulderRight], UnderShoulder, UnderShoulderZ);
+                                            }
                                             break;
                                         case "FlexExHorizontal":
                                             if (Izquierdo)
-                                                angle = 90 - CalcularAnguloAlterno(joints[JointType.ElbowLeft], joints[JointType.ShoulderLeft], joints[JointType.ShoulderRight], UnderShoulder, UnderShoulderZ);
-                                            else
-                                                angle = 90 - CalcularAnguloAlterno(joints[JointType.ElbowRight], joints[JointType.ShoulderRight], joints[JointType.ShoulderLeft], UnderShoulder, UnderShoulderZ);
+                                            {
+                                                if (anteriorY == 0) anteriorY = joints[JointType.ElbowLeft].Position.Y;
+                                                if ((anteriorY - 0.15 <= joints[JointType.ElbowLeft].Position.Y) && (joints[JointType.ElbowLeft].Position.Y <= anteriorY + 0.15)){
+                                                    /*if (joints[JointType.ElbowRight].Position.X == joints[JointType.ShoulderRight].Position.X)
+                                                        angle = 90 + CalcularAnguloAlterno(joints[JointType.ElbowRight], joints[JointType.ShoulderRight], joints[JointType.ShoulderLeft], UnderShoulder, UnderShoulderZ);
+                                                    else*/ angle = 90 - CalcularAnguloAlterno(joints[JointType.ElbowRight], joints[JointType.ShoulderRight], joints[JointType.ShoulderLeft], UnderShoulder, UnderShoulderZ);
+                                                }
+                                            }
+                                            if (Derecho)
+                                            {
+                                                if (anteriorY == 0) anteriorY = joints[JointType.ElbowRight].Position.Y;
+                                                if ((anteriorY - 0.3 <= joints[JointType.ElbowRight].Position.Y) && (joints[JointType.ElbowRight].Position.Y <= anteriorY + 0.3))
+                                                {
+                                                    /*if (joints[JointType.ElbowRight].Position.X == joints[JointType.ShoulderRight].Position.X)
+                                                        angle = 90 + CalcularAnguloAlterno(joints[JointType.ElbowRight], joints[JointType.ShoulderRight], joints[JointType.ShoulderLeft], UnderShoulder, UnderShoulderZ);
+                                                    else*/ angle = 90 - CalcularAnguloAlterno(joints[JointType.ElbowRight], joints[JointType.ShoulderRight], joints[JointType.ShoulderLeft], UnderShoulder, UnderShoulderZ);
+                                                }
+                                            }
                                             break;
-                                        case "CodoFlexoEx":
+                                        case "CodoFlexEx":
                                             if (Izquierdo)
                                                 angle = AngleBetweenJoints(joints[JointType.WristLeft], joints[JointType.ElbowLeft], joints[JointType.ShoulderLeft]);
-                                            else
+                                            if (Derecho)
                                                 angle = AngleBetweenJoints(joints[JointType.WristRight], joints[JointType.ElbowRight], joints[JointType.ShoulderRight]);                                            break;
                                 }
 
@@ -629,10 +689,24 @@ namespace PatientControl.ViewModels
         private async Task Parar()
         {
             comenzado = false;
+            On = false;
+            Izquierdo = true;
+            Derecho = false;
             if (myList != null) myList.Clear();
             if (this.Angulo != null)
                 this.Angulo = "";
             confra = 0;
+            anteriorX = anteriorY = anteriorZ = 0;
+        }
+
+        private async Task Mas()
+        {
+            Repeticion++;
+        }
+
+        private async Task Menos()
+        {
+            if (Repeticion != 0) Repeticion--;
         }
 
         private async Task Pausar()
@@ -643,7 +717,52 @@ namespace PatientControl.ViewModels
         private async Task Grabar()
         {
             if (this.ejerSelected != null & this.Angulo != null)
-                ejerSelected.AnguloMedido = Angulo;
+            {
+                if (On)
+                {
+                    switch (Title)
+                    {
+                        case "Abduccion-Aduccion":
+                            ejerSelected.AnguloAd = Angulo;
+                            ejerSelected.RepeticionesAbd = Repeticion;
+                            break;
+                        case "FlexoExtension":
+                            ejerSelected.AnguloEx = Angulo;
+                            ejerSelected.RepeticionesFlEx = Repeticion;
+                            break;
+                        case "FlexExHorizontal":
+                            ejerSelected.AnguloExh = Angulo;
+                            ejerSelected.RepeticionesFlExh = Repeticion;
+                            break;
+                        case "CodoFlexEx":
+                            ejerSelected.AnguloCex = Angulo;
+                            ejerSelected.RepeticionesCflEx = Repeticion;
+                            break;
+                    }
+                }
+                else
+                {
+                    switch (Title)
+                    {
+                        case "Abduccion-Aduccion":
+                            ejerSelected.AnguloAb = Angulo;
+                            ejerSelected.RepeticionesAbd = Repeticion;
+                            break;
+                        case "FlexoExtension":
+                            ejerSelected.AnguloFl = Angulo;
+                            ejerSelected.RepeticionesFlEx = Repeticion;
+                            break;
+                        case "FlexExHorizontal":
+                            ejerSelected.AnguloFlh = Angulo;
+                            ejerSelected.RepeticionesFlExh = Repeticion;
+                            break;
+                        case "CodoFlexEx":
+                            ejerSelected.AnguloCfl = Angulo;
+                            ejerSelected.RepeticionesCflEx = Repeticion;
+                            break;
+                    }
+                }
+            }
         }
 
         private void Checked(object parameter)

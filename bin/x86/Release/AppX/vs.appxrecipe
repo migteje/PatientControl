@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>GIRO_UVA</Machine>
+    <WindowsUser>Giro</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Release|x86</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+    <PackageIdentityName>PatientControl-Beta</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\obj\x86\Release\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>EF25787D08FCAECECF14464D9CBD576D4D1270B9B7C5D12ECDF8732FDBD866BF</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>PatientControl-Beta_1.0.0.0_x86__66yfckezvbf7a</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>PatientControl-Beta_66yfckezvbf7a!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>PatientControl-Beta</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Giro</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Release\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-03-27T07:39:18.176</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Release\PatientControl.exe">
+      <PackagePath>PatientControl.exe</PackagePath>
+      <Modified>2015-03-27T07:39:16.148</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.Kinect.Toolkit.Input\2.0\References\CommonConfiguration\neutral\Microsoft.Kinect.Toolkit.Input.winmd">
+      <PackagePath>Microsoft.Kinect.Toolkit.Input.winmd</PackagePath>
+      <Modified>2014-10-19T13:13:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.Kinect.Xaml.Controls\2.0\References\CommonConfiguration\neutral\Microsoft.Kinect.Xaml.Controls.winmd">
+      <PackagePath>Microsoft.Kinect.Xaml.Controls.winmd</PackagePath>
+      <Modified>2014-10-19T13:20:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\BehaviorsXamlSDKManaged\12.0\References\CommonConfiguration\Neutral\Microsoft.Xaml.Interactions.dll">
+      <PackagePath>Microsoft.Xaml.Interactions.dll</PackagePath>
+      <Modified>2014-04-29T12:23:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\BehaviorsXamlSDKManaged\12.0\References\CommonConfiguration\Neutral\Microsoft.Xaml.Interactivity.dll">
+      <PackagePath>Microsoft.Xaml.Interactivity.dll</PackagePath>
+      <Modified>2014-04-29T12:23:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\Prism.Mvvm.1.1.1\lib\windows8\Microsoft.Practices.Prism.Mvvm.dll">
+      <PackagePath>Microsoft.Practices.Prism.Mvvm.dll</PackagePath>
+      <Modified>2015-01-07T08:07:05.748</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\Prism.Mvvm.1.1.1\lib\windows8\Microsoft.Practices.Prism.Mvvm.Store.dll">
+      <PackagePath>Microsoft.Practices.Prism.Mvvm.Store.dll</PackagePath>
+      <Modified>2015-01-07T08:07:05.757</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\Prism.PubSubEvents.1.1.0\lib\portable-sl5+windowsphone8+windows8+net40+wpa81\Microsoft.Practices.Prism.PubSubEvents.dll">
+      <PackagePath>Microsoft.Practices.Prism.PubSubEvents.dll</PackagePath>
+      <Modified>2015-01-07T09:25:16.419</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\Prism.Mvvm.1.1.1\lib\windows8\Microsoft.Practices.Prism.SharedInterfaces.dll">
+      <PackagePath>Microsoft.Practices.Prism.SharedInterfaces.dll</PackagePath>
+      <Modified>2015-01-07T08:07:05.768</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\Prism.StoreApps.2.0.0\lib\windows8\Microsoft.Practices.Prism.StoreApps.dll">
+      <PackagePath>Microsoft.Practices.Prism.StoreApps.dll</PackagePath>
+      <Modified>2015-01-07T08:07:05.826</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\Prism.StoreApps.2.0.0\lib\windows8\Microsoft.Practices.Prism.StoreApps.Windows.dll">
+      <PackagePath>Microsoft.Practices.Prism.StoreApps.Windows.dll</PackagePath>
+      <Modified>2015-01-07T08:07:05.836</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\CommonServiceLocator.1.2\lib\portable-windows8+net40+sl5+windowsphone8\Microsoft.Practices.ServiceLocation.dll">
+      <PackagePath>Microsoft.Practices.ServiceLocation.dll</PackagePath>
+      <Modified>2015-01-07T09:10:56.255</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\Unity.3.5.1404.0\lib\win8\Microsoft.Practices.Unity.dll">
+      <PackagePath>Microsoft.Practices.Unity.dll</PackagePath>
+      <Modified>2015-01-07T09:10:56.335</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\Unity.3.5.1404.0\lib\win8\Microsoft.Practices.Unity.RegistrationByConvention.dll">
+      <PackagePath>Microsoft.Practices.Unity.RegistrationByConvention.dll</PackagePath>
+      <Modified>2015-01-07T09:10:56.346</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.Kinect.Xaml.Controls\2.0\Redist\CommonConfiguration\x86\Microsoft.Kinect.Xaml.Controls\CursorSpriteSheet.png">
+      <PackagePath>Microsoft.Kinect.Xaml.Controls\CursorSpriteSheet.png</PackagePath>
+      <Modified>2014-10-19T13:43:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.Kinect.Xaml.Controls\2.0\Redist\CommonConfiguration\x86\Microsoft.Kinect.Xaml.Controls\KinectUserViewerPixelShader.cso">
+      <PackagePath>Microsoft.Kinect.Xaml.Controls\KinectUserViewerPixelShader.cso</PackagePath>
+      <Modified>2014-10-19T12:46:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.Kinect.Xaml.Controls\2.0\Redist\CommonConfiguration\x86\Microsoft.Kinect.Xaml.Controls\KinectUserViewerVertexShader.cso">
+      <PackagePath>Microsoft.Kinect.Xaml.Controls\KinectUserViewerVertexShader.cso</PackagePath>
+      <Modified>2014-10-19T12:46:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.Kinect.Toolkit.Input\2.0\Redist\CommonConfiguration\x86\Microsoft.Kinect.Toolkit.Input.dll">
+      <PackagePath>Microsoft.Kinect.Toolkit.Input.dll</PackagePath>
+      <Modified>2014-10-19T12:44:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.Kinect.Xaml.Controls\2.0\Redist\CommonConfiguration\x86\Microsoft.Kinect.Xaml.Controls.dll">
+      <PackagePath>Microsoft.Kinect.Xaml.Controls.dll</PackagePath>
+      <Modified>2014-10-19T12:50:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.Kinect.Xaml.Controls\2.0\Redist\CommonConfiguration\x86\Microsoft.Kinect.Xaml.Controls\SelectButtonClick.wav">
+      <PackagePath>Microsoft.Kinect.Xaml.Controls\SelectButtonClick.wav</PackagePath>
+      <Modified>2014-10-19T13:43:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.Kinect.Xaml.Controls\2.0\Redist\CommonConfiguration\x86\Microsoft.Kinect.Xaml.Controls\SelectButtonPressingKinect.wav">
+      <PackagePath>Microsoft.Kinect.Xaml.Controls\SelectButtonPressingKinect.wav</PackagePath>
+      <Modified>2014-10-19T13:43:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-03-18T12:25:07.542</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-03-18T12:25:07.551</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-03-18T12:25:07.561</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-03-18T12:25:07.843</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\Assets\StoreLogo.scale-180.png">
+      <PackagePath>Assets\StoreLogo.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-03-18T12:25:07.852</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Release\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2015-03-27T07:39:15.914</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Release\Themes\DataTemplates.xbf">
+      <PackagePath>Themes\DataTemplates.xbf</PackagePath>
+      <Modified>2015-03-27T07:39:15.914</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Release\Themes\PControlStyles.xbf">
+      <PackagePath>Themes\PControlStyles.xbf</PackagePath>
+      <Modified>2015-03-27T07:39:15.914</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Release\Views\DatosPage.xbf">
+      <PackagePath>Views\DatosPage.xbf</PackagePath>
+      <Modified>2015-03-27T07:39:15.914</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Release\Views\EjercicioPage.xbf">
+      <PackagePath>Views\EjercicioPage.xbf</PackagePath>
+      <Modified>2015-03-27T07:39:15.929</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Release\Views\MainPage.xbf">
+      <PackagePath>Views\MainPage.xbf</PackagePath>
+      <Modified>2015-03-27T07:39:15.929</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Release\Views\LoginPage.xbf">
+      <PackagePath>Views\LoginPage.xbf</PackagePath>
+      <Modified>2015-03-27T07:39:15.929</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Release\Microsoft.Kinect.Xaml.Controls\Themes\Generic.xbf">
+      <PackagePath>Microsoft.Kinect.Xaml.Controls\Themes\Generic.xbf</PackagePath>
+      <Modified>2015-03-27T07:39:15.929</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Release\Microsoft.Kinect.Xaml.Controls\SpriteSheet.xbf">
+      <PackagePath>Microsoft.Kinect.Xaml.Controls\SpriteSheet.xbf</PackagePath>
+      <Modified>2015-03-27T07:39:15.929</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Release\PatientControl.xr.xml">
+      <PackagePath>PatientControl.xr.xml</PackagePath>
+      <Modified>2015-03-27T07:14:32.894</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Release\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-03-27T07:39:16.601</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\">
+      <Name>Microsoft.VCLibs.120.00</Name>
+      <Version>12.0.21005.1</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.120.00, MinVersion = 12.0.21005.1</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\.\AppX\Retail\ARM\Microsoft.VCLibs.ARM.12.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\">
+      <Name>Microsoft.VCLibs.120.00</Name>
+      <Version>12.0.21005.1</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.120.00, MinVersion = 12.0.21005.1</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\.\AppX\Retail\x64\Microsoft.VCLibs.x64.12.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\">
+      <Name>Microsoft.VCLibs.120.00</Name>
+      <Version>12.0.21005.1</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.120.00, MinVersion = 12.0.21005.1</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\.\AppX\Retail\x86\Microsoft.VCLibs.x86.12.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\WindowsPreview.Kinect\2.0\">
+      <Name>Microsoft.WindowsPreview.Kinect.8.1</Name>
+      <Version>2.0.1410.19000</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.WindowsPreview.Kinect.8.1, MinVersion = 2.0.1410.19000</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\WindowsPreview.Kinect\2.0\.\AppX\Retail\x64\WindowsPreview.Kinect_2.0_x64.appx</AppxLocation>
+      <MoreInfo>http://www.kinectforwindows.com</MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\WindowsPreview.Kinect\2.0\">
+      <Name>Microsoft.WindowsPreview.Kinect.8.1</Name>
+      <Version>2.0.1410.19000</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.WindowsPreview.Kinect.8.1, MinVersion = 2.0.1410.19000</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\WindowsPreview.Kinect\2.0\.\AppX\Retail\x86\WindowsPreview.Kinect_2.0_Win32.appx</AppxLocation>
+      <MoreInfo>http://www.kinectforwindows.com</MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

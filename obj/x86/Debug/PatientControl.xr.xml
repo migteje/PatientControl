@@ -18,8 +18,18 @@
     <RootPropertyPathName Name="DiscountedPrice" />
     <RootPropertyPathName Name="Group" />
     <RootPropertyPathName Name="TotalNumberOfItems" />
-    <RootPropertyPathName Name="Valor" />
-    <RootPropertyPathName Name="Prueba" />
+    <RootPropertyPathName Name="RepeticionCflEx" />
+    <RootPropertyPathName Name="ValorCex" />
+    <RootPropertyPathName Name="ValorCfl" />
+    <RootPropertyPathName Name="ValorFlExh" />
+    <RootPropertyPathName Name="ValorExh" />
+    <RootPropertyPathName Name="ValorFlh" />
+    <RootPropertyPathName Name="RepeticionFlEx" />
+    <RootPropertyPathName Name="ValorEx" />
+    <RootPropertyPathName Name="ValorFl" />
+    <RootPropertyPathName Name="RepeticionAbd" />
+    <RootPropertyPathName Name="ValorAd" />
+    <RootPropertyPathName Name="ValorAb" />
     <RootPropertyPathName Name="GoBackCommand" />
     <RootPropertyPathName Name="KinectCanvas" />
     <RootPropertyPathName Name="Bitmap" />
@@ -27,6 +37,12 @@
     <RootPropertyPathName Name="CheckedCommand" />
     <RootPropertyPathName Name="IsSelected" />
     <RootPropertyPathName Name="Angulo" />
+    <RootPropertyPathName Name="Desactivado" />
+    <RootPropertyPathName Name="Activado" />
+    <RootPropertyPathName Name="On" />
+    <RootPropertyPathName Name="MasCommand" />
+    <RootPropertyPathName Name="MenosCommand" />
+    <RootPropertyPathName Name="Repeticion" />
     <RootPropertyPathName Name="PararCommand" />
     <RootPropertyPathName Name="PausarCommand" />
     <RootPropertyPathName Name="IniciarCommand" />
@@ -348,6 +364,15 @@
     </RootType>
     <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="PatientControl.Views.DatosPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ToggleSwitch">
+      <RootProperty Name="Header" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="OffContent" />
+      <RootProperty Name="OnContent" />
+      <RootProperty Name="IsOn" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.CheckBox">
       <RootProperty Name="Content" />
       <RootProperty Name="HorizontalAlignment" />
@@ -366,7 +391,6 @@
     <RootType FullName="Windows.UI.Xaml.Documents.Run">
       <RootProperty Name="Text" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Documents.LineBreak" />
     <RootType FullName="PatientControl.Views.EjercicioPage" />
     <RootType FullName="Windows.UI.Xaml.Data.CollectionViewSource">
       <RootProperty Name="Source" />

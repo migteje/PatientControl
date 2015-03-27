@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
-  <Identity Name="PatientControl-Beta" Publisher="CN=Giro" Version="1.0.0.0" />
+  <Identity Name="PatientControl-Beta" Publisher="CN=Giro" Version="1.0.0.2" />
   <Properties>
     <DisplayName>PatientControl</DisplayName>
     <PublisherDisplayName>Giro</PublisherDisplayName>

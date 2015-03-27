@@ -56,17 +56,16 @@
             <StackPanel Grid.ColumnSpan="1" Orientation="Vertical" Margin="0,0,1030,0">
                 <TextBlock x:Name="repTitle" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18.667" Text="NÚMERO DE REPETICIONES:" Margin="12,11,0,0"/>
                 <StackPanel Orientation="Horizontal" Height="50" Margin="12,0,15,0">
-                    <TextBlock x:Name="repeticiones" HorizontalAlignment="Left" Margin="23,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18.667" Width="25" Height="22" TextAlignment="Center">
-        				<Run Text="1"/>
-        				<LineBreak/>
-        				<Run/>
-                    </TextBlock>
-                    <Button x:Name="mas" Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18.667" Width="50" Height="45" Margin="20,0,0,0"/>
-                    <Button x:Name="menos" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18.667" Width="50" Height="45" Margin="8,0,0,0"/>
+                    <TextBlock x:Name="repeticiones" HorizontalAlignment="Left" Margin="23,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18.667" Width="25" Height="22" TextAlignment="Center" Text="{Binding Repeticion}"/>
+                    <Button x:Name="mas" Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18.667" Width="50" Height="45" Margin="20,0,0,0" Command="{Binding MenosCommand, Mode=TwoWay}"/>
+                    <Button x:Name="menos" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18.667" Width="50" Height="45" Margin="8,0,0,0" Command="{Binding MasCommand, Mode=TwoWay}"/>
                 </StackPanel>
+                <ToggleSwitch Header="Tipo de ejercicio" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="21.333" OffContent="{Binding Desactivado, Mode=TwoWay}" OnContent="{Binding Activado, Mode=TwoWay}" IsOn="{Binding On, Mode=TwoWay}"/>
                 <StackPanel Orientation="Horizontal" Height="24" Margin="12,36,0,0">
-                    <TextBlock x:Name="angTitle" HorizontalAlignment="Left" TextWrapping="Wrap" Text="ÁNGULO FORMADO:" VerticalAlignment="Top" FontSize="18.667"/>
-                    <TextBlock x:Name="angulo" TextWrapping="Wrap" Text="{Binding Angulo}" FontSize="25" Margin="0" Width="39" Height="24" TextAlignment="Right"/>
+                    <TextBlock x:Name="angTitle" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18.667">
+                		<Run Text="ÁNGULO FORMADO:"/>
+                    </TextBlock>
+                    <TextBlock x:Name="angulo" TextWrapping="Wrap" Text="{Binding Angulo}" FontSize="25" Margin="7,0,0,0" Width="123" Height="24"/>
                 </StackPanel>
                 <CheckBox x:Name="SkeletonShow" Content="ESQUELETO" HorizontalAlignment="Right" Margin="0,30,92,0" VerticalAlignment="Center" FontSize="20" IsChecked="{Binding Path=IsSelected, Mode=TwoWay}"/>
                 <StackPanel x:Name="Lado" Height="100" Margin="92,31,30,0">

@@ -1,0 +1,21 @@
+<XamlCompilerSaveState>
+  <ReferenceAssemblyList>
+    <LocalAssembly PathName="c:\users\giro\documents\visual studio 2013\projects\patientcontrol.app\patientcontrol\obj\x86\release\intermediatexaml\patientcontrol.exe" HashGuid="da1a5863-4052-5ede-d826-33fe3ef7cff3" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\microsoft.kinect.toolkit.input\2.0\references\commonconfiguration\neutral\microsoft.kinect.toolkit.input.winmd" HashGuid="e6525654-5632-5cf5-4387-7da4061d49ea" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\microsoft.kinect.xaml.controls\2.0\references\commonconfiguration\neutral\microsoft.kinect.xaml.controls.winmd" HashGuid="4a3c2739-33b3-a39a-6361-713b287a923a" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\behaviorsxamlsdkmanaged\12.0\references\commonconfiguration\neutral\microsoft.xaml.interactions.dll" HashGuid="95a94f94-3917-d473-4f7c-18c4bd437046" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\behaviorsxamlsdkmanaged\12.0\references\commonconfiguration\neutral\microsoft.xaml.interactivity.dll" HashGuid="d25f59e6-dd81-900a-0dfc-55b39f6898ef" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\microsoft.vclibs\12.0\references\commonconfiguration\neutral\platform.winmd" HashGuid="58b6b6d1-928e-9908-9804-eb460e5e101b" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\windowspreview.kinect\2.0\references\commonconfiguration\neutral\windowspreview.data.winmd" HashGuid="bec3b354-5b74-1234-191f-25a435755c0a" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\windowspreview.kinect\2.0\references\commonconfiguration\neutral\windowspreview.kinect.winmd" HashGuid="d7412096-a3c7-9108-a946-0ff0cc614d3f" />
+    <ReferenceAssembly PathName="c:\users\giro\documents\visual studio 2013\projects\patientcontrol.app\packages\prism.mvvm.1.1.1\lib\windows8\microsoft.practices.prism.mvvm.dll" HashGuid="cbdd458f-3f7b-91dd-175a-6fbe0d8f860e" />
+    <ReferenceAssembly PathName="c:\users\giro\documents\visual studio 2013\projects\patientcontrol.app\packages\prism.mvvm.1.1.1\lib\windows8\microsoft.practices.prism.mvvm.store.dll" HashGuid="347692ae-d3bb-41c8-00a0-1222d3d82e87" />
+    <ReferenceAssembly PathName="c:\users\giro\documents\visual studio 2013\projects\patientcontrol.app\packages\prism.pubsubevents.1.1.0\lib\portable-sl5+windowsphone8+windows8+net40+wpa81\microsoft.practices.prism.pubsubevents.dll" HashGuid="c373fc99-68a2-04f4-f041-14986b4a3636" />
+    <ReferenceAssembly PathName="c:\users\giro\documents\visual studio 2013\projects\patientcontrol.app\packages\prism.mvvm.1.1.1\lib\windows8\microsoft.practices.prism.sharedinterfaces.dll" HashGuid="77ddb96d-234e-bbe6-7043-530fe79bc489" />
+    <ReferenceAssembly PathName="c:\users\giro\documents\visual studio 2013\projects\patientcontrol.app\packages\prism.storeapps.2.0.0\lib\windows8\microsoft.practices.prism.storeapps.dll" HashGuid="480782f1-e4b6-714d-0927-945a03634ad1" />
+    <ReferenceAssembly PathName="c:\users\giro\documents\visual studio 2013\projects\patientcontrol.app\packages\prism.storeapps.2.0.0\lib\windows8\microsoft.practices.prism.storeapps.windows.dll" HashGuid="2427a039-41ae-2589-47fb-f304c758c985" />
+    <ReferenceAssembly PathName="c:\users\giro\documents\visual studio 2013\projects\patientcontrol.app\packages\commonservicelocator.1.2\lib\portable-windows8+net40+sl5+windowsphone8\microsoft.practices.servicelocation.dll" HashGuid="89de7f80-26d8-a17c-5ad9-b855f81ea5b2" />
+    <ReferenceAssembly PathName="c:\users\giro\documents\visual studio 2013\projects\patientcontrol.app\packages\unity.3.5.1404.0\lib\win8\microsoft.practices.unity.dll" HashGuid="bfbab92e-125a-5b6e-9ddc-f777451b52b9" />
+    <ReferenceAssembly PathName="c:\users\giro\documents\visual studio 2013\projects\patientcontrol.app\packages\unity.3.5.1404.0\lib\win8\microsoft.practices.unity.registrationbyconvention.dll" HashGuid="51d90060-4c44-273b-debb-8173fa2723a6" />
+  </ReferenceAssemblyList>
+</XamlCompilerSaveState>

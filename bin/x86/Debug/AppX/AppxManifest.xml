@@ -7,7 +7,7 @@
 
     Para obtener más información acerca de los archivos de manifiesto del paquete, vea http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="PatientControl-Beta" Publisher="CN=Giro" Version="1.0.0.0" ProcessorArchitecture="x86" />
+  <Identity Name="PatientControl-Beta" Publisher="CN=Giro" Version="1.0.0.2" ProcessorArchitecture="x86" />
   <Properties>
     <DisplayName>PatientControl</DisplayName>
     <PublisherDisplayName>Giro</PublisherDisplayName>

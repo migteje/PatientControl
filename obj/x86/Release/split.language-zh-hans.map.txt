@@ -1,0 +1,6 @@
+﻿[ResourceMetadata]
+"ResourceId"			"split.language-zh-hans"
+"ResourceDimensions"		"language-zh-cn"
+
+[Files]
+"C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\obj\x86\Release\split.language-zh-hans.pri"			"resources.pri"

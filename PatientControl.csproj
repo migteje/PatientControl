@@ -15,6 +15,9 @@
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <PackageCertificateKeyFile>PatientControl_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <AppxBundle>Never</AppxBundle>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxBundlePlatforms>x86</AppxBundlePlatforms>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -95,11 +98,12 @@
     <DefineConstants>TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
     <Optimize>true</Optimize>
     <NoWarn>;2008</NoWarn>
-    <DebugType>pdbonly</DebugType>
+    <DebugType>full</DebugType>
     <PlatformTarget>x86</PlatformTarget>
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <ErrorReport>prompt</ErrorReport>
     <Prefer32Bit>true</Prefer32Bit>
+    <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
