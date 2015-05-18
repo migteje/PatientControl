@@ -91,7 +91,7 @@
                     </StackPanel>
                     <StackPanel x:Name="Rep2" Orientation="Horizontal" Height="24" Margin="0,0,22,0">
                         <TextBlock x:Name="angTitle10" HorizontalAlignment="Left" TextWrapping="Wrap" Text="REPETICIONES:" VerticalAlignment="Top" FontSize="18.667" Width="194" Margin="0,0,0,-21"/>
-                        <TextBlock x:Name="angulo10" TextWrapping="Wrap" Text="{Binding ValorFlExh}" FontSize="18.667" Margin="0"  Width="211" Height="24"/>
+                        <TextBlock x:Name="angulo10" TextWrapping="Wrap" Text="{Binding RepeticionFlExh}" FontSize="18.667" Margin="0"  Width="211" Height="24"/>
                     </StackPanel>
                 </StackPanel>
                 <StackPanel x:Name="CodoFlex" Margin="12,0,0,5" Orientation="Vertical">

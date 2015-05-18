@@ -18,12 +18,16 @@
     <RootPropertyPathName Name="DiscountedPrice" />
     <RootPropertyPathName Name="Group" />
     <RootPropertyPathName Name="TotalNumberOfItems" />
+    <RootPropertyPathName Name="RepeticionCflEx" />
     <RootPropertyPathName Name="ValorCex" />
     <RootPropertyPathName Name="ValorCfl" />
+    <RootPropertyPathName Name="RepeticionFlExh" />
     <RootPropertyPathName Name="ValorExh" />
     <RootPropertyPathName Name="ValorFlh" />
+    <RootPropertyPathName Name="RepeticionFlEx" />
     <RootPropertyPathName Name="ValorEx" />
     <RootPropertyPathName Name="ValorFl" />
+    <RootPropertyPathName Name="RepeticionAbd" />
     <RootPropertyPathName Name="ValorAd" />
     <RootPropertyPathName Name="ValorAb" />
     <RootPropertyPathName Name="GoBackCommand" />
@@ -36,14 +40,33 @@
     <RootPropertyPathName Name="Desactivado" />
     <RootPropertyPathName Name="Activado" />
     <RootPropertyPathName Name="On" />
+    <RootPropertyPathName Name="MasCommand" />
+    <RootPropertyPathName Name="MenosCommand" />
+    <RootPropertyPathName Name="Repeticion" />
     <RootPropertyPathName Name="PararCommand" />
     <RootPropertyPathName Name="PausarCommand" />
     <RootPropertyPathName Name="IniciarCommand" />
     <RootPropertyPathName Name="Ejercicios" />
     <RootPropertyPathName Name="RootCategories" />
-    <RootPropertyPathName Name="VerDatosCommand" />
-    <RootPropertyPathName Name="LogInCommand" />
     <RootPropertyPathName Name="Username" />
+    <RootPropertyPathName Name="VerDatosCommand" />
+    <RootPropertyPathName Name="RegistrarCommand" />
+    <RootPropertyPathName Name="LogInCommand" />
+    <RootPropertyPathName Name="SaveCommand" />
+    <RootPropertyPathName Name="RegistroViewModel" />
+    <RootPropertyPathName Name="BindableValidator" />
+    <RootPropertyPathName Name="Errors" />
+    <RootPropertyPathName Name="Paciente" />
+    <RootPropertyPathName Name="Telefono" />
+    <RootPropertyPathName Name="IsValidationEnabled" />
+    <RootPropertyPathName Name="CodPostal" />
+    <RootPropertyPathName Name="Provincias" />
+    <RootPropertyPathName Name="Provincia" />
+    <RootPropertyPathName Name="Localidad" />
+    <RootPropertyPathName Name="DireccionOpcional" />
+    <RootPropertyPathName Name="Direccion" />
+    <RootPropertyPathName Name="Apellidos" />
+    <RootPropertyPathName Name="Nombre" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Microsoft.Practices.Prism.Mvvm.MvvmAppBase">
@@ -81,6 +104,7 @@
       <RootProperty Name="RowDefinitions" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="ChildrenTransitions" />
+      <RootProperty Name="MaxWidth" />
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
       <RootMethod Name="GetRow" />
@@ -174,6 +198,10 @@
       <RootMethod Name="SetAutomationId" />
       <RootMethod Name="GetItemType" />
       <RootMethod Name="SetItemType" />
+      <RootMethod Name="GetIsRequiredForForm" />
+      <RootMethod Name="SetIsRequiredForForm" />
+      <RootMethod Name="GetLabeledBy" />
+      <RootMethod Name="SetLabeledBy" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Shapes.Line">
       <RootProperty Name="Stretch" />
@@ -192,6 +220,14 @@
       <RootProperty Name="HeaderTemplate" />
       <RootProperty Name="Header" />
       <RootProperty Name="Text" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="IsEnabled" />
+      <RootProperty Name="InputScope" />
+      <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.FrameworkElement">
       <RootProperty Name="VerticalAlignment" />
@@ -207,6 +243,13 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
       <RootProperty Name="HeaderTemplate" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="DisplayMemberPath" />
+      <RootProperty Name="SelectedValuePath" />
+      <RootProperty Name="SelectedValue" />
+      <RootProperty Name="IsEnabled" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Documents.Typography">
       <RootMethod Name="GetStylisticSet20" />
@@ -244,6 +287,8 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="MinWidth" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
       <RootProperty Name="HorizontalScrollBarVisibility" />
@@ -384,7 +429,6 @@
     <RootType FullName="Windows.UI.Xaml.Documents.Run">
       <RootProperty Name="Text" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Documents.LineBreak" />
     <RootType FullName="PatientControl.Views.EjercicioPage" />
     <RootType FullName="Windows.UI.Xaml.Data.CollectionViewSource">
       <RootProperty Name="Source" />
@@ -424,5 +468,22 @@
     </RootType>
     <RootType FullName="PatientControl.Views.MainPage" />
     <RootType FullName="PatientControl.Views.LoginPage" />
+    <RootType FullName="PatientControl.Views.RegistroUserControl">
+      <RootProperty Name="MaxWidth" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="DataContext" />
+      <RootEvent Name="Loaded" />
+      <RootEvent Name="Unloaded" />
+    </RootType>
+    <RootType FullName="PatientControl.Views.RegistroPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="PatientControl.Behaviors.HighlightFormFieldOnErrors">
+      <RootProperty Name="PropertyErrors" />
+      <RootProperty Name="HighlightStyleName" />
+      <RootProperty Name="OriginalStyleName" />
+    </RootType>
+    <RootType FullName="PatientControl.Views.RegPage" />
   </Roots.RootTypes>
 </Roots>

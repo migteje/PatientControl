@@ -8,20 +8,16 @@ namespace PatientControl.Models
 {
     public class Categoria
     {
-        public int Id { get; set; }
+        public int id { get; set; }
 
-        public int ParentId { get; set; }
+        public int parentId { get; set; }
 
-        public string Title { get; set; }
+        public string title { get; set; }
 
-        public Uri ImageUri { get; set; }
+        public Uri imageUri { get; set; }
 
-        public IEnumerable<Categoria> Subcategories { get; set; }
+        public IEnumerable<Ejercicio> ejercicios { get; set; }
 
-        public IEnumerable<Ejercicio> Ejercicios { get; set; }
-
-        public int TotalNumberOfItems { get; set; }
-
-        public bool HasSubcategories { get; set; }
+        public int totalNumberOfItems { get; set; }
     }
 }

@@ -7,10 +7,10 @@
 
     Para obtener más información acerca de los archivos de manifiesto del paquete, vea http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="PatientControl-Beta" Publisher="CN=Giro" Version="1.0.0.1" ProcessorArchitecture="x86" />
+  <Identity Name="10544GIRO.RehabControl" Publisher="CN=5B986934-607C-4FA7-B84B-B2A9CFF78B5B" Version="1.2.0.3" ProcessorArchitecture="x86" />
   <Properties>
     <DisplayName>PatientControl</DisplayName>
-    <PublisherDisplayName>Giro</PublisherDisplayName>
+    <PublisherDisplayName>GIRO</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Prerequisites>
@@ -71,6 +71,7 @@
     <build:Item Name="BehaviorsXamlSDKManaged" Version="12.0" />
     <build:Item Name="Microsoft.Kinect.Toolkit.Input" Version="2.0" />
     <build:Item Name="Microsoft.Kinect.Xaml.Controls" Version="2.0" />
+    <build:Item Name="SQLite.WinRT81" Version="3.8.9" />
     <build:Item Name="MakePri.exe" Version="6.3.9600.17298 (winblue.141024-1500)" />
   </build:Metadata>
 </Package>

@@ -6,6 +6,9 @@
 
 [Files]
 "C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\obj\x86\Release\split.pri"			"resources.pri"
+"C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\obj\x86\Release\PackageLayout\Views\RegPage.xbf"			"Views\RegPage.xbf"
+"C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\obj\x86\Release\PackageLayout\Views\RegistroUserControl.xbf"			"Views\RegistroUserControl.xbf"
+"C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\obj\x86\Release\PackageLayout\Views\RegistroPage.xbf"			"Views\RegistroPage.xbf"
 "C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\obj\x86\Release\PackageLayout\Views\MainPage.xbf"			"Views\MainPage.xbf"
 "C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\obj\x86\Release\PackageLayout\Views\LoginPage.xbf"			"Views\LoginPage.xbf"
 "C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\obj\x86\Release\PackageLayout\Views\EjercicioPage.xbf"			"Views\EjercicioPage.xbf"

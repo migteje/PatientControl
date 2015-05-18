@@ -211,7 +211,7 @@
 
     </ResourceDictionary.ThemeDictionaries>
 
-    <!-- AW Shopper Brushes -->
+    <!-- rushes -->
     <SolidColorBrush x:Name="PControlItemDarkerBackgroundBrush"
                      Color="#FF262C2F" />
     <SolidColorBrush x:Name="PControlFlyoutContentBackground"

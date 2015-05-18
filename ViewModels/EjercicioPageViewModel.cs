@@ -20,6 +20,7 @@ using Windows.UI.Xaml.Shapes;
 using WindowsPreview.Kinect;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Diagnostics;
+using PatientControl.Models;
 
 namespace PatientControl.ViewModels
 {
@@ -39,11 +40,14 @@ namespace PatientControl.ViewModels
 
         private string _angulo = default(string);
         public string Angulo { get { return _angulo; } set { SetProperty(ref _angulo, value);} }
+        private string _nombrePaciente = default(string);
+        public string NombrePaciente { get { return _nombrePaciente; } set { SetProperty(ref _nombrePaciente, value); } }
         private string _title = default(string);
-        public string Title { get { return _title; } set { SetProperty(ref _title, value);} }
+        public string Title { get { return _title; } set { SetProperty(ref _title, value); } }
         private bool _isSelected;
         public bool IsSelected { get { return _isSelected; } set { SetProperty(ref _isSelected, value); OnPropertyChanged("IsSelected"); } }
-
+        private PacienteViewModel _paciente;
+        public PacienteViewModel Paciente { get { return _paciente; } set { SetProperty(ref _paciente, value); } }
         private bool _on;
         public bool On { get { return _on; } set { SetProperty(ref _on, value); OnPropertyChanged("On"); } }
         private string _activado = default(string);
@@ -56,6 +60,9 @@ namespace PatientControl.ViewModels
         public bool Izquierdo { get { return _izquierdo; } set { SetProperty(ref _izquierdo, value); OnPropertyChanged("Izquierdo"); } }
         private int _repeticion = default(int);
         public int Repeticion { get { return _repeticion; } set { SetProperty(ref _repeticion, value); } }
+
+        private string _colores;
+        public string Colores { get { return _colores; } set { SetProperty(ref _colores, value); } }
 
         private EjercicioViewModel ejerSelected;
 
@@ -137,7 +144,7 @@ namespace PatientControl.ViewModels
         {
             _eventAggregator = eventAggregator;
             _navigationService = navigationService;
-
+            Paciente = new PacienteViewModel(new Paciente());
             IniciarCommand = DelegateCommand.FromAsyncHandler(Iniciar);
             PausarCommand = DelegateCommand.FromAsyncHandler(Pausar);
             PararCommand = DelegateCommand.FromAsyncHandler(Parar);
@@ -147,10 +154,12 @@ namespace PatientControl.ViewModels
             this.CheckedCommand = new DelegateCommand<string>(Checked);
         }
 
-        public override void OnNavigatedTo(object navigationParameter, NavigationMode navigationMode, Dictionary<string, object> viewModelState)
+        public async override void OnNavigatedTo(object navigationParameter, NavigationMode navigationMode, Dictionary<string, object> viewModelState)
         {
             this.ejerSelected = navigationParameter as EjercicioViewModel;
+            await this.Paciente.ObtenerPacientePorId(this.ejerSelected.Paciente_Id.ToString());
             this.Title = ejerSelected.Title;
+            this.NombrePaciente = Paciente.Nombre;
             if (this.Title == "Abduccion-Aduccion")
             {
                 this.Activado = "Aduccion";
@@ -161,8 +170,14 @@ namespace PatientControl.ViewModels
                 this.Activado = "Extension";
                 this.Desactivado = "Flexion";
             }
+            //this.Colores = "White";
             this.Angulo = "";
             this.Repeticion = 0;
+            if (Paciente.ZonaLesion.Equals("Izquierdo"))
+            {
+                Izquierdo = true; Derecho = false;
+            }
+            else { Derecho = true; Izquierdo = false; }
 
             KinectConect();
         }
@@ -337,7 +352,6 @@ namespace PatientControl.ViewModels
                                             {
                                                 if (anteriorZ == 0) anteriorZ = joints[JointType.ElbowLeft].Position.Z;
                                                 //Debug.WriteLine(anteriorZ + " y " + joints[JointType.ElbowLeft].Position.Z);
-
                                                 if ((anteriorZ - 0.15 <= joints[JointType.ElbowLeft].Position.Z) && (joints[JointType.ElbowLeft].Position.Z <= anteriorZ + 0.15))
                                                     angle = AngleBetweenJoints(joints[JointType.ElbowLeft], joints[JointType.ShoulderLeft], UnderShoulder, UnderShoulderZ);
                                             }
@@ -398,7 +412,8 @@ namespace PatientControl.ViewModels
                                         myList.Clear();
                                         myList.AddRange(myAngles);
                                         myMedian.Add(median);
-                                        Debug.WriteLine(median);
+                                        //Debug.WriteLine(median);
+                                        WriteAngle(median, inicial);
                                     }
 
                                     if (confra == 30)
@@ -414,7 +429,7 @@ namespace PatientControl.ViewModels
                                         else calibration = 0;
                                         anguloInicial = median;
                                         if (!inicial)
-                                            WriteAngle(median);
+                                            WriteAngle(median,inicial);
                                         myMedian.Clear();
                                         confra = 0;
                                     }
@@ -613,9 +628,11 @@ namespace PatientControl.ViewModels
             return Math.Sqrt(Math.Pow(x, 2) + Math.Pow(y, 2) + Math.Pow(z, 2));
         }
 
-        private void WriteAngle(double p)
+        private void WriteAngle(double p, bool correcto)
         {
-
+            if (correcto) this.Colores = "Red";
+            else
+            this.Colores = "White";
             this.Angulo = p.ToString();
         }
 
@@ -677,7 +694,7 @@ namespace PatientControl.ViewModels
             }
             else
                 Angulo = 0;
-            Debug.WriteLine(Math.Round(Angulo, 0));
+            //Debug.WriteLine(Math.Round(Angulo, 0));
             return Math.Round(Angulo, 0);
         }
 
@@ -689,9 +706,7 @@ namespace PatientControl.ViewModels
         private async Task Parar()
         {
             comenzado = false;
-            On = false;
-            Izquierdo = true;
-            Derecho = false;
+            inicial = true;
             if (myList != null) myList.Clear();
             if (this.Angulo != null)
                 this.Angulo = "";
@@ -762,20 +777,20 @@ namespace PatientControl.ViewModels
                             break;
                     }
                 }
+                //ejerSelected.CreateDatabase();
+                //await ejerSelected.InsertarNuevoEjercicio();
             }
         }
 
         private void Checked(object parameter)
         {
-            if (parameter.ToString() == "Izquierdo")
+            if (parameter.ToString() == "Activado")
             {
-                Derecho = false;
-                Izquierdo = true;
+                On = true;
             }
             else
             {
-                Derecho = true;
-                Izquierdo = false;
+                On = false;
             }
         }
     }

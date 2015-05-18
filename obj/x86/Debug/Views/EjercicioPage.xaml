@@ -44,7 +44,7 @@
                           Style="{StaticResource BackButtonStyle}" />
             <TextBlock x:Name="pageTitle" Text="{Binding Title}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
                         IsHitTestVisible="false" TextWrapping="NoWrap" Margin="0,0,872,16" Height="72" VerticalAlignment="Bottom"/>
-            <TextBlock x:Name="nombrePaciente" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Manuel" VerticalAlignment="Center" Grid.Column="1" Margin="369,59,0,40" Height="41" Width="115" FontSize="26.667" TextAlignment="Justify" LineHeight="8" FontWeight="Bold"/>
+            <TextBlock x:Name="nombrePaciente" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding NombrePaciente}" VerticalAlignment="Center" Grid.Column="1" Margin="369,59,0,40" Height="41" Width="115" FontSize="26.667" TextAlignment="Justify" LineHeight="8" FontWeight="Bold"/>
             <StackPanel Grid.Column="1" Margin="484,10,124,10" Orientation="Horizontal">
                 <Button x:Name="Iniciar" Content="INICIAR" HorizontalAlignment="Left" VerticalAlignment="Top" Height="80" Margin="60,15,0,0" Width="130" Command="{Binding IniciarCommand}"/>
                 <Button x:Name="Pausa" Content="PAUSA" HorizontalAlignment="Left" Margin="45,15,0,0" VerticalAlignment="Top" Height="80" Width="130" Command="{Binding PausarCommand}"/>
@@ -60,17 +60,17 @@
                     <Button x:Name="mas" Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18.667" Width="50" Height="45" Margin="20,0,0,0" Command="{Binding MenosCommand, Mode=TwoWay}"/>
                     <Button x:Name="menos" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18.667" Width="50" Height="45" Margin="8,0,0,0" Command="{Binding MasCommand, Mode=TwoWay}"/>
                 </StackPanel>
-                <ToggleSwitch Header="Tipo de ejercicio" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="21.333" OffContent="{Binding Desactivado, Mode=TwoWay}" OnContent="{Binding Activado, Mode=TwoWay}" IsOn="{Binding On, Mode=TwoWay}"/>
+
                 <StackPanel Orientation="Horizontal" Height="24" Margin="12,36,0,0">
                     <TextBlock x:Name="angTitle" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18.667">
                 		<Run Text="ÁNGULO FORMADO:"/>
                     </TextBlock>
-                    <TextBlock x:Name="angulo" TextWrapping="Wrap" Text="{Binding Angulo}" FontSize="25" Margin="7,0,0,0" Width="123" Height="24"/>
+                    <TextBlock x:Name="angulo" TextWrapping="Wrap" Text="{Binding Angulo}" FontSize="25"  Margin="7,0,0,0" Width="123" Height="24" Foreground="{Binding Colores}"/>
                 </StackPanel>
                 <CheckBox x:Name="SkeletonShow" Content="ESQUELETO" HorizontalAlignment="Right" Margin="0,30,92,0" VerticalAlignment="Center" FontSize="20" IsChecked="{Binding Path=IsSelected, Mode=TwoWay}"/>
-                <StackPanel x:Name="Lado" Height="100" Margin="92,31,30,0">
-                    <RadioButton x:Name="Derecho" VerticalAlignment="Stretch" Margin="0,0,0,0" Content="Derecho" Command="{Binding CheckedCommand, Mode=TwoWay}" CommandParameter="Derecho"/>
-                    <RadioButton x:Name="Izquierdo" Content="Izquierdo" VerticalAlignment="Stretch" Margin="0,0,0,0" Command="{Binding CheckedCommand, Mode=TwoWay}" CommandParameter="Izquierdo"/>
+                <StackPanel x:Name="Tipo"  Height="100" Margin="92,31,30,0">
+                    <RadioButton x:Name="Activado" Content="{Binding Activado}" VerticalAlignment="Stretch" Margin="0,0,0,0" Command="{Binding CheckedCommand, Mode=TwoWay}" CommandParameter="Activado"/>
+                    <RadioButton x:Name="Desactivado" Content="{Binding Desactivado}" VerticalAlignment="Stretch" Margin="0,0,0,0" Command="{Binding CheckedCommand, Mode=TwoWay}" CommandParameter="Desactivado"/>
                 </StackPanel>
                 <Button x:Name="Grabar" Content="GRABAR" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Top" FontSize="18.667" Height="46" Width="140" Command="{Binding GrabarCommand}"/>
             </StackPanel>

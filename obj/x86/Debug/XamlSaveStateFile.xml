@@ -1,6 +1,6 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <LocalAssembly PathName="c:\users\giro\documents\visual studio 2013\projects\patientcontrol.app\patientcontrol\obj\x86\debug\intermediatexaml\patientcontrol.exe" HashGuid="991889af-8173-4f8f-5bb0-0cdc84f5fd30" />
+    <LocalAssembly PathName="c:\users\giro\documents\visual studio 2013\projects\patientcontrol.app\patientcontrol\obj\x86\debug\intermediatexaml\patientcontrol.exe" HashGuid="ca9118bb-56d6-6fce-06b8-fdebef1ac088" />
     <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\microsoft.kinect.toolkit.input\2.0\references\commonconfiguration\neutral\microsoft.kinect.toolkit.input.winmd" HashGuid="e6525654-5632-5cf5-4387-7da4061d49ea" />
     <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\microsoft.kinect.xaml.controls\2.0\references\commonconfiguration\neutral\microsoft.kinect.xaml.controls.winmd" HashGuid="4a3c2739-33b3-a39a-6361-713b287a923a" />
     <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\behaviorsxamlsdkmanaged\12.0\references\commonconfiguration\neutral\microsoft.xaml.interactions.dll" HashGuid="95a94f94-3917-d473-4f7c-18c4bd437046" />

@@ -59,6 +59,10 @@
                         <TextBlock x:Name="angTitle4" HorizontalAlignment="Left" TextWrapping="Wrap" Text="ANGULO ADDUCION:" VerticalAlignment="Top" FontSize="18.667" Width="189" Margin="0,0,0,-21"/>
                         <TextBlock x:Name="angulo4" TextWrapping="Wrap" Text="{Binding ValorAd}" FontSize="18.667" Margin="0"  Width="211" Height="24"/>
                     </StackPanel>
+                    <StackPanel x:Name="Rep" Orientation="Horizontal" Height="24" Margin="0,0,22,0">
+                        <TextBlock x:Name="angTitle8" HorizontalAlignment="Left" TextWrapping="Wrap" Text="REPETICIONES:" VerticalAlignment="Top" FontSize="18.667" Width="194" Margin="0,0,0,-21"/>
+                        <TextBlock x:Name="angulo8" TextWrapping="Wrap" Text="{Binding RepeticionAbd}" FontSize="18.667" Margin="0"  Width="211" Height="24"/>
+                    </StackPanel>
                 </StackPanel>
                 <StackPanel x:Name="HombroFlex" Margin="12,0,0,15" Orientation="Vertical">
                     <TextBlock x:Name="pruebaTitle1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="PRUEBA: HOMBRO FLEXION-EXTENSION" FontSize="18.667" Margin="0,0,0,2"/>
@@ -69,6 +73,10 @@
                     <StackPanel x:Name="Ex" Orientation="Horizontal" Height="24" Margin="0,0,22,0">
                         <TextBlock x:Name="angTitle5" HorizontalAlignment="Left" TextWrapping="Wrap" Text="ANGULO EXTENSION:" VerticalAlignment="Top" FontSize="18.667" Width="186" Margin="0,0,0,-21"/>
                         <TextBlock x:Name="angulo5" TextWrapping="Wrap" Text="{Binding ValorEx}" FontSize="18.667" Margin="0"  Width="211" Height="24"/>
+                    </StackPanel>
+                    <StackPanel x:Name="Rep1" Orientation="Horizontal" Height="24" Margin="0,0,22,0">
+                        <TextBlock x:Name="angTitle9" HorizontalAlignment="Left" TextWrapping="Wrap" Text="REPETICIONES:" VerticalAlignment="Top" FontSize="18.667" Width="194" Margin="0,0,0,-21"/>
+                        <TextBlock x:Name="angulo9" TextWrapping="Wrap" Text="{Binding RepeticionFlEx}" FontSize="18.667" Margin="0"  Width="211" Height="24"/>
                     </StackPanel>
                 </StackPanel>
                 <StackPanel x:Name="HombroFlexH" Margin="12,0,0,15" Orientation="Vertical">
@@ -81,6 +89,10 @@
                         <TextBlock x:Name="angTitle6" HorizontalAlignment="Left" TextWrapping="Wrap" Text="ANGULO EXTENSION:" VerticalAlignment="Top" FontSize="18.667" Width="180" Margin="0,0,0,-21"/>
                         <TextBlock x:Name="angulo6" TextWrapping="Wrap" Text="{Binding ValorExh}" FontSize="18.667" Margin="0"  Width="211" Height="24"/>
                     </StackPanel>
+                    <StackPanel x:Name="Rep2" Orientation="Horizontal" Height="24" Margin="0,0,22,0">
+                        <TextBlock x:Name="angTitle10" HorizontalAlignment="Left" TextWrapping="Wrap" Text="REPETICIONES:" VerticalAlignment="Top" FontSize="18.667" Width="194" Margin="0,0,0,-21"/>
+                        <TextBlock x:Name="angulo10" TextWrapping="Wrap" Text="{Binding RepeticionFlExh}" FontSize="18.667" Margin="0"  Width="211" Height="24"/>
+                    </StackPanel>
                 </StackPanel>
                 <StackPanel x:Name="CodoFlex" Margin="12,0,0,5" Orientation="Vertical">
                         <TextBlock x:Name="pruebaTitle3" HorizontalAlignment="Left" TextWrapping="Wrap" Text="PRUEBA: CODO FLEX-EXTENSION" FontSize="18.667" Margin="0,0,0,2"/>
@@ -91,6 +103,10 @@
                     <StackPanel x:Name="Cex" Orientation="Horizontal" Height="24" Margin="0,0,22,0">
                         <TextBlock x:Name="angTitle7" HorizontalAlignment="Left" TextWrapping="Wrap" Text="ANGULO EXTENSION:" VerticalAlignment="Top" FontSize="18.667" Width="186" Margin="0,0,0,-21"/>
                         <TextBlock x:Name="angulo7" TextWrapping="Wrap" Text="{Binding ValorCex}" FontSize="18.667" Margin="0"  Width="211" Height="24"/>
+                    </StackPanel>
+                    <StackPanel x:Name="Rep3" Orientation="Horizontal" Height="24" Margin="0,0,22,0">
+                        <TextBlock x:Name="angTitle11" HorizontalAlignment="Left" TextWrapping="Wrap" Text="REPETICIONES:" VerticalAlignment="Top" FontSize="18.667" Width="194" Margin="0,0,0,-21"/>
+                        <TextBlock x:Name="angulo11" TextWrapping="Wrap" Text="{Binding RepeticionCflEx}" FontSize="18.667" Margin="0"  Width="211" Height="24"/>
                     </StackPanel>
                 </StackPanel>
             </StackPanel>

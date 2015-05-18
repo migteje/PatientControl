@@ -265,12 +265,12 @@
         </Border>
     </DataTemplate>
 
-    <DataTemplate x:Key="ShippingMethodTemplate">
+    <DataTemplate x:Key="RegisterMethodTemplate">
         <Border BorderBrush="{StaticResource PControlItemBorderBrush}" BorderThickness="1">
             <Grid MinWidth="200"
               Height="80"
               Background="{StaticResource PControlItemBackgroundBrush}"
-              AutomationProperties.Name="ShippingMethodMainGrid">
+              AutomationProperties.Name="RegisterMethodMainGrid">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />
                     <ColumnDefinition Width="90" />
@@ -302,12 +302,12 @@
         </Border>
     </DataTemplate>
 
-    <DataTemplate x:Key="ShippingMethodTemplateMinimal">
+    <DataTemplate x:Key="RegisterMethodTemplateMinimal">
         <Border BorderBrush="{StaticResource PControlItemBorderBrush}" BorderThickness="1">
             <Grid MinWidth="200"
               Height="80"
               Background="{StaticResource PControlItemBackgroundBrush}"
-              AutomationProperties.Name="ShippingMethodMainGrid">
+              AutomationProperties.Name="RegisterMethodMainGrid">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />
                     <ColumnDefinition Width="90" />
@@ -340,7 +340,7 @@
     </DataTemplate>
 
 
-    <DataTemplate x:Key="CheckoutDataTemplate">
+    <DataTemplate x:Key="RegisterDataTemplate">
         <Border BorderBrush="{StaticResource PControlItemBorderBrush}" BorderThickness="1">
             <Grid MinWidth="270"
               Height="130"
@@ -385,7 +385,7 @@
         </Border>
     </DataTemplate>
 
-    <DataTemplate x:Key="SmallCheckoutDataTemplate">
+    <DataTemplate x:Key="SmallRegisterDataTemplate">
         <Border BorderBrush="{StaticResource PControlItemBorderBrush}" BorderThickness="1">
             <Grid Width="390"
               Height="50"
@@ -406,7 +406,7 @@
         </Border>
     </DataTemplate>
 
-    <DataTemplate x:Key="CheckoutDataFlyoutTemplate">
+    <DataTemplate x:Key="RegisterDataFlyoutTemplate">
         <Border BorderBrush="{StaticResource PControlItemBorderBrush}" BorderThickness="1" MinWidth="220">
             <StackPanel Margin="10">
                 <TextBlock Text="{Binding FirstLine}"
@@ -419,7 +419,7 @@
         </Border>
     </DataTemplate>
 
-    <DataTemplate x:Key="ProductTemplate">
+    <DataTemplate x:Key="EjercicioTemplate">
         <Grid MinWidth="420">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" />
@@ -454,7 +454,7 @@
         </Grid>
     </DataTemplate>
 
-    <DataTemplate x:Key="ProductTemplateMinimal">
+    <DataTemplate x:Key="EjercicioTemplateMinimal">
         <Grid Margin="6,0" HorizontalAlignment="Stretch" Height="90">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" />

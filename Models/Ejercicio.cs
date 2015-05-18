@@ -3,35 +3,39 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SQLite;
 
 namespace PatientControl.Models
 {
+    [Table("Ejercicios")]
     public class Ejercicio
     {
-        public string NumeroEjercicio { get; set; }
+        [PrimaryKey, AutoIncrement]
+        public int id { get; set; }
 
-        public string Title { get; set; }
+        public string titulo { get; set; }
 
-        public string Description { get; set; }
+        public string descripcion { get; set; }
 
-        public Uri ImageUri { get; set; }
+        public Uri imageUri { get; set; }
 
-        public int SubcategoryId { get; set; }
+        //[Indexed]
+        public int paciente_id { get; set; }
 
-        public string AnguloAb { get; set; }
-        public string AnguloAd { get; set; }
-        public int RepeticionesAbd { get; set; }
-        public string AnguloFl { get; set; }
-        public string AnguloEx { get; set; }
-        public int RepeticionesFlEx { get; set; }
-        public string AnguloFlh { get; set; }
-        public string AnguloExh { get; set; }
-        public int RepeticionesFlExh { get; set; }
-        public string AnguloCfl { get; set; }
-        public string AnguloCex { get; set; }
-        public int RepeticionesCflEx { get; set; }
+        public string anguloAb { get; set; }
+        public string anguloAd { get; set; }
+        public int repeticionesAbd { get; set; }
+        public string anguloFl { get; set; }
+        public string anguloEx { get; set; }
+        public int repeticionesFlEx { get; set; }
+        public string anguloFlh { get; set; }
+        public string anguloExh { get; set; }
+        public int repeticionesFlExh { get; set; }
+        public string anguloCfl { get; set; }
+        public string anguloCex { get; set; }
+        public int repeticionesCflEx { get; set; }
 
-        public double Diferencia { get; set; }
+        public double diferencia { get; set; }
 
 
     }

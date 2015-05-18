@@ -148,7 +148,7 @@ namespace PatientControl.PatientControl_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[45];
+            _typeNameTable = new string[52];
             _typeNameTable[0] = "Microsoft.Practices.Prism.Mvvm.MvvmAppBase";
             _typeNameTable[1] = "Windows.UI.Xaml.Application";
             _typeNameTable[2] = "Boolean";
@@ -194,8 +194,15 @@ namespace PatientControl.PatientControl_XamlTypeInfo
             _typeNameTable[42] = "PatientControl.Behaviors.NavigateWithEventArgsToPageAction";
             _typeNameTable[43] = "PatientControl.Views.MainPage";
             _typeNameTable[44] = "PatientControl.Views.LoginPage";
+            _typeNameTable[45] = "PatientControl.Views.RegistroUserControl";
+            _typeNameTable[46] = "PatientControl.Views.RegistroPage";
+            _typeNameTable[47] = "PatientControl.Behaviors.HighlightFormFieldOnErrors";
+            _typeNameTable[48] = "PatientControl.Behaviors.Behavior`1<Windows.UI.Xaml.FrameworkElement>";
+            _typeNameTable[49] = "System.Collections.ObjectModel.ReadOnlyCollection`1<String>";
+            _typeNameTable[50] = "Windows.UI.Xaml.FrameworkElement";
+            _typeNameTable[51] = "PatientControl.Views.RegPage";
 
-            _typeTable = new global::System.Type[45];
+            _typeTable = new global::System.Type[52];
             _typeTable[0] = typeof(global::Microsoft.Practices.Prism.Mvvm.MvvmAppBase);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Application);
             _typeTable[2] = typeof(global::System.Boolean);
@@ -241,6 +248,13 @@ namespace PatientControl.PatientControl_XamlTypeInfo
             _typeTable[42] = typeof(global::PatientControl.Behaviors.NavigateWithEventArgsToPageAction);
             _typeTable[43] = typeof(global::PatientControl.Views.MainPage);
             _typeTable[44] = typeof(global::PatientControl.Views.LoginPage);
+            _typeTable[45] = typeof(global::PatientControl.Views.RegistroUserControl);
+            _typeTable[46] = typeof(global::PatientControl.Views.RegistroPage);
+            _typeTable[47] = typeof(global::PatientControl.Behaviors.HighlightFormFieldOnErrors);
+            _typeTable[48] = typeof(global::PatientControl.Behaviors.Behavior<global::Windows.UI.Xaml.FrameworkElement>);
+            _typeTable[49] = typeof(global::System.Collections.ObjectModel.ReadOnlyCollection<global::System.String>);
+            _typeTable[50] = typeof(global::Windows.UI.Xaml.FrameworkElement);
+            _typeTable[51] = typeof(global::PatientControl.Views.RegPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -297,6 +311,10 @@ namespace PatientControl.PatientControl_XamlTypeInfo
         private object Activate_42_NavigateWithEventArgsToPageAction() { return new global::PatientControl.Behaviors.NavigateWithEventArgsToPageAction(); }
         private object Activate_43_MainPage() { return new global::PatientControl.Views.MainPage(); }
         private object Activate_44_LoginPage() { return new global::PatientControl.Views.LoginPage(); }
+        private object Activate_45_RegistroUserControl() { return new global::PatientControl.Views.RegistroUserControl(); }
+        private object Activate_46_RegistroPage() { return new global::PatientControl.Views.RegistroPage(); }
+        private object Activate_47_HighlightFormFieldOnErrors() { return new global::PatientControl.Behaviors.HighlightFormFieldOnErrors(); }
+        private object Activate_51_RegPage() { return new global::PatientControl.Views.RegPage(); }
         private void VectorAdd_14_BehaviorCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
@@ -319,6 +337,12 @@ namespace PatientControl.PatientControl_XamlTypeInfo
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
             var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_49_ReadOnlyCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::System.String>)instance;
+            var newItem = (global::System.String)item;
             collection.Add(newItem);
         }
 
@@ -612,6 +636,55 @@ namespace PatientControl.PatientControl_XamlTypeInfo
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
+
+            case 45:   //  PatientControl.Views.RegistroUserControl
+                userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_45_RegistroUserControl;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 46:   //  PatientControl.Views.RegistroPage
+                userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("PatientControl.Controls.PageBase"));
+                userType.Activator = Activate_46_RegistroPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 47:   //  PatientControl.Behaviors.HighlightFormFieldOnErrors
+                userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("PatientControl.Behaviors.Behavior`1<Windows.UI.Xaml.FrameworkElement>"));
+                userType.Activator = Activate_47_HighlightFormFieldOnErrors;
+                userType.AddMemberName("PropertyErrors");
+                userType.AddMemberName("HighlightStyleName");
+                userType.AddMemberName("OriginalStyleName");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 48:   //  PatientControl.Behaviors.Behavior`1<Windows.UI.Xaml.FrameworkElement>
+                userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                userType.AddMemberName("AssociatedObject");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 49:   //  System.Collections.ObjectModel.ReadOnlyCollection`1<String>
+                userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.CollectionAdd = VectorAdd_49_ReadOnlyCollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 50:   //  Windows.UI.Xaml.FrameworkElement
+                xamlType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 51:   //  PatientControl.Views.RegPage
+                userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("PatientControl.Controls.PageBase"));
+                userType.Activator = Activate_51_RegPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
             }
             return xamlType;
         }
@@ -886,6 +959,41 @@ namespace PatientControl.PatientControl_XamlTypeInfo
             var that = (global::PatientControl.Behaviors.NavigateWithEventArgsToPageAction)instance;
             that.EventArgsParameterPath = (global::System.String)Value;
         }
+        private object get_24_HighlightFormFieldOnErrors_PropertyErrors(object instance)
+        {
+            var that = (global::PatientControl.Behaviors.HighlightFormFieldOnErrors)instance;
+            return that.PropertyErrors;
+        }
+        private void set_24_HighlightFormFieldOnErrors_PropertyErrors(object instance, object Value)
+        {
+            var that = (global::PatientControl.Behaviors.HighlightFormFieldOnErrors)instance;
+            that.PropertyErrors = (global::System.Collections.ObjectModel.ReadOnlyCollection<global::System.String>)Value;
+        }
+        private object get_25_HighlightFormFieldOnErrors_HighlightStyleName(object instance)
+        {
+            var that = (global::PatientControl.Behaviors.HighlightFormFieldOnErrors)instance;
+            return that.HighlightStyleName;
+        }
+        private void set_25_HighlightFormFieldOnErrors_HighlightStyleName(object instance, object Value)
+        {
+            var that = (global::PatientControl.Behaviors.HighlightFormFieldOnErrors)instance;
+            that.HighlightStyleName = (global::System.String)Value;
+        }
+        private object get_26_HighlightFormFieldOnErrors_OriginalStyleName(object instance)
+        {
+            var that = (global::PatientControl.Behaviors.HighlightFormFieldOnErrors)instance;
+            return that.OriginalStyleName;
+        }
+        private void set_26_HighlightFormFieldOnErrors_OriginalStyleName(object instance, object Value)
+        {
+            var that = (global::PatientControl.Behaviors.HighlightFormFieldOnErrors)instance;
+            that.OriginalStyleName = (global::System.String)Value;
+        }
+        private object get_27_Behavior_AssociatedObject(object instance)
+        {
+            var that = (global::PatientControl.Behaviors.Behavior<global::Windows.UI.Xaml.FrameworkElement>)instance;
+            return that.AssociatedObject;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
@@ -1052,6 +1160,33 @@ namespace PatientControl.PatientControl_XamlTypeInfo
                 xamlMember = new global::PatientControl.PatientControl_XamlTypeInfo.XamlMember(this, "EventArgsParameterPath", "String");
                 xamlMember.Getter = get_23_NavigateWithEventArgsToPageAction_EventArgsParameterPath;
                 xamlMember.Setter = set_23_NavigateWithEventArgsToPageAction_EventArgsParameterPath;
+                break;
+            case "PatientControl.Behaviors.HighlightFormFieldOnErrors.PropertyErrors":
+                userType = (global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("PatientControl.Behaviors.HighlightFormFieldOnErrors");
+                xamlMember = new global::PatientControl.PatientControl_XamlTypeInfo.XamlMember(this, "PropertyErrors", "System.Collections.ObjectModel.ReadOnlyCollection`1<String>");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_24_HighlightFormFieldOnErrors_PropertyErrors;
+                xamlMember.Setter = set_24_HighlightFormFieldOnErrors_PropertyErrors;
+                break;
+            case "PatientControl.Behaviors.HighlightFormFieldOnErrors.HighlightStyleName":
+                userType = (global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("PatientControl.Behaviors.HighlightFormFieldOnErrors");
+                xamlMember = new global::PatientControl.PatientControl_XamlTypeInfo.XamlMember(this, "HighlightStyleName", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_25_HighlightFormFieldOnErrors_HighlightStyleName;
+                xamlMember.Setter = set_25_HighlightFormFieldOnErrors_HighlightStyleName;
+                break;
+            case "PatientControl.Behaviors.HighlightFormFieldOnErrors.OriginalStyleName":
+                userType = (global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("PatientControl.Behaviors.HighlightFormFieldOnErrors");
+                xamlMember = new global::PatientControl.PatientControl_XamlTypeInfo.XamlMember(this, "OriginalStyleName", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_26_HighlightFormFieldOnErrors_OriginalStyleName;
+                xamlMember.Setter = set_26_HighlightFormFieldOnErrors_OriginalStyleName;
+                break;
+            case "PatientControl.Behaviors.Behavior`1<Windows.UI.Xaml.FrameworkElement>.AssociatedObject":
+                userType = (global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType)GetXamlTypeByName("PatientControl.Behaviors.Behavior`1<Windows.UI.Xaml.FrameworkElement>");
+                xamlMember = new global::PatientControl.PatientControl_XamlTypeInfo.XamlMember(this, "AssociatedObject", "Windows.UI.Xaml.FrameworkElement");
+                xamlMember.Getter = get_27_Behavior_AssociatedObject;
+                xamlMember.SetIsReadOnly();
                 break;
             }
             return xamlMember;
