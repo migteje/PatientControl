@@ -52,11 +52,11 @@
     <Extension Category="windows.activatableClass.inProcessServer">
       <InProcessServer>
         <Path>Microsoft.Kinect.Xaml.Controls.dll</Path>
-        <ActivatableClass ActivatableClassId="Microsoft.Kinect.Xaml.Controls.INTERNAL_Microsoft_Kinect_Xaml_Controls_8_1_XamlTypeInfo.XamlMetaDataProvider" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Microsoft.Kinect.Xaml.Controls.KinectUserViewer" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Microsoft.Kinect.Xaml.Controls.KinectRegion" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="Microsoft.Kinect.Xaml.Controls.SpriteSheet" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Kinect.Xaml.Controls.INTERNAL_Microsoft_Kinect_Xaml_Controls_8_1_XamlTypeInfo.XamlMetaDataProvider" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="Microsoft.Kinect.Xaml.Controls.KinectSoundDefinition" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Kinect.Xaml.Controls.KinectRegion" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Kinect.Xaml.Controls.KinectUserViewer" ThreadingModel="both" />
       </InProcessServer>
     </Extension>
   </Extensions>

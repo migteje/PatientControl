@@ -20,15 +20,21 @@ namespace PatientControl.ViewModels
             _ejercicio = ejercicio;
         }
 
+        public int Id { get { return _ejercicio.id; } set { _ejercicio.id = value; } }
+
         public string Title { get { return _ejercicio.titulo; } set { _ejercicio.titulo = value; } }
-
         public string Description { get { return _ejercicio.descripcion; } set { _ejercicio.descripcion = value; } }
+        public Uri Image { get { return _ejercicio.imageUri; } set { _ejercicio.imageUri = value; } }
 
-        public int Id { get { return _ejercicio.id; } }
-
+        public string Articulacion { get { return _ejercicio.articulacion; } set { _ejercicio.articulacion = value; } }
+        public string Tipo { get { return _ejercicio.tipo; } set { _ejercicio.tipo = value; } }
         public int Paciente_Id { get { return _ejercicio.paciente_id; } set { _ejercicio.paciente_id = value; } }
+        public string Angulo { get { return _ejercicio.angulo; } set { _ejercicio.angulo = value; } }
+        public int Repeticiones { get { return _ejercicio.repeticiones; } set { _ejercicio.repeticiones = value; } }
+        public DateTime FechaRealizado { get { return _ejercicio.fechaRealizado; } set { _ejercicio.fechaRealizado = value; } }
 
-        public string AnguloAb { get { return _ejercicio.anguloAb; } set { _ejercicio.anguloAb = value; } }
+
+        /*public string AnguloAb { get { return _ejercicio.anguloAb; } set { _ejercicio.anguloAb = value; } }
         public string AnguloAd { get { return _ejercicio.anguloAd; } set { _ejercicio.anguloAd = value; } }
         public int RepeticionesAbd { get { return _ejercicio.repeticionesAbd; } set { _ejercicio.repeticionesAbd = value; } }
         public string AnguloFl { get { return _ejercicio.anguloFl; } set { _ejercicio.anguloFl = value; } }
@@ -39,29 +45,42 @@ namespace PatientControl.ViewModels
         public int RepeticionesFlExh { get { return _ejercicio.repeticionesFlExh; } set { _ejercicio.repeticionesFlExh = value; } }
         public string AnguloCfl { get { return _ejercicio.anguloCfl; } set { _ejercicio.anguloCfl = value; } }
         public string AnguloCex { get { return _ejercicio.anguloCex; } set { _ejercicio.anguloCex = value; } }
-        public int RepeticionesCflEx { get { return _ejercicio.repeticionesCflEx; } set { _ejercicio.repeticionesCflEx = value; } }
+        public int RepeticionesCflEx { get { return _ejercicio.repeticionesCflEx; } set { _ejercicio.repeticionesCflEx = value; } }*/
 
-        public Uri Image { get { return _ejercicio.imageUri; } set { _ejercicio.imageUri = value; } }
+        public double Diferencia { get { return _ejercicio.diferencia; } set { _ejercicio.diferencia = value; } }
 
         public int ItemPosition { get; set; }
 
-        public async Task<bool> ObtenerEjercicioInfo(string data){
+        public async Task<List<EjercicioViewModel>> ObtenerEjercicios(string data){
+            List<EjercicioViewModel> lista = new List<EjercicioViewModel>();
             SQLiteAsyncConnection connection = new SQLiteAsyncConnection("Paciente.db");
             var result = await connection.QueryAsync<Ejercicio>("Select * FROM Ejercicios WHERE paciente_id = ?", new object[] { data });
-            if (result.Count() == 0) return false;
+            if (result.Count() == 0) return null;
             foreach (var item in result)
             {
-                /*this.Id = item.id;
-                this.Nombre = item.nombre;
-                this.Apellidos = item.apellidos;
-                this.Direccion = item.direccion;
-                this.DireccionOpcional = item.direccionOpcional;
-                this.Localidad = item.localidad;
-                this.Provincia = item.provincia;
-                this.CodPostal = item.codigoPostal;
-                this.Telefono = item.telefono;*/
+                this.Articulacion = item.articulacion;
+                this.Id = item.id;
+                this.Tipo = item.tipo;
+                this.Paciente_Id = item.paciente_id;
+                this.FechaRealizado = item.fechaRealizado;
+                this.Angulo = item.angulo;
+                this.Repeticiones = item.repeticiones;
+                /*this.AnguloAb = item.anguloAb;
+                this.AnguloAd { get { return _ejercicio.anguloAd;
+                this.RepeticionesAbd = item.repeticionesAbd;
+                this.AnguloFl = item.anguloFl;
+                this.AnguloEx = item.anguloEx;
+                this.RepeticionesFlEx = item.repeticionesFlEx;
+                this.AnguloFlh = item.anguloFlh;
+                this.AnguloExh = item.anguloExh;
+                this.RepeticionesFlExh = item.repeticionesFlExh;
+                this.nguloCfl = item.anguloCfl;
+                this.AnguloCex = item.anguloCex;
+                this.RepeticionesCflEx = item.repeticionesCflEx;*/
+                this.Diferencia = item.diferencia;
+                lista.Add(this);
             }
-            return true;
+            return lista;
         }
 
         public async void CreateDatabase()

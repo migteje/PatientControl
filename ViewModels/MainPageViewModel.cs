@@ -28,6 +28,11 @@ namespace PatientControl.ViewModels
                 get { return _paciente; }
                 set { SetProperty(ref _paciente, value); }
             }
+            string _Title = default(string);
+            public string Title { get { return _Title; } set { SetProperty(ref _Title, value); } }
+
+            string _username = default(string);
+            public string Username { get { return _username; } set { SetProperty(ref _username, value); } }
 
             public DelegateCommand VerDatosCommand { get; private set; }
 
@@ -43,9 +48,9 @@ namespace PatientControl.ViewModels
                         title = "Ejercicios de Hombro",
                         ejercicios = new List<Ejercicio>()
                             {
-                                new Ejercicio() { paciente_id = Paciente.Id, titulo = "Abduccion-Aduccion", descripcion = "Realizar levantamiento lateral del brazo", imageUri = new Uri("ms-appx:///Assets/StoreLogo.scale-180.png")},
-                                new Ejercicio() { paciente_id = Paciente.Id, titulo = "FlexoExtension", descripcion = "Realizar levantamiento frontal del brazo", imageUri = new Uri("ms-appx:///Assets/StoreLogo.scale-180.png")},
-                                new Ejercicio() { paciente_id = Paciente.Id, titulo = "FlexExHorizontal", descripcion = "Realizar movimientos laterales", imageUri = new Uri("ms-appx:///Assets/StoreLogo.scale-180.png")},
+                                new Ejercicio() { paciente_id = Paciente.Id, articulacion = "Hombro", titulo = "Abduccion-Aduccion", descripcion = "Realizar levantamiento lateral del brazo", imageUri = new Uri("ms-appx:///Assets/StoreLogo.scale-180.png")},
+                                new Ejercicio() { paciente_id = Paciente.Id, articulacion = "Hombro", titulo = "FlexoExtension", descripcion = "Realizar levantamiento frontal del brazo", imageUri = new Uri("ms-appx:///Assets/StoreLogo.scale-180.png")},
+                                new Ejercicio() { paciente_id = Paciente.Id, articulacion = "Hombro", titulo = "FlexExHorizontal", descripcion = "Realizar movimientos laterales", imageUri = new Uri("ms-appx:///Assets/StoreLogo.scale-180.png")},
                             }
                     }, null),
                     new CategoriaViewModel(new Categoria()
@@ -53,12 +58,12 @@ namespace PatientControl.ViewModels
                         title = "Ejercicios de Codo", 
                         ejercicios = new List<Ejercicio>()
                             {
-                                new Ejercicio() { paciente_id = Paciente.Id, titulo = "CodoFlexEx",  descripcion = "Doblar y extender el codo moviendo el antebrazo", imageUri = new Uri("ms-appx:///Assets/StoreLogo.scale-180.png")},                            }
+                                new Ejercicio() { paciente_id = Paciente.Id, articulacion = "Codo", titulo = "CodoFlexEx",  descripcion = "Doblar y extender el codo moviendo el antebrazo", imageUri = new Uri("ms-appx:///Assets/StoreLogo.scale-180.png")},                            }
                     }, null)
                 };
             }
 
-            public override async void OnNavigatedTo(object navigationParameter, NavigationMode navigationMode, Dictionary<string, object> viewModelState)
+            public override void OnNavigatedTo(object navigationParameter, NavigationMode navigationMode, Dictionary<string, object> viewModelState)
             {
                 this.Title = "PatientControl";
                 VerDatosCommand = DelegateCommand.FromAsyncHandler(VerDatosAsync);
@@ -68,12 +73,6 @@ namespace PatientControl.ViewModels
                     foreach (var ej in cat.Ejercicios)
                         ej.Paciente_Id = Paciente.Id;
             }
-
-            string _Title = default(string);
-            public string Title { get { return _Title; } set { SetProperty(ref _Title, value); } }
-
-            string _username = default(string);
-            public string Username { get { return _username; } set { SetProperty(ref _username, value); } }
 
         private async Task VerDatosAsync()
         {
@@ -95,7 +94,7 @@ namespace PatientControl.ViewModels
             var navigationServiceReference = _navigationService;
             navigateAction = async () =>
                     {
-                       _navigationService.Navigate(App.Experiences.Datos.ToString(), RootCategories);
+                       _navigationService.Navigate(App.Experiences.Datos.ToString(), Paciente);
                     };
             return navigateAction;
         }

@@ -13,14 +13,20 @@ namespace PatientControl.Models
         [PrimaryKey, AutoIncrement]
         public int id { get; set; }
 
+        [Ignore]
         public string titulo { get; set; }
-
+        [Ignore]
         public string descripcion { get; set; }
-
+        [Ignore]
         public Uri imageUri { get; set; }
 
+        public string articulacion { get; set; }
+        public string tipo { get; set; }
         //[Indexed]
         public int paciente_id { get; set; }
+        public string angulo { get; set; }
+        public int repeticiones { get; set; }
+        public DateTime fechaRealizado { get; set; }
 
         public string anguloAb { get; set; }
         public string anguloAd { get; set; }
@@ -36,7 +42,5 @@ namespace PatientControl.Models
         public int repeticionesCflEx { get; set; }
 
         public double diferencia { get; set; }
-
-
     }
 }

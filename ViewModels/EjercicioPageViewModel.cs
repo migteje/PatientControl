@@ -733,9 +733,9 @@ namespace PatientControl.ViewModels
         {
             if (this.ejerSelected != null & this.Angulo != null)
             {
-                if (On)
+                /*if (On)
                 {
-                    switch (Title)
+                   switch (Title)
                     {
                         case "Abduccion-Aduccion":
                             ejerSelected.AnguloAd = Angulo;
@@ -776,9 +776,15 @@ namespace PatientControl.ViewModels
                             ejerSelected.RepeticionesCflEx = Repeticion;
                             break;
                     }
-                }
-                //ejerSelected.CreateDatabase();
-                //await ejerSelected.InsertarNuevoEjercicio();
+                }*/
+                ejerSelected.Angulo = Angulo;
+                ejerSelected.Repeticiones = Repeticion;
+                    if (On)
+                ejerSelected.Tipo = Activado;
+                    else
+                ejerSelected.Tipo = Desactivado;
+
+                await ejerSelected.InsertarNuevoEjercicio();
             }
         }
 

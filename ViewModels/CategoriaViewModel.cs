@@ -25,7 +25,7 @@ namespace PatientControl.ViewModels
             {
                 int position = 0;
                 Ejercicios = new ReadOnlyCollection<EjercicioViewModel>(category.ejercicios
-                                                                            .Select(p => new EjercicioViewModel(p) { ItemPosition = position++ })
+                                                                            .Select(p => new EjercicioViewModel(p) {ItemPosition = position++ })
                                                                             .ToList());
             }
         }

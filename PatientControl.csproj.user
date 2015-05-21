@@ -4,7 +4,7 @@
     <UseSimulator>true</UseSimulator>
   </PropertyGroup>
   <PropertyGroup>
-    <ProjectView>ProjectFiles</ProjectView>
+    <ProjectView>ShowAllFiles</ProjectView>
     <AppxPackageIsForStore>True</AppxPackageIsForStore>
     <AppxShowAllApps>True</AppxShowAllApps>
     <AppxBuildConfigurationSelection>x86</AppxBuildConfigurationSelection>

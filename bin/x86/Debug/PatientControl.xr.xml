@@ -18,18 +18,14 @@
     <RootPropertyPathName Name="DiscountedPrice" />
     <RootPropertyPathName Name="Group" />
     <RootPropertyPathName Name="TotalNumberOfItems" />
-    <RootPropertyPathName Name="RepeticionCflEx" />
-    <RootPropertyPathName Name="ValorCex" />
-    <RootPropertyPathName Name="ValorCfl" />
-    <RootPropertyPathName Name="RepeticionFlExh" />
-    <RootPropertyPathName Name="ValorExh" />
-    <RootPropertyPathName Name="ValorFlh" />
-    <RootPropertyPathName Name="RepeticionFlEx" />
-    <RootPropertyPathName Name="ValorEx" />
-    <RootPropertyPathName Name="ValorFl" />
-    <RootPropertyPathName Name="RepeticionAbd" />
-    <RootPropertyPathName Name="ValorAd" />
-    <RootPropertyPathName Name="ValorAb" />
+    <RootPropertyPathName Name="FechaRealizado" />
+    <RootPropertyPathName Name="Repeticiones" />
+    <RootPropertyPathName Name="Angulo" />
+    <RootPropertyPathName Name="Articulacion" />
+    <RootPropertyPathName Name="Ejercicios" />
+    <RootPropertyPathName Name="Tipo" />
+    <RootPropertyPathName Name="Paciente" />
+    <RootPropertyPathName Name="Nombre" />
     <RootPropertyPathName Name="GoBackCommand" />
     <RootPropertyPathName Name="KinectCanvas" />
     <RootPropertyPathName Name="Bitmap" />
@@ -38,7 +34,6 @@
     <RootPropertyPathName Name="CheckedCommand" />
     <RootPropertyPathName Name="Activado" />
     <RootPropertyPathName Name="IsSelected" />
-    <RootPropertyPathName Name="Angulo" />
     <RootPropertyPathName Name="Colores" />
     <RootPropertyPathName Name="MasCommand" />
     <RootPropertyPathName Name="MenosCommand" />
@@ -47,8 +42,8 @@
     <RootPropertyPathName Name="PausarCommand" />
     <RootPropertyPathName Name="IniciarCommand" />
     <RootPropertyPathName Name="NombrePaciente" />
-    <RootPropertyPathName Name="Ejercicios" />
     <RootPropertyPathName Name="RootCategories" />
+    <RootPropertyPathName Name="EditarCommand" />
     <RootPropertyPathName Name="Username" />
     <RootPropertyPathName Name="VerDatosCommand" />
     <RootPropertyPathName Name="RegistrarCommand" />
@@ -56,7 +51,6 @@
     <RootPropertyPathName Name="SaveCommand" />
     <RootPropertyPathName Name="MedicalViewModel" />
     <RootPropertyPathName Name="RegistroViewModel" />
-    <RootPropertyPathName Name="Paciente" />
     <RootPropertyPathName Name="FechaLesion" />
     <RootPropertyPathName Name="Articulaciones" />
     <RootPropertyPathName Name="ArticValorar" />
@@ -72,7 +66,6 @@
     <RootPropertyPathName Name="DireccionOpcional" />
     <RootPropertyPathName Name="Direccion" />
     <RootPropertyPathName Name="Apellidos" />
-    <RootPropertyPathName Name="Nombre" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Microsoft.Practices.Prism.Mvvm.MvvmAppBase">
@@ -132,6 +125,7 @@
       <RootProperty Name="Child" />
       <RootProperty Name="MinWidth" />
       <RootProperty Name="CornerRadius" />
+      <RootProperty Name="Style" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Margin" />
@@ -293,6 +287,7 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Foreground" />
       <RootProperty Name="Background" />
       <RootProperty Name="MinWidth" />
     </RootType>
@@ -400,14 +395,30 @@
       <RootProperty Name="Orientation" />
     </RootType>
     <RootType FullName="PatientControl.Controls.PageBase">
-      <RootProperty Name="Content" />
       <RootProperty Name="Resources" />
+      <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Microsoft.Practices.Prism.Mvvm.ViewModelLocator">
       <RootMethod Name="GetAutoWireViewModel" />
       <RootMethod Name="SetAutoWireViewModel" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart">
+      <RootProperty Name="Title" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Series" />
+    </RootType>
+    <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries">
+      <RootProperty Name="Title" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="IndependentValueBinding" />
+      <RootProperty Name="DependentValueBinding" />
+      <RootProperty Name="IsSelectionEnabled" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsControl">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="ItemTemplate" />
+    </RootType>
     <RootType FullName="PatientControl.Views.DatosPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.CheckBox">
       <RootProperty Name="Content" />

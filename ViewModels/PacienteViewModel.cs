@@ -158,6 +158,7 @@ namespace PatientControl.ViewModels
         {
             SQLiteAsyncConnection connection = new SQLiteAsyncConnection("Paciente.db");
             await connection.CreateTableAsync<Paciente>();
+            await connection.CreateTableAsync<Ejercicio>();
         }
 
         public async Task<bool> ObtenerPacienteInfo(string data){

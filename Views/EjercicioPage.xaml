@@ -46,9 +46,9 @@
                         IsHitTestVisible="false" TextWrapping="NoWrap" Margin="0,0,872,16" Height="72" VerticalAlignment="Bottom"/>
             <TextBlock x:Name="nombrePaciente" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding NombrePaciente}" VerticalAlignment="Center" Grid.Column="1" Margin="369,59,0,40" Height="41" Width="115" FontSize="26.667" TextAlignment="Justify" LineHeight="8" FontWeight="Bold"/>
             <StackPanel Grid.Column="1" Margin="484,10,124,10" Orientation="Horizontal">
-                <Button x:Name="Iniciar" Content="INICIAR" HorizontalAlignment="Left" VerticalAlignment="Top" Height="80" Margin="60,15,0,0" Width="130" Command="{Binding IniciarCommand}"/>
-                <Button x:Name="Pausa" Content="PAUSA" HorizontalAlignment="Left" Margin="45,15,0,0" VerticalAlignment="Top" Height="80" Width="130" Command="{Binding PausarCommand}"/>
-                <Button x:Name="Parar" Content="PARAR" HorizontalAlignment="Left" Margin="45,15,0,0" VerticalAlignment="Top" Width="130" Height="80" Command="{Binding PararCommand}"/>
+                <Button x:Name="Iniciar" Content="INICIAR" HorizontalAlignment="Left" VerticalAlignment="Top" Height="80" Margin="60,15,0,0" Width="130" Command="{Binding IniciarCommand}" Foreground="White"/>
+                <Button x:Name="Pausa" Content="PAUSA" HorizontalAlignment="Left" Margin="45,15,0,0" VerticalAlignment="Top" Height="80" Width="130" Command="{Binding PausarCommand}" Foreground="White"/>
+                <Button x:Name="Parar" Content="PARAR" HorizontalAlignment="Left" Margin="45,15,0,0" VerticalAlignment="Top" Width="130" Height="80" Command="{Binding PararCommand}" Foreground="White"/>
             </StackPanel>
         </Grid>
 
@@ -72,7 +72,7 @@
                     <RadioButton x:Name="Activado" Content="{Binding Activado}" VerticalAlignment="Stretch" Margin="0,0,0,0" Command="{Binding CheckedCommand, Mode=TwoWay}" CommandParameter="Activado"/>
                     <RadioButton x:Name="Desactivado" Content="{Binding Desactivado}" VerticalAlignment="Stretch" Margin="0,0,0,0" Command="{Binding CheckedCommand, Mode=TwoWay}" CommandParameter="Desactivado"/>
                 </StackPanel>
-                <Button x:Name="Grabar" Content="GRABAR" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Top" FontSize="18.667" Height="46" Width="140" Command="{Binding GrabarCommand}"/>
+                <Button x:Name="Grabar" Content="GRABAR" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Top" FontSize="18.667" Height="46" Width="140" Command="{Binding GrabarCommand}" Foreground="White"/>
             </StackPanel>
             <Image Source="{Binding Bitmap}" Stretch="UniformToFill" Margin="333,0,0,0"/>
             <Canvas HorizontalAlignment="Right" Width="1013" Grid.Column="1">
