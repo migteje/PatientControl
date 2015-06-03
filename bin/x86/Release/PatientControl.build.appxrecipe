@@ -58,6 +58,15 @@
     <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\Unity.3.5.1404.0\lib\win8\Microsoft.Practices.Unity.RegistrationByConvention.dll">
       <PackagePath>Microsoft.Practices.Unity.RegistrationByConvention.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Controls.DataVisualization.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Controls.DataVisualization.dll">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Debugging.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Debugging.dll">
+      <PackagePath>WinRTXamlToolkit.Debugging.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.dll">
+      <PackagePath>WinRTXamlToolkit.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.Kinect.Xaml.Controls\2.0\Redist\CommonConfiguration\x86\Microsoft.Kinect.Xaml.Controls\CursorSpriteSheet.png">
       <PackagePath>Microsoft.Kinect.Xaml.Controls\CursorSpriteSheet.png</PackagePath>
     </AppxPackagedFile>
@@ -126,11 +135,11 @@
     <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Release\Views\RegistroPage.xbf">
       <PackagePath>Views\RegistroPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Release\Views\MedicalInfo.xbf">
+      <PackagePath>Views\MedicalInfo.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Release\Views\RegistroUserControl.xbf">
       <PackagePath>Views\RegistroUserControl.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Release\Views\RegPage.xbf">
-      <PackagePath>Views\RegPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Release\Microsoft.Kinect.Xaml.Controls\Themes\Generic.xbf">
       <PackagePath>Microsoft.Kinect.Xaml.Controls\Themes\Generic.xbf</PackagePath>
@@ -140,6 +149,240 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Release\PatientControl.xr.xml">
       <PackagePath>PatientControl.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\WinRTXamlToolkit.xr.xml">
+      <PackagePath>WinRTXamlToolkit\WinRTXamlToolkit.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\AlternativeFrame\AlternativeFrame.xbf">
+      <PackagePath>WinRTXamlToolkit\Controls\AlternativeFrame\AlternativeFrame.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\AnimatingContainer\AnimatingContainer.xbf">
+      <PackagePath>WinRTXamlToolkit\Controls\AnimatingContainer\AnimatingContainer.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\AutoCompleteTextBox\AutoCompleteTextBox.xbf">
+      <PackagePath>WinRTXamlToolkit\Controls\AutoCompleteTextBox\AutoCompleteTextBox.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\CameraCaptureControl\CameraCaptureControl.xbf">
+      <PackagePath>WinRTXamlToolkit\Controls\CameraCaptureControl\CameraCaptureControl.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\CascadingImageControl\CascadingImageControl.xbf">
+      <PackagePath>WinRTXamlToolkit\Controls\CascadingImageControl\CascadingImageControl.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\CascadingTextBlock\CascadingTextBlock.xbf">
+      <PackagePath>WinRTXamlToolkit\Controls\CascadingTextBlock\CascadingTextBlock.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\ColorPicker\ColorPicker.xbf">
+      <PackagePath>WinRTXamlToolkit\Controls\ColorPicker\ColorPicker.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\CountdownControl\CountdownControl.xbf">
+      <PackagePath>WinRTXamlToolkit\Controls\CountdownControl\CountdownControl.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\CustomAppBar\CustomAppBar.xbf">
+      <PackagePath>WinRTXamlToolkit\Controls\CustomAppBar\CustomAppBar.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\CustomGridSplitter\CustomGridSplitter.xbf">
+      <PackagePath>WinRTXamlToolkit\Controls\CustomGridSplitter\CustomGridSplitter.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\DelayedLoadControl\DelayedLoadControl.xbf">
+      <PackagePath>WinRTXamlToolkit\Controls\DelayedLoadControl\DelayedLoadControl.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\FocusVisualizer\FocusVisualizer.xbf">
+      <PackagePath>WinRTXamlToolkit\Controls\FocusVisualizer\FocusVisualizer.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\FxContentControl\FxContentControl.xbf">
+      <PackagePath>WinRTXamlToolkit\Controls\FxContentControl\FxContentControl.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\ImageButton\ImageButton.xbf">
+      <PackagePath>WinRTXamlToolkit\Controls\ImageButton\ImageButton.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\ImageToggleButton\ImageToggleButton.xbf">
+      <PackagePath>WinRTXamlToolkit\Controls\ImageToggleButton\ImageToggleButton.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\InputDialog\InputDialog.xbf">
+      <PackagePath>WinRTXamlToolkit\Controls\InputDialog\InputDialog.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\ListItemButton\ListItemButton.xbf">
+      <PackagePath>WinRTXamlToolkit\Controls\ListItemButton\ListItemButton.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\NumericUpDown\NumericUpDown.xbf">
+      <PackagePath>WinRTXamlToolkit\Controls\NumericUpDown\NumericUpDown.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\ToolStrip\ToolStrip.xbf">
+      <PackagePath>WinRTXamlToolkit\Controls\ToolStrip\ToolStrip.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\ToolWindow\ToolWindow.xbf">
+      <PackagePath>WinRTXamlToolkit\Controls\ToolWindow\ToolWindow.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\TreeView\TreeView.xbf">
+      <PackagePath>WinRTXamlToolkit\Controls\TreeView\TreeView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\TreeView\TreeViewItem.xbf">
+      <PackagePath>WinRTXamlToolkit\Controls\TreeView\TreeViewItem.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\TreeView\TreeViewMouse.xbf">
+      <PackagePath>WinRTXamlToolkit\Controls\TreeView\TreeViewMouse.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\TreeView\TreeViewTouch.xbf">
+      <PackagePath>WinRTXamlToolkit\Controls\TreeView\TreeViewTouch.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\WatermarkPasswordBox\WatermarkPasswordBox.xbf">
+      <PackagePath>WinRTXamlToolkit\Controls\WatermarkPasswordBox\WatermarkPasswordBox.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\WatermarkTextBox\WatermarkTextBox.xbf">
+      <PackagePath>WinRTXamlToolkit\Controls\WatermarkTextBox\WatermarkTextBox.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Controls\WebBrowser\WebBrowser.xbf">
+      <PackagePath>WinRTXamlToolkit\Controls\WebBrowser\WebBrowser.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\Themes\Generic.xbf">
+      <PackagePath>WinRTXamlToolkit\Themes\Generic.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Controls.DataVisualization.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Controls.DataVisualization\WinRTXamlToolkit.Controls.DataVisualization.xr.xml">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\WinRTXamlToolkit.Controls.DataVisualization.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Controls.DataVisualization.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Controls.DataVisualization\Charting\Axis\AxisLabel.xbf">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\Charting\Axis\AxisLabel.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Controls.DataVisualization.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Controls.DataVisualization\Charting\Axis\DateTimeAxisLabel.xbf">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\Charting\Axis\DateTimeAxisLabel.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Controls.DataVisualization.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Controls.DataVisualization\Charting\Axis\DisplayAxis.xbf">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\Charting\Axis\DisplayAxis.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Controls.DataVisualization.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Controls.DataVisualization\Charting\Axis\NumericAxisLabel.xbf">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\Charting\Axis\NumericAxisLabel.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Controls.DataVisualization.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Controls.DataVisualization\Charting\Axis\RangeAxis.xbf">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\Charting\Axis\RangeAxis.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Controls.DataVisualization.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Controls.DataVisualization\Charting\Chart\Chart.xbf">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\Charting\Chart\Chart.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Controls.DataVisualization.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Controls.DataVisualization\Charting\DataPoint\AreaDataPoint.xbf">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\Charting\DataPoint\AreaDataPoint.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Controls.DataVisualization.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Controls.DataVisualization\Charting\DataPoint\BarDataPoint.xbf">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\Charting\DataPoint\BarDataPoint.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Controls.DataVisualization.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Controls.DataVisualization\Charting\DataPoint\BubbleDataPoint.xbf">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\Charting\DataPoint\BubbleDataPoint.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Controls.DataVisualization.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Controls.DataVisualization\Charting\DataPoint\ColumnDataPoint.xbf">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\Charting\DataPoint\ColumnDataPoint.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Controls.DataVisualization.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Controls.DataVisualization\Charting\DataPoint\LineDataPoint.xbf">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\Charting\DataPoint\LineDataPoint.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Controls.DataVisualization.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Controls.DataVisualization\Charting\DataPoint\PieDataPoint.xbf">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\Charting\DataPoint\PieDataPoint.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Controls.DataVisualization.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Controls.DataVisualization\Charting\DataPoint\ScatterDataPoint.xbf">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\Charting\DataPoint\ScatterDataPoint.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Controls.DataVisualization.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Controls.DataVisualization\Charting\Primitives\DelegatingListBox.xbf">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\Charting\Primitives\DelegatingListBox.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Controls.DataVisualization.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Controls.DataVisualization\Charting\Series\AreaSeries.xbf">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\Charting\Series\AreaSeries.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Controls.DataVisualization.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Controls.DataVisualization\Charting\Series\DataPointSeries.xbf">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\Charting\Series\DataPointSeries.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Controls.DataVisualization.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Controls.DataVisualization\Charting\Series\DefinitionSeries.xbf">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\Charting\Series\DefinitionSeries.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Controls.DataVisualization.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Controls.DataVisualization\Charting\Series\LegendItem.xbf">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\Charting\Series\LegendItem.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Controls.DataVisualization.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Controls.DataVisualization\Charting\Series\LineSeries.xbf">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\Charting\Series\LineSeries.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Controls.DataVisualization.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Controls.DataVisualization\Charting\Series\PieSeries.xbf">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\Charting\Series\PieSeries.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Controls.DataVisualization.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Controls.DataVisualization\Legend\Legend.xbf">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\Legend\Legend.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Controls.DataVisualization.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Controls.DataVisualization\Themes\Generic.xbf">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\Themes\Generic.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Controls.DataVisualization.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Controls.DataVisualization\Title\Title.xbf">
+      <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\Title\Title.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Debugging.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Debugging\WinRTXamlToolkit.Debugging.xr.xml">
+      <PackagePath>WinRTXamlToolkit.Debugging\WinRTXamlToolkit.Debugging.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Debugging.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Debugging\Controls\EditableListBox\EditableListBox.xbf">
+      <PackagePath>WinRTXamlToolkit.Debugging\Controls\EditableListBox\EditableListBox.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Debugging.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Debugging\Controls\EditableListBox\EditableListBoxItem.xbf">
+      <PackagePath>WinRTXamlToolkit.Debugging\Controls\EditableListBox\EditableListBoxItem.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Debugging.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Debugging\Themes\Generic.xbf">
+      <PackagePath>WinRTXamlToolkit.Debugging\Themes\Generic.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Debugging.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Debugging\Themes\SharedResources.xbf">
+      <PackagePath>WinRTXamlToolkit.Debugging\Themes\SharedResources.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Debugging.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Debugging\Views\DebugConsoleView.xbf">
+      <PackagePath>WinRTXamlToolkit.Debugging\Views\DebugConsoleView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Debugging.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Debugging\Views\DependencyObjectDetailsView.xbf">
+      <PackagePath>WinRTXamlToolkit.Debugging\Views\DependencyObjectDetailsView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Debugging.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Debugging\Views\ElementListWindow.xbf">
+      <PackagePath>WinRTXamlToolkit.Debugging\Views\ElementListWindow.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Debugging.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Debugging\Views\FocusTrackerWindow.xbf">
+      <PackagePath>WinRTXamlToolkit.Debugging\Views\FocusTrackerWindow.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Debugging.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Debugging\Views\HighlightOverlay.xbf">
+      <PackagePath>WinRTXamlToolkit.Debugging\Views\HighlightOverlay.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Debugging.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Debugging\Views\PropertiesView.xbf">
+      <PackagePath>WinRTXamlToolkit.Debugging\Views\PropertiesView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Debugging.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Debugging\Views\VisualTreeView.xbf">
+      <PackagePath>WinRTXamlToolkit.Debugging\Views\VisualTreeView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Debugging.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Debugging\Views\PropertyEditors\BooleanPropertyEditor.xbf">
+      <PackagePath>WinRTXamlToolkit.Debugging\Views\PropertyEditors\BooleanPropertyEditor.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Debugging.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Debugging\Views\PropertyEditors\BrushPropertyEditor.xbf">
+      <PackagePath>WinRTXamlToolkit.Debugging\Views\PropertyEditors\BrushPropertyEditor.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Debugging.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Debugging\Views\PropertyEditors\CacheModePropertyEditor.xbf">
+      <PackagePath>WinRTXamlToolkit.Debugging\Views\PropertyEditors\CacheModePropertyEditor.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Debugging.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Debugging\Views\PropertyEditors\CornerRadiusPropertyEditor.xbf">
+      <PackagePath>WinRTXamlToolkit.Debugging\Views\PropertyEditors\CornerRadiusPropertyEditor.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Debugging.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Debugging\Views\PropertyEditors\DefaultPropertyEditor.xbf">
+      <PackagePath>WinRTXamlToolkit.Debugging\Views\PropertyEditors\DefaultPropertyEditor.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Debugging.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Debugging\Views\PropertyEditors\DependencyObjectPropertyEditor.xbf">
+      <PackagePath>WinRTXamlToolkit.Debugging\Views\PropertyEditors\DependencyObjectPropertyEditor.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Debugging.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Debugging\Views\PropertyEditors\EnumPropertyEditor.xbf">
+      <PackagePath>WinRTXamlToolkit.Debugging\Views\PropertyEditors\EnumPropertyEditor.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Debugging.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Debugging\Views\PropertyEditors\FontWeightPropertyEditor.xbf">
+      <PackagePath>WinRTXamlToolkit.Debugging\Views\PropertyEditors\FontWeightPropertyEditor.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Debugging.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Debugging\Views\PropertyEditors\ImageSourcePropertyEditor.xbf">
+      <PackagePath>WinRTXamlToolkit.Debugging\Views\PropertyEditors\ImageSourcePropertyEditor.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Debugging.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Debugging\Views\PropertyEditors\NumericPropertyEditor.xbf">
+      <PackagePath>WinRTXamlToolkit.Debugging\Views\PropertyEditors\NumericPropertyEditor.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Debugging.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Debugging\Views\PropertyEditors\PropertyEditorFooter.xbf">
+      <PackagePath>WinRTXamlToolkit.Debugging\Views\PropertyEditors\PropertyEditorFooter.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Debugging.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Debugging\Views\PropertyEditors\StringPropertyEditor.xbf">
+      <PackagePath>WinRTXamlToolkit.Debugging\Views\PropertyEditors\StringPropertyEditor.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Debugging.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit.Debugging\Views\PropertyEditors\ThicknessPropertyEditor.xbf">
+      <PackagePath>WinRTXamlToolkit.Debugging\Views\PropertyEditors\ThicknessPropertyEditor.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>

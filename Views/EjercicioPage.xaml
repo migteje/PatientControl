@@ -61,18 +61,20 @@
                     <Button x:Name="menos" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18.667" Width="50" Height="45" Margin="8,0,0,0" Command="{Binding MasCommand, Mode=TwoWay}"/>
                 </StackPanel>
 
-                <StackPanel Orientation="Horizontal" Height="24" Margin="12,36,0,0">
-                    <TextBlock x:Name="angTitle" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18.667">
-                		<Run Text="ÁNGULO FORMADO:"/>
-                    </TextBlock>
-                    <TextBlock x:Name="angulo" TextWrapping="Wrap" Text="{Binding Angulo}" FontSize="25"  Margin="7,0,0,0" Width="123" Height="24" Foreground="{Binding Colores}"/>
+                <StackPanel Orientation="Horizontal" Height="54" Margin="12,17,0,0">
+                    <TextBlock x:Name="angTitle" TextWrapping="Wrap" FontSize="18.667" Text="ÁNGULO:" Height="54" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+                    <TextBlock x:Name="angulo" TextWrapping="Wrap" Text="{Binding Angulo}" FontSize="48"  Margin="9,0,0,0" Width="217" Height="54" Foreground="{Binding Colores}" VerticalAlignment="Center"/>
                 </StackPanel>
-                <CheckBox x:Name="SkeletonShow" Content="ESQUELETO" HorizontalAlignment="Right" Margin="0,30,92,0" VerticalAlignment="Center" FontSize="20" IsChecked="{Binding Path=IsSelected, Mode=TwoWay}"/>
+                <CheckBox x:Name="SkeletonShow" Content="ESQUELETO" HorizontalAlignment="Right" Margin="0,7,92,0" VerticalAlignment="Center" FontSize="20" IsChecked="{Binding Path=IsSelected, Mode=TwoWay}"/>
                 <StackPanel x:Name="Tipo"  Height="100" Margin="92,31,30,0">
-                    <RadioButton x:Name="Activado" Content="{Binding Activado}" VerticalAlignment="Stretch" Margin="0,0,0,0" Command="{Binding CheckedCommand, Mode=TwoWay}" CommandParameter="Activado"/>
-                    <RadioButton x:Name="Desactivado" Content="{Binding Desactivado}" VerticalAlignment="Stretch" Margin="0,0,0,0" Command="{Binding CheckedCommand, Mode=TwoWay}" CommandParameter="Desactivado"/>
+                    <RadioButton x:Name="Activado" Content="{Binding Activado}" VerticalAlignment="Stretch" Margin="0,0,0,0" Command="{Binding CheckedCommand, Mode=TwoWay}" CommandParameter="Activado" FontSize="18"/>
+                    <RadioButton x:Name="Desactivado" Content="{Binding Desactivado}" VerticalAlignment="Stretch" Margin="0,0,0,0" Command="{Binding CheckedCommand, Mode=TwoWay}" CommandParameter="Desactivado" FontSize="18"/>
                 </StackPanel>
                 <Button x:Name="Grabar" Content="GRABAR" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Top" FontSize="18.667" Height="46" Width="140" Command="{Binding GrabarCommand}" Foreground="White"/>
+                <StackPanel x:Name="Lado"  Height="100" Margin="92,31,0,0">
+                    <RadioButton x:Name="Izquierdo" Content="IZQUIERDO" VerticalAlignment="Stretch" Margin="0,0,0,0" Command="{Binding LadoCommand, Mode=TwoWay}" CommandParameter="Izquierdo" FontSize="18"/>
+                    <RadioButton x:Name="Derecho" Content="DERECHO" VerticalAlignment="Stretch" Margin="0,0,0,0" Command="{Binding LadoCommand, Mode=TwoWay}" CommandParameter="Derecho" FontSize="18"/>
+                </StackPanel>
             </StackPanel>
             <Image Source="{Binding Bitmap}" Stretch="UniformToFill" Margin="333,0,0,0"/>
             <Canvas HorizontalAlignment="Right" Width="1013" Grid.Column="1">

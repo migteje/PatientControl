@@ -37,24 +37,43 @@
         </Grid>
 
     <!-- Page content -->
-    <Grid HorizontalAlignment="Left" Height="608" VerticalAlignment="Top" Width="1346" Margin="12,10,0,0" Grid.Row="1">
-      <Grid x:Name="HubGrid"
-             Margin="120,10,0,50"
-                  VerticalAlignment="Top"
-                  HorizontalAlignment="Left"
-                  MaxWidth="600"
-                  MinWidth="600"
-                  Grid.RowSpan="3">
+      <ScrollViewer x:Name="scrollViewer" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled" Grid.Row="1">
+            <Grid x:Name="HubGrid"
+             Margin="120,10,0,50">
+                <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="600" />
+                <ColumnDefinition Width="80" />
+                    <ColumnDefinition Width="600" />
+                    <ColumnDefinition Width="80" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="0" />
+                    <RowDefinition Height="0" />
+                    <RowDefinition Height="0" />
+                </Grid.RowDefinitions>
 
-        <!-- Address -->
-          <StackPanel x:Name="stackPanel" HorizontalAlignment="Stretch">
-                    <local:RegistroUserControl x:ConnectionId='1' x:Name="AddressInfo"
+                <!-- Datos Personales -->
+                <local:RegistroUserControl x:ConnectionId='1' x:Name="AddressInfo"
                                           Grid.Row="1"
+                                          Grid.Column="0"
                                           MaxWidth="600"
                                           HorizontalAlignment="Stretch"
                                                                      
                                                                       
                                           DataContext="{Binding RegistroViewModel}" />
+
+                <!-- Datos Medicos -->
+                <StackPanel x:Name="stackPanel" HorizontalAlignment="Stretch" Orientation="Vertical" Grid.Row="1"
+                            Grid.Column="2">
+                    <local:MedicalInfo x:ConnectionId='2' x:Name="MedicalInfo"
+                                          MaxWidth="600"
+                                          HorizontalAlignment="Stretch"
+                                                                     
+                                                                      
+                                          DataContext="{Binding MedicalViewModel}" />
                     <Button x:Name="button" x:Uid="SaveButton"
                             AutomationProperties.AutomationId="SaveButton"
                             Content="Registrar"
@@ -64,8 +83,9 @@
                             HorizontalAlignment="Right"
                             Command="{Binding SaveCommand}"/>
                 </StackPanel>
+
             </Grid>
-    </Grid>
+    </ScrollViewer>
 
   </Grid>
 </controls:PageBase>

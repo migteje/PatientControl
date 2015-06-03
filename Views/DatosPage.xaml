@@ -51,18 +51,18 @@
         <DataTemplate x:Key="DefaultItemDetailTemplate">
             <Grid HorizontalAlignment="Left">
                 <Border Background="{StaticResource BlockBackgroundBrush}"/>
-                <StackPanel Orientation="Horizontal" Background="{StaticResource StackPanelBackgroundBrush}" Width="806" HorizontalAlignment="Left">
+                <StackPanel Orientation="Horizontal" Background="{StaticResource StackPanelBackgroundBrush}" Width="750"  Height="Auto" HorizontalAlignment="Left">
                     <Border Style="{StaticResource BorderCell}">
-                        <TextBlock Text="{Binding Articulacion}" Style="{StaticResource TextBlockCell}" Width="340"/>
+                        <TextBlock Text="{Binding articulacion}" Style="{StaticResource TextBlockCell}" FontSize="18.667" Width="232" Margin="5,0,0,0" Height="Auto"/>
                     </Border>
                     <Border Style="{StaticResource BorderCell}">
-                        <TextBlock Text="{Binding Angulo}" Style="{StaticResource TextBlockCell}" Width="108"/>
+                        <TextBlock Text="{Binding angulo}" Style="{StaticResource TextBlockCell}" FontSize="18.667" Width="108" Height="Auto"/>
                     </Border>
                     <Border Style="{StaticResource BorderCell}">
-                        <TextBlock Text="{Binding Repeticiones}" Style="{StaticResource TextBlockCell}" Width="125"/>
+                        <TextBlock Text="{Binding repeticiones}" Style="{StaticResource TextBlockCell}" FontSize="18.667" Width="125" Height="Auto"/>
                     </Border>
                     <Border Style="{StaticResource BorderCell}">
-                        <TextBlock Text="{Binding FechaRealizado}" Style="{StaticResource TextBlockCell}" Width="256"/>
+                        <TextBlock Text="{Binding fechaRealizado}" Style="{StaticResource TextBlockCell}" FontSize="18.667" Width="250" Height="Auto"/>
                     </Border>
                 </StackPanel>
             </Grid>
@@ -86,60 +86,57 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
         <!-- Back button and page title -->
-        <Grid Grid.Row="0" Margin="0,0,10,10">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="120"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
+        <Grid Grid.Row="0" Margin="0,0,10,10" Grid.ColumnSpan="2">
             <Button x:Name="backButton"
                           Command="{Binding GoBackCommand, ElementName=pageRoot}"
                           Style="{StaticResource BackButtonStyle}" />
-            <TextBlock x:Name="pageTitle" Text="{Binding Title}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
-                        IsHitTestVisible="false" TextWrapping="NoWrap" Margin="0,0,872,16" Height="72" VerticalAlignment="Bottom"/>
-            <TextBlock x:Name="nombrePaciente" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Paciente.Nombre}" VerticalAlignment="Center" Grid.Column="1" Margin="369,59,0,40" Height="41" Width="115" FontSize="26.667" TextAlignment="Justify" LineHeight="8" FontWeight="Bold"/>
+            <TextBlock x:Name="pageTitle" Text="{Binding Title}" Style="{StaticResource HeaderTextBlockStyle}" 
+                        IsHitTestVisible="false" TextWrapping="NoWrap" Margin="89,0,0,21" Height="72" VerticalAlignment="Bottom" Width="564" HorizontalAlignment="Left"/>
+            <TextBlock x:Name="nombrePaciente" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Paciente.Nombre}" VerticalAlignment="Center" Margin="1067,53,0,36" Height="41" Width="115" FontSize="26.667" TextAlignment="Justify" LineHeight="8" FontWeight="Bold"/>
         </Grid>
 
-        <Grid Margin="10,0,10,10" Grid.Row="1">
+        <Grid Margin="10" Grid.Row="1" Grid.ColumnSpan="2">
             <Grid.RowDefinitions>
-                <RowDefinition Height="22"/>
-                <RowDefinition Height="60"/>
+                <RowDefinition Height="82"/>
+                <RowDefinition Height="0"/>
             </Grid.RowDefinitions>
-            
-            <StackPanel Grid.Row="0" Grid.ColumnSpan="1" Orientation="Vertical" Margin="0,0,530,0">
-                <StackPanel x:Name="Cabeceras" Margin="0" Orientation="Horizontal" HorizontalAlignment="Left" Width="806">
+
+            <StackPanel Grid.Row="0" Orientation="Vertical" Margin="0,0,578,-516" Grid.RowSpan="2">
+                <StackPanel x:Name="Cabeceras" Margin="0" Orientation="Horizontal" HorizontalAlignment="Left" Width="768">
                     <Border Style="{StaticResource BorderHeader}">
-                        <TextBlock x:Name="pruebaTitle" HorizontalAlignment="Center" Style="{StaticResource TextBlockHeader}" TextWrapping="Wrap" Text="PRUEBA" FontSize="18.667" Width="340" TextAlignment="Center"/>
+                        <TextBlock x:Name="pruebaTitle" HorizontalAlignment="Center" Style="{StaticResource TextBlockHeader}" TextWrapping="Wrap" Text="PRUEBA" FontSize="18.667" Width="232" TextAlignment="Center"/>
                     </Border>
                     <Border Style="{StaticResource BorderHeader}">
-                        <TextBlock x:Name="angTitle" HorizontalAlignment="Center" Style="{StaticResource TextBlockHeader}" TextWrapping="Wrap" Text="ANGULO" VerticalAlignment="Top" FontSize="18.667" Width="108" Margin="0" TextAlignment="Center"/>
+                        <TextBlock x:Name="angTitle" HorizontalAlignment="Center" Style="{StaticResource TextBlockHeader}" TextWrapping="Wrap" Text="ANGULO" VerticalAlignment="Top" FontSize="18.667" Width="116" Margin="0" TextAlignment="Center"/>
                     </Border>
                     <Border Style="{StaticResource BorderHeader}">
-                        <TextBlock x:Name="reptTitle" HorizontalAlignment="Center" Style="{StaticResource TextBlockHeader}" TextWrapping="Wrap" Text="REPETICIONES" VerticalAlignment="Top" FontSize="18.667" Width="125" Margin="0" TextAlignment="Center"/>
+                        <TextBlock x:Name="reptTitle" HorizontalAlignment="Center" Style="{StaticResource TextBlockHeader}" TextWrapping="Wrap" Text="REPETICIONES" VerticalAlignment="Top" FontSize="18.667" Width="129" Margin="0" TextAlignment="Center"/>
                     </Border>
                     <Border Style="{StaticResource BorderHeader}">
-                        <TextBlock x:Name="repFecha" HorizontalAlignment="Center" Style="{StaticResource TextBlockHeader}" TextWrapping="Wrap" Text="FECHA REALIZADO" VerticalAlignment="Top" FontSize="18.667" Width="256" Margin="0" TextAlignment="Center"/>
+                        <TextBlock x:Name="repFecha" HorizontalAlignment="Center" Style="{StaticResource TextBlockHeader}" TextWrapping="Wrap" Text="FECHA REALIZADO" VerticalAlignment="Top" FontSize="18.667" Width="258" Margin="0" TextAlignment="Center"/>
                     </Border>
                 </StackPanel>
-                <ItemsControl Grid.Row="1"
+                <ItemsControl Grid.Row="1" 
                               ItemsSource="{Binding Ejercicios}"
-                              ItemTemplate="{StaticResource DefaultItemDetailTemplate}"/>
+                              ItemTemplate="{StaticResource DefaultItemDetailTemplate}" Margin="0"/>
             </StackPanel>
-        </Grid>
-        <Grid Grid.ColumnSpan="2" Grid.Row="1">
-            <charting:Chart 
-                x:Name="PieChart" 
-                Title="Pie Chart" 
-                Margin="70,0,352,0">
-                <charting:Chart.Series>
-                    <Series:ColumnSeries 
-                        Title="Population" 
-                        ItemsSource="{Binding Ejercicios}" 
-                        IndependentValueBinding="{Binding Tipo}" 
-                        DependentValueBinding="{Binding Angulo}" 
-                        IsSelectionEnabled="True" />
-                </charting:Chart.Series>
-            </charting:Chart>
+            <Series:Chart 
+            	x:Name="PieChart" 
+            	Title="Pie Chart" 
+            	Margin="773,0,15,-516" Grid.RowSpan="2">
+                <Series:ColumnSeries 
+            		Title="Population" 
+            		ItemsSource="{Binding Ejercicios}" 
+            		IndependentValueBinding="{Binding tipo}" 
+            		DependentValueBinding="{Binding angulo}" 
+            		IsSelectionEnabled="True" />
+            </Series:Chart>
         </Grid>
     </Grid>
 </controls:PageBase>

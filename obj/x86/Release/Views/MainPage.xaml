@@ -30,11 +30,11 @@
         <Grid x:Name="titleGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" >
             <TextBlock x:Name="rootTitle" Text="{Binding Title}" Style="{StaticResource HeaderTextBlockStyle}" 
                         IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Top" Margin="0,0,30,0" Height="60"/>
-            <Button Content="Datos" 
+            <Button Content="VER RESULTADOS" 
                     VerticalAlignment="Top" 
                     HorizontalAlignment="Right" 
                     Margin="0,0,0,0"
-                    Command="{Binding VerDatosCommand}"
+                    Command="{Binding VerDatosCommand}" Foreground="White"
                 />
         </Grid>
         <controls:MultipleSizedGridView x:Name="itemsGridView"
@@ -119,6 +119,12 @@
         <Grid x:Name="Datos" HorizontalAlignment="Left" Height="127" VerticalAlignment="Top" Width="1346" Margin="10,631,0,0">
             <TextBlock x:Name="Username" HorizontalAlignment="Left" Margin="0,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="26.667"
                        Text="{Binding Username}"/>
+            <Button Content="EDITAR PACIENTE" 
+            	VerticalAlignment="Top" 
+            	HorizontalAlignment="Right" 
+            	Margin="0,92,755,-3"
+            	Command="{Binding EditarCommand}" Foreground="White"
+                />
         </Grid>
     </Grid>
 </controls:PageBase>

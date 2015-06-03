@@ -7,7 +7,7 @@
 
     Para obtener más información acerca de los archivos de manifiesto del paquete, vea http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="10544GIRO.RehabControl" Publisher="CN=5B986934-607C-4FA7-B84B-B2A9CFF78B5B" Version="1.2.0.3" ProcessorArchitecture="x86" />
+  <Identity Name="10544GIRO.RehabControl" Publisher="CN=5B986934-607C-4FA7-B84B-B2A9CFF78B5B" Version="1.2.0.5" ProcessorArchitecture="x86" />
   <Properties>
     <DisplayName>PatientControl</DisplayName>
     <PublisherDisplayName>GIRO</PublisherDisplayName>
@@ -52,11 +52,11 @@
     <Extension Category="windows.activatableClass.inProcessServer">
       <InProcessServer>
         <Path>Microsoft.Kinect.Xaml.Controls.dll</Path>
-        <ActivatableClass ActivatableClassId="Microsoft.Kinect.Xaml.Controls.INTERNAL_Microsoft_Kinect_Xaml_Controls_8_1_XamlTypeInfo.XamlMetaDataProvider" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Microsoft.Kinect.Xaml.Controls.KinectUserViewer" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Microsoft.Kinect.Xaml.Controls.KinectRegion" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="Microsoft.Kinect.Xaml.Controls.SpriteSheet" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Kinect.Xaml.Controls.INTERNAL_Microsoft_Kinect_Xaml_Controls_8_1_XamlTypeInfo.XamlMetaDataProvider" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="Microsoft.Kinect.Xaml.Controls.KinectSoundDefinition" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Kinect.Xaml.Controls.KinectRegion" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Kinect.Xaml.Controls.KinectUserViewer" ThreadingModel="both" />
       </InProcessServer>
     </Extension>
   </Extensions>

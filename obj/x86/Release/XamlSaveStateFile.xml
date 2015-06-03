@@ -1,6 +1,6 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <LocalAssembly PathName="c:\users\giro\documents\visual studio 2013\projects\patientcontrol.app\patientcontrol\obj\x86\release\intermediatexaml\patientcontrol.exe" HashGuid="963eb2c3-ad56-66b2-7749-091b73b8acce" />
+    <LocalAssembly PathName="c:\users\giro\documents\visual studio 2013\projects\patientcontrol.app\patientcontrol\obj\x86\release\intermediatexaml\patientcontrol.exe" HashGuid="ed215b39-e097-f91f-f6d8-349c652f3f6a" />
     <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\microsoft.kinect.toolkit.input\2.0\references\commonconfiguration\neutral\microsoft.kinect.toolkit.input.winmd" HashGuid="e6525654-5632-5cf5-4387-7da4061d49ea" />
     <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\microsoft.kinect.xaml.controls\2.0\references\commonconfiguration\neutral\microsoft.kinect.xaml.controls.winmd" HashGuid="4a3c2739-33b3-a39a-6361-713b287a923a" />
     <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\behaviorsxamlsdkmanaged\12.0\references\commonconfiguration\neutral\microsoft.xaml.interactions.dll" HashGuid="95a94f94-3917-d473-4f7c-18c4bd437046" />
@@ -17,5 +17,8 @@
     <ReferenceAssembly PathName="c:\users\giro\documents\visual studio 2013\projects\patientcontrol.app\packages\commonservicelocator.1.2\lib\portable-windows8+net40+sl5+windowsphone8\microsoft.practices.servicelocation.dll" HashGuid="89de7f80-26d8-a17c-5ad9-b855f81ea5b2" />
     <ReferenceAssembly PathName="c:\users\giro\documents\visual studio 2013\projects\patientcontrol.app\packages\unity.3.5.1404.0\lib\win8\microsoft.practices.unity.dll" HashGuid="bfbab92e-125a-5b6e-9ddc-f777451b52b9" />
     <ReferenceAssembly PathName="c:\users\giro\documents\visual studio 2013\projects\patientcontrol.app\packages\unity.3.5.1404.0\lib\win8\microsoft.practices.unity.registrationbyconvention.dll" HashGuid="51d90060-4c44-273b-debb-8173fa2723a6" />
+    <ReferenceAssembly PathName="c:\users\giro\documents\visual studio 2013\projects\patientcontrol.app\packages\winrtxamltoolkit.controls.datavisualization.windows.1.8.1.0\lib\netcore451\winrtxamltoolkit.controls.datavisualization.dll" HashGuid="f8fd8bd3-9eeb-d528-57f8-6c7d71980f08" />
+    <ReferenceAssembly PathName="c:\users\giro\documents\visual studio 2013\projects\patientcontrol.app\packages\winrtxamltoolkit.debugging.windows.1.8.1.0\lib\netcore451\winrtxamltoolkit.debugging.dll" HashGuid="de98b597-f9cc-ebb1-b2f7-e67f8263482f" />
+    <ReferenceAssembly PathName="c:\users\giro\documents\visual studio 2013\projects\patientcontrol.app\packages\winrtxamltoolkit.windows.1.8.1.0\lib\netcore451\winrtxamltoolkit.dll" HashGuid="252c629a-ba8b-17d0-82a6-1ab8df5964bb" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

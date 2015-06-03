@@ -2,7 +2,7 @@
 <PriInfo>
 	<ResourceMap name="10544GIRO.RehabControl" version="1.0" primary="true">
 		<Qualifiers>
-			<Language>EN, EN-US, ES-ES</Language>
+			<Language>EN, ES-ES, EN-US</Language>
 			<Scale>100</Scale>
 		</Qualifiers>
 		<ResourceMapSubtree name="Files">
@@ -100,6 +100,11 @@
 						<Value>Views\MainPage.xbf</Value>
 					</Candidate>
 				</NamedResource>
+				<NamedResource name="MedicalInfo.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/Views/MedicalInfo.xbf">
+					<Candidate type="Path">
+						<Value>Views\MedicalInfo.xbf</Value>
+					</Candidate>
+				</NamedResource>
 				<NamedResource name="RegistroPage.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/Views/RegistroPage.xbf">
 					<Candidate type="Path">
 						<Value>Views\RegistroPage.xbf</Value>
@@ -110,11 +115,482 @@
 						<Value>Views\RegistroUserControl.xbf</Value>
 					</Candidate>
 				</NamedResource>
-				<NamedResource name="RegPage.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/Views/RegPage.xbf">
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="WinRTXamlToolkit">
+				<NamedResource name="WinRTXamlToolkit.xr.xml" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/WinRTXamlToolkit.xr.xml">
 					<Candidate type="Path">
-						<Value>Views\RegPage.xbf</Value>
+						<Value>WinRTXamlToolkit\WinRTXamlToolkit.xr.xml</Value>
 					</Candidate>
 				</NamedResource>
+				<ResourceMapSubtree name="Controls">
+					<ResourceMapSubtree name="AlternativeFrame">
+						<NamedResource name="AlternativeFrame.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/AlternativeFrame/AlternativeFrame.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\AlternativeFrame\AlternativeFrame.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="AnimatingContainer">
+						<NamedResource name="AnimatingContainer.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/AnimatingContainer/AnimatingContainer.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\AnimatingContainer\AnimatingContainer.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="AutoCompleteTextBox">
+						<NamedResource name="AutoCompleteTextBox.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/AutoCompleteTextBox/AutoCompleteTextBox.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\AutoCompleteTextBox\AutoCompleteTextBox.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="CameraCaptureControl">
+						<NamedResource name="CameraCaptureControl.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/CameraCaptureControl/CameraCaptureControl.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\CameraCaptureControl\CameraCaptureControl.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="CascadingImageControl">
+						<NamedResource name="CascadingImageControl.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/CascadingImageControl/CascadingImageControl.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\CascadingImageControl\CascadingImageControl.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="CascadingTextBlock">
+						<NamedResource name="CascadingTextBlock.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/CascadingTextBlock/CascadingTextBlock.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\CascadingTextBlock\CascadingTextBlock.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="ColorPicker">
+						<NamedResource name="ColorPicker.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/ColorPicker/ColorPicker.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\ColorPicker\ColorPicker.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="CountdownControl">
+						<NamedResource name="CountdownControl.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/CountdownControl/CountdownControl.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\CountdownControl\CountdownControl.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="CustomAppBar">
+						<NamedResource name="CustomAppBar.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/CustomAppBar/CustomAppBar.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\CustomAppBar\CustomAppBar.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="CustomGridSplitter">
+						<NamedResource name="CustomGridSplitter.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/CustomGridSplitter/CustomGridSplitter.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\CustomGridSplitter\CustomGridSplitter.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="DelayedLoadControl">
+						<NamedResource name="DelayedLoadControl.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/DelayedLoadControl/DelayedLoadControl.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\DelayedLoadControl\DelayedLoadControl.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="FocusVisualizer">
+						<NamedResource name="FocusVisualizer.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/FocusVisualizer/FocusVisualizer.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\FocusVisualizer\FocusVisualizer.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="FxContentControl">
+						<NamedResource name="FxContentControl.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/FxContentControl/FxContentControl.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\FxContentControl\FxContentControl.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="ImageButton">
+						<NamedResource name="ImageButton.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/ImageButton/ImageButton.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\ImageButton\ImageButton.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="ImageToggleButton">
+						<NamedResource name="ImageToggleButton.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/ImageToggleButton/ImageToggleButton.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\ImageToggleButton\ImageToggleButton.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="InputDialog">
+						<NamedResource name="InputDialog.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/InputDialog/InputDialog.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\InputDialog\InputDialog.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="ListItemButton">
+						<NamedResource name="ListItemButton.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/ListItemButton/ListItemButton.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\ListItemButton\ListItemButton.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="NumericUpDown">
+						<NamedResource name="NumericUpDown.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/NumericUpDown/NumericUpDown.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\NumericUpDown\NumericUpDown.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="ToolStrip">
+						<NamedResource name="ToolStrip.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/ToolStrip/ToolStrip.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\ToolStrip\ToolStrip.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="ToolWindow">
+						<NamedResource name="ToolWindow.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/ToolWindow/ToolWindow.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\ToolWindow\ToolWindow.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="TreeView">
+						<NamedResource name="TreeView.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/TreeView/TreeView.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\TreeView\TreeView.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="TreeViewItem.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/TreeView/TreeViewItem.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\TreeView\TreeViewItem.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="TreeViewMouse.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/TreeView/TreeViewMouse.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\TreeView\TreeViewMouse.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="TreeViewTouch.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/TreeView/TreeViewTouch.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\TreeView\TreeViewTouch.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="WatermarkPasswordBox">
+						<NamedResource name="WatermarkPasswordBox.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/WatermarkPasswordBox/WatermarkPasswordBox.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\WatermarkPasswordBox\WatermarkPasswordBox.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="WatermarkTextBox">
+						<NamedResource name="WatermarkTextBox.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/WatermarkTextBox/WatermarkTextBox.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\WatermarkTextBox\WatermarkTextBox.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="WebBrowser">
+						<NamedResource name="WebBrowser.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/WebBrowser/WebBrowser.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\WebBrowser\WebBrowser.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="Generic.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Themes/Generic.xbf">
+						<Candidate type="Path">
+							<Value>WinRTXamlToolkit\Themes\Generic.xbf</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="WinRTXamlToolkit.Controls.DataVisualization">
+				<NamedResource name="WinRTXamlToolkit.Controls.DataVisualization.xr.xml" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/WinRTXamlToolkit.Controls.DataVisualization.xr.xml">
+					<Candidate type="Path">
+						<Value>WinRTXamlToolkit.Controls.DataVisualization\WinRTXamlToolkit.Controls.DataVisualization.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Charting">
+					<ResourceMapSubtree name="Axis">
+						<NamedResource name="AxisLabel.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Charting/Axis/AxisLabel.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Controls.DataVisualization\Charting\Axis\AxisLabel.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="DateTimeAxisLabel.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Charting/Axis/DateTimeAxisLabel.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Controls.DataVisualization\Charting\Axis\DateTimeAxisLabel.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="DisplayAxis.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Charting/Axis/DisplayAxis.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Controls.DataVisualization\Charting\Axis\DisplayAxis.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="NumericAxisLabel.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Charting/Axis/NumericAxisLabel.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Controls.DataVisualization\Charting\Axis\NumericAxisLabel.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="RangeAxis.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Charting/Axis/RangeAxis.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Controls.DataVisualization\Charting\Axis\RangeAxis.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="Chart">
+						<NamedResource name="Chart.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Charting/Chart/Chart.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Controls.DataVisualization\Charting\Chart\Chart.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="DataPoint">
+						<NamedResource name="AreaDataPoint.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Charting/DataPoint/AreaDataPoint.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Controls.DataVisualization\Charting\DataPoint\AreaDataPoint.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="BarDataPoint.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Charting/DataPoint/BarDataPoint.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Controls.DataVisualization\Charting\DataPoint\BarDataPoint.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="BubbleDataPoint.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Charting/DataPoint/BubbleDataPoint.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Controls.DataVisualization\Charting\DataPoint\BubbleDataPoint.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="ColumnDataPoint.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Charting/DataPoint/ColumnDataPoint.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Controls.DataVisualization\Charting\DataPoint\ColumnDataPoint.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="LineDataPoint.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Charting/DataPoint/LineDataPoint.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Controls.DataVisualization\Charting\DataPoint\LineDataPoint.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="PieDataPoint.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Charting/DataPoint/PieDataPoint.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Controls.DataVisualization\Charting\DataPoint\PieDataPoint.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="ScatterDataPoint.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Charting/DataPoint/ScatterDataPoint.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Controls.DataVisualization\Charting\DataPoint\ScatterDataPoint.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="Primitives">
+						<NamedResource name="DelegatingListBox.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Charting/Primitives/DelegatingListBox.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Controls.DataVisualization\Charting\Primitives\DelegatingListBox.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="Series">
+						<NamedResource name="AreaSeries.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Charting/Series/AreaSeries.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Controls.DataVisualization\Charting\Series\AreaSeries.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="DataPointSeries.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Charting/Series/DataPointSeries.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Controls.DataVisualization\Charting\Series\DataPointSeries.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="DefinitionSeries.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Charting/Series/DefinitionSeries.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Controls.DataVisualization\Charting\Series\DefinitionSeries.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="LegendItem.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Charting/Series/LegendItem.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Controls.DataVisualization\Charting\Series\LegendItem.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="LineSeries.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Charting/Series/LineSeries.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Controls.DataVisualization\Charting\Series\LineSeries.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="PieSeries.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Charting/Series/PieSeries.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Controls.DataVisualization\Charting\Series\PieSeries.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Legend">
+					<NamedResource name="Legend.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Legend/Legend.xbf">
+						<Candidate type="Path">
+							<Value>WinRTXamlToolkit.Controls.DataVisualization\Legend\Legend.xbf</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="Generic.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Themes/Generic.xbf">
+						<Candidate type="Path">
+							<Value>WinRTXamlToolkit.Controls.DataVisualization\Themes\Generic.xbf</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Title">
+					<NamedResource name="Title.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Title/Title.xbf">
+						<Candidate type="Path">
+							<Value>WinRTXamlToolkit.Controls.DataVisualization\Title\Title.xbf</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="WinRTXamlToolkit.Debugging">
+				<NamedResource name="WinRTXamlToolkit.Debugging.xr.xml" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/WinRTXamlToolkit.Debugging.xr.xml">
+					<Candidate type="Path">
+						<Value>WinRTXamlToolkit.Debugging\WinRTXamlToolkit.Debugging.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Controls">
+					<ResourceMapSubtree name="EditableListBox">
+						<NamedResource name="EditableListBox.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Controls/EditableListBox/EditableListBox.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Debugging\Controls\EditableListBox\EditableListBox.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="EditableListBoxItem.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Controls/EditableListBox/EditableListBoxItem.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Debugging\Controls\EditableListBox\EditableListBoxItem.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="Generic.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Themes/Generic.xbf">
+						<Candidate type="Path">
+							<Value>WinRTXamlToolkit.Debugging\Themes\Generic.xbf</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="SharedResources.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Themes/SharedResources.xbf">
+						<Candidate type="Path">
+							<Value>WinRTXamlToolkit.Debugging\Themes\SharedResources.xbf</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Views">
+					<NamedResource name="DebugConsoleView.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Views/DebugConsoleView.xbf">
+						<Candidate type="Path">
+							<Value>WinRTXamlToolkit.Debugging\Views\DebugConsoleView.xbf</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="DependencyObjectDetailsView.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Views/DependencyObjectDetailsView.xbf">
+						<Candidate type="Path">
+							<Value>WinRTXamlToolkit.Debugging\Views\DependencyObjectDetailsView.xbf</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="ElementListWindow.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Views/ElementListWindow.xbf">
+						<Candidate type="Path">
+							<Value>WinRTXamlToolkit.Debugging\Views\ElementListWindow.xbf</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="FocusTrackerWindow.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Views/FocusTrackerWindow.xbf">
+						<Candidate type="Path">
+							<Value>WinRTXamlToolkit.Debugging\Views\FocusTrackerWindow.xbf</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="HighlightOverlay.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Views/HighlightOverlay.xbf">
+						<Candidate type="Path">
+							<Value>WinRTXamlToolkit.Debugging\Views\HighlightOverlay.xbf</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="PropertiesView.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Views/PropertiesView.xbf">
+						<Candidate type="Path">
+							<Value>WinRTXamlToolkit.Debugging\Views\PropertiesView.xbf</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="VisualTreeView.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Views/VisualTreeView.xbf">
+						<Candidate type="Path">
+							<Value>WinRTXamlToolkit.Debugging\Views\VisualTreeView.xbf</Value>
+						</Candidate>
+					</NamedResource>
+					<ResourceMapSubtree name="PropertyEditors">
+						<NamedResource name="BooleanPropertyEditor.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Views/PropertyEditors/BooleanPropertyEditor.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Debugging\Views\PropertyEditors\BooleanPropertyEditor.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="BrushPropertyEditor.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Views/PropertyEditors/BrushPropertyEditor.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Debugging\Views\PropertyEditors\BrushPropertyEditor.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="CacheModePropertyEditor.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Views/PropertyEditors/CacheModePropertyEditor.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Debugging\Views\PropertyEditors\CacheModePropertyEditor.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="CornerRadiusPropertyEditor.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Views/PropertyEditors/CornerRadiusPropertyEditor.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Debugging\Views\PropertyEditors\CornerRadiusPropertyEditor.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="DefaultPropertyEditor.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Views/PropertyEditors/DefaultPropertyEditor.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Debugging\Views\PropertyEditors\DefaultPropertyEditor.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="DependencyObjectPropertyEditor.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Views/PropertyEditors/DependencyObjectPropertyEditor.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Debugging\Views\PropertyEditors\DependencyObjectPropertyEditor.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="EnumPropertyEditor.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Views/PropertyEditors/EnumPropertyEditor.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Debugging\Views\PropertyEditors\EnumPropertyEditor.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="FontWeightPropertyEditor.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Views/PropertyEditors/FontWeightPropertyEditor.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Debugging\Views\PropertyEditors\FontWeightPropertyEditor.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="ImageSourcePropertyEditor.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Views/PropertyEditors/ImageSourcePropertyEditor.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Debugging\Views\PropertyEditors\ImageSourcePropertyEditor.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="NumericPropertyEditor.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Views/PropertyEditors/NumericPropertyEditor.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Debugging\Views\PropertyEditors\NumericPropertyEditor.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="PropertyEditorFooter.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Views/PropertyEditors/PropertyEditorFooter.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Debugging\Views\PropertyEditors\PropertyEditorFooter.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="StringPropertyEditor.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Views/PropertyEditors/StringPropertyEditor.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Debugging\Views\PropertyEditors\StringPropertyEditor.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="ThicknessPropertyEditor.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Views/PropertyEditors/ThicknessPropertyEditor.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Debugging\Views\PropertyEditors\ThicknessPropertyEditor.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
 			</ResourceMapSubtree>
 		</ResourceMapSubtree>
 		<ResourceMapSubtree name="Microsoft.Practices.Prism.Mvvm.Properties.Resources">
@@ -1292,6 +1768,168 @@ At the time of the exception, the container was:
 					</Candidate>
 				</NamedResource>
 			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources">
+			<NamedResource name="Chart_Axes_SetterNotSupported" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/Chart_Axes_SetterNotSupported">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Changing the Chart's Axes property is not supported; changes to the collection should be made with its .Add/.Remove methods instead.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Chart_AxisLocationChanged_CantBeChangedToAutoWhenHostedInsideOfASeriesHost" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/Chart_AxisLocationChanged_CantBeChangedToAutoWhenHostedInsideOfASeriesHost">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Axis location cannot be changed to auto when hosted inside of a series host.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Chart_Series_SetterNotSupported" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/Chart_Series_SetterNotSupported">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Changing the Chart's Series property is not supported; changes to the collection should be made with its .Add/.Remove methods instead.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DataPointSeriesDropTarget_set_Content_ContentMustBeAChart" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/DataPointSeriesDropTarget_set_Content_ContentMustBeAChart">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The content property must be set to a Chart object.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DataPointSeriesWithAxes_GetAxes_AssignedDependentAxisCannotBeUsed" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/DataPointSeriesWithAxes_GetAxes_AssignedDependentAxisCannotBeUsed">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Assigned dependent axis cannot be used. This may be due to an unset Orientation property for the axis or a type mismatch between the values being plotted and those supported by the axis.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DataPointSeriesWithAxes_GetAxes_AssignedIndependentAxisCannotBeUsed" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/DataPointSeriesWithAxes_GetAxes_AssignedIndependentAxisCannotBeUsed">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Assigned independent axis cannot be used. This may be due to an unset Orientation property for the axis.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DataPointSeriesWithAxes_NoSuitableAxisAvailableForPlottingDependentValue" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/DataPointSeriesWithAxes_NoSuitableAxisAvailableForPlottingDependentValue">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>No suitable axis is available for plotting the dependent value.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DataPointSeriesWithAxes_ThisSeriesDoesNotSupportRadialAxes" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/DataPointSeriesWithAxes_ThisSeriesDoesNotSupportRadialAxes">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>This series does not support radial axes.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DefinitionSeries_EnsureAxes_MissingDependentValueBinding" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/DefinitionSeries_EnsureAxes_MissingDependentValueBinding">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>A SeriesDefinition does not have its DependentValueBinding or DependentValuePath properties set; unable to determine the source for dependent values. Please use either of these properties to identify the data model property corresponding to the dependent values.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DefinitionSeries_EnsureAxes_MissingIndependentValueBinding" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/DefinitionSeries_EnsureAxes_MissingIndependentValueBinding">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>A SeriesDefinition does not have its IndependentValueBinding or IndependentValuePath properties set; unable to determine the source for independent values. Please use either of these properties to identify the data model property corresponding to the independent values.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DefinitionSeries_SeriesDefinitions_SetterNotSupported" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/DefinitionSeries_SeriesDefinitions_SetterNotSupported">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Changing the SeriesDefinitions property of a DefinitionSeries is not supported; changes to the collection should be made with its .Add/.Remove methods instead.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DisplayAxis_GetLength_CannotDetermineTheLengthOfAnAxisWithAnOrientationOfNone" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/DisplayAxis_GetLength_CannotDetermineTheLengthOfAnAxisWithAnOrientationOfNone">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Cannot determine the size of an axis without an orientation.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="EdgePanel_OnEdgePropertyChanged" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/EdgePanel_OnEdgePropertyChanged">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Attempt to set Edge property to an invalid value.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Interpolator_IncludeInRange_DataRangeBindingNotIConvertible" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/Interpolator_IncludeInRange_DataRangeBindingNotIConvertible">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The DataRangeBinding property of the Interpolator must be bound to an IConvertible object.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="RangeAxis_MaximumValueMustBeLargerThanOrEqualToMinimumValue" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/RangeAxis_MaximumValueMustBeLargerThanOrEqualToMinimumValue">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The maximum value must be larger than or equal to the minimum value.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="RangeAxis_MinimumValueMustBeLargerThanOrEqualToMaximumValue" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/RangeAxis_MinimumValueMustBeLargerThanOrEqualToMaximumValue">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The minimum value must be smaller than or equal to the maximum value.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Range_ctor_MaximumValueMustBeLargerThanOrEqualToMinimumValue" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/Range_ctor_MaximumValueMustBeLargerThanOrEqualToMinimumValue">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The maximum value must be larger than or equal to the minimum value.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Range_get_Maximum_CannotReadTheMaximumOfAnEmptyRange" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/Range_get_Maximum_CannotReadTheMaximumOfAnEmptyRange">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>"Cannot read the Maximum of an empty range."</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Range_get_Minimum_CannotReadTheMinimumOfAnEmptyRange" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/Range_get_Minimum_CannotReadTheMinimumOfAnEmptyRange">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>"Cannot read the Minimum of an empty range."</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Range_ToString_Data" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/Range_ToString_Data">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>[{0},{1}]</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Range_ToString_NoData" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/Range_ToString_NoData">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>No Data.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ReadOnlyObservableCollection_CollectionIsReadOnly" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/ReadOnlyObservableCollection_CollectionIsReadOnly">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Collection is read-only.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ResourceDictionaryEnumerator_CantResetEnumeratorResetDispenserInstead" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/ResourceDictionaryEnumerator_CantResetEnumeratorResetDispenserInstead">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Cannot reset a ResourceDictionaryEnumerator; reset the ResourceDictionaryDispenser instead.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SeriesDefinition_SeriesHost_InvalidParent" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/SeriesDefinition_SeriesHost_InvalidParent">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>A SeriesDefinition instance's SeriesHost property may only be set to an instance of the DefinitionSeries class; other SeriesHost types are not supported.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SeriesHostAxesCollection_InvalidAttemptToRemovePermanentAxisFromSeriesHost" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/SeriesHostAxesCollection_InvalidAttemptToRemovePermanentAxisFromSeriesHost">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Invalid attempt to remove permanent axis from axis collection.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SeriesHostAxesCollection_RemoveItem_AxisCannotBeRemovedFromASeriesHostWhenOneOrMoreSeriesAreListeningToIt" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/SeriesHostAxesCollection_RemoveItem_AxisCannotBeRemovedFromASeriesHostWhenOneOrMoreSeriesAreListeningToIt">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>An axis cannot be removed from a series host when one or more hosted series is listening to it.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Series_OnGlobalSeriesIndexPropertyChanged_UntitledSeriesFormatString" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/Series_OnGlobalSeriesIndexPropertyChanged_UntitledSeriesFormatString">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Series {0}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Series_SeriesHost_SeriesHostPropertyNotNull" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/Series_SeriesHost_SeriesHostPropertyNotNull">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>A series cannot be added to more than one series host.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TreeMap_BuildTreeMapTree_TemplateNotSet" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/TreeMap_BuildTreeMapTree_TemplateNotSet">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Either ItemTemplate must be set or TreeMapItemDefinitionSelector must return a non-null template.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TreeMap_CreateChildren_InterpolatorBindingNotSet" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/TreeMap_CreateChildren_InterpolatorBindingNotSet">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The value of PropertyBinding property of an interpolator cannot be null.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TreeMap_Interpolators_SetterNotSupported" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/TreeMap_Interpolators_SetterNotSupported">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Changing the TreeMap's Interpolators Property is not supported; changes to the collection should be made with its .Add/.Remove methods instead.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="UniqueObservableCollection_InvalidAttemptToInsertADuplicateItem" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/UniqueObservableCollection_InvalidAttemptToInsertADuplicateItem">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Invalid attempt to insert a duplicate item.</Value>
+				</Candidate>
+			</NamedResource>
 		</ResourceMapSubtree>
 	</ResourceMap>
 </PriInfo>

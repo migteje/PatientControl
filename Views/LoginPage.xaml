@@ -24,10 +24,10 @@
                     VerticalAlignment="Center" 
                     HorizontalAlignment="Left" 
                     Margin="0,20,0,0"
-                    Command="{Binding LogInCommand}"/>
+                    Command="{Binding LogInCommand}" Foreground="White" BorderBrush="White"/>
 <Button Content="Registrar nuevo paciente" HorizontalAlignment="right" Width="199" 
         VerticalAlignment="Center" Margin="0"
-        Command="{Binding RegistrarCommand}"/>
+        Command="{Binding RegistrarCommand}" BorderBrush="White" Foreground="White"/>
         </StackPanel>
     </Grid>
 </controls:PageBase>
