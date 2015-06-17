@@ -1,0 +1,6 @@
+﻿[ResourceMetadata]
+"ResourceId"			"split.language-ru"
+"ResourceDimensions"		"language-ru"
+
+[Files]
+"C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\obj\x64\Release\split.language-ru.pri"			"resources.pri"

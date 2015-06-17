@@ -18,32 +18,55 @@
     <RootPropertyPathName Name="DiscountedPrice" />
     <RootPropertyPathName Name="Group" />
     <RootPropertyPathName Name="TotalNumberOfItems" />
-    <RootPropertyPathName Name="ValorCex" />
-    <RootPropertyPathName Name="ValorCfl" />
-    <RootPropertyPathName Name="ValorExh" />
-    <RootPropertyPathName Name="ValorFlh" />
-    <RootPropertyPathName Name="ValorEx" />
-    <RootPropertyPathName Name="ValorFl" />
-    <RootPropertyPathName Name="ValorAd" />
-    <RootPropertyPathName Name="ValorAb" />
+    <RootPropertyPathName Name="fechaRealizado" />
+    <RootPropertyPathName Name="repeticiones" />
+    <RootPropertyPathName Name="angulo" />
+    <RootPropertyPathName Name="articulacion" />
+    <RootPropertyPathName Name="Ejercicios" />
+    <RootPropertyPathName Name="tipo" />
+    <RootPropertyPathName Name="Paciente" />
+    <RootPropertyPathName Name="Nombre" />
     <RootPropertyPathName Name="GoBackCommand" />
     <RootPropertyPathName Name="KinectCanvas" />
     <RootPropertyPathName Name="Bitmap" />
+    <RootPropertyPathName Name="LadoCommand" />
     <RootPropertyPathName Name="GrabarCommand" />
+    <RootPropertyPathName Name="Desactivado" />
     <RootPropertyPathName Name="CheckedCommand" />
+    <RootPropertyPathName Name="Activado" />
     <RootPropertyPathName Name="IsSelected" />
     <RootPropertyPathName Name="Angulo" />
-    <RootPropertyPathName Name="Desactivado" />
-    <RootPropertyPathName Name="Activado" />
-    <RootPropertyPathName Name="On" />
+    <RootPropertyPathName Name="Colores" />
+    <RootPropertyPathName Name="MasCommand" />
+    <RootPropertyPathName Name="MenosCommand" />
+    <RootPropertyPathName Name="Repeticion" />
     <RootPropertyPathName Name="PararCommand" />
-    <RootPropertyPathName Name="PausarCommand" />
     <RootPropertyPathName Name="IniciarCommand" />
-    <RootPropertyPathName Name="Ejercicios" />
+    <RootPropertyPathName Name="NombrePaciente" />
     <RootPropertyPathName Name="RootCategories" />
-    <RootPropertyPathName Name="VerDatosCommand" />
-    <RootPropertyPathName Name="LogInCommand" />
+    <RootPropertyPathName Name="EditarCommand" />
     <RootPropertyPathName Name="Username" />
+    <RootPropertyPathName Name="VerDatosCommand" />
+    <RootPropertyPathName Name="RegistrarCommand" />
+    <RootPropertyPathName Name="LogInCommand" />
+    <RootPropertyPathName Name="SaveCommand" />
+    <RootPropertyPathName Name="MedicalViewModel" />
+    <RootPropertyPathName Name="RegistroViewModel" />
+    <RootPropertyPathName Name="FechaLesion" />
+    <RootPropertyPathName Name="Articulaciones" />
+    <RootPropertyPathName Name="ArticValorar" />
+    <RootPropertyPathName Name="BindableValidator" />
+    <RootPropertyPathName Name="IsValidationEnabled" />
+    <RootPropertyPathName Name="Diagnostico" />
+    <RootPropertyPathName Name="Errors" />
+    <RootPropertyPathName Name="Telefono" />
+    <RootPropertyPathName Name="CodPostal" />
+    <RootPropertyPathName Name="Provincias" />
+    <RootPropertyPathName Name="Provincia" />
+    <RootPropertyPathName Name="Localidad" />
+    <RootPropertyPathName Name="DireccionOpcional" />
+    <RootPropertyPathName Name="Direccion" />
+    <RootPropertyPathName Name="Apellidos" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Microsoft.Practices.Prism.Mvvm.MvvmAppBase">
@@ -54,13 +77,8 @@
       <RootProperty Name="Source" />
       <RootProperty Name="ThemeDictionaries" />
     </RootType>
-    <RootType FullName="PatientControl.Converters.BooleanToVisibilityConverter" />
-    <RootType FullName="PatientControl.Converters.BooleanNegationToVisibilityConverter" />
     <RootType FullName="PatientControl.Converters.NullToVisibleConverter" />
     <RootType FullName="PatientControl.Converters.NotNullToVisibleConverter" />
-    <RootType FullName="PatientControl.Converters.IsSignInInvalidConverter" />
-    <RootType FullName="PatientControl.Converters.FormStatusToVisibilityConverter" />
-    <RootType FullName="PatientControl.Converters.FormStatusToStyleConverter" />
     <RootType FullName="PatientControl.Converters.FirstErrorConverter" />
     <RootType FullName="PatientControl.Converters.TextToHeaderVisibilityConverter" />
     <RootType FullName="Windows.UI.Xaml.Controls.ItemsPanelTemplate">
@@ -103,6 +121,7 @@
       <RootProperty Name="Child" />
       <RootProperty Name="MinWidth" />
       <RootProperty Name="CornerRadius" />
+      <RootProperty Name="Style" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Margin" />
@@ -137,7 +156,6 @@
       <RootProperty Name="Visibility" />
       <RootProperty Name="Opacity" />
       <RootProperty Name="IsHitTestVisible" />
-      <RootProperty Name="Inlines" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.Interactivity.Interaction">
       <RootMethod Name="GetBehaviors" />
@@ -174,6 +192,10 @@
       <RootMethod Name="SetAutomationId" />
       <RootMethod Name="GetItemType" />
       <RootMethod Name="SetItemType" />
+      <RootMethod Name="GetIsRequiredForForm" />
+      <RootMethod Name="SetIsRequiredForForm" />
+      <RootMethod Name="GetLabeledBy" />
+      <RootMethod Name="SetLabeledBy" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Shapes.Line">
       <RootProperty Name="Stretch" />
@@ -192,6 +214,10 @@
       <RootProperty Name="HeaderTemplate" />
       <RootProperty Name="Header" />
       <RootProperty Name="Text" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="IsEnabled" />
+      <RootProperty Name="InputScope" />
+      <RootProperty Name="PlaceholderText" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.FrameworkElement">
       <RootProperty Name="VerticalAlignment" />
@@ -207,6 +233,14 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
       <RootProperty Name="HeaderTemplate" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="DisplayMemberPath" />
+      <RootProperty Name="SelectedValuePath" />
+      <RootProperty Name="SelectedValue" />
+      <RootProperty Name="IsEnabled" />
+      <RootProperty Name="Header" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Documents.Typography">
       <RootMethod Name="GetStylisticSet20" />
@@ -244,6 +278,10 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="MinWidth" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
       <RootProperty Name="HorizontalScrollBarVisibility" />
@@ -251,6 +289,7 @@
       <RootProperty Name="HorizontalScrollMode" />
       <RootProperty Name="VerticalScrollMode" />
       <RootProperty Name="ZoomMode" />
+      <RootProperty Name="Content" />
       <RootMethod Name="GetIsHorizontalScrollChainingEnabled" />
       <RootMethod Name="SetIsHorizontalScrollChainingEnabled" />
     </RootType>
@@ -348,24 +387,32 @@
       <RootProperty Name="Orientation" />
     </RootType>
     <RootType FullName="PatientControl.Controls.PageBase">
-      <RootProperty Name="Content" />
       <RootProperty Name="Resources" />
+      <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Microsoft.Practices.Prism.Mvvm.ViewModelLocator">
       <RootMethod Name="GetAutoWireViewModel" />
       <RootMethod Name="SetAutoWireViewModel" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.ThemeResourceExtension" />
-    <RootType FullName="PatientControl.Views.DatosPage" />
-    <RootType FullName="Windows.UI.Xaml.Controls.ToggleSwitch">
-      <RootProperty Name="Header" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="FontSize" />
-      <RootProperty Name="OffContent" />
-      <RootProperty Name="OnContent" />
-      <RootProperty Name="IsOn" />
+    <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart">
+      <RootProperty Name="Title" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Series" />
     </RootType>
+    <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries">
+      <RootProperty Name="Title" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="IndependentValueBinding" />
+      <RootProperty Name="DependentValueBinding" />
+      <RootProperty Name="IsSelectionEnabled" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsControl">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="PatientControl.Views.DatosPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.CheckBox">
       <RootProperty Name="Content" />
       <RootProperty Name="HorizontalAlignment" />
@@ -375,16 +422,13 @@
       <RootProperty Name="IsChecked" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.RadioButton">
+      <RootProperty Name="Content" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Margin" />
-      <RootProperty Name="Content" />
       <RootProperty Name="Command" />
       <RootProperty Name="CommandParameter" />
+      <RootProperty Name="FontSize" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Documents.Run">
-      <RootProperty Name="Text" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Documents.LineBreak" />
     <RootType FullName="PatientControl.Views.EjercicioPage" />
     <RootType FullName="Windows.UI.Xaml.Data.CollectionViewSource">
       <RootProperty Name="Source" />
@@ -424,5 +468,34 @@
     </RootType>
     <RootType FullName="PatientControl.Views.MainPage" />
     <RootType FullName="PatientControl.Views.LoginPage" />
+    <RootType FullName="PatientControl.Views.RegistroUserControl">
+      <RootProperty Name="MaxWidth" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="DataContext" />
+      <RootEvent Name="Loaded" />
+      <RootEvent Name="Unloaded" />
+    </RootType>
+    <RootType FullName="PatientControl.Views.MedicalInfo">
+      <RootProperty Name="MaxWidth" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="DataContext" />
+      <RootEvent Name="Loaded" />
+      <RootEvent Name="Unloaded" />
+    </RootType>
+    <RootType FullName="PatientControl.Views.RegistroPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.DatePicker">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Date" />
+      <RootProperty Name="Header" />
+    </RootType>
+    <RootType FullName="PatientControl.Behaviors.HighlightFormFieldOnErrors">
+      <RootProperty Name="PropertyErrors" />
+      <RootProperty Name="HighlightStyleName" />
+      <RootProperty Name="OriginalStyleName" />
+    </RootType>
   </Roots.RootTypes>
 </Roots>

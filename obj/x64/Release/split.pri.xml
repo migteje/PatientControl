@@ -1,0 +1,1935 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="10544GIRO.RehabControl" version="1.0" primary="true">
+		<Qualifiers>
+			<Language>EN, ES-ES, EN-US</Language>
+			<Scale>100</Scale>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="App.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/App.xbf">
+				<Candidate type="Path">
+					<Value>App.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="PatientControl.xr.xml" uri="ms-resource://10544GIRO.RehabControl/Files/PatientControl.xr.xml">
+				<Candidate type="Path">
+					<Value>PatientControl.xr.xml</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="Assets">
+				<NamedResource name="Logo.png" uri="ms-resource://10544GIRO.RehabControl/Files/Assets/Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>Assets\Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SmallLogo.png" uri="ms-resource://10544GIRO.RehabControl/Files/Assets/SmallLogo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>Assets\SmallLogo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SplashScreen.png" uri="ms-resource://10544GIRO.RehabControl/Files/Assets/SplashScreen.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>Assets\SplashScreen.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="StoreLogo.png" uri="ms-resource://10544GIRO.RehabControl/Files/Assets/StoreLogo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>Assets\StoreLogo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Microsoft.Kinect.Xaml.Controls">
+				<NamedResource name="CursorSpriteSheet.png" uri="ms-resource://10544GIRO.RehabControl/Files/Microsoft.Kinect.Xaml.Controls/CursorSpriteSheet.png">
+					<Candidate type="Path">
+						<Value>Microsoft.Kinect.Xaml.Controls\CursorSpriteSheet.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="KinectUserViewerPixelShader.cso" uri="ms-resource://10544GIRO.RehabControl/Files/Microsoft.Kinect.Xaml.Controls/KinectUserViewerPixelShader.cso">
+					<Candidate type="Path">
+						<Value>Microsoft.Kinect.Xaml.Controls\KinectUserViewerPixelShader.cso</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="KinectUserViewerVertexShader.cso" uri="ms-resource://10544GIRO.RehabControl/Files/Microsoft.Kinect.Xaml.Controls/KinectUserViewerVertexShader.cso">
+					<Candidate type="Path">
+						<Value>Microsoft.Kinect.Xaml.Controls\KinectUserViewerVertexShader.cso</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SpriteSheet.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/Microsoft.Kinect.Xaml.Controls/SpriteSheet.xbf">
+					<Candidate type="Path">
+						<Value>Microsoft.Kinect.Xaml.Controls\SpriteSheet.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="Generic.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/Microsoft.Kinect.Xaml.Controls/Themes/Generic.xbf">
+						<Candidate type="Path">
+							<Value>Microsoft.Kinect.Xaml.Controls\Themes\Generic.xbf</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Themes">
+				<NamedResource name="DataTemplates.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/Themes/DataTemplates.xbf">
+					<Candidate type="Path">
+						<Value>Themes\DataTemplates.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="PControlStyles.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/Themes/PControlStyles.xbf">
+					<Candidate type="Path">
+						<Value>Themes\PControlStyles.xbf</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Views">
+				<NamedResource name="DatosPage.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/Views/DatosPage.xbf">
+					<Candidate type="Path">
+						<Value>Views\DatosPage.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="EjercicioPage.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/Views/EjercicioPage.xbf">
+					<Candidate type="Path">
+						<Value>Views\EjercicioPage.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="LoginPage.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/Views/LoginPage.xbf">
+					<Candidate type="Path">
+						<Value>Views\LoginPage.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="MainPage.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/Views/MainPage.xbf">
+					<Candidate type="Path">
+						<Value>Views\MainPage.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="MedicalInfo.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/Views/MedicalInfo.xbf">
+					<Candidate type="Path">
+						<Value>Views\MedicalInfo.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="RegistroPage.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/Views/RegistroPage.xbf">
+					<Candidate type="Path">
+						<Value>Views\RegistroPage.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="RegistroUserControl.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/Views/RegistroUserControl.xbf">
+					<Candidate type="Path">
+						<Value>Views\RegistroUserControl.xbf</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="WinRTXamlToolkit">
+				<NamedResource name="WinRTXamlToolkit.xr.xml" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/WinRTXamlToolkit.xr.xml">
+					<Candidate type="Path">
+						<Value>WinRTXamlToolkit\WinRTXamlToolkit.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Controls">
+					<ResourceMapSubtree name="AlternativeFrame">
+						<NamedResource name="AlternativeFrame.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/AlternativeFrame/AlternativeFrame.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\AlternativeFrame\AlternativeFrame.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="AnimatingContainer">
+						<NamedResource name="AnimatingContainer.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/AnimatingContainer/AnimatingContainer.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\AnimatingContainer\AnimatingContainer.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="AutoCompleteTextBox">
+						<NamedResource name="AutoCompleteTextBox.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/AutoCompleteTextBox/AutoCompleteTextBox.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\AutoCompleteTextBox\AutoCompleteTextBox.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="CameraCaptureControl">
+						<NamedResource name="CameraCaptureControl.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/CameraCaptureControl/CameraCaptureControl.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\CameraCaptureControl\CameraCaptureControl.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="CascadingImageControl">
+						<NamedResource name="CascadingImageControl.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/CascadingImageControl/CascadingImageControl.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\CascadingImageControl\CascadingImageControl.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="CascadingTextBlock">
+						<NamedResource name="CascadingTextBlock.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/CascadingTextBlock/CascadingTextBlock.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\CascadingTextBlock\CascadingTextBlock.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="ColorPicker">
+						<NamedResource name="ColorPicker.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/ColorPicker/ColorPicker.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\ColorPicker\ColorPicker.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="CountdownControl">
+						<NamedResource name="CountdownControl.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/CountdownControl/CountdownControl.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\CountdownControl\CountdownControl.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="CustomAppBar">
+						<NamedResource name="CustomAppBar.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/CustomAppBar/CustomAppBar.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\CustomAppBar\CustomAppBar.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="CustomGridSplitter">
+						<NamedResource name="CustomGridSplitter.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/CustomGridSplitter/CustomGridSplitter.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\CustomGridSplitter\CustomGridSplitter.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="DelayedLoadControl">
+						<NamedResource name="DelayedLoadControl.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/DelayedLoadControl/DelayedLoadControl.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\DelayedLoadControl\DelayedLoadControl.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="FocusVisualizer">
+						<NamedResource name="FocusVisualizer.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/FocusVisualizer/FocusVisualizer.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\FocusVisualizer\FocusVisualizer.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="FxContentControl">
+						<NamedResource name="FxContentControl.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/FxContentControl/FxContentControl.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\FxContentControl\FxContentControl.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="ImageButton">
+						<NamedResource name="ImageButton.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/ImageButton/ImageButton.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\ImageButton\ImageButton.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="ImageToggleButton">
+						<NamedResource name="ImageToggleButton.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/ImageToggleButton/ImageToggleButton.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\ImageToggleButton\ImageToggleButton.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="InputDialog">
+						<NamedResource name="InputDialog.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/InputDialog/InputDialog.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\InputDialog\InputDialog.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="ListItemButton">
+						<NamedResource name="ListItemButton.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/ListItemButton/ListItemButton.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\ListItemButton\ListItemButton.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="NumericUpDown">
+						<NamedResource name="NumericUpDown.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/NumericUpDown/NumericUpDown.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\NumericUpDown\NumericUpDown.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="ToolStrip">
+						<NamedResource name="ToolStrip.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/ToolStrip/ToolStrip.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\ToolStrip\ToolStrip.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="ToolWindow">
+						<NamedResource name="ToolWindow.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/ToolWindow/ToolWindow.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\ToolWindow\ToolWindow.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="TreeView">
+						<NamedResource name="TreeView.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/TreeView/TreeView.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\TreeView\TreeView.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="TreeViewItem.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/TreeView/TreeViewItem.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\TreeView\TreeViewItem.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="TreeViewMouse.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/TreeView/TreeViewMouse.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\TreeView\TreeViewMouse.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="TreeViewTouch.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/TreeView/TreeViewTouch.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\TreeView\TreeViewTouch.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="WatermarkPasswordBox">
+						<NamedResource name="WatermarkPasswordBox.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/WatermarkPasswordBox/WatermarkPasswordBox.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\WatermarkPasswordBox\WatermarkPasswordBox.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="WatermarkTextBox">
+						<NamedResource name="WatermarkTextBox.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/WatermarkTextBox/WatermarkTextBox.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\WatermarkTextBox\WatermarkTextBox.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="WebBrowser">
+						<NamedResource name="WebBrowser.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Controls/WebBrowser/WebBrowser.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit\Controls\WebBrowser\WebBrowser.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="Generic.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit/Themes/Generic.xbf">
+						<Candidate type="Path">
+							<Value>WinRTXamlToolkit\Themes\Generic.xbf</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="WinRTXamlToolkit.Controls.DataVisualization">
+				<NamedResource name="WinRTXamlToolkit.Controls.DataVisualization.xr.xml" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/WinRTXamlToolkit.Controls.DataVisualization.xr.xml">
+					<Candidate type="Path">
+						<Value>WinRTXamlToolkit.Controls.DataVisualization\WinRTXamlToolkit.Controls.DataVisualization.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Charting">
+					<ResourceMapSubtree name="Axis">
+						<NamedResource name="AxisLabel.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Charting/Axis/AxisLabel.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Controls.DataVisualization\Charting\Axis\AxisLabel.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="DateTimeAxisLabel.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Charting/Axis/DateTimeAxisLabel.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Controls.DataVisualization\Charting\Axis\DateTimeAxisLabel.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="DisplayAxis.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Charting/Axis/DisplayAxis.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Controls.DataVisualization\Charting\Axis\DisplayAxis.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="NumericAxisLabel.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Charting/Axis/NumericAxisLabel.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Controls.DataVisualization\Charting\Axis\NumericAxisLabel.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="RangeAxis.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Charting/Axis/RangeAxis.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Controls.DataVisualization\Charting\Axis\RangeAxis.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="Chart">
+						<NamedResource name="Chart.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Charting/Chart/Chart.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Controls.DataVisualization\Charting\Chart\Chart.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="DataPoint">
+						<NamedResource name="AreaDataPoint.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Charting/DataPoint/AreaDataPoint.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Controls.DataVisualization\Charting\DataPoint\AreaDataPoint.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="BarDataPoint.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Charting/DataPoint/BarDataPoint.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Controls.DataVisualization\Charting\DataPoint\BarDataPoint.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="BubbleDataPoint.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Charting/DataPoint/BubbleDataPoint.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Controls.DataVisualization\Charting\DataPoint\BubbleDataPoint.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="ColumnDataPoint.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Charting/DataPoint/ColumnDataPoint.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Controls.DataVisualization\Charting\DataPoint\ColumnDataPoint.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="LineDataPoint.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Charting/DataPoint/LineDataPoint.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Controls.DataVisualization\Charting\DataPoint\LineDataPoint.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="PieDataPoint.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Charting/DataPoint/PieDataPoint.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Controls.DataVisualization\Charting\DataPoint\PieDataPoint.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="ScatterDataPoint.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Charting/DataPoint/ScatterDataPoint.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Controls.DataVisualization\Charting\DataPoint\ScatterDataPoint.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="Primitives">
+						<NamedResource name="DelegatingListBox.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Charting/Primitives/DelegatingListBox.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Controls.DataVisualization\Charting\Primitives\DelegatingListBox.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="Series">
+						<NamedResource name="AreaSeries.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Charting/Series/AreaSeries.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Controls.DataVisualization\Charting\Series\AreaSeries.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="DataPointSeries.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Charting/Series/DataPointSeries.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Controls.DataVisualization\Charting\Series\DataPointSeries.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="DefinitionSeries.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Charting/Series/DefinitionSeries.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Controls.DataVisualization\Charting\Series\DefinitionSeries.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="LegendItem.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Charting/Series/LegendItem.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Controls.DataVisualization\Charting\Series\LegendItem.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="LineSeries.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Charting/Series/LineSeries.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Controls.DataVisualization\Charting\Series\LineSeries.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="PieSeries.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Charting/Series/PieSeries.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Controls.DataVisualization\Charting\Series\PieSeries.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Legend">
+					<NamedResource name="Legend.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Legend/Legend.xbf">
+						<Candidate type="Path">
+							<Value>WinRTXamlToolkit.Controls.DataVisualization\Legend\Legend.xbf</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="Generic.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Themes/Generic.xbf">
+						<Candidate type="Path">
+							<Value>WinRTXamlToolkit.Controls.DataVisualization\Themes\Generic.xbf</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Title">
+					<NamedResource name="Title.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Controls.DataVisualization/Title/Title.xbf">
+						<Candidate type="Path">
+							<Value>WinRTXamlToolkit.Controls.DataVisualization\Title\Title.xbf</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="WinRTXamlToolkit.Debugging">
+				<NamedResource name="WinRTXamlToolkit.Debugging.xr.xml" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/WinRTXamlToolkit.Debugging.xr.xml">
+					<Candidate type="Path">
+						<Value>WinRTXamlToolkit.Debugging\WinRTXamlToolkit.Debugging.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Controls">
+					<ResourceMapSubtree name="EditableListBox">
+						<NamedResource name="EditableListBox.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Controls/EditableListBox/EditableListBox.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Debugging\Controls\EditableListBox\EditableListBox.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="EditableListBoxItem.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Controls/EditableListBox/EditableListBoxItem.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Debugging\Controls\EditableListBox\EditableListBoxItem.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="Generic.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Themes/Generic.xbf">
+						<Candidate type="Path">
+							<Value>WinRTXamlToolkit.Debugging\Themes\Generic.xbf</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="SharedResources.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Themes/SharedResources.xbf">
+						<Candidate type="Path">
+							<Value>WinRTXamlToolkit.Debugging\Themes\SharedResources.xbf</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Views">
+					<NamedResource name="DebugConsoleView.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Views/DebugConsoleView.xbf">
+						<Candidate type="Path">
+							<Value>WinRTXamlToolkit.Debugging\Views\DebugConsoleView.xbf</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="DependencyObjectDetailsView.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Views/DependencyObjectDetailsView.xbf">
+						<Candidate type="Path">
+							<Value>WinRTXamlToolkit.Debugging\Views\DependencyObjectDetailsView.xbf</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="ElementListWindow.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Views/ElementListWindow.xbf">
+						<Candidate type="Path">
+							<Value>WinRTXamlToolkit.Debugging\Views\ElementListWindow.xbf</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="FocusTrackerWindow.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Views/FocusTrackerWindow.xbf">
+						<Candidate type="Path">
+							<Value>WinRTXamlToolkit.Debugging\Views\FocusTrackerWindow.xbf</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="HighlightOverlay.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Views/HighlightOverlay.xbf">
+						<Candidate type="Path">
+							<Value>WinRTXamlToolkit.Debugging\Views\HighlightOverlay.xbf</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="PropertiesView.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Views/PropertiesView.xbf">
+						<Candidate type="Path">
+							<Value>WinRTXamlToolkit.Debugging\Views\PropertiesView.xbf</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="VisualTreeView.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Views/VisualTreeView.xbf">
+						<Candidate type="Path">
+							<Value>WinRTXamlToolkit.Debugging\Views\VisualTreeView.xbf</Value>
+						</Candidate>
+					</NamedResource>
+					<ResourceMapSubtree name="PropertyEditors">
+						<NamedResource name="BooleanPropertyEditor.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Views/PropertyEditors/BooleanPropertyEditor.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Debugging\Views\PropertyEditors\BooleanPropertyEditor.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="BrushPropertyEditor.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Views/PropertyEditors/BrushPropertyEditor.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Debugging\Views\PropertyEditors\BrushPropertyEditor.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="CacheModePropertyEditor.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Views/PropertyEditors/CacheModePropertyEditor.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Debugging\Views\PropertyEditors\CacheModePropertyEditor.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="CornerRadiusPropertyEditor.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Views/PropertyEditors/CornerRadiusPropertyEditor.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Debugging\Views\PropertyEditors\CornerRadiusPropertyEditor.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="DefaultPropertyEditor.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Views/PropertyEditors/DefaultPropertyEditor.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Debugging\Views\PropertyEditors\DefaultPropertyEditor.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="DependencyObjectPropertyEditor.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Views/PropertyEditors/DependencyObjectPropertyEditor.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Debugging\Views\PropertyEditors\DependencyObjectPropertyEditor.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="EnumPropertyEditor.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Views/PropertyEditors/EnumPropertyEditor.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Debugging\Views\PropertyEditors\EnumPropertyEditor.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="FontWeightPropertyEditor.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Views/PropertyEditors/FontWeightPropertyEditor.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Debugging\Views\PropertyEditors\FontWeightPropertyEditor.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="ImageSourcePropertyEditor.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Views/PropertyEditors/ImageSourcePropertyEditor.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Debugging\Views\PropertyEditors\ImageSourcePropertyEditor.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="NumericPropertyEditor.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Views/PropertyEditors/NumericPropertyEditor.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Debugging\Views\PropertyEditors\NumericPropertyEditor.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="PropertyEditorFooter.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Views/PropertyEditors/PropertyEditorFooter.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Debugging\Views\PropertyEditors\PropertyEditorFooter.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="StringPropertyEditor.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Views/PropertyEditors/StringPropertyEditor.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Debugging\Views\PropertyEditors\StringPropertyEditor.xbf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="ThicknessPropertyEditor.xbf" uri="ms-resource://10544GIRO.RehabControl/Files/WinRTXamlToolkit.Debugging/Views/PropertyEditors/ThicknessPropertyEditor.xbf">
+							<Candidate type="Path">
+								<Value>WinRTXamlToolkit.Debugging\Views\PropertyEditors\ThicknessPropertyEditor.xbf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Microsoft.Practices.Prism.Mvvm.Properties.Resources">
+			<NamedResource name="CannotRegisterCompositeCommandInItself" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Prism.Mvvm.Properties.Resources/CannotRegisterCompositeCommandInItself">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>Cannot register a CompositeCommand in itself.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CannotRegisterSameCommandTwice" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Prism.Mvvm.Properties.Resources/CannotRegisterSameCommandTwice">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>Cannot register the same command twice in the same CompositeCommand.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DelegateCommandDelegatesCannotBeNull" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Prism.Mvvm.Properties.Resources/DelegateCommandDelegatesCannotBeNull">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>Neither the executeMethod nor the canExecuteMethod delegates can be null.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DelegateCommandInvalidGenericPayloadType" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Prism.Mvvm.Properties.Resources/DelegateCommandInvalidGenericPayloadType">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>T for DelegateCommand&lt;T&gt; is not an object nor Nullable.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="PropertySupport_ExpressionNotProperty_Exception" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Prism.Mvvm.Properties.Resources/PropertySupport_ExpressionNotProperty_Exception">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The member access expression does not access a property.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="PropertySupport_NotMemberAccessExpression_Exception" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Prism.Mvvm.Properties.Resources/PropertySupport_NotMemberAccessExpression_Exception">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The expression is not a member access expression.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="PropertySupport_StaticExpression_Exception" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Prism.Mvvm.Properties.Resources/PropertySupport_StaticExpression_Exception">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The referenced property is a static property.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="WeakEventHandlerNotConstructedOnUIThread" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Prism.Mvvm.Properties.Resources/WeakEventHandlerNotConstructedOnUIThread">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value/>
+				</Candidate>
+			</NamedResource>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Microsoft.Practices.Prism.PubSubEvents.Properties.Resources">
+			<NamedResource name="EventAggregatorNotConstructedOnUIThread" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Prism.PubSubEvents.Properties.Resources/EventAggregatorNotConstructedOnUIThread">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>To use the UIThread option for subscribing, the EventAggregator must be constructed on the UI thread.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="InvalidDelegateRerefenceTypeException" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Prism.PubSubEvents.Properties.Resources/InvalidDelegateRerefenceTypeException">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>Invalid Delegate Reference Type Exception</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="InvalidPropertyNameException" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Prism.PubSubEvents.Properties.Resources/InvalidPropertyNameException">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The entity does not contain a property with that name</Value>
+				</Candidate>
+			</NamedResource>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Microsoft.Practices.Prism.StoreApps">
+			<ResourceMapSubtree name="Resources">
+				<NamedResource name="DefaultPageTypeLookupErrorMessage" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Prism.StoreApps/Resources/DefaultPageTypeLookupErrorMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>The page name {0} does not have an associated type in namespace {1}</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FrameAlreadyRegisteredWithKey" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Prism.StoreApps/Resources/FrameAlreadyRegisteredWithKey">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Frames can only be registered to one session state key</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FrameNavigationServiceUnableResolveMessage" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Prism.StoreApps/Resources/FrameNavigationServiceUnableResolveMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Unable to resolve the pageToken {0} to a type.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FrameRegistrationRequirement" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Prism.StoreApps/Resources/FrameRegistrationRequirement">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Frames must be either be registered before accessing frame session state, or not registered at all</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="InvalidPropertyNameException" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Prism.StoreApps/Resources/InvalidPropertyNameException">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>The entity does not contain a property with that name</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SessionStateServiceFailed" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Prism.StoreApps/Resources/SessionStateServiceFailed">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Session state service failed</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Microsoft.Practices.ServiceLocation.Properties.Resources">
+			<NamedResource name="ActivateAllExceptionMessage" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.ServiceLocation.Properties.Resources/ActivateAllExceptionMessage">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Activation error occurred while trying to get all instances of type {0}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ActivationExceptionMessage" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.ServiceLocation.Properties.Resources/ActivationExceptionMessage">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Activation error occurred while trying to get instance of type {0}, key "{1}"</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ServiceLocationProviderNotSetMessage" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.ServiceLocation.Properties.Resources/ServiceLocationProviderNotSetMessage">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>ServiceLocationProvider must be set.</Value>
+				</Candidate>
+			</NamedResource>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Microsoft.Practices.Unity.Properties.Resources">
+			<NamedResource name="AmbiguousInjectionConstructor" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/AmbiguousInjectionConstructor">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The type {0} has multiple constructors of length {1}. Unable to disambiguate.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ArgumentMustNotBeEmpty" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/ArgumentMustNotBeEmpty">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The provided string argument must not be empty.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="BuildFailedException" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/BuildFailedException">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The current build operation (build key {2}) failed: {3} (Strategy type {0}, index {1})</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CannotConstructAbstractClass" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/CannotConstructAbstractClass">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The current type, {0}, is an abstract class and cannot be constructed. Are you missing a type mapping?</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CannotConstructDelegate" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/CannotConstructDelegate">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The current type, {0}, is delegate and cannot be constructed. Unity only supports resolving Func&lt;T&gt; and Func&lt;IEnumerable&lt;T&gt;&gt; by default.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CannotConstructInterface" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/CannotConstructInterface">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The current type, {0}, is an interface and cannot be constructed. Are you missing a type mapping?</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CannotExtractTypeFromBuildKey" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/CannotExtractTypeFromBuildKey">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>Cannot extract type from build key {0}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CannotInjectGenericMethod" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/CannotInjectGenericMethod">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The method {0}.{1}({2}) is an open generic method. Open generic methods cannot be injected.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CannotInjectIndexer" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/CannotInjectIndexer">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The property {0} on type {1} is an indexer. Indexed properties cannot be injected.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CannotInjectMethodWithOutParam" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/CannotInjectMethodWithOutParam">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The method {1} on type {0} has an out parameter. Injection cannot be performed.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CannotInjectMethodWithOutParams" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/CannotInjectMethodWithOutParams">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The method {0}.{1}({2}) has at least one out parameter. Methods with out parameters cannot be injected.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CannotInjectMethodWithRefParams" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/CannotInjectMethodWithRefParams">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The method {0}.{1}({2}) has at least one ref parameter.Methods with ref parameters cannot be injected.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CannotInjectOpenGenericMethod" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/CannotInjectOpenGenericMethod">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The method {1} on type {0} is marked for injection, but it is an open generic method. Injection cannot be performed.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CannotInjectStaticMethod" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/CannotInjectStaticMethod">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The method {0}.{1}({2}) is static. Static methods cannot be injected.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CannotResolveOpenGenericType" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/CannotResolveOpenGenericType">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The type {0} is an open generic type. An open generic type cannot be resolved.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ConstructorArgumentResolveOperation" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/ConstructorArgumentResolveOperation">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>Resolving parameter "{0}" of constructor {1}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ConstructorParameterResolutionFailed" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/ConstructorParameterResolutionFailed">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The parameter {0} could not be resolved when attempting to call constructor {1}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ExceptionNullParameterValue" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/ExceptionNullParameterValue">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>Parameter type inference does not work for null values. Indicate the parameter type explicitly using a properly configured instance of the InjectionParameter or InjectionParameter&lt;T&gt; classes.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="InvokingConstructorOperation" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/InvokingConstructorOperation">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>Calling constructor {0}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="InvokingMethodOperation" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/InvokingMethodOperation">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>Calling method {0}.{1}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="KeyAlreadyPresent" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/KeyAlreadyPresent">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>An item with the given key is already present in the dictionary.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="LifetimeManagerInUse" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/LifetimeManagerInUse">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The lifetime manager is already registered. Lifetime managers cannot be reused, please create a new one.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MarkerBuildPlanInvoked" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/MarkerBuildPlanInvoked">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The override marker build plan policy has been invoked. This should never happen, looks like a bug in the container.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MethodArgumentResolveOperation" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/MethodArgumentResolveOperation">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>Resolving parameter "{0}" of method {1}.{2}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MethodParameterResolutionFailed" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/MethodParameterResolutionFailed">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The value for parameter "{1}" of method {0} could not be resolved. </Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MissingDependency" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/MissingDependency">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>Could not resolve dependency for build key {0}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MultipleInjectionConstructors" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/MultipleInjectionConstructors">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The type {0} has multiple constructors marked with the InjectionConstructor attribute. Unable to disambiguate.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MustHaveOpenGenericType" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/MustHaveOpenGenericType">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The supplied type {0} must be an open generic type.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MustHaveSameNumberOfGenericArguments" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/MustHaveSameNumberOfGenericArguments">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The supplied type {0} does not have the same number of generic arguments as the target type {1}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NoConstructorFound" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/NoConstructorFound">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The type {0} does not have an accessible constructor.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NoMatchingGenericArgument" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/NoMatchingGenericArgument">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The type {0} does not have a generic argument named "{1}"</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NoOperationExceptionReason" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/NoOperationExceptionReason">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>while resolving</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NoSuchConstructor" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/NoSuchConstructor">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The type {0} does not have a constructor that takes the parameters ({1}).</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NoSuchMethod" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/NoSuchMethod">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The type {0} does not have a public method named {1} that takes the parameters ({2}).</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NoSuchProperty" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/NoSuchProperty">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The type {0} does not contain an instance property named {1}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NotAGenericType" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/NotAGenericType">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The type {0} is not a generic type, and you are attempting to inject a generic parameter named "{1}".</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NotAnArrayTypeWithRankOne" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/NotAnArrayTypeWithRankOne">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The type {0} is not an array type with rank 1, and you are attempting to use a [DependencyArray] attribute on a parameter or property with this type.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="OptionalDependenciesMustBeReferenceTypes" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/OptionalDependenciesMustBeReferenceTypes">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>Optional dependencies must be reference types. The type {0} is a value type.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="PropertyNotSettable" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/PropertyNotSettable">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The property {0} on type {1} is not settable.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="PropertyTypeMismatch" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/PropertyTypeMismatch">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The property {0} on type {1} is of type {2}, and cannot be injected with a value of type {3}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="PropertyValueResolutionFailed" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/PropertyValueResolutionFailed">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The value for the property "{0}" could not be resolved.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ProvidedStringArgMustNotBeEmpty" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/ProvidedStringArgMustNotBeEmpty">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The provided string argument must not be empty.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ResolutionFailed" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/ResolutionFailed">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>Resolution of the dependency failed, type = "{0}", name = "{1}".
+Exception occurred while: {2}.
+Exception is: {3} - {4}
+-----------------------------------------------
+At the time of the exception, the container was:
+</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ResolutionTraceDetail" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/ResolutionTraceDetail">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>Resolving {0},{1}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ResolutionWithMappingTraceDetail" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/ResolutionWithMappingTraceDetail">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>Resolving {0},{1} (mapped from {2}, {3})</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ResolvingPropertyValueOperation" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/ResolvingPropertyValueOperation">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>Resolving value for property {0}.{1}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SelectedConstructorHasRefParameters" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/SelectedConstructorHasRefParameters">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The constructor {1} selected for type {0} has ref or out parameters. Such parameters are not supported for constructor injection.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SettingPropertyOperation" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/SettingPropertyOperation">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>Setting value for property {0}.{1}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TypeIsNotConstructable" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/TypeIsNotConstructable">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The type {0} cannot be constructed. You must configure the container to supply this value.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TypesAreNotAssignable" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/TypesAreNotAssignable">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>The type {1} cannot be assigned to variables of type {0}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="UnknownType" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.Properties.Resources/UnknownType">
+				<Candidate qualifiers="Language-EN" isDefault="true" type="String">
+					<Value>&lt;unknown&gt;</Value>
+				</Candidate>
+			</NamedResource>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Microsoft.Practices.Unity.RegistrationByConvention">
+			<ResourceMapSubtree name="Resources">
+				<NamedResource name="DuplicateTypeMappingException" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.RegistrationByConvention/Resources/DuplicateTypeMappingException">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>An attempt to override an existing mapping was detected for type {1} with name "{0}", currently mapped to type {2}, to type {3}.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ExceptionNullAssembly" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Practices.Unity.RegistrationByConvention/Resources/ExceptionNullAssembly">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>The set of assemblies contains a null element.</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Microsoft.Xaml.Interactions">
+			<ResourceMapSubtree name="Strings">
+				<NamedResource name="CallMethodActionValidMethodNotFoundExceptionMessage" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Xaml.Interactions/Strings/CallMethodActionValidMethodNotFoundExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Cannot find method named {0} on object of type {1} that matches the expected signature.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="CannotAttachBehaviorMultipleTimesExceptionMessage" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Xaml.Interactions/Strings/CannotAttachBehaviorMultipleTimesExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>An instance of a behavior cannot be attached to more than one object at a time.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="CannotFindEventNameExceptionMessage" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Xaml.Interactions/Strings/CannotFindEventNameExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Cannot find an event named {0} on type {1}.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ChangePropertyActionCannotFindPropertyNameExceptionMessage" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Xaml.Interactions/Strings/ChangePropertyActionCannotFindPropertyNameExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Cannot find a property named {0} on type {1}.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ChangePropertyActionCannotSetValueExceptionMessage" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Xaml.Interactions/Strings/ChangePropertyActionCannotSetValueExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Cannot assign value of type {0} to property {1} of type {2}. The {1} property can be assigned only values of type {2}.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ChangePropertyActionPropertyIsReadOnlyExceptionMessage" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Xaml.Interactions/Strings/ChangePropertyActionPropertyIsReadOnlyExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Property {0} defined by type {1} does not expose a set method and therefore cannot be modified.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="EventNotSupportedExceptionMessage" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Xaml.Interactions/Strings/EventNotSupportedExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Event {0} is not supported. Consider implementing a custom IBehavior to respond to this event.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="GoToStateActionTargetHasNoStateGroups" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Xaml.Interactions/Strings/GoToStateActionTargetHasNoStateGroups">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Target {0} does not define any VisualStateGroups.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="InvalidLeftOperand" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Xaml.Interactions/Strings/InvalidLeftOperand">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Binding property of type {0} cannot be used with operator {1}.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="InvalidOperands" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Xaml.Interactions/Strings/InvalidOperands">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Binding property of type {0} and Value property of type {1} cannot be used with operator {2}.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="InvalidRightOperand" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Xaml.Interactions/Strings/InvalidRightOperand">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Value property of type {0} cannot be used with operator {1}.</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Microsoft.Xaml.Interactivity">
+			<ResourceMapSubtree name="Strings">
+				<NamedResource name="CannotAttachBehaviorMultipleTimesExceptionMessage" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Xaml.Interactivity/Strings/CannotAttachBehaviorMultipleTimesExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>An instance of a behavior cannot be attached to more than one object at a time.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DuplicateBehaviorInCollectionExceptionMessage" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Xaml.Interactivity/Strings/DuplicateBehaviorInCollectionExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Cannot add an instance of a behavior to a BehaviorCollection more than once.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="NonActionAddedToActionCollectionExceptionMessage" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Xaml.Interactivity/Strings/NonActionAddedToActionCollectionExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Only IAction types are supported in an ActionCollection.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="NonBehaviorAddedToBehaviorCollectionExceptionMessage" uri="ms-resource://10544GIRO.RehabControl/Microsoft.Xaml.Interactivity/Strings/NonBehaviorAddedToBehaviorCollectionExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Only IBehavior types are supported in a BehaviorCollection.</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Resources">
+			<NamedResource name="AddAddressTitle" uri="ms-resource://10544GIRO.RehabControl/Resources/AddAddressTitle">
+				<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+					<Value>Ponga una direccion</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CardEndingIn" uri="ms-resource://10544GIRO.RehabControl/Resources/CardEndingIn">
+				<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+					<Value>Card Ending In: {0}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CardExpiringOn" uri="ms-resource://10544GIRO.RehabControl/Resources/CardExpiringOn">
+				<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+					<Value>Card expiring on: {0}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ChangeDefaults" uri="ms-resource://10544GIRO.RehabControl/Resources/ChangeDefaults">
+				<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+					<Value>Change Defaults</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DialogOkButtonLabel" uri="ms-resource://10544GIRO.RehabControl/Resources/DialogOkButtonLabel">
+				<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+					<Value>OK</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="EditAddressTitle" uri="ms-resource://10544GIRO.RehabControl/Resources/EditAddressTitle">
+				<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+					<Value>Editar Direccion</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Error" uri="ms-resource://10544GIRO.RehabControl/Resources/Error">
+				<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+					<Value>Error</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ErrorCardMonthInvalid" uri="ms-resource://10544GIRO.RehabControl/Resources/ErrorCardMonthInvalid">
+				<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+					<Value>Invalid expiration month</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ErrorCardNumberInvalidLength" uri="ms-resource://10544GIRO.RehabControl/Resources/ErrorCardNumberInvalidLength">
+				<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+					<Value>Card number must contain between 4 and 20 characters</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ErrorCardYearInvalid" uri="ms-resource://10544GIRO.RehabControl/Resources/ErrorCardYearInvalid">
+				<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+					<Value>Invalid expiration year</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ErrorInvalidSignInErrorMessage" uri="ms-resource://10544GIRO.RehabControl/Resources/ErrorInvalidSignInErrorMessage">
+				<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+					<Value>Invalid email or password</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ErrorProcessingOrder" uri="ms-resource://10544GIRO.RehabControl/Resources/ErrorProcessingOrder">
+				<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+					<Value>There was an error processing your order.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ErrorRegex" uri="ms-resource://10544GIRO.RehabControl/Resources/ErrorRegex">
+				<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+					<Value>This field contains invalid characters</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ErrorRequired" uri="ms-resource://10544GIRO.RehabControl/Resources/ErrorRequired">
+				<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+					<Value>This field is required</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ErrorServiceUnreachable" uri="ms-resource://10544GIRO.RehabControl/Resources/ErrorServiceUnreachable">
+				<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+					<Value>Service is unreachable.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="GeneralServiceErrorMessage" uri="ms-resource://10544GIRO.RehabControl/Resources/GeneralServiceErrorMessage">
+				<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+					<Value>The following error messages were received from the service: {0} {1}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Help" uri="ms-resource://10544GIRO.RehabControl/Resources/Help">
+				<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+					<Value>Ayuda</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="HelpUrl" uri="ms-resource://10544GIRO.RehabControl/Resources/HelpUrl">
+				<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+					<Value>http://go.microsoft.com/fwlink/?LinkID=288811&amp;clcid=0x409</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="LoginText" uri="ms-resource://10544GIRO.RehabControl/Resources/LoginText">
+				<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+					<Value>Login</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="LogoutText" uri="ms-resource://10544GIRO.RehabControl/Resources/LogoutText">
+				<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+					<Value>Logout</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="OrderConfirmationContent" uri="ms-resource://10544GIRO.RehabControl/Resources/OrderConfirmationContent">
+				<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+					<Value>Your order confirmation number is: {0}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="OrderPurchasedTitle" uri="ms-resource://10544GIRO.RehabControl/Resources/OrderPurchasedTitle">
+				<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+					<Value>Order purchased</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="PrivacyPolicy" uri="ms-resource://10544GIRO.RehabControl/Resources/PrivacyPolicy">
+				<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+					<Value>Politica de privacidad</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="PrivacyPolicyUrl" uri="ms-resource://10544GIRO.RehabControl/Resources/PrivacyPolicyUrl">
+				<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+					<Value>http://konaguidance.codeplex.com/wikipage?title=Sample%20Privacy%20Policy%20Page</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Products" uri="ms-resource://10544GIRO.RehabControl/Resources/Products">
+				<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+					<Value>Products</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Provincia" uri="ms-resource://10544GIRO.RehabControl/Resources/Provincia">
+				<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+					<Value>Provincia</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Quantity" uri="ms-resource://10544GIRO.RehabControl/Resources/Quantity">
+				<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+					<Value>QTY</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="RegistroTitle" uri="ms-resource://10544GIRO.RehabControl/Resources/RegistroTitle">
+				<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+					<Value>Registrar nuevo usuario</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SelectCheckoutData" uri="ms-resource://10544GIRO.RehabControl/Resources/SelectCheckoutData">
+				<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+					<Value>Select {0}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ZipCodeLengthInvalidErrorMessage" uri="ms-resource://10544GIRO.RehabControl/Resources/ZipCodeLengthInvalidErrorMessage">
+				<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+					<Value>Invalid Zip Code length. Try Washington (State) and 98052 (Zip Code).</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ZipCodeRegexErrorMessage" uri="ms-resource://10544GIRO.RehabControl/Resources/ZipCodeRegexErrorMessage">
+				<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+					<Value>This field contains invalid characters. Try Washington (State) and 98052 (Zip Code).</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="AddButton">
+				<NamedResource name="Content" uri="ms-resource://10544GIRO.RehabControl/Resources/AddButton/Content">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Add</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Address">
+				<NamedResource name="Header" uri="ms-resource://10544GIRO.RehabControl/Resources/Address/Header">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Direccion*</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="[using:Windows.UI.Xaml.Automation]AutomationProperties">
+					<NamedResource name="Name" uri="ms-resource://10544GIRO.RehabControl/Resources/Address/%5Busing%3AWindows.UI.Xaml.Automation%5DAutomationProperties/Name">
+						<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+							<Value>Direccion</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="AddToCartButton">
+				<NamedResource name="Content" uri="ms-resource://10544GIRO.RehabControl/Resources/AddToCartButton/Content">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Add to Cart</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="BottomAppBar">
+				<NamedResource name="FlowDirection" uri="ms-resource://10544GIRO.RehabControl/Resources/BottomAppBar/FlowDirection">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>LeftToRight</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="[using:Windows.UI.Xaml.Automation]AutomationProperties">
+					<NamedResource name="Name" uri="ms-resource://10544GIRO.RehabControl/Resources/BottomAppBar/%5Busing%3AWindows.UI.Xaml.Automation%5DAutomationProperties/Name">
+						<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+							<Value>Bottom App Bar</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="CardholderName">
+				<NamedResource name="Header" uri="ms-resource://10544GIRO.RehabControl/Resources/CardholderName/Header">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Cardholder Name*</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="[using:Windows.UI.Xaml.Automation]AutomationProperties">
+					<NamedResource name="Name" uri="ms-resource://10544GIRO.RehabControl/Resources/CardholderName/%5Busing%3AWindows.UI.Xaml.Automation%5DAutomationProperties/Name">
+						<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+							<Value>Card Holder Name</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="CardNumber">
+				<NamedResource name="Header" uri="ms-resource://10544GIRO.RehabControl/Resources/CardNumber/Header">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Card Number*</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="[using:Windows.UI.Xaml.Automation]AutomationProperties">
+					<NamedResource name="Name" uri="ms-resource://10544GIRO.RehabControl/Resources/CardNumber/%5Busing%3AWindows.UI.Xaml.Automation%5DAutomationProperties/Name">
+						<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+							<Value>Card Number</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="CardVerificationCode">
+				<NamedResource name="Header" uri="ms-resource://10544GIRO.RehabControl/Resources/CardVerificationCode/Header">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>CVC2*</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="[using:Windows.UI.Xaml.Automation]AutomationProperties">
+					<NamedResource name="Name" uri="ms-resource://10544GIRO.RehabControl/Resources/CardVerificationCode/%5Busing%3AWindows.UI.Xaml.Automation%5DAutomationProperties/Name">
+						<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+							<Value>Card Verification Code</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="CartItemsLabel">
+				<NamedResource name="Text" uri="ms-resource://10544GIRO.RehabControl/Resources/CartItemsLabel/Text">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Cart Items</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="CartLabel">
+				<NamedResource name="Text" uri="ms-resource://10544GIRO.RehabControl/Resources/CartLabel/Text">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Cart:</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="ChangeDefaultsTitle">
+				<NamedResource name="Text" uri="ms-resource://10544GIRO.RehabControl/Resources/ChangeDefaultsTitle/Text">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Change Defaults</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="CheckoutButton">
+				<NamedResource name="Content" uri="ms-resource://10544GIRO.RehabControl/Resources/CheckoutButton/Content">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Registrar</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="CheckoutHubTitle">
+				<NamedResource name="Text" uri="ms-resource://10544GIRO.RehabControl/Resources/CheckoutHubTitle/Text">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Registrar nuevo paciente</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="CheckoutSummaryTitle">
+				<NamedResource name="Text" uri="ms-resource://10544GIRO.RehabControl/Resources/CheckoutSummaryTitle/Text">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Checkout Summary</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="City">
+				<NamedResource name="PlaceholderText" uri="ms-resource://10544GIRO.RehabControl/Resources/City/PlaceholderText">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Ciudad</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="[using:Windows.UI.Xaml.Automation]AutomationProperties">
+					<NamedResource name="Name" uri="ms-resource://10544GIRO.RehabControl/Resources/City/%5Busing%3AWindows.UI.Xaml.Automation%5DAutomationProperties/Name">
+						<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+							<Value>Ciudad</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="ContinueShoppingButton">
+				<NamedResource name="Content" uri="ms-resource://10544GIRO.RehabControl/Resources/ContinueShoppingButton/Content">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Continue Shopping</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="DecrementQuantityButton">
+				<NamedResource name="Label" uri="ms-resource://10544GIRO.RehabControl/Resources/DecrementQuantityButton/Label">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Remove</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="DetailsLabel">
+				<NamedResource name="Text" uri="ms-resource://10544GIRO.RehabControl/Resources/DetailsLabel/Text">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Details</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="DiscountCodesLabel">
+				<NamedResource name="Text" uri="ms-resource://10544GIRO.RehabControl/Resources/DiscountCodesLabel/Text">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Discount Codes:</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="EditQuantityLabel">
+				<NamedResource name="Text" uri="ms-resource://10544GIRO.RehabControl/Resources/EditQuantityLabel/Text">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Edit Quantity</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="ExpandAddressButton">
+				<ResourceMapSubtree name="[using:Windows.UI.Xaml.Automation]AutomationProperties">
+					<NamedResource name="Name" uri="ms-resource://10544GIRO.RehabControl/Resources/ExpandAddressButton/%5Busing%3AWindows.UI.Xaml.Automation%5DAutomationProperties/Name">
+						<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+							<Value>direccion</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="ExpirationMonth">
+				<NamedResource name="PlaceholderText" uri="ms-resource://10544GIRO.RehabControl/Resources/ExpirationMonth/PlaceholderText">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Month (1 - 12)</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="[using:Windows.UI.Xaml.Automation]AutomationProperties">
+					<NamedResource name="Name" uri="ms-resource://10544GIRO.RehabControl/Resources/ExpirationMonth/%5Busing%3AWindows.UI.Xaml.Automation%5DAutomationProperties/Name">
+						<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+							<Value>Expiration month</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="ExpirationYear">
+				<NamedResource name="PlaceholderText" uri="ms-resource://10544GIRO.RehabControl/Resources/ExpirationYear/PlaceholderText">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Year</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="[using:Windows.UI.Xaml.Automation]AutomationProperties">
+					<NamedResource name="Name" uri="ms-resource://10544GIRO.RehabControl/Resources/ExpirationYear/%5Busing%3AWindows.UI.Xaml.Automation%5DAutomationProperties/Name">
+						<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+							<Value>Expiration year</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="FirstName">
+				<ResourceMapSubtree name="[using:Windows.UI.Xaml.Automation]AutomationProperties">
+					<NamedResource name="Name" uri="ms-resource://10544GIRO.RehabControl/Resources/FirstName/%5Busing%3AWindows.UI.Xaml.Automation%5DAutomationProperties/Name">
+						<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+							<Value>Nombre</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="GrandTotalLabel">
+				<NamedResource name="Text" uri="ms-resource://10544GIRO.RehabControl/Resources/GrandTotalLabel/Text">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Grand Total:</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="HomeAppBarButton">
+				<NamedResource name="Content" uri="ms-resource://10544GIRO.RehabControl/Resources/HomeAppBarButton/Content">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Home</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="IncrementQuantityButton">
+				<NamedResource name="Label" uri="ms-resource://10544GIRO.RehabControl/Resources/IncrementQuantityButton/Label">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Add</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="InventoryStatusLabel">
+				<NamedResource name="Text" uri="ms-resource://10544GIRO.RehabControl/Resources/InventoryStatusLabel/Text">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Inventory Status</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="ItemsLabel">
+				<NamedResource name="Text" uri="ms-resource://10544GIRO.RehabControl/Resources/ItemsLabel/Text">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Items</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="ItemsPurchasedLabel">
+				<NamedResource name="Text" uri="ms-resource://10544GIRO.RehabControl/Resources/ItemsPurchasedLabel/Text">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Items Purchased</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="LastName">
+				<ResourceMapSubtree name="[using:Windows.UI.Xaml.Automation]AutomationProperties">
+					<NamedResource name="Name" uri="ms-resource://10544GIRO.RehabControl/Resources/LastName/%5Busing%3AWindows.UI.Xaml.Automation%5DAutomationProperties/Name">
+						<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+							<Value>Apellidos</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="LoginTitle">
+				<NamedResource name="Text" uri="ms-resource://10544GIRO.RehabControl/Resources/LoginTitle/Text">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Login</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="LogoutButton">
+				<NamedResource name="Content" uri="ms-resource://10544GIRO.RehabControl/Resources/LogoutButton/Content">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Logout</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="LogoutTitle">
+				<NamedResource name="Text" uri="ms-resource://10544GIRO.RehabControl/Resources/LogoutTitle/Text">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Logout</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="NextButton">
+				<NamedResource name="Content" uri="ms-resource://10544GIRO.RehabControl/Resources/NextButton/Content">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Next</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="OptionalAddress">
+				<ResourceMapSubtree name="[using:Windows.UI.Xaml.Automation]AutomationProperties">
+					<NamedResource name="Name" uri="ms-resource://10544GIRO.RehabControl/Resources/OptionalAddress/%5Busing%3AWindows.UI.Xaml.Automation%5DAutomationProperties/Name">
+						<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+							<Value>Direccion alternativa</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="OrderConfirmationTitle">
+				<NamedResource name="Text" uri="ms-resource://10544GIRO.RehabControl/Resources/OrderConfirmationTitle/Text">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Order Confirmation</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="OrderSubtotalLabel">
+				<NamedResource name="Text" uri="ms-resource://10544GIRO.RehabControl/Resources/OrderSubtotalLabel/Text">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Order Subtotal:</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="OverviewLabel">
+				<NamedResource name="Text" uri="ms-resource://10544GIRO.RehabControl/Resources/OverviewLabel/Text">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Overview</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Page">
+				<NamedResource name="FlowDirection" uri="ms-resource://10544GIRO.RehabControl/Resources/Page/FlowDirection">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>LeftToRight</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="PasswordBox">
+				<NamedResource name="Header" uri="ms-resource://10544GIRO.RehabControl/Resources/PasswordBox/Header">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Password</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="[using:Windows.UI.Xaml.Automation]AutomationProperties">
+					<NamedResource name="Name" uri="ms-resource://10544GIRO.RehabControl/Resources/PasswordBox/%5Busing%3AWindows.UI.Xaml.Automation%5DAutomationProperties/Name">
+						<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+							<Value>Password</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Phone">
+				<ResourceMapSubtree name="[using:Windows.UI.Xaml.Automation]AutomationProperties">
+					<NamedResource name="Name" uri="ms-resource://10544GIRO.RehabControl/Resources/Phone/%5Busing%3AWindows.UI.Xaml.Automation%5DAutomationProperties/Name">
+						<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+							<Value>Telefono</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="PinAppBarButton">
+				<NamedResource name="Label" uri="ms-resource://10544GIRO.RehabControl/Resources/PinAppBarButton/Label">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Pin To Start</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="PleaseSignInTextBlock">
+				<NamedResource name="Text" uri="ms-resource://10544GIRO.RehabControl/Resources/PleaseSignInTextBlock/Text">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Please sign in. Valid usernames are 'user' and 'JohnDoe'. Valid password is 'pwd'.</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="PostalCodeTextBox">
+				<NamedResource name="PlaceholderText" uri="ms-resource://10544GIRO.RehabControl/Resources/PostalCodeTextBox/PlaceholderText">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Codigo postal</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="[using:Windows.UI.Xaml.Automation]AutomationProperties">
+					<NamedResource name="Name" uri="ms-resource://10544GIRO.RehabControl/Resources/PostalCodeTextBox/%5Busing%3AWindows.UI.Xaml.Automation%5DAutomationProperties/Name">
+						<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+							<Value>Codigo postal</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="ProductInformationTitle">
+				<NamedResource name="Text" uri="ms-resource://10544GIRO.RehabControl/Resources/ProductInformationTitle/Text">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Product Details</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="RemoveAppBarButton">
+				<NamedResource name="Label" uri="ms-resource://10544GIRO.RehabControl/Resources/RemoveAppBarButton/Label">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Remove item</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="ResultsForLabel">
+				<NamedResource name="Text" uri="ms-resource://10544GIRO.RehabControl/Resources/ResultsForLabel/Text">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Results for</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="ReviewsLabel">
+				<NamedResource name="Text" uri="ms-resource://10544GIRO.RehabControl/Resources/ReviewsLabel/Text">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>12 Reviews:</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="SalePriceLabel">
+				<NamedResource name="Text" uri="ms-resource://10544GIRO.RehabControl/Resources/SalePriceLabel/Text">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Sale Price</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="SaveButton">
+				<NamedResource name="Content" uri="ms-resource://10544GIRO.RehabControl/Resources/SaveButton/Content">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Save</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="SaveCredentialsLabel">
+				<NamedResource name="Content" uri="ms-resource://10544GIRO.RehabControl/Resources/SaveCredentialsLabel/Content">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Save Credentials?</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="SearchBoxUserControl">
+				<NamedResource name="PlaceholderText" uri="ms-resource://10544GIRO.RehabControl/Resources/SearchBoxUserControl/PlaceholderText">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Search for a Product</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="SearchButton">
+				<ResourceMapSubtree name="[using:Windows.UI.Xaml.Automation]AutomationProperties">
+					<NamedResource name="Name" uri="ms-resource://10544GIRO.RehabControl/Resources/SearchButton/%5Busing%3AWindows.UI.Xaml.Automation%5DAutomationProperties/Name">
+						<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+							<Value>Search</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="SearchPageTitle">
+				<NamedResource name="Text" uri="ms-resource://10544GIRO.RehabControl/Resources/SearchPageTitle/Text">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Search</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="SelectCheckoutDataAppBarButton">
+				<NamedResource name="Label" uri="ms-resource://10544GIRO.RehabControl/Resources/SelectCheckoutDataAppBarButton/Label">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Select</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="SelectedProductImage">
+				<ResourceMapSubtree name="[using:Windows.UI.Xaml.Automation]AutomationProperties">
+					<NamedResource name="Name" uri="ms-resource://10544GIRO.RehabControl/Resources/SelectedProductImage/%5Busing%3AWindows.UI.Xaml.Automation%5DAutomationProperties/Name">
+						<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+							<Value>Selected product image</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="SetAsDefaultCheckbox">
+				<NamedResource name="Content" uri="ms-resource://10544GIRO.RehabControl/Resources/SetAsDefaultCheckbox/Content">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Set as default</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="SignInCancelButton">
+				<NamedResource name="Content" uri="ms-resource://10544GIRO.RehabControl/Resources/SignInCancelButton/Content">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Cancel</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="SignInTextBlock">
+				<NamedResource name="Text" uri="ms-resource://10544GIRO.RehabControl/Resources/SignInTextBlock/Text">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Sign in to the app</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="StateComboBox">
+				<ResourceMapSubtree name="[using:Windows.UI.Xaml.Automation]AutomationProperties">
+					<NamedResource name="Name" uri="ms-resource://10544GIRO.RehabControl/Resources/StateComboBox/%5Busing%3AWindows.UI.Xaml.Automation%5DAutomationProperties/Name">
+						<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+							<Value>State</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="SubmitButton">
+				<NamedResource name="Content" uri="ms-resource://10544GIRO.RehabControl/Resources/SubmitButton/Content">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Submit</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="TaxLabel">
+				<NamedResource name="Text" uri="ms-resource://10544GIRO.RehabControl/Resources/TaxLabel/Text">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Tax:</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="TitleExpirationDate">
+				<ResourceMapSubtree name="[using:Windows.UI.Xaml.Automation]AutomationProperties">
+					<NamedResource name="Name" uri="ms-resource://10544GIRO.RehabControl/Resources/TitleExpirationDate/%5Busing%3AWindows.UI.Xaml.Automation%5DAutomationProperties/Name">
+						<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+							<Value>Expiration Date</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Username">
+				<NamedResource name="Header" uri="ms-resource://10544GIRO.RehabControl/Resources/Username/Header">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>Nombre de usuario</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="[using:Windows.UI.Xaml.Automation]AutomationProperties">
+					<NamedResource name="Name" uri="ms-resource://10544GIRO.RehabControl/Resources/Username/%5Busing%3AWindows.UI.Xaml.Automation%5DAutomationProperties/Name">
+						<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+							<Value>Username</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="YoureCurrentlySignedInAsLabel">
+				<NamedResource name="Text" uri="ms-resource://10544GIRO.RehabControl/Resources/YoureCurrentlySignedInAsLabel/Text">
+					<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+						<Value>You're currently signed in as:</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources">
+			<NamedResource name="Chart_Axes_SetterNotSupported" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/Chart_Axes_SetterNotSupported">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Changing the Chart's Axes property is not supported; changes to the collection should be made with its .Add/.Remove methods instead.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Chart_AxisLocationChanged_CantBeChangedToAutoWhenHostedInsideOfASeriesHost" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/Chart_AxisLocationChanged_CantBeChangedToAutoWhenHostedInsideOfASeriesHost">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Axis location cannot be changed to auto when hosted inside of a series host.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Chart_Series_SetterNotSupported" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/Chart_Series_SetterNotSupported">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Changing the Chart's Series property is not supported; changes to the collection should be made with its .Add/.Remove methods instead.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DataPointSeriesDropTarget_set_Content_ContentMustBeAChart" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/DataPointSeriesDropTarget_set_Content_ContentMustBeAChart">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The content property must be set to a Chart object.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DataPointSeriesWithAxes_GetAxes_AssignedDependentAxisCannotBeUsed" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/DataPointSeriesWithAxes_GetAxes_AssignedDependentAxisCannotBeUsed">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Assigned dependent axis cannot be used. This may be due to an unset Orientation property for the axis or a type mismatch between the values being plotted and those supported by the axis.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DataPointSeriesWithAxes_GetAxes_AssignedIndependentAxisCannotBeUsed" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/DataPointSeriesWithAxes_GetAxes_AssignedIndependentAxisCannotBeUsed">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Assigned independent axis cannot be used. This may be due to an unset Orientation property for the axis.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DataPointSeriesWithAxes_NoSuitableAxisAvailableForPlottingDependentValue" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/DataPointSeriesWithAxes_NoSuitableAxisAvailableForPlottingDependentValue">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>No suitable axis is available for plotting the dependent value.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DataPointSeriesWithAxes_ThisSeriesDoesNotSupportRadialAxes" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/DataPointSeriesWithAxes_ThisSeriesDoesNotSupportRadialAxes">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>This series does not support radial axes.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DefinitionSeries_EnsureAxes_MissingDependentValueBinding" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/DefinitionSeries_EnsureAxes_MissingDependentValueBinding">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>A SeriesDefinition does not have its DependentValueBinding or DependentValuePath properties set; unable to determine the source for dependent values. Please use either of these properties to identify the data model property corresponding to the dependent values.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DefinitionSeries_EnsureAxes_MissingIndependentValueBinding" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/DefinitionSeries_EnsureAxes_MissingIndependentValueBinding">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>A SeriesDefinition does not have its IndependentValueBinding or IndependentValuePath properties set; unable to determine the source for independent values. Please use either of these properties to identify the data model property corresponding to the independent values.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DefinitionSeries_SeriesDefinitions_SetterNotSupported" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/DefinitionSeries_SeriesDefinitions_SetterNotSupported">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Changing the SeriesDefinitions property of a DefinitionSeries is not supported; changes to the collection should be made with its .Add/.Remove methods instead.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DisplayAxis_GetLength_CannotDetermineTheLengthOfAnAxisWithAnOrientationOfNone" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/DisplayAxis_GetLength_CannotDetermineTheLengthOfAnAxisWithAnOrientationOfNone">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Cannot determine the size of an axis without an orientation.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="EdgePanel_OnEdgePropertyChanged" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/EdgePanel_OnEdgePropertyChanged">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Attempt to set Edge property to an invalid value.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Interpolator_IncludeInRange_DataRangeBindingNotIConvertible" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/Interpolator_IncludeInRange_DataRangeBindingNotIConvertible">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The DataRangeBinding property of the Interpolator must be bound to an IConvertible object.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="RangeAxis_MaximumValueMustBeLargerThanOrEqualToMinimumValue" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/RangeAxis_MaximumValueMustBeLargerThanOrEqualToMinimumValue">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The maximum value must be larger than or equal to the minimum value.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="RangeAxis_MinimumValueMustBeLargerThanOrEqualToMaximumValue" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/RangeAxis_MinimumValueMustBeLargerThanOrEqualToMaximumValue">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The minimum value must be smaller than or equal to the maximum value.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Range_ctor_MaximumValueMustBeLargerThanOrEqualToMinimumValue" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/Range_ctor_MaximumValueMustBeLargerThanOrEqualToMinimumValue">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The maximum value must be larger than or equal to the minimum value.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Range_get_Maximum_CannotReadTheMaximumOfAnEmptyRange" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/Range_get_Maximum_CannotReadTheMaximumOfAnEmptyRange">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>"Cannot read the Maximum of an empty range."</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Range_get_Minimum_CannotReadTheMinimumOfAnEmptyRange" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/Range_get_Minimum_CannotReadTheMinimumOfAnEmptyRange">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>"Cannot read the Minimum of an empty range."</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Range_ToString_Data" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/Range_ToString_Data">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>[{0},{1}]</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Range_ToString_NoData" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/Range_ToString_NoData">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>No Data.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ReadOnlyObservableCollection_CollectionIsReadOnly" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/ReadOnlyObservableCollection_CollectionIsReadOnly">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Collection is read-only.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ResourceDictionaryEnumerator_CantResetEnumeratorResetDispenserInstead" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/ResourceDictionaryEnumerator_CantResetEnumeratorResetDispenserInstead">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Cannot reset a ResourceDictionaryEnumerator; reset the ResourceDictionaryDispenser instead.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SeriesDefinition_SeriesHost_InvalidParent" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/SeriesDefinition_SeriesHost_InvalidParent">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>A SeriesDefinition instance's SeriesHost property may only be set to an instance of the DefinitionSeries class; other SeriesHost types are not supported.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SeriesHostAxesCollection_InvalidAttemptToRemovePermanentAxisFromSeriesHost" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/SeriesHostAxesCollection_InvalidAttemptToRemovePermanentAxisFromSeriesHost">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Invalid attempt to remove permanent axis from axis collection.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SeriesHostAxesCollection_RemoveItem_AxisCannotBeRemovedFromASeriesHostWhenOneOrMoreSeriesAreListeningToIt" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/SeriesHostAxesCollection_RemoveItem_AxisCannotBeRemovedFromASeriesHostWhenOneOrMoreSeriesAreListeningToIt">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>An axis cannot be removed from a series host when one or more hosted series is listening to it.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Series_OnGlobalSeriesIndexPropertyChanged_UntitledSeriesFormatString" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/Series_OnGlobalSeriesIndexPropertyChanged_UntitledSeriesFormatString">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Series {0}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Series_SeriesHost_SeriesHostPropertyNotNull" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/Series_SeriesHost_SeriesHostPropertyNotNull">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>A series cannot be added to more than one series host.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TreeMap_BuildTreeMapTree_TemplateNotSet" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/TreeMap_BuildTreeMapTree_TemplateNotSet">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Either ItemTemplate must be set or TreeMapItemDefinitionSelector must return a non-null template.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TreeMap_CreateChildren_InterpolatorBindingNotSet" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/TreeMap_CreateChildren_InterpolatorBindingNotSet">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The value of PropertyBinding property of an interpolator cannot be null.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TreeMap_Interpolators_SetterNotSupported" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/TreeMap_Interpolators_SetterNotSupported">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Changing the TreeMap's Interpolators Property is not supported; changes to the collection should be made with its .Add/.Remove methods instead.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="UniqueObservableCollection_InvalidAttemptToInsertADuplicateItem" uri="ms-resource://10544GIRO.RehabControl/WinRTXamlToolkit.Controls.DataVisualization.Properties.Resources/UniqueObservableCollection_InvalidAttemptToInsertADuplicateItem">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Invalid attempt to insert a duplicate item.</Value>
+				</Candidate>
+			</NamedResource>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

@@ -10,11 +10,64 @@
     prism:ViewModelLocator.AutoWireViewModel="True"
     xmlns:prism="using:Microsoft.Practices.Prism.Mvvm"
     xmlns:designtime="using:PatientControl.DesignTime"
+    xmlns:datavis="using:WinRTXamlToolkit.Controls.DataVisualization"    
+    xmlns:charting="using:WinRTXamlToolkit.Controls.DataVisualization.Charting" 
+    xmlns:Series="using:WinRTXamlToolkit.Controls.DataVisualization.Charting"
     mc:Ignorable="d">
 
     <d:Page.DataContext>
         <designtime:DatosPageViewModel />
     </d:Page.DataContext>
+
+    <Page.Resources>
+
+        <SolidColorBrush x:Key="BlockBackgroundBrush" Color="#FF46BDB8"/>
+        <SolidColorBrush x:Key="StackPanelBackgroundBrush" Color="#FFDDDDDD"/>
+
+        <Style x:Key="TextBlockHeader" TargetType="TextBlock">
+            <Setter Property="Height" Value="20"/>
+            <Setter Property="Margin" Value="5,0,2,0"/>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+
+        <Style x:Key="BorderHeader" TargetType="Border">
+            <Setter Property="Background" Value="{StaticResource BlockBackgroundBrush}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+        </Style>
+
+        <Style x:Key="TextBlockCell" TargetType="TextBlock">
+            <Setter Property="Height" Value="15"/>
+            <Setter Property="Margin" Value="5,0,2,0"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="FontSize" Value="10"/>
+        </Style>
+
+        <Style x:Key="BorderCell" TargetType="Border">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderBrush" Value="{StaticResource BlockBackgroundBrush}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+        </Style>
+
+        <DataTemplate x:Key="DefaultItemDetailTemplate">
+            <Grid HorizontalAlignment="Left">
+                <Border Background="{StaticResource BlockBackgroundBrush}"/>
+                <StackPanel Orientation="Horizontal" Background="{StaticResource StackPanelBackgroundBrush}" Width="750"  Height="Auto" HorizontalAlignment="Left">
+                    <Border Style="{StaticResource BorderCell}">
+                        <TextBlock Text="{Binding articulacion}" Style="{StaticResource TextBlockCell}" FontSize="18.667" Width="232" Margin="5,0,0,0" Height="Auto"/>
+                    </Border>
+                    <Border Style="{StaticResource BorderCell}">
+                        <TextBlock Text="{Binding angulo}" Style="{StaticResource TextBlockCell}" FontSize="18.667" Width="108" Height="Auto"/>
+                    </Border>
+                    <Border Style="{StaticResource BorderCell}">
+                        <TextBlock Text="{Binding repeticiones}" Style="{StaticResource TextBlockCell}" FontSize="18.667" Width="125" Height="Auto"/>
+                    </Border>
+                    <Border Style="{StaticResource BorderCell}">
+                        <TextBlock Text="{Binding fechaRealizado}" Style="{StaticResource TextBlockCell}" FontSize="18.667" Width="250" Height="Auto"/>
+                    </Border>
+                </StackPanel>
+            </Grid>
+        </DataTemplate>
+    </Page.Resources>
 
     <!--
         This grid acts as a root panel for the page that defines two rows:
@@ -33,67 +86,57 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
         <!-- Back button and page title -->
-        <Grid Grid.Row="0" Margin="0,0,10,10">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="120"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
+        <Grid Grid.Row="0" Margin="0,0,10,10" Grid.ColumnSpan="2">
             <Button x:Name="backButton"
                           Command="{Binding GoBackCommand, ElementName=pageRoot}"
                           Style="{StaticResource BackButtonStyle}" />
-            <TextBlock x:Name="pageTitle" Text="{Binding Title}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
-                        IsHitTestVisible="false" TextWrapping="NoWrap" Margin="0,0,872,16" Height="72" VerticalAlignment="Bottom"/>
-            <TextBlock x:Name="nombrePaciente" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Manuel" VerticalAlignment="Center" Grid.Column="1" Margin="369,59,0,40" Height="41" Width="115" FontSize="26.667" TextAlignment="Justify" LineHeight="8" FontWeight="Bold"/>
+            <TextBlock x:Name="pageTitle" Text="{Binding Title}" Style="{StaticResource HeaderTextBlockStyle}" 
+                        IsHitTestVisible="false" TextWrapping="NoWrap" Margin="89,0,0,21" Height="72" VerticalAlignment="Bottom" Width="564" HorizontalAlignment="Left"/>
+            <TextBlock x:Name="nombrePaciente" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Paciente.Nombre}" VerticalAlignment="Center" Margin="1067,53,0,36" Height="41" Width="115" FontSize="26.667" TextAlignment="Justify" LineHeight="8" FontWeight="Bold"/>
         </Grid>
 
-        <Grid Margin="10,0,10,10" Grid.Row="1">
-            <StackPanel Grid.ColumnSpan="1" Orientation="Vertical" Margin="10,0,762,0">
-                <StackPanel x:Name="Abduccion" Margin="12,0,0,15" Orientation="Vertical">
-                        <TextBlock x:Name="pruebaTitle" HorizontalAlignment="Left" TextWrapping="Wrap" Text="PRUEBA: HOMBRO ABDUCCION-ADUCCION" FontSize="18.667" Margin="0,0,0,2"/>
-                    <StackPanel x:Name="Ab" Orientation="Horizontal" Height="24" Margin="0,0,22,0">
-                        <TextBlock x:Name="angTitle" HorizontalAlignment="Left" TextWrapping="Wrap" Text="ANGULO ABDUCCION:" VerticalAlignment="Top" FontSize="18.667" Width="194" Margin="0,0,0,-21"/>
-                        <TextBlock x:Name="angulo" TextWrapping="Wrap" Text="{Binding ValorAb}" FontSize="18.667" Margin="0"  Width="211" Height="24"/>
-                    </StackPanel>
-                    <StackPanel x:Name="Ad" Orientation="Horizontal" Height="24" Margin="0,0,22,0">
-                        <TextBlock x:Name="angTitle4" HorizontalAlignment="Left" TextWrapping="Wrap" Text="ANGULO ADDUCION:" VerticalAlignment="Top" FontSize="18.667" Width="189" Margin="0,0,0,-21"/>
-                        <TextBlock x:Name="angulo4" TextWrapping="Wrap" Text="{Binding ValorAd}" FontSize="18.667" Margin="0"  Width="211" Height="24"/>
-                    </StackPanel>
+        <Grid Margin="10" Grid.Row="1" Grid.ColumnSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="82"/>
+                <RowDefinition Height="0"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0" Orientation="Vertical" Margin="0,0,578,-516" Grid.RowSpan="2">
+                <StackPanel x:Name="Cabeceras" Margin="0" Orientation="Horizontal" HorizontalAlignment="Left" Width="768">
+                    <Border Style="{StaticResource BorderHeader}">
+                        <TextBlock x:Name="pruebaTitle" HorizontalAlignment="Center" Style="{StaticResource TextBlockHeader}" TextWrapping="Wrap" Text="PRUEBA" FontSize="18.667" Width="232" TextAlignment="Center"/>
+                    </Border>
+                    <Border Style="{StaticResource BorderHeader}">
+                        <TextBlock x:Name="angTitle" HorizontalAlignment="Center" Style="{StaticResource TextBlockHeader}" TextWrapping="Wrap" Text="ANGULO" VerticalAlignment="Top" FontSize="18.667" Width="116" Margin="0" TextAlignment="Center"/>
+                    </Border>
+                    <Border Style="{StaticResource BorderHeader}">
+                        <TextBlock x:Name="reptTitle" HorizontalAlignment="Center" Style="{StaticResource TextBlockHeader}" TextWrapping="Wrap" Text="REPETICIONES" VerticalAlignment="Top" FontSize="18.667" Width="129" Margin="0" TextAlignment="Center"/>
+                    </Border>
+                    <Border Style="{StaticResource BorderHeader}">
+                        <TextBlock x:Name="repFecha" HorizontalAlignment="Center" Style="{StaticResource TextBlockHeader}" TextWrapping="Wrap" Text="FECHA REALIZADO" VerticalAlignment="Top" FontSize="18.667" Width="258" Margin="0" TextAlignment="Center"/>
+                    </Border>
                 </StackPanel>
-                <StackPanel x:Name="HombroFlex" Margin="12,0,0,15" Orientation="Vertical">
-                    <TextBlock x:Name="pruebaTitle1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="PRUEBA: HOMBRO FLEXION-EXTENSION" FontSize="18.667" Margin="0,0,0,2"/>
-                    <StackPanel x:Name="Fl" Orientation="Horizontal" Height="24" Margin="0,0,22,0">
-                        <TextBlock x:Name="angTitle1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="ANGULO FLEXION:" VerticalAlignment="Top" FontSize="18.667" Width="158" Margin="0,0,0,-21"/>
-                        <TextBlock x:Name="angulo1" TextWrapping="Wrap" Text="{Binding ValorFl}" FontSize="18.667" Margin="0"  Width="211" Height="24"/>
-                    </StackPanel>
-                    <StackPanel x:Name="Ex" Orientation="Horizontal" Height="24" Margin="0,0,22,0">
-                        <TextBlock x:Name="angTitle5" HorizontalAlignment="Left" TextWrapping="Wrap" Text="ANGULO EXTENSION:" VerticalAlignment="Top" FontSize="18.667" Width="186" Margin="0,0,0,-21"/>
-                        <TextBlock x:Name="angulo5" TextWrapping="Wrap" Text="{Binding ValorEx}" FontSize="18.667" Margin="0"  Width="211" Height="24"/>
-                    </StackPanel>
-                </StackPanel>
-                <StackPanel x:Name="HombroFlexH" Margin="12,0,0,15" Orientation="Vertical">
-                        <TextBlock x:Name="pruebaTitle2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="PRUEBA: HOMBRO FLEXION-EXTENSION HORIZON" FontSize="18.667" Margin="0,0,0,2"/>
-                    <StackPanel x:Name="Flh" Orientation="Horizontal" Height="24" Margin="0,0,22,0">
-                        <TextBlock x:Name="angTitle2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="ANGULO FLEXION:" VerticalAlignment="Top" FontSize="18.667" Width="160" Margin="0,0,0,-21"/>
-                        <TextBlock x:Name="angulo2" TextWrapping="Wrap" Text="{Binding ValorFlh}" FontSize="18.667" Margin="0"  Width="211" Height="24"/>
-                    </StackPanel>
-                    <StackPanel x:Name="Exh" Orientation="Horizontal" Height="24" Margin="0,0,22,0">
-                        <TextBlock x:Name="angTitle6" HorizontalAlignment="Left" TextWrapping="Wrap" Text="ANGULO EXTENSION:" VerticalAlignment="Top" FontSize="18.667" Width="180" Margin="0,0,0,-21"/>
-                        <TextBlock x:Name="angulo6" TextWrapping="Wrap" Text="{Binding ValorExh}" FontSize="18.667" Margin="0"  Width="211" Height="24"/>
-                    </StackPanel>
-                </StackPanel>
-                <StackPanel x:Name="CodoFlex" Margin="12,0,0,5" Orientation="Vertical">
-                        <TextBlock x:Name="pruebaTitle3" HorizontalAlignment="Left" TextWrapping="Wrap" Text="PRUEBA: CODO FLEX-EXTENSION" FontSize="18.667" Margin="0,0,0,2"/>
-                    <StackPanel x:Name="Cfl" Orientation="Horizontal" Height="24" Margin="0,0,22,0">
-                        <TextBlock x:Name="angTitle3" HorizontalAlignment="Left" TextWrapping="Wrap" Text="ANGULO FLEXION:" VerticalAlignment="Top" FontSize="18.667" Width="160" Margin="0,0,0,-21"/>
-                        <TextBlock x:Name="angulo3" TextWrapping="Wrap" Text="{Binding ValorCfl}" FontSize="18.667" Margin="0"  Width="211" Height="24"/>
-                    </StackPanel>
-                    <StackPanel x:Name="Cex" Orientation="Horizontal" Height="24" Margin="0,0,22,0">
-                        <TextBlock x:Name="angTitle7" HorizontalAlignment="Left" TextWrapping="Wrap" Text="ANGULO EXTENSION:" VerticalAlignment="Top" FontSize="18.667" Width="186" Margin="0,0,0,-21"/>
-                        <TextBlock x:Name="angulo7" TextWrapping="Wrap" Text="{Binding ValorCex}" FontSize="18.667" Margin="0"  Width="211" Height="24"/>
-                    </StackPanel>
-                </StackPanel>
+                <ItemsControl Grid.Row="1" 
+                              ItemsSource="{Binding Ejercicios}"
+                              ItemTemplate="{StaticResource DefaultItemDetailTemplate}" Margin="0"/>
             </StackPanel>
+            <Series:Chart 
+            	x:Name="PieChart" 
+            	Title="Pie Chart" 
+            	Margin="773,0,15,-516" Grid.RowSpan="2">
+                <Series:ColumnSeries 
+            		Title="Population" 
+            		ItemsSource="{Binding Ejercicios}" 
+            		IndependentValueBinding="{Binding tipo}" 
+            		DependentValueBinding="{Binding angulo}" 
+            		IsSelectionEnabled="True" />
+            </Series:Chart>
         </Grid>
     </Grid>
 </controls:PageBase>

@@ -144,6 +144,9 @@ namespace PatientControl.ViewModels
         double anteriorY=0;
         double anteriorX=0;
         double anteriorHombroZ = 0;
+        double dist1 = 1;
+        double angRad = 1;
+        double Error = 1;
         Point anteriorHombro = new Point(0,0);
 
         public EjercicioPageViewModel(INavigationService navigationService, IEventAggregator eventAggregator)
@@ -364,36 +367,63 @@ namespace PatientControl.ViewModels
                                             if (Izquierdo)
                                             {
                                                 if (anteriorZ == 0) anteriorZ = joints[JointType.ElbowLeft].Position.Z;
-                                                //Debug.WriteLine(anteriorZ + " y " + joints[JointType.ElbowLeft].Position.Z);
-                                                if ((anteriorZ - 0.15 <= joints[JointType.ElbowLeft].Position.Z) && (joints[JointType.ElbowLeft].Position.Z <= anteriorZ + 0.15))
-                                                    if (On && joints[JointType.ElbowLeft].Position.X >= joints[JointType.ShoulderLeft].Position.X && joints[JointType.ElbowLeft].Position.Y < joints[JointType.ShoulderLeft].Position.Y)
-                                                        angle = 0 -AngleBetweenJoints(joints[JointType.ElbowLeft], joints[JointType.ShoulderLeft], UnderShoulder, UnderShoulderZ);
-                                                    else
-                                                        angle = AngleBetweenJoints(joints[JointType.ElbowLeft], joints[JointType.ShoulderLeft], UnderShoulder, UnderShoulderZ);
+                                                if (anteriorHombro.X == 0) anteriorHombro.X = joints[JointType.ShoulderLeft].Position.X;
+                                                if (anteriorHombro.Y == 0) anteriorHombro.Y = joints[JointType.ShoulderLeft].Position.Y;
 
+                                                if ((anteriorZ - 0.15 <= joints[JointType.ElbowLeft].Position.Z) && (joints[JointType.ElbowLeft].Position.Z <= anteriorZ + 0.15))
+                                                dist1 = Math.Sqrt(Math.Pow((joints[JointType.ShoulderRight].Position.X - anteriorHombro.X), 2) + Math.Pow((joints[JointType.ShoulderRight].Position.Y - anteriorHombro.Y), 2));
+                                                angRad = Math.Asin(Math.Sqrt(Math.Pow(joints[JointType.ShoulderRight].Position.Y - anteriorHombro.Y, 2)) / dist1);
+                                                Error = Math.Round(angRad * (180.0 / Math.PI),0);
+                                                    if (On && joints[JointType.ElbowLeft].Position.X >= joints[JointType.ShoulderLeft].Position.X && joints[JointType.ElbowLeft].Position.Y < joints[JointType.ShoulderLeft].Position.Y)
+                                                        angle = (-1) * AngleBetweenJoints(joints[JointType.ElbowLeft], joints[JointType.ShoulderLeft], UnderShoulder, UnderShoulderZ);
+                                                    else
+                                                        angle = AngleBetweenJoints(joints[JointType.ElbowLeft], joints[JointType.ShoulderLeft], UnderShoulder, UnderShoulderZ) + Error;
                                             }
                                             if (Derecho)
                                             {
                                                 if (anteriorZ == 0) anteriorZ = joints[JointType.ElbowRight].Position.Z;
+                                                if (anteriorHombro.X == 0) anteriorHombro.X = joints[JointType.ShoulderRight].Position.X;
+                                                if (anteriorHombro.Y == 0) anteriorHombro.Y = joints[JointType.ShoulderRight].Position.Y;
+
                                                 if ((anteriorZ - 0.15 <= joints[JointType.ElbowRight].Position.Z) && (joints[JointType.ElbowRight].Position.Z <= anteriorZ + 0.15))
+                                                dist1 = Math.Sqrt(Math.Pow((joints[JointType.ShoulderLeft].Position.X - anteriorHombro.X), 2) + Math.Pow((joints[JointType.ShoulderLeft].Position.Y - anteriorHombro.Y), 2));
+                                                angRad = Math.Asin(Math.Sqrt(Math.Pow(joints[JointType.ShoulderLeft].Position.Y - anteriorHombro.Y, 2)) / dist1);
+                                                Error = Math.Round(angRad * (180.0 / Math.PI), 0);
+
                                                     if (On && joints[JointType.ElbowRight].Position.X <= joints[JointType.ShoulderRight].Position.X && joints[JointType.ElbowRight].Position.Y < joints[JointType.ShoulderRight].Position.Y)
-                                                        angle = 0 - AngleBetweenJoints(joints[JointType.ElbowRight], joints[JointType.ShoulderRight], UnderShoulder, UnderShoulderZ);
+                                                        angle = (-1) * AngleBetweenJoints(joints[JointType.ElbowRight], joints[JointType.ShoulderRight], UnderShoulder, UnderShoulderZ);
                                                     else
-                                                        angle = AngleBetweenJoints(joints[JointType.ElbowRight], joints[JointType.ShoulderRight], UnderShoulder, UnderShoulderZ);
+                                                        angle = AngleBetweenJoints(joints[JointType.ElbowRight], joints[JointType.ShoulderRight], UnderShoulder, UnderShoulderZ) + Error;
                                             }
                                             break;
                                         case "FlexoExtension":
                                             if (Izquierdo)
                                             {
                                                 if (anteriorX == 0) anteriorX = joints[JointType.ElbowLeft].Position.X;
+                                                if (anteriorHombro.X == 0) anteriorHombro.X = joints[JointType.ShoulderLeft].Position.X;
+                                                if (anteriorHombro.Y == 0) anteriorHombro.Y = joints[JointType.ShoulderLeft].Position.Y;
+
                                                 if ((anteriorX - 0.15 <= joints[JointType.ElbowLeft].Position.X) && (joints[JointType.ElbowLeft].Position.X <= anteriorX + 0.15))
-                                                    angle = AngleBetweenJoints(joints[JointType.ElbowLeft], joints[JointType.ShoulderLeft], UnderShoulder, UnderShoulderZ);
+                                                    dist1 = Math.Sqrt(Math.Pow((joints[JointType.ShoulderRight].Position.X - joints[JointType.ShoulderLeft].Position.X), 2) + Math.Pow((joints[JointType.ShoulderRight].Position.Y - joints[JointType.ShoulderLeft].Position.Y), 2));
+                                                angRad = Math.Asin(Math.Sqrt(Math.Pow(joints[JointType.ShoulderRight].Position.Y - joints[JointType.ShoulderLeft].Position.Y, 2)) / dist1);
+                                                Error = Math.Round(angRad * (180.0 / Math.PI), 0);
+
+                                                    angle = AngleBetweenJoints(joints[JointType.ElbowLeft], joints[JointType.ShoulderLeft], UnderShoulder, UnderShoulderZ) + Error;
+                                                    if (angle > 184) angle = 182;
                                             }
                                             if (Derecho)
                                             {
                                                 if (anteriorX == 0) anteriorX = joints[JointType.ElbowRight].Position.X;
+                                                if (anteriorHombro.X == 0) anteriorHombro.X = joints[JointType.ShoulderRight].Position.X;
+                                                if (anteriorHombro.Y == 0) anteriorHombro.Y = joints[JointType.ShoulderRight].Position.Y;
+
                                                 if ((anteriorX - 0.15 <= joints[JointType.ElbowRight].Position.X) && (joints[JointType.ElbowRight].Position.X <= anteriorX + 0.15))
-                                                angle = AngleBetweenJoints(joints[JointType.ElbowRight], joints[JointType.ShoulderRight], UnderShoulder, UnderShoulderZ);
+                                                    dist1 = Math.Sqrt(Math.Pow((joints[JointType.ShoulderLeft].Position.X - joints[JointType.ShoulderRight].Position.X), 2) + Math.Pow((joints[JointType.ShoulderLeft].Position.Y - joints[JointType.ShoulderRight].Position.Y), 2));
+                                                angRad = Math.Asin(Math.Sqrt(Math.Pow(joints[JointType.ShoulderLeft].Position.Y - joints[JointType.ShoulderRight].Position.Y, 2)) / dist1);
+                                                Error = Math.Round(angRad * (180.0 / Math.PI), 0);
+
+                                                angle = AngleBetweenJoints(joints[JointType.ElbowRight], joints[JointType.ShoulderRight], UnderShoulder, UnderShoulderZ) + Error;
+                                                if (angle > 184) angle = 182;
                                             }
                                             break;
                                         case "FlexExHorizontal":
@@ -419,7 +449,7 @@ namespace PatientControl.ViewModels
                                                         angle = 90 - CalcularAnguloAlterno(joints[JointType.ElbowLeft], joints[JointType.ShoulderLeft], joints[JointType.ShoulderRight], UnderShoulder, UnderShoulderZ);
                                                         if (angle >= 45)
                                                         angle = 90 - CalcularAnguloAlterno(joints[JointType.ElbowLeft], anteriorHombro, anteriorHombroZ, joints[JointType.ShoulderRight], UnderShoulder, UnderShoulderZ);
-                                                        //                                                        angle = AngleBetweenJoints(joints[JointType.ElbowLeft], anteriorHombro, anteriorHombroZ, anteriorHombro, anteriorHombroZ + 50) - 90;
+                                                        // angle = AngleBetweenJoints(joints[JointType.ElbowLeft], anteriorHombro, anteriorHombroZ, anteriorHombro, anteriorHombroZ + 50) - 90;
                                                         if (angle < 0) angle = angle * (-1);
                                                     }
                                                 }
@@ -427,25 +457,40 @@ namespace PatientControl.ViewModels
                                             if (Derecho)
                                             {
                                                 if (anteriorY == 0) anteriorY = joints[JointType.ElbowRight].Position.Y;
+                                                if (anteriorHombro.X == 0) anteriorHombro.X = joints[JointType.ShoulderRight].Position.X;
+                                                if (anteriorHombro.Y == 0) anteriorHombro.Y = joints[JointType.ShoulderRight].Position.Y;
+                                                if (anteriorHombroZ == 0) anteriorHombroZ = joints[JointType.ShoulderRight].Position.Z;
+
                                                 if ((anteriorY - 0.1 <= joints[JointType.ElbowRight].Position.Y) && (joints[JointType.ElbowRight].Position.Y <= anteriorY + 0.1))
                                                 {
-                                                    if (joints[JointType.ElbowRight].Position.X <= joints[JointType.ShoulderRight].Position.X)
+                                                    if (joints[JointType.ElbowRight].Position.X <= joints[JointType.ShoulderRight].Position.X || joints[JointType.ElbowRight].Position.X <= anteriorHombro.X)
+                                                    {
                                                         angle = 90 + CalcularAnguloAlterno(joints[JointType.ElbowRight], joints[JointType.ShoulderRight], joints[JointType.ShoulderLeft], UnderShoulder, UnderShoulderZ);
-                                                    else angle = 90 - CalcularAnguloAlterno(joints[JointType.ElbowRight], joints[JointType.ShoulderRight], joints[JointType.ShoulderLeft], UnderShoulder, UnderShoulderZ);
+                                                        if (angle <= 110)
+                                                            angle = 90 + CalcularAnguloAlterno(joints[JointType.ElbowRight], anteriorHombro, anteriorHombroZ, joints[JointType.ShoulderLeft], UnderShoulder, UnderShoulderZ);
+                                                    }
+                                                    else
+                                                    {
+                                                        angle = 90 - CalcularAnguloAlterno(joints[JointType.ElbowRight], joints[JointType.ShoulderRight], joints[JointType.ShoulderLeft], UnderShoulder, UnderShoulderZ);
+                                                        if (angle >= 45)
+                                                            angle = 90 - CalcularAnguloAlterno(joints[JointType.ElbowRight], anteriorHombro, anteriorHombroZ, joints[JointType.ShoulderLeft], UnderShoulder, UnderShoulderZ);
+                                                        // angle = AngleBetweenJoints(joints[JointType.ElbowLeft], anteriorHombro, anteriorHombroZ, anteriorHombro, anteriorHombroZ + 50) - 90;
+                                                        if (angle < 0) angle = angle * (-1);
+                                                    }
                                                 }
                                             }
                                             break;
                                         case "CodoFlexEx":
                                             if (Izquierdo)
                                                 if (On)
-                                                    angle = 180 - AngleBetweenJoints(joints[JointType.WristLeft], joints[JointType.ElbowLeft], joints[JointType.ShoulderLeft]);
-                                                else
                                                     angle = AngleBetweenJoints(joints[JointType.WristLeft], joints[JointType.ElbowLeft], joints[JointType.ShoulderLeft]);
+                                                else
+                                                    angle = 180 - AngleBetweenJoints(joints[JointType.WristLeft], joints[JointType.ElbowLeft], joints[JointType.ShoulderLeft]);
                                             if (Derecho)
                                                 if (On)
-                                                    angle = 180 - AngleBetweenJoints(joints[JointType.WristRight], joints[JointType.ElbowRight], joints[JointType.ShoulderRight]);
-                                                else
                                                     angle = AngleBetweenJoints(joints[JointType.WristRight], joints[JointType.ElbowRight], joints[JointType.ShoulderRight]);
+                                                else
+                                                    angle = 180 - AngleBetweenJoints(joints[JointType.WristRight], joints[JointType.ElbowRight], joints[JointType.ShoulderRight]);
                                                     break;
                                 }
                                     myList.Add(angle);
@@ -869,7 +914,7 @@ namespace PatientControl.ViewModels
                     else
                         ejerSelected.Lado = "Derecho";
                     ejerSelected.FechaRealizado = new DateTime();
-                    ejerSelected.FechaRealizado.ToLocalTime();
+                    ejerSelected.FechaRealizado = DateTime.UtcNow.AddHours(2);
                 await ejerSelected.InsertarNuevoEjercicio();
             }
         }
@@ -898,6 +943,7 @@ namespace PatientControl.ViewModels
                 Izquierdo = false;
                 Derecho = true;
             }
+            anteriorHombro.X = anteriorHombro.Y = anteriorHombroZ = anteriorX = anteriorY = anteriorZ = 0;
         }
     }
 }

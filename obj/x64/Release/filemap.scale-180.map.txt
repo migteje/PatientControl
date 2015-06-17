@@ -1,0 +1,7 @@
+﻿[ResourceMetadata]
+"ResourceId"			"filemap.scale-180"
+"ResourceDimensions"		"scale-180"
+
+[Files]
+"C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\obj\x64\Release\filemap.scale-180.pri"			"resources.pri"
+"C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\obj\x64\Release\PackageLayout\Assets\StoreLogo.scale-180.png"			"Assets\StoreLogo.scale-180.png"

@@ -13,3 +13,6 @@ Views\DatosPage.xbf
 Views\EjercicioPage.xbf
 Views\LoginPage.xbf
 Views\MainPage.xbf
+Views\MedicalInfo.xbf
+Views\RegistroPage.xbf
+Views\RegistroUserControl.xbf

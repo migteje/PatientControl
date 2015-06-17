@@ -19,13 +19,11 @@
             </ResourceDictionary.MergedDictionaries>
             
             <!-- Converters -->
-            <converters:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
-            <converters:BooleanNegationToVisibilityConverter x:Key="BooleanNegationToVisibilityConverter" />
+            <!--converters:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" /-->
+            <!--converters:BooleanNegationToVisibilityConverter x:Key="BooleanNegationToVisibilityConverter" /-->
             <converters:NullToVisibleConverter x:Key="NullToVisibleConverter" />
             <converters:NotNullToVisibleConverter x:Key="NotNullToVisibleConverter" />
-            <converters:IsSignInInvalidConverter x:Key="IsSignInInvalidConverter" />
-            <converters:FormStatusToVisibilityConverter x:Key="FormStatusToVisibilityConverter" />
-            <converters:FormStatusToStyleConverter x:Key="FormStatusToStyleConverter" />
+            <!--converters:IsSignInInvalidConverter x:Key="IsSignInInvalidConverter" /-->
             <converters:FirstErrorConverter x:Key="FirstErrorConverter" />
             <converters:TextToHeaderVisibilityConverter x:Key="TextToHeaderVisibilityConverter" />
         </ResourceDictionary>

@@ -148,177 +148,167 @@ namespace PatientControl.PatientControl_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[84];
+            _typeNameTable = new string[79];
             _typeNameTable[0] = "Microsoft.Practices.Prism.Mvvm.MvvmAppBase";
             _typeNameTable[1] = "Windows.UI.Xaml.Application";
             _typeNameTable[2] = "Boolean";
-            _typeNameTable[3] = "PatientControl.Converters.BooleanToVisibilityConverter";
+            _typeNameTable[3] = "PatientControl.Converters.NullToVisibleConverter";
             _typeNameTable[4] = "Object";
-            _typeNameTable[5] = "PatientControl.Converters.BooleanNegationToVisibilityConverter";
-            _typeNameTable[6] = "PatientControl.Converters.NullToVisibleConverter";
-            _typeNameTable[7] = "PatientControl.Converters.NotNullToVisibleConverter";
-            _typeNameTable[8] = "PatientControl.Converters.IsSignInInvalidConverter";
-            _typeNameTable[9] = "PatientControl.Converters.FormStatusToVisibilityConverter";
-            _typeNameTable[10] = "PatientControl.Converters.FormStatusToStyleConverter";
-            _typeNameTable[11] = "PatientControl.Converters.FirstErrorConverter";
-            _typeNameTable[12] = "PatientControl.Converters.TextToHeaderVisibilityConverter";
-            _typeNameTable[13] = "Microsoft.Xaml.Interactivity.Interaction";
-            _typeNameTable[14] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
-            _typeNameTable[15] = "Windows.UI.Xaml.DependencyObjectCollection";
-            _typeNameTable[16] = "Windows.UI.Xaml.DependencyObject";
-            _typeNameTable[17] = "Microsoft.Xaml.Interactions.Core.IncrementalUpdateBehavior";
-            _typeNameTable[18] = "Int32";
-            _typeNameTable[19] = "Windows.UI.Color";
-            _typeNameTable[20] = "System.ValueType";
-            _typeNameTable[21] = "Byte";
-            _typeNameTable[22] = "PatientControl.Controls.PageBase";
-            _typeNameTable[23] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[24] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[25] = "Microsoft.Practices.Prism.Commands.DelegateCommand";
-            _typeNameTable[26] = "Microsoft.Practices.Prism.Commands.DelegateCommandBase";
-            _typeNameTable[27] = "Microsoft.Practices.Prism.Mvvm.ViewModelLocator";
-            _typeNameTable[28] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart";
-            _typeNameTable[29] = "Windows.UI.Xaml.Controls.Control";
-            _typeNameTable[30] = "System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>";
-            _typeNameTable[31] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries";
-            _typeNameTable[32] = "System.Collections.ObjectModel.ObservableCollection`1<Object>";
-            _typeNameTable[33] = "System.Collections.ObjectModel.Collection`1<Object>";
-            _typeNameTable[34] = "System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>";
-            _typeNameTable[35] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis";
-            _typeNameTable[36] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation";
-            _typeNameTable[37] = "System.Enum";
-            _typeNameTable[38] = "System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>";
-            _typeNameTable[39] = "System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>";
-            _typeNameTable[40] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener";
-            _typeNameTable[41] = "System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>";
-            _typeNameTable[42] = "System.Collections.ObjectModel.ReadOnlyCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>";
-            _typeNameTable[43] = "Windows.UI.Xaml.Style";
-            _typeNameTable[44] = "System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.ResourceDictionary>";
-            _typeNameTable[45] = "Windows.UI.Xaml.ResourceDictionary";
-            _typeNameTable[46] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries";
-            _typeNameTable[47] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>";
-            _typeNameTable[48] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes";
-            _typeNameTable[49] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeriesWithAxes";
-            _typeNameTable[50] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries";
-            _typeNameTable[51] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.Series";
-            _typeNameTable[52] = "System.Collections.IEnumerable";
-            _typeNameTable[53] = "Windows.UI.Xaml.Data.Binding";
-            _typeNameTable[54] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis";
-            _typeNameTable[55] = "System.Nullable`1<Int32>";
-            _typeNameTable[56] = "String";
-            _typeNameTable[57] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence";
-            _typeNameTable[58] = "Windows.UI.Xaml.Media.Animation.EasingFunctionBase";
-            _typeNameTable[59] = "TimeSpan";
-            _typeNameTable[60] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeriesHost";
-            _typeNameTable[61] = "PatientControl.Views.DatosPage";
-            _typeNameTable[62] = "PatientControl.Views.EjercicioPage";
-            _typeNameTable[63] = "PatientControl.Controls.MultipleSizedGridView";
-            _typeNameTable[64] = "PatientControl.Controls.AutoRotatingGridView";
-            _typeNameTable[65] = "Windows.UI.Xaml.Controls.GridView";
-            _typeNameTable[66] = "Windows.UI.Xaml.Controls.ItemsControl";
-            _typeNameTable[67] = "Windows.UI.Xaml.Controls.ItemsPanelTemplate";
-            _typeNameTable[68] = "System.Collections.ObjectModel.ObservableCollection`1<Windows.UI.Xaml.Controls.GroupStyle>";
-            _typeNameTable[69] = "System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.Controls.GroupStyle>";
-            _typeNameTable[70] = "Windows.UI.Xaml.Controls.GroupStyle";
-            _typeNameTable[71] = "Windows.UI.Xaml.DataTemplate";
-            _typeNameTable[72] = "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior";
-            _typeNameTable[73] = "Microsoft.Xaml.Interactivity.ActionCollection";
-            _typeNameTable[74] = "PatientControl.Behaviors.NavigateWithEventArgsToPageAction";
-            _typeNameTable[75] = "PatientControl.Views.MainPage";
-            _typeNameTable[76] = "PatientControl.Views.LoginPage";
-            _typeNameTable[77] = "PatientControl.Views.RegistroUserControl";
-            _typeNameTable[78] = "PatientControl.Views.MedicalInfo";
-            _typeNameTable[79] = "PatientControl.Views.RegistroPage";
-            _typeNameTable[80] = "PatientControl.Behaviors.HighlightFormFieldOnErrors";
-            _typeNameTable[81] = "PatientControl.Behaviors.Behavior`1<Windows.UI.Xaml.FrameworkElement>";
-            _typeNameTable[82] = "System.Collections.ObjectModel.ReadOnlyCollection`1<String>";
-            _typeNameTable[83] = "Windows.UI.Xaml.FrameworkElement";
+            _typeNameTable[5] = "PatientControl.Converters.NotNullToVisibleConverter";
+            _typeNameTable[6] = "PatientControl.Converters.FirstErrorConverter";
+            _typeNameTable[7] = "PatientControl.Converters.TextToHeaderVisibilityConverter";
+            _typeNameTable[8] = "Microsoft.Xaml.Interactivity.Interaction";
+            _typeNameTable[9] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
+            _typeNameTable[10] = "Windows.UI.Xaml.DependencyObjectCollection";
+            _typeNameTable[11] = "Windows.UI.Xaml.DependencyObject";
+            _typeNameTable[12] = "Microsoft.Xaml.Interactions.Core.IncrementalUpdateBehavior";
+            _typeNameTable[13] = "Int32";
+            _typeNameTable[14] = "Windows.UI.Color";
+            _typeNameTable[15] = "System.ValueType";
+            _typeNameTable[16] = "Byte";
+            _typeNameTable[17] = "PatientControl.Controls.PageBase";
+            _typeNameTable[18] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[19] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[20] = "Microsoft.Practices.Prism.Commands.DelegateCommand";
+            _typeNameTable[21] = "Microsoft.Practices.Prism.Commands.DelegateCommandBase";
+            _typeNameTable[22] = "Microsoft.Practices.Prism.Mvvm.ViewModelLocator";
+            _typeNameTable[23] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart";
+            _typeNameTable[24] = "Windows.UI.Xaml.Controls.Control";
+            _typeNameTable[25] = "System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>";
+            _typeNameTable[26] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries";
+            _typeNameTable[27] = "System.Collections.ObjectModel.ObservableCollection`1<Object>";
+            _typeNameTable[28] = "System.Collections.ObjectModel.Collection`1<Object>";
+            _typeNameTable[29] = "System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>";
+            _typeNameTable[30] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis";
+            _typeNameTable[31] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation";
+            _typeNameTable[32] = "System.Enum";
+            _typeNameTable[33] = "System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>";
+            _typeNameTable[34] = "System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>";
+            _typeNameTable[35] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener";
+            _typeNameTable[36] = "System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>";
+            _typeNameTable[37] = "System.Collections.ObjectModel.ReadOnlyCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>";
+            _typeNameTable[38] = "Windows.UI.Xaml.Style";
+            _typeNameTable[39] = "System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.ResourceDictionary>";
+            _typeNameTable[40] = "Windows.UI.Xaml.ResourceDictionary";
+            _typeNameTable[41] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries";
+            _typeNameTable[42] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>";
+            _typeNameTable[43] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes";
+            _typeNameTable[44] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeriesWithAxes";
+            _typeNameTable[45] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries";
+            _typeNameTable[46] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.Series";
+            _typeNameTable[47] = "System.Collections.IEnumerable";
+            _typeNameTable[48] = "Windows.UI.Xaml.Data.Binding";
+            _typeNameTable[49] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis";
+            _typeNameTable[50] = "System.Nullable`1<Int32>";
+            _typeNameTable[51] = "String";
+            _typeNameTable[52] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence";
+            _typeNameTable[53] = "Windows.UI.Xaml.Media.Animation.EasingFunctionBase";
+            _typeNameTable[54] = "TimeSpan";
+            _typeNameTable[55] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeriesHost";
+            _typeNameTable[56] = "PatientControl.Views.DatosPage";
+            _typeNameTable[57] = "PatientControl.Views.EjercicioPage";
+            _typeNameTable[58] = "PatientControl.Controls.MultipleSizedGridView";
+            _typeNameTable[59] = "PatientControl.Controls.AutoRotatingGridView";
+            _typeNameTable[60] = "Windows.UI.Xaml.Controls.GridView";
+            _typeNameTable[61] = "Windows.UI.Xaml.Controls.ItemsControl";
+            _typeNameTable[62] = "Windows.UI.Xaml.Controls.ItemsPanelTemplate";
+            _typeNameTable[63] = "System.Collections.ObjectModel.ObservableCollection`1<Windows.UI.Xaml.Controls.GroupStyle>";
+            _typeNameTable[64] = "System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.Controls.GroupStyle>";
+            _typeNameTable[65] = "Windows.UI.Xaml.Controls.GroupStyle";
+            _typeNameTable[66] = "Windows.UI.Xaml.DataTemplate";
+            _typeNameTable[67] = "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior";
+            _typeNameTable[68] = "Microsoft.Xaml.Interactivity.ActionCollection";
+            _typeNameTable[69] = "PatientControl.Behaviors.NavigateWithEventArgsToPageAction";
+            _typeNameTable[70] = "PatientControl.Views.MainPage";
+            _typeNameTable[71] = "PatientControl.Views.LoginPage";
+            _typeNameTable[72] = "PatientControl.Views.RegistroUserControl";
+            _typeNameTable[73] = "PatientControl.Views.MedicalInfo";
+            _typeNameTable[74] = "PatientControl.Views.RegistroPage";
+            _typeNameTable[75] = "PatientControl.Behaviors.HighlightFormFieldOnErrors";
+            _typeNameTable[76] = "PatientControl.Behaviors.Behavior`1<Windows.UI.Xaml.FrameworkElement>";
+            _typeNameTable[77] = "System.Collections.ObjectModel.ReadOnlyCollection`1<String>";
+            _typeNameTable[78] = "Windows.UI.Xaml.FrameworkElement";
 
-            _typeTable = new global::System.Type[84];
+            _typeTable = new global::System.Type[79];
             _typeTable[0] = typeof(global::Microsoft.Practices.Prism.Mvvm.MvvmAppBase);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Application);
             _typeTable[2] = typeof(global::System.Boolean);
-            _typeTable[3] = typeof(global::PatientControl.Converters.BooleanToVisibilityConverter);
+            _typeTable[3] = typeof(global::PatientControl.Converters.NullToVisibleConverter);
             _typeTable[4] = typeof(global::System.Object);
-            _typeTable[5] = typeof(global::PatientControl.Converters.BooleanNegationToVisibilityConverter);
-            _typeTable[6] = typeof(global::PatientControl.Converters.NullToVisibleConverter);
-            _typeTable[7] = typeof(global::PatientControl.Converters.NotNullToVisibleConverter);
-            _typeTable[8] = typeof(global::PatientControl.Converters.IsSignInInvalidConverter);
-            _typeTable[9] = typeof(global::PatientControl.Converters.FormStatusToVisibilityConverter);
-            _typeTable[10] = typeof(global::PatientControl.Converters.FormStatusToStyleConverter);
-            _typeTable[11] = typeof(global::PatientControl.Converters.FirstErrorConverter);
-            _typeTable[12] = typeof(global::PatientControl.Converters.TextToHeaderVisibilityConverter);
-            _typeTable[13] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
-            _typeTable[14] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
-            _typeTable[15] = typeof(global::Windows.UI.Xaml.DependencyObjectCollection);
-            _typeTable[16] = typeof(global::Windows.UI.Xaml.DependencyObject);
-            _typeTable[17] = typeof(global::Microsoft.Xaml.Interactions.Core.IncrementalUpdateBehavior);
-            _typeTable[18] = typeof(global::System.Int32);
-            _typeTable[19] = typeof(global::Windows.UI.Color);
-            _typeTable[20] = typeof(global::System.ValueType);
-            _typeTable[21] = typeof(global::System.Byte);
-            _typeTable[22] = typeof(global::PatientControl.Controls.PageBase);
-            _typeTable[23] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[24] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[25] = typeof(global::Microsoft.Practices.Prism.Commands.DelegateCommand);
-            _typeTable[26] = typeof(global::Microsoft.Practices.Prism.Commands.DelegateCommandBase);
-            _typeTable[27] = typeof(global::Microsoft.Practices.Prism.Mvvm.ViewModelLocator);
-            _typeTable[28] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart);
-            _typeTable[29] = typeof(global::Windows.UI.Xaml.Controls.Control);
-            _typeTable[30] = typeof(global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>);
-            _typeTable[31] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries);
-            _typeTable[32] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::System.Object>);
-            _typeTable[33] = typeof(global::System.Collections.ObjectModel.Collection<global::System.Object>);
-            _typeTable[34] = typeof(global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>);
-            _typeTable[35] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis);
-            _typeTable[36] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation);
-            _typeTable[37] = typeof(global::System.Enum);
-            _typeTable[38] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>);
-            _typeTable[39] = typeof(global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>);
-            _typeTable[40] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener);
-            _typeTable[41] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>);
-            _typeTable[42] = typeof(global::System.Collections.ObjectModel.ReadOnlyCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>);
-            _typeTable[43] = typeof(global::Windows.UI.Xaml.Style);
-            _typeTable[44] = typeof(global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.ResourceDictionary>);
-            _typeTable[45] = typeof(global::Windows.UI.Xaml.ResourceDictionary);
-            _typeTable[46] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries);
-            _typeTable[47] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>);
-            _typeTable[48] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes);
-            _typeTable[49] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeriesWithAxes);
-            _typeTable[50] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries);
-            _typeTable[51] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Series);
-            _typeTable[52] = typeof(global::System.Collections.IEnumerable);
-            _typeTable[53] = typeof(global::Windows.UI.Xaml.Data.Binding);
-            _typeTable[54] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis);
-            _typeTable[55] = typeof(global::System.Nullable<global::System.Int32>);
-            _typeTable[56] = typeof(global::System.String);
-            _typeTable[57] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence);
-            _typeTable[58] = typeof(global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase);
-            _typeTable[59] = typeof(global::System.TimeSpan);
-            _typeTable[60] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeriesHost);
-            _typeTable[61] = typeof(global::PatientControl.Views.DatosPage);
-            _typeTable[62] = typeof(global::PatientControl.Views.EjercicioPage);
-            _typeTable[63] = typeof(global::PatientControl.Controls.MultipleSizedGridView);
-            _typeTable[64] = typeof(global::PatientControl.Controls.AutoRotatingGridView);
-            _typeTable[65] = typeof(global::Windows.UI.Xaml.Controls.GridView);
-            _typeTable[66] = typeof(global::Windows.UI.Xaml.Controls.ItemsControl);
-            _typeTable[67] = typeof(global::Windows.UI.Xaml.Controls.ItemsPanelTemplate);
-            _typeTable[68] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Windows.UI.Xaml.Controls.GroupStyle>);
-            _typeTable[69] = typeof(global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.Controls.GroupStyle>);
-            _typeTable[70] = typeof(global::Windows.UI.Xaml.Controls.GroupStyle);
-            _typeTable[71] = typeof(global::Windows.UI.Xaml.DataTemplate);
-            _typeTable[72] = typeof(global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior);
-            _typeTable[73] = typeof(global::Microsoft.Xaml.Interactivity.ActionCollection);
-            _typeTable[74] = typeof(global::PatientControl.Behaviors.NavigateWithEventArgsToPageAction);
-            _typeTable[75] = typeof(global::PatientControl.Views.MainPage);
-            _typeTable[76] = typeof(global::PatientControl.Views.LoginPage);
-            _typeTable[77] = typeof(global::PatientControl.Views.RegistroUserControl);
-            _typeTable[78] = typeof(global::PatientControl.Views.MedicalInfo);
-            _typeTable[79] = typeof(global::PatientControl.Views.RegistroPage);
-            _typeTable[80] = typeof(global::PatientControl.Behaviors.HighlightFormFieldOnErrors);
-            _typeTable[81] = typeof(global::PatientControl.Behaviors.Behavior<global::Windows.UI.Xaml.FrameworkElement>);
-            _typeTable[82] = typeof(global::System.Collections.ObjectModel.ReadOnlyCollection<global::System.String>);
-            _typeTable[83] = typeof(global::Windows.UI.Xaml.FrameworkElement);
+            _typeTable[5] = typeof(global::PatientControl.Converters.NotNullToVisibleConverter);
+            _typeTable[6] = typeof(global::PatientControl.Converters.FirstErrorConverter);
+            _typeTable[7] = typeof(global::PatientControl.Converters.TextToHeaderVisibilityConverter);
+            _typeTable[8] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
+            _typeTable[9] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
+            _typeTable[10] = typeof(global::Windows.UI.Xaml.DependencyObjectCollection);
+            _typeTable[11] = typeof(global::Windows.UI.Xaml.DependencyObject);
+            _typeTable[12] = typeof(global::Microsoft.Xaml.Interactions.Core.IncrementalUpdateBehavior);
+            _typeTable[13] = typeof(global::System.Int32);
+            _typeTable[14] = typeof(global::Windows.UI.Color);
+            _typeTable[15] = typeof(global::System.ValueType);
+            _typeTable[16] = typeof(global::System.Byte);
+            _typeTable[17] = typeof(global::PatientControl.Controls.PageBase);
+            _typeTable[18] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[19] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[20] = typeof(global::Microsoft.Practices.Prism.Commands.DelegateCommand);
+            _typeTable[21] = typeof(global::Microsoft.Practices.Prism.Commands.DelegateCommandBase);
+            _typeTable[22] = typeof(global::Microsoft.Practices.Prism.Mvvm.ViewModelLocator);
+            _typeTable[23] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart);
+            _typeTable[24] = typeof(global::Windows.UI.Xaml.Controls.Control);
+            _typeTable[25] = typeof(global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>);
+            _typeTable[26] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries);
+            _typeTable[27] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::System.Object>);
+            _typeTable[28] = typeof(global::System.Collections.ObjectModel.Collection<global::System.Object>);
+            _typeTable[29] = typeof(global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>);
+            _typeTable[30] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis);
+            _typeTable[31] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation);
+            _typeTable[32] = typeof(global::System.Enum);
+            _typeTable[33] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>);
+            _typeTable[34] = typeof(global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>);
+            _typeTable[35] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener);
+            _typeTable[36] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>);
+            _typeTable[37] = typeof(global::System.Collections.ObjectModel.ReadOnlyCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>);
+            _typeTable[38] = typeof(global::Windows.UI.Xaml.Style);
+            _typeTable[39] = typeof(global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.ResourceDictionary>);
+            _typeTable[40] = typeof(global::Windows.UI.Xaml.ResourceDictionary);
+            _typeTable[41] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries);
+            _typeTable[42] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>);
+            _typeTable[43] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes);
+            _typeTable[44] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeriesWithAxes);
+            _typeTable[45] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries);
+            _typeTable[46] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Series);
+            _typeTable[47] = typeof(global::System.Collections.IEnumerable);
+            _typeTable[48] = typeof(global::Windows.UI.Xaml.Data.Binding);
+            _typeTable[49] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis);
+            _typeTable[50] = typeof(global::System.Nullable<global::System.Int32>);
+            _typeTable[51] = typeof(global::System.String);
+            _typeTable[52] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence);
+            _typeTable[53] = typeof(global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase);
+            _typeTable[54] = typeof(global::System.TimeSpan);
+            _typeTable[55] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeriesHost);
+            _typeTable[56] = typeof(global::PatientControl.Views.DatosPage);
+            _typeTable[57] = typeof(global::PatientControl.Views.EjercicioPage);
+            _typeTable[58] = typeof(global::PatientControl.Controls.MultipleSizedGridView);
+            _typeTable[59] = typeof(global::PatientControl.Controls.AutoRotatingGridView);
+            _typeTable[60] = typeof(global::Windows.UI.Xaml.Controls.GridView);
+            _typeTable[61] = typeof(global::Windows.UI.Xaml.Controls.ItemsControl);
+            _typeTable[62] = typeof(global::Windows.UI.Xaml.Controls.ItemsPanelTemplate);
+            _typeTable[63] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Windows.UI.Xaml.Controls.GroupStyle>);
+            _typeTable[64] = typeof(global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.Controls.GroupStyle>);
+            _typeTable[65] = typeof(global::Windows.UI.Xaml.Controls.GroupStyle);
+            _typeTable[66] = typeof(global::Windows.UI.Xaml.DataTemplate);
+            _typeTable[67] = typeof(global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior);
+            _typeTable[68] = typeof(global::Microsoft.Xaml.Interactivity.ActionCollection);
+            _typeTable[69] = typeof(global::PatientControl.Behaviors.NavigateWithEventArgsToPageAction);
+            _typeTable[70] = typeof(global::PatientControl.Views.MainPage);
+            _typeTable[71] = typeof(global::PatientControl.Views.LoginPage);
+            _typeTable[72] = typeof(global::PatientControl.Views.RegistroUserControl);
+            _typeTable[73] = typeof(global::PatientControl.Views.MedicalInfo);
+            _typeTable[74] = typeof(global::PatientControl.Views.RegistroPage);
+            _typeTable[75] = typeof(global::PatientControl.Behaviors.HighlightFormFieldOnErrors);
+            _typeTable[76] = typeof(global::PatientControl.Behaviors.Behavior<global::Windows.UI.Xaml.FrameworkElement>);
+            _typeTable[77] = typeof(global::System.Collections.ObjectModel.ReadOnlyCollection<global::System.String>);
+            _typeTable[78] = typeof(global::Windows.UI.Xaml.FrameworkElement);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -353,121 +343,116 @@ namespace PatientControl.PatientControl_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_3_BooleanToVisibilityConverter() { return new global::PatientControl.Converters.BooleanToVisibilityConverter(); }
-        private object Activate_5_BooleanNegationToVisibilityConverter() { return new global::PatientControl.Converters.BooleanNegationToVisibilityConverter(); }
-        private object Activate_6_NullToVisibleConverter() { return new global::PatientControl.Converters.NullToVisibleConverter(); }
-        private object Activate_7_NotNullToVisibleConverter() { return new global::PatientControl.Converters.NotNullToVisibleConverter(); }
-        private object Activate_8_IsSignInInvalidConverter() { return new global::PatientControl.Converters.IsSignInInvalidConverter(); }
-        private object Activate_9_FormStatusToVisibilityConverter() { return new global::PatientControl.Converters.FormStatusToVisibilityConverter(); }
-        private object Activate_10_FormStatusToStyleConverter() { return new global::PatientControl.Converters.FormStatusToStyleConverter(); }
-        private object Activate_11_FirstErrorConverter() { return new global::PatientControl.Converters.FirstErrorConverter(); }
-        private object Activate_12_TextToHeaderVisibilityConverter() { return new global::PatientControl.Converters.TextToHeaderVisibilityConverter(); }
-        private object Activate_14_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
-        private object Activate_17_IncrementalUpdateBehavior() { return new global::Microsoft.Xaml.Interactions.Core.IncrementalUpdateBehavior(); }
-        private object Activate_28_Chart() { return new global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart(); }
-        private object Activate_30_Collection() { return new global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>(); }
-        private object Activate_32_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::System.Object>(); }
-        private object Activate_33_Collection() { return new global::System.Collections.ObjectModel.Collection<global::System.Object>(); }
-        private object Activate_34_Collection() { return new global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>(); }
-        private object Activate_38_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>(); }
-        private object Activate_39_Collection() { return new global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>(); }
-        private object Activate_41_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>(); }
-        private object Activate_44_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.ResourceDictionary>(); }
-        private object Activate_46_ColumnSeries() { return new global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries(); }
-        private object Activate_61_DatosPage() { return new global::PatientControl.Views.DatosPage(); }
-        private object Activate_62_EjercicioPage() { return new global::PatientControl.Views.EjercicioPage(); }
-        private object Activate_63_MultipleSizedGridView() { return new global::PatientControl.Controls.MultipleSizedGridView(); }
-        private object Activate_64_AutoRotatingGridView() { return new global::PatientControl.Controls.AutoRotatingGridView(); }
-        private object Activate_68_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Windows.UI.Xaml.Controls.GroupStyle>(); }
-        private object Activate_69_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.Controls.GroupStyle>(); }
-        private object Activate_72_EventTriggerBehavior() { return new global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior(); }
-        private object Activate_73_ActionCollection() { return new global::Microsoft.Xaml.Interactivity.ActionCollection(); }
-        private object Activate_74_NavigateWithEventArgsToPageAction() { return new global::PatientControl.Behaviors.NavigateWithEventArgsToPageAction(); }
-        private object Activate_75_MainPage() { return new global::PatientControl.Views.MainPage(); }
-        private object Activate_76_LoginPage() { return new global::PatientControl.Views.LoginPage(); }
-        private object Activate_77_RegistroUserControl() { return new global::PatientControl.Views.RegistroUserControl(); }
-        private object Activate_78_MedicalInfo() { return new global::PatientControl.Views.MedicalInfo(); }
-        private object Activate_79_RegistroPage() { return new global::PatientControl.Views.RegistroPage(); }
-        private object Activate_80_HighlightFormFieldOnErrors() { return new global::PatientControl.Behaviors.HighlightFormFieldOnErrors(); }
-        private void VectorAdd_14_BehaviorCollection(object instance, object item)
+        private object Activate_3_NullToVisibleConverter() { return new global::PatientControl.Converters.NullToVisibleConverter(); }
+        private object Activate_5_NotNullToVisibleConverter() { return new global::PatientControl.Converters.NotNullToVisibleConverter(); }
+        private object Activate_6_FirstErrorConverter() { return new global::PatientControl.Converters.FirstErrorConverter(); }
+        private object Activate_7_TextToHeaderVisibilityConverter() { return new global::PatientControl.Converters.TextToHeaderVisibilityConverter(); }
+        private object Activate_9_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
+        private object Activate_12_IncrementalUpdateBehavior() { return new global::Microsoft.Xaml.Interactions.Core.IncrementalUpdateBehavior(); }
+        private object Activate_23_Chart() { return new global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart(); }
+        private object Activate_25_Collection() { return new global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>(); }
+        private object Activate_27_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::System.Object>(); }
+        private object Activate_28_Collection() { return new global::System.Collections.ObjectModel.Collection<global::System.Object>(); }
+        private object Activate_29_Collection() { return new global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>(); }
+        private object Activate_33_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>(); }
+        private object Activate_34_Collection() { return new global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>(); }
+        private object Activate_36_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>(); }
+        private object Activate_39_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.ResourceDictionary>(); }
+        private object Activate_41_ColumnSeries() { return new global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries(); }
+        private object Activate_56_DatosPage() { return new global::PatientControl.Views.DatosPage(); }
+        private object Activate_57_EjercicioPage() { return new global::PatientControl.Views.EjercicioPage(); }
+        private object Activate_58_MultipleSizedGridView() { return new global::PatientControl.Controls.MultipleSizedGridView(); }
+        private object Activate_59_AutoRotatingGridView() { return new global::PatientControl.Controls.AutoRotatingGridView(); }
+        private object Activate_63_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Windows.UI.Xaml.Controls.GroupStyle>(); }
+        private object Activate_64_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.Controls.GroupStyle>(); }
+        private object Activate_67_EventTriggerBehavior() { return new global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior(); }
+        private object Activate_68_ActionCollection() { return new global::Microsoft.Xaml.Interactivity.ActionCollection(); }
+        private object Activate_69_NavigateWithEventArgsToPageAction() { return new global::PatientControl.Behaviors.NavigateWithEventArgsToPageAction(); }
+        private object Activate_70_MainPage() { return new global::PatientControl.Views.MainPage(); }
+        private object Activate_71_LoginPage() { return new global::PatientControl.Views.LoginPage(); }
+        private object Activate_72_RegistroUserControl() { return new global::PatientControl.Views.RegistroUserControl(); }
+        private object Activate_73_MedicalInfo() { return new global::PatientControl.Views.MedicalInfo(); }
+        private object Activate_74_RegistroPage() { return new global::PatientControl.Views.RegistroPage(); }
+        private object Activate_75_HighlightFormFieldOnErrors() { return new global::PatientControl.Behaviors.HighlightFormFieldOnErrors(); }
+        private void VectorAdd_9_BehaviorCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
             var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_30_Collection(object instance, object item)
+        private void VectorAdd_25_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>)instance;
             var newItem = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_32_ObservableCollection(object instance, object item)
+        private void VectorAdd_27_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::System.Object>)instance;
             var newItem = (global::System.Object)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_33_Collection(object instance, object item)
+        private void VectorAdd_28_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::System.Object>)instance;
             var newItem = (global::System.Object)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_29_Collection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>)instance;
+            var newItem = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_33_ObservableCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>)instance;
+            var newItem = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener)item;
             collection.Add(newItem);
         }
         private void VectorAdd_34_Collection(object instance, object item)
         {
+            var collection = (global::System.Collections.Generic.ICollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>)instance;
+            var newItem = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_36_ObservableCollection(object instance, object item)
+        {
             var collection = (global::System.Collections.Generic.ICollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>)instance;
             var newItem = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_38_ObservableCollection(object instance, object item)
+        private void VectorAdd_37_ReadOnlyCollection(object instance, object item)
         {
-            var collection = (global::System.Collections.Generic.ICollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>)instance;
-            var newItem = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener)item;
+            var collection = (global::System.Collections.Generic.ICollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>)instance;
+            var newItem = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)item;
             collection.Add(newItem);
         }
         private void VectorAdd_39_Collection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>)instance;
-            var newItem = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_41_ObservableCollection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>)instance;
-            var newItem = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_42_ReadOnlyCollection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>)instance;
-            var newItem = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_44_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.ResourceDictionary>)instance;
             var newItem = (global::Windows.UI.Xaml.ResourceDictionary)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_68_ObservableCollection(object instance, object item)
+        private void VectorAdd_63_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.Controls.GroupStyle>)instance;
             var newItem = (global::Windows.UI.Xaml.Controls.GroupStyle)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_69_Collection(object instance, object item)
+        private void VectorAdd_64_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.Controls.GroupStyle>)instance;
             var newItem = (global::Windows.UI.Xaml.Controls.GroupStyle)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_73_ActionCollection(object instance, object item)
+        private void VectorAdd_68_ActionCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
             var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_82_ReadOnlyCollection(object instance, object item)
+        private void VectorAdd_77_ReadOnlyCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::System.String>)instance;
             var newItem = (global::System.String)item;
@@ -498,9 +483,9 @@ namespace PatientControl.PatientControl_XamlTypeInfo
                 xamlType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  PatientControl.Converters.BooleanToVisibilityConverter
+            case 3:   //  PatientControl.Converters.NullToVisibleConverter
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_3_BooleanToVisibilityConverter;
+                userType.Activator = Activate_3_NullToVisibleConverter;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -509,96 +494,61 @@ namespace PatientControl.PatientControl_XamlTypeInfo
                 xamlType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 5:   //  PatientControl.Converters.BooleanNegationToVisibilityConverter
+            case 5:   //  PatientControl.Converters.NotNullToVisibleConverter
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_5_BooleanNegationToVisibilityConverter;
+                userType.Activator = Activate_5_NotNullToVisibleConverter;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 6:   //  PatientControl.Converters.NullToVisibleConverter
+            case 6:   //  PatientControl.Converters.FirstErrorConverter
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_6_NullToVisibleConverter;
+                userType.Activator = Activate_6_FirstErrorConverter;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 7:   //  PatientControl.Converters.NotNullToVisibleConverter
+            case 7:   //  PatientControl.Converters.TextToHeaderVisibilityConverter
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_7_NotNullToVisibleConverter;
+                userType.Activator = Activate_7_TextToHeaderVisibilityConverter;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 8:   //  PatientControl.Converters.IsSignInInvalidConverter
-                userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_8_IsSignInInvalidConverter;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 9:   //  PatientControl.Converters.FormStatusToVisibilityConverter
-                userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_9_FormStatusToVisibilityConverter;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 10:   //  PatientControl.Converters.FormStatusToStyleConverter
-                userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_10_FormStatusToStyleConverter;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 11:   //  PatientControl.Converters.FirstErrorConverter
-                userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_11_FirstErrorConverter;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 12:   //  PatientControl.Converters.TextToHeaderVisibilityConverter
-                userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_12_TextToHeaderVisibilityConverter;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 13:   //  Microsoft.Xaml.Interactivity.Interaction
+            case 8:   //  Microsoft.Xaml.Interactivity.Interaction
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.AddMemberName("Behaviors");
                 xamlType = userType;
                 break;
 
-            case 14:   //  Microsoft.Xaml.Interactivity.BehaviorCollection
+            case 9:   //  Microsoft.Xaml.Interactivity.BehaviorCollection
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObjectCollection"));
-                userType.CollectionAdd = VectorAdd_14_BehaviorCollection;
+                userType.CollectionAdd = VectorAdd_9_BehaviorCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 15:   //  Windows.UI.Xaml.DependencyObjectCollection
+            case 10:   //  Windows.UI.Xaml.DependencyObjectCollection
                 xamlType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 16:   //  Windows.UI.Xaml.DependencyObject
+            case 11:   //  Windows.UI.Xaml.DependencyObject
                 xamlType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 17:   //  Microsoft.Xaml.Interactions.Core.IncrementalUpdateBehavior
+            case 12:   //  Microsoft.Xaml.Interactions.Core.IncrementalUpdateBehavior
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_17_IncrementalUpdateBehavior;
+                userType.Activator = Activate_12_IncrementalUpdateBehavior;
                 userType.AddMemberName("Phase");
                 userType.AddMemberName("AssociatedObject");
                 xamlType = userType;
                 break;
 
-            case 18:   //  Int32
+            case 13:   //  Int32
                 xamlType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 19:   //  Windows.UI.Color
+            case 14:   //  Windows.UI.Color
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.AddMemberName("A");
                 userType.AddMemberName("B");
@@ -607,18 +557,18 @@ namespace PatientControl.PatientControl_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 20:   //  System.ValueType
+            case 15:   //  System.ValueType
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 xamlType = userType;
                 break;
 
-            case 21:   //  Byte
+            case 16:   //  Byte
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 22:   //  PatientControl.Controls.PageBase
+            case 17:   //  PatientControl.Controls.PageBase
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.AddMemberName("MinimalLayoutWidth");
                 userType.AddMemberName("GoBackCommand");
@@ -626,34 +576,34 @@ namespace PatientControl.PatientControl_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 23:   //  Windows.UI.Xaml.Controls.Page
+            case 18:   //  Windows.UI.Xaml.Controls.Page
                 xamlType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 24:   //  Windows.UI.Xaml.Controls.UserControl
+            case 19:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 25:   //  Microsoft.Practices.Prism.Commands.DelegateCommand
+            case 20:   //  Microsoft.Practices.Prism.Commands.DelegateCommand
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.Practices.Prism.Commands.DelegateCommandBase"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 26:   //  Microsoft.Practices.Prism.Commands.DelegateCommandBase
+            case 21:   //  Microsoft.Practices.Prism.Commands.DelegateCommandBase
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 xamlType = userType;
                 break;
 
-            case 27:   //  Microsoft.Practices.Prism.Mvvm.ViewModelLocator
+            case 22:   //  Microsoft.Practices.Prism.Mvvm.ViewModelLocator
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.AddMemberName("AutoWireViewModel");
                 xamlType = userType;
                 break;
 
-            case 28:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart
+            case 23:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Control"));
-                userType.Activator = Activate_28_Chart;
+                userType.Activator = Activate_23_Chart;
                 userType.SetContentPropertyName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.Series");
                 userType.AddMemberName("Series");
                 userType.AddMemberName("Title");
@@ -669,45 +619,45 @@ namespace PatientControl.PatientControl_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 29:   //  Windows.UI.Xaml.Controls.Control
+            case 24:   //  Windows.UI.Xaml.Controls.Control
                 xamlType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 30:   //  System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>
+            case 25:   //  System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.CollectionAdd = VectorAdd_30_Collection;
+                userType.CollectionAdd = VectorAdd_25_Collection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 31:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries
+            case 26:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.AddMemberName("LegendItems");
                 xamlType = userType;
                 break;
 
-            case 32:   //  System.Collections.ObjectModel.ObservableCollection`1<Object>
+            case 27:   //  System.Collections.ObjectModel.ObservableCollection`1<Object>
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Object>"));
-                userType.CollectionAdd = VectorAdd_32_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_27_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 33:   //  System.Collections.ObjectModel.Collection`1<Object>
+            case 28:   //  System.Collections.ObjectModel.Collection`1<Object>
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_33_Collection;
-                userType.CollectionAdd = VectorAdd_33_Collection;
+                userType.Activator = Activate_28_Collection;
+                userType.CollectionAdd = VectorAdd_28_Collection;
                 xamlType = userType;
                 break;
 
-            case 34:   //  System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>
+            case 29:   //  System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_34_Collection;
-                userType.CollectionAdd = VectorAdd_34_Collection;
+                userType.Activator = Activate_29_Collection;
+                userType.CollectionAdd = VectorAdd_29_Collection;
                 xamlType = userType;
                 break;
 
-            case 35:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis
+            case 30:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.AddMemberName("Orientation");
                 userType.AddMemberName("RegisteredListeners");
@@ -715,7 +665,7 @@ namespace PatientControl.PatientControl_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 36:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation
+            case 31:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("None", global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation.None);
                 userType.AddEnumValue("X", global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation.X);
@@ -723,66 +673,66 @@ namespace PatientControl.PatientControl_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 37:   //  System.Enum
+            case 32:   //  System.Enum
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 xamlType = userType;
                 break;
 
-            case 38:   //  System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>
+            case 33:   //  System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>"));
-                userType.CollectionAdd = VectorAdd_38_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_33_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 39:   //  System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>
+            case 34:   //  System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_39_Collection;
-                userType.CollectionAdd = VectorAdd_39_Collection;
+                userType.Activator = Activate_34_Collection;
+                userType.CollectionAdd = VectorAdd_34_Collection;
                 xamlType = userType;
                 break;
 
-            case 40:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener
+            case 35:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 xamlType = userType;
                 break;
 
-            case 41:   //  System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>
+            case 36:   //  System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>"));
-                userType.CollectionAdd = VectorAdd_41_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_36_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 42:   //  System.Collections.ObjectModel.ReadOnlyCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>
+            case 37:   //  System.Collections.ObjectModel.ReadOnlyCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.CollectionAdd = VectorAdd_42_ReadOnlyCollection;
+                userType.CollectionAdd = VectorAdd_37_ReadOnlyCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 43:   //  Windows.UI.Xaml.Style
+            case 38:   //  Windows.UI.Xaml.Style
                 xamlType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 44:   //  System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.ResourceDictionary>
+            case 39:   //  System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.ResourceDictionary>
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.CollectionAdd = VectorAdd_44_Collection;
+                userType.CollectionAdd = VectorAdd_39_Collection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 45:   //  Windows.UI.Xaml.ResourceDictionary
+            case 40:   //  Windows.UI.Xaml.ResourceDictionary
                 xamlType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 46:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries
+            case 41:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>"));
-                userType.Activator = Activate_46_ColumnSeries;
+                userType.Activator = Activate_41_ColumnSeries;
                 xamlType = userType;
                 break;
 
-            case 47:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>
+            case 42:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes"));
                 userType.AddMemberName("DependentRangeAxis");
                 userType.AddMemberName("IndependentAxis");
@@ -791,18 +741,18 @@ namespace PatientControl.PatientControl_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 48:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes
+            case 43:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeriesWithAxes"));
                 userType.AddMemberName("GlobalSeriesIndex");
                 xamlType = userType;
                 break;
 
-            case 49:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeriesWithAxes
+            case 44:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeriesWithAxes
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries"));
                 xamlType = userType;
                 break;
 
-            case 50:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries
+            case 45:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Series"));
                 userType.AddMemberName("ItemsSource");
                 userType.AddMemberName("IndependentValueBinding");
@@ -819,7 +769,7 @@ namespace PatientControl.PatientControl_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 51:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.Series
+            case 46:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.Series
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Control"));
                 userType.AddMemberName("Title");
                 userType.AddMemberName("SeriesHost");
@@ -827,33 +777,33 @@ namespace PatientControl.PatientControl_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 52:   //  System.Collections.IEnumerable
+            case 47:   //  System.Collections.IEnumerable
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 53:   //  Windows.UI.Xaml.Data.Binding
+            case 48:   //  Windows.UI.Xaml.Data.Binding
                 xamlType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 54:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis
+            case 49:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 55:   //  System.Nullable`1<Int32>
+            case 50:   //  System.Nullable`1<Int32>
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 56:   //  String
+            case 51:   //  String
                 xamlType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 57:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence
+            case 52:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Simultaneous", global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence.Simultaneous);
                 userType.AddEnumValue("FirstToLast", global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence.FirstToLast);
@@ -861,46 +811,46 @@ namespace PatientControl.PatientControl_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 58:   //  Windows.UI.Xaml.Media.Animation.EasingFunctionBase
+            case 53:   //  Windows.UI.Xaml.Media.Animation.EasingFunctionBase
                 xamlType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 59:   //  TimeSpan
+            case 54:   //  TimeSpan
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 60:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeriesHost
+            case 55:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeriesHost
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 61:   //  PatientControl.Views.DatosPage
+            case 56:   //  PatientControl.Views.DatosPage
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("PatientControl.Controls.PageBase"));
-                userType.Activator = Activate_61_DatosPage;
+                userType.Activator = Activate_56_DatosPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 62:   //  PatientControl.Views.EjercicioPage
+            case 57:   //  PatientControl.Views.EjercicioPage
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("PatientControl.Controls.PageBase"));
-                userType.Activator = Activate_62_EjercicioPage;
+                userType.Activator = Activate_57_EjercicioPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 63:   //  PatientControl.Controls.MultipleSizedGridView
+            case 58:   //  PatientControl.Controls.MultipleSizedGridView
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("PatientControl.Controls.AutoRotatingGridView"));
-                userType.Activator = Activate_63_MultipleSizedGridView;
+                userType.Activator = Activate_58_MultipleSizedGridView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 64:   //  PatientControl.Controls.AutoRotatingGridView
+            case 59:   //  PatientControl.Controls.AutoRotatingGridView
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.GridView"));
-                userType.Activator = Activate_64_AutoRotatingGridView;
+                userType.Activator = Activate_59_AutoRotatingGridView;
                 userType.AddMemberName("PortraitItemsPanel");
                 userType.AddMemberName("PortraitGroupStyle");
                 userType.AddMemberName("PortraitItemTemplate");
@@ -912,43 +862,43 @@ namespace PatientControl.PatientControl_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 65:   //  Windows.UI.Xaml.Controls.GridView
+            case 60:   //  Windows.UI.Xaml.Controls.GridView
                 xamlType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 66:   //  Windows.UI.Xaml.Controls.ItemsControl
+            case 61:   //  Windows.UI.Xaml.Controls.ItemsControl
                 xamlType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 67:   //  Windows.UI.Xaml.Controls.ItemsPanelTemplate
+            case 62:   //  Windows.UI.Xaml.Controls.ItemsPanelTemplate
                 xamlType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 68:   //  System.Collections.ObjectModel.ObservableCollection`1<Windows.UI.Xaml.Controls.GroupStyle>
+            case 63:   //  System.Collections.ObjectModel.ObservableCollection`1<Windows.UI.Xaml.Controls.GroupStyle>
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.Controls.GroupStyle>"));
-                userType.CollectionAdd = VectorAdd_68_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_63_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 69:   //  System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.Controls.GroupStyle>
+            case 64:   //  System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.Controls.GroupStyle>
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_69_Collection;
-                userType.CollectionAdd = VectorAdd_69_Collection;
+                userType.Activator = Activate_64_Collection;
+                userType.CollectionAdd = VectorAdd_64_Collection;
                 xamlType = userType;
                 break;
 
-            case 70:   //  Windows.UI.Xaml.Controls.GroupStyle
+            case 65:   //  Windows.UI.Xaml.Controls.GroupStyle
                 xamlType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 71:   //  Windows.UI.Xaml.DataTemplate
+            case 66:   //  Windows.UI.Xaml.DataTemplate
                 xamlType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 72:   //  Microsoft.Xaml.Interactions.Core.EventTriggerBehavior
+            case 67:   //  Microsoft.Xaml.Interactions.Core.EventTriggerBehavior
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_72_EventTriggerBehavior;
+                userType.Activator = Activate_67_EventTriggerBehavior;
                 userType.SetContentPropertyName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.Actions");
                 userType.AddMemberName("Actions");
                 userType.AddMemberName("EventName");
@@ -957,60 +907,60 @@ namespace PatientControl.PatientControl_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 73:   //  Microsoft.Xaml.Interactivity.ActionCollection
+            case 68:   //  Microsoft.Xaml.Interactivity.ActionCollection
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObjectCollection"));
-                userType.CollectionAdd = VectorAdd_73_ActionCollection;
+                userType.CollectionAdd = VectorAdd_68_ActionCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 74:   //  PatientControl.Behaviors.NavigateWithEventArgsToPageAction
+            case 69:   //  PatientControl.Behaviors.NavigateWithEventArgsToPageAction
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_74_NavigateWithEventArgsToPageAction;
+                userType.Activator = Activate_69_NavigateWithEventArgsToPageAction;
                 userType.AddMemberName("TargetPage");
                 userType.AddMemberName("EventArgsParameterPath");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 75:   //  PatientControl.Views.MainPage
+            case 70:   //  PatientControl.Views.MainPage
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("PatientControl.Controls.PageBase"));
-                userType.Activator = Activate_75_MainPage;
+                userType.Activator = Activate_70_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 76:   //  PatientControl.Views.LoginPage
+            case 71:   //  PatientControl.Views.LoginPage
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("PatientControl.Controls.PageBase"));
-                userType.Activator = Activate_76_LoginPage;
+                userType.Activator = Activate_71_LoginPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 77:   //  PatientControl.Views.RegistroUserControl
+            case 72:   //  PatientControl.Views.RegistroUserControl
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_77_RegistroUserControl;
+                userType.Activator = Activate_72_RegistroUserControl;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 78:   //  PatientControl.Views.MedicalInfo
+            case 73:   //  PatientControl.Views.MedicalInfo
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_78_MedicalInfo;
+                userType.Activator = Activate_73_MedicalInfo;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 79:   //  PatientControl.Views.RegistroPage
+            case 74:   //  PatientControl.Views.RegistroPage
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("PatientControl.Controls.PageBase"));
-                userType.Activator = Activate_79_RegistroPage;
+                userType.Activator = Activate_74_RegistroPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 80:   //  PatientControl.Behaviors.HighlightFormFieldOnErrors
+            case 75:   //  PatientControl.Behaviors.HighlightFormFieldOnErrors
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("PatientControl.Behaviors.Behavior`1<Windows.UI.Xaml.FrameworkElement>"));
-                userType.Activator = Activate_80_HighlightFormFieldOnErrors;
+                userType.Activator = Activate_75_HighlightFormFieldOnErrors;
                 userType.AddMemberName("PropertyErrors");
                 userType.AddMemberName("HighlightStyleName");
                 userType.AddMemberName("OriginalStyleName");
@@ -1018,21 +968,21 @@ namespace PatientControl.PatientControl_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 81:   //  PatientControl.Behaviors.Behavior`1<Windows.UI.Xaml.FrameworkElement>
+            case 76:   //  PatientControl.Behaviors.Behavior`1<Windows.UI.Xaml.FrameworkElement>
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
                 userType.AddMemberName("AssociatedObject");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 82:   //  System.Collections.ObjectModel.ReadOnlyCollection`1<String>
+            case 77:   //  System.Collections.ObjectModel.ReadOnlyCollection`1<String>
                 userType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.CollectionAdd = VectorAdd_82_ReadOnlyCollection;
+                userType.CollectionAdd = VectorAdd_77_ReadOnlyCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 83:   //  Windows.UI.Xaml.FrameworkElement
+            case 78:   //  Windows.UI.Xaml.FrameworkElement
                 xamlType = new global::PatientControl.PatientControl_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }

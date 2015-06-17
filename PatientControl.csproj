@@ -17,7 +17,7 @@
     <PackageCertificateKeyFile>PatientControl_StoreKey.pfx</PackageCertificateKeyFile>
     <AppxBundle>Always</AppxBundle>
     <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
-    <AppxBundlePlatforms>x86</AppxBundlePlatforms>
+    <AppxBundlePlatforms>x86|x64</AppxBundlePlatforms>
     <PackageCertificateThumbprint>87B19C0ECF8C7FBB151576320B7924F710A44EFA</PackageCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -120,15 +120,16 @@
     <Compile Include="Controls\SuspensionManager.cs" />
     <Compile Include="Controls\MultipleSizedGridView.cs" />
     <Compile Include="Controls\PageBase.cs" />
-    <Compile Include="Converters\BooleanNegationToVisibilityConverter.cs" />
-    <Compile Include="Converters\BooleanToVisibilityConverter.cs" />
-    <Compile Include="Converters\FirstErrorConverter.cs" />
-    <Compile Include="Converters\FormStatusToStyleConverter.cs" />
-    <Compile Include="Converters\FormStatusToVisibilityConverter.cs" />
-    <Compile Include="Converters\IsSignInInvalidConverter.cs" />
+    <Compile Include="Converters\FirstErrorConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Converters\NotNullToVisibleConverter.cs" />
-    <Compile Include="Converters\NullToVisibleConverter.cs" />
-    <Compile Include="Converters\TextToHeaderVisibilityConverter.cs" />
+    <Compile Include="Converters\NullToVisibleConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Converters\TextToHeaderVisibilityConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="DesignTime\DatosPageViewModel.cs" />
     <Compile Include="DesignTime\EjercicioPageViewModel.cs" />
     <Compile Include="DesignTime\LoginPageViewModel.cs" />
@@ -156,7 +157,6 @@
     <Compile Include="ViewModels\EjercicioPageViewModel.cs" />
     <Compile Include="ViewModels\PacienteViewModel.cs" />
     <Compile Include="ViewModels\EjercicioViewModel.cs" />
-    <Compile Include="ViewModels\FormStatus.cs" />
     <Compile Include="ViewModels\MedicalInfoViewModel.cs" />
     <Compile Include="ViewModels\RegistroUserControlViewModel.cs" />
     <Compile Include="ViewModels\RegistroPageViewModel.cs" />

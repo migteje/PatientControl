@@ -41,7 +41,6 @@
     <RootPropertyPathName Name="MenosCommand" />
     <RootPropertyPathName Name="Repeticion" />
     <RootPropertyPathName Name="PararCommand" />
-    <RootPropertyPathName Name="PausarCommand" />
     <RootPropertyPathName Name="IniciarCommand" />
     <RootPropertyPathName Name="NombrePaciente" />
     <RootPropertyPathName Name="RootCategories" />
@@ -78,13 +77,8 @@
       <RootProperty Name="Source" />
       <RootProperty Name="ThemeDictionaries" />
     </RootType>
-    <RootType FullName="PatientControl.Converters.BooleanToVisibilityConverter" />
-    <RootType FullName="PatientControl.Converters.BooleanNegationToVisibilityConverter" />
     <RootType FullName="PatientControl.Converters.NullToVisibleConverter" />
     <RootType FullName="PatientControl.Converters.NotNullToVisibleConverter" />
-    <RootType FullName="PatientControl.Converters.IsSignInInvalidConverter" />
-    <RootType FullName="PatientControl.Converters.FormStatusToVisibilityConverter" />
-    <RootType FullName="PatientControl.Converters.FormStatusToStyleConverter" />
     <RootType FullName="PatientControl.Converters.FirstErrorConverter" />
     <RootType FullName="PatientControl.Converters.TextToHeaderVisibilityConverter" />
     <RootType FullName="Windows.UI.Xaml.Controls.ItemsPanelTemplate">
