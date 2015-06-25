@@ -24,7 +24,7 @@
 		</Grid.RowDefinitions>
 
         <!-- Diagnostico -->
-        <Grid x:Name="DiagnosticoGrid"
+        <Grid x:Name="DiagnósticoGrid"
 			Margin="0,20,0,0"
 			Grid.Row="0" Grid.ColumnSpan="3">
             <Grid.RowDefinitions>
@@ -39,9 +39,9 @@
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
 
-            <TextBox x:Name="Diagnostico" Header="Diagnostico*"
+            <TextBox x:Name="Diagnóstico" Header="Diagnóstico*"
 				x:Uid="Nombre"
-				AutomationProperties.AutomationId="DiagnosticoTextBox"
+				AutomationProperties.AutomationId="DiagnósticoTextBox"
 				Margin="5,0"              
 				Grid.Row="0"
 				Grid.Column="0"
@@ -69,13 +69,13 @@
 			</Grid.RowDefinitions>
 
             <!-- Zona -->
-            <TextBlock x:Name="ZonaLesion"
+            <TextBlock x:Name="ZonaLesión"
 				x:Uid="TitleArea"
 				Style="{StaticResource FormTitleStyle}"
 				Margin="5,0,5,-4"
 				Grid.Row="0"
 				Grid.Column="0"
-				Text="Lado del cuerpo*" />
+				Text="Lado afectado*" />
 
             <StackPanel x:Name="Lado" Grid.Row="1"
 				Grid.Column="0" Margin="0,10,0,0">
@@ -83,21 +83,7 @@
                 <RadioButton x:Name="Izquierdo" Content="Izquierdo" VerticalAlignment="Stretch" Margin="0,0,0,0" Command="{Binding CheckedCommand, Mode=TwoWay}" CommandParameter="Izquierdo"/>
             </StackPanel>
 
-            <!-- Articulacion -->
-            <ComboBox x:Name="Articulaciones"
-				x:Uid="ArticulacionesComboBox"
-				AutomationProperties.AutomationId="ArticulacionesComboBox"
-				AutomationProperties.IsRequiredForForm="True"
-                VerticalAlignment="Bottom"
-				Margin="0,0,0,10"
-				Grid.Row="1"
-				Grid.Column="1"
-				ItemsSource="{Binding Articulaciones}"
-				DisplayMemberPath="Value"
-				SelectedValuePath="Id"
-				SelectedValue="{Binding Paciente.ArticValorar, Mode=TwoWay}"
-				IsEnabled="{Binding BindableValidator.IsValidationEnabled}" Header="Articulacion a Valorar*">
-            </ComboBox>
+
 		</Grid>
 
             <!-- Fecha -->
@@ -110,7 +96,7 @@
 				<RowDefinition Height="Auto" />
 				<RowDefinition Height="Auto" />
 			</Grid.RowDefinitions>
-            <DatePicker x:Name="FechaLesion" HorizontalAlignment="Left" VerticalAlignment="Top" Date="{Binding Paciente.FechaLesion, Mode=TwoWay}" Header="Fecha de lesion*"/>
+            <DatePicker x:Name="FechaLesion" HorizontalAlignment="Left" VerticalAlignment="Top" Date="{Binding Paciente.FechaLesion, Mode=TwoWay}" Header="Fecha de la lesión*"/>
 		</Grid>
 	</Grid>
 </UserControl>

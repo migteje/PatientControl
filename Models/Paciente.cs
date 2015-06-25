@@ -17,7 +17,6 @@ namespace PatientControl.Models
         [NotNull]
         public string apellidos { get; set; }
         public string direccion { get; set; }
-        public string direccionOpcional { get; set; }
         public string provincia { get; set; }
         public string localidad { get; set; }
         public string codigoPostal { get; set; }
@@ -26,7 +25,6 @@ namespace PatientControl.Models
         public string zonaLesion { get; set; }
         public string diagnostico { get; set; }
         [NotNull]
-        public string articValorar { get; set; }
         public DateTimeOffset fechaLesion { get; set; }
     }
 }

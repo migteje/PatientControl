@@ -113,7 +113,7 @@
                         <TextBlock x:Name="pruebaTitle" HorizontalAlignment="Center" Style="{StaticResource TextBlockHeader}" TextWrapping="Wrap" Text="PRUEBA" FontSize="18.667" Width="232" TextAlignment="Center"/>
                     </Border>
                     <Border Style="{StaticResource BorderHeader}">
-                        <TextBlock x:Name="angTitle" HorizontalAlignment="Center" Style="{StaticResource TextBlockHeader}" TextWrapping="Wrap" Text="ANGULO" VerticalAlignment="Top" FontSize="18.667" Width="116" Margin="0" TextAlignment="Center"/>
+                        <TextBlock x:Name="angTitle" HorizontalAlignment="Center" Style="{StaticResource TextBlockHeader}" TextWrapping="Wrap" Text="ÁNGULO" VerticalAlignment="Top" FontSize="18.667" Width="116" Margin="0" TextAlignment="Center"/>
                     </Border>
                     <Border Style="{StaticResource BorderHeader}">
                         <TextBlock x:Name="reptTitle" HorizontalAlignment="Center" Style="{StaticResource TextBlockHeader}" TextWrapping="Wrap" Text="REPETICIONES" VerticalAlignment="Top" FontSize="18.667" Width="129" Margin="0" TextAlignment="Center"/>

@@ -114,37 +114,14 @@
                 </interactivity:Interaction.Behaviors>
 
             </TextBox>
-			<TextBlock x:Name="ErrorsDireccion"
+            <TextBlock x:Name="ErrorsDireccion"
 				Style="{StaticResource ErrorMessageStyle}"
 				Grid.Row="1"
 				Grid.Column="0"
 				Grid.ColumnSpan="3"
 				Text="{Binding BindableValidator.Errors[Direccion], Converter={StaticResource FirstErrorConverter}}"
 				TextWrapping="Wrap" />
-
-            <TextBox x:Name="DireccionOpcional"
-				x:Uid="DireccionOpcional"
-				Header="Direccion Opcional"
-				AutomationProperties.AutomationId="OptionalDireccionTextBox"
-				Grid.Row="2"
-				Grid.Column="0"
-				Grid.ColumnSpan="4"
-				IsEnabled="{Binding BindableValidator.IsValidationEnabled}"
-				Margin="5,0"
-				Text="{Binding Paciente.DireccionOpcional, Mode=TwoWay}">
-                <interactivity:Interaction.Behaviors>
-                    <behaviors:HighlightFormFieldOnErrors PropertyErrors="{Binding BindableValidator.Errors[DireccionOpcional]}" />
-                </interactivity:Interaction.Behaviors>
-
-            </TextBox>
-			<TextBlock x:Name="ErrorsOptionalAddress"
-				Style="{StaticResource ErrorMessageStyle}"
-				Grid.Row="3"
-				Grid.Column="0"
-				Grid.ColumnSpan="4"
-				Text="{Binding BindableValidator.Errors[DireccionOpcional], Converter={StaticResource FirstErrorConverter}}"
-				TextWrapping="Wrap" />
-		</Grid>
+        </Grid>
 
             <!-- Provincia -->
 		<Grid x:Name="ProvinciaGrid"

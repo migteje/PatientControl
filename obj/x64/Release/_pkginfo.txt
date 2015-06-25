@@ -1,1 +1,1 @@
-C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\AppPackages\PatientControl_1.2.0.6_Test\PatientControl_1.2.0.6_x86_x64.appxbundle
+C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\AppPackages\PatientControl_1.2.0.9_Test\PatientControl_1.2.0.9_x86_x64.appxbundle

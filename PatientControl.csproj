@@ -17,7 +17,7 @@
     <PackageCertificateKeyFile>PatientControl_StoreKey.pfx</PackageCertificateKeyFile>
     <AppxBundle>Always</AppxBundle>
     <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
-    <AppxBundlePlatforms>x86|x64</AppxBundlePlatforms>
+    <AppxBundlePlatforms>x86</AppxBundlePlatforms>
     <PackageCertificateThumbprint>87B19C0ECF8C7FBB151576320B7924F710A44EFA</PackageCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">

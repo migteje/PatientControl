@@ -53,18 +53,15 @@
     <RootPropertyPathName Name="MedicalViewModel" />
     <RootPropertyPathName Name="RegistroViewModel" />
     <RootPropertyPathName Name="FechaLesion" />
-    <RootPropertyPathName Name="Articulaciones" />
-    <RootPropertyPathName Name="ArticValorar" />
-    <RootPropertyPathName Name="BindableValidator" />
-    <RootPropertyPathName Name="IsValidationEnabled" />
     <RootPropertyPathName Name="Diagnostico" />
+    <RootPropertyPathName Name="BindableValidator" />
     <RootPropertyPathName Name="Errors" />
     <RootPropertyPathName Name="Telefono" />
+    <RootPropertyPathName Name="IsValidationEnabled" />
     <RootPropertyPathName Name="CodPostal" />
     <RootPropertyPathName Name="Provincias" />
     <RootPropertyPathName Name="Provincia" />
     <RootPropertyPathName Name="Localidad" />
-    <RootPropertyPathName Name="DireccionOpcional" />
     <RootPropertyPathName Name="Direccion" />
     <RootPropertyPathName Name="Apellidos" />
   </Roots.PropertyPathNames>
@@ -240,7 +237,6 @@
       <RootProperty Name="SelectedValuePath" />
       <RootProperty Name="SelectedValue" />
       <RootProperty Name="IsEnabled" />
-      <RootProperty Name="Header" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Documents.Typography">
       <RootMethod Name="GetStylisticSet20" />

@@ -74,8 +74,8 @@
                                           Loaded="StartLayoutUpdates"
                                           Unloaded="StopLayoutUpdates"
                                           DataContext="{Binding MedicalViewModel}" />
-                    <Button x:Name="button" x:Uid="SaveButton"
-                            AutomationProperties.AutomationId="SaveButton"
+                    <Button x:Name="button" x:Uid="RegistrarButton"
+                            AutomationProperties.AutomationId="RegistrarButton"
                             Content="Registrar"
                             Background="{StaticResource ButtonForegroundThemeBrush}"
                             MinWidth="300"

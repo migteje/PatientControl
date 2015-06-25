@@ -63,13 +63,6 @@ namespace PatientControl.ViewModels
             set { _paciente.direccion = value; }
         }
 
-        [RegularExpression(ADDRESS_REGEX_PATTERN, ErrorMessageResourceType = typeof(ErrorMessagesHelper), ErrorMessageResourceName = "RegexErrorMessage")]
-        public string DireccionOpcional
-        {
-            get { return _paciente.direccionOpcional; }
-            set { _paciente.direccionOpcional= value; }
-        }
-
         [Required(ErrorMessageResourceType = typeof(ErrorMessagesHelper), ErrorMessageResourceName = "RequiredErrorMessage")]
         [RegularExpression(ADDRESS_REGEX_PATTERN, ErrorMessageResourceType = typeof(ErrorMessagesHelper), ErrorMessageResourceName = "RegexErrorMessage")]
         public string Provincia
@@ -122,12 +115,6 @@ namespace PatientControl.ViewModels
             set { _paciente.fechaLesion = value; }
         }
 
-        public string ArticValorar
-        {
-            get { return _paciente.articValorar; }
-            set { _paciente.articValorar = value; }
-        }
-
         public async Task<bool> CoincidePaciente()
         {
             SQLiteAsyncConnection connection = new SQLiteAsyncConnection("Paciente.db");
@@ -171,7 +158,6 @@ namespace PatientControl.ViewModels
                 this.Nombre = item.nombre;
                 this.Apellidos = item.apellidos;
                 this.Direccion = item.direccion;
-                this.DireccionOpcional = item.direccionOpcional;
                 this.Localidad = item.localidad;
                 this.Provincia = item.provincia;
                 this.CodPostal = item.codigoPostal;
@@ -179,7 +165,6 @@ namespace PatientControl.ViewModels
                 this.Diagnostico = item.diagnostico;
                 this.ZonaLesion = item.zonaLesion;
                 this.FechaLesion = item.fechaLesion;
-                this.ArticValorar = item.articValorar;
             }
             return true;
         }
@@ -196,7 +181,6 @@ namespace PatientControl.ViewModels
                 this.Nombre = item.nombre;
                 this.Apellidos = item.apellidos;
                 this.Direccion = item.direccion;
-                this.DireccionOpcional = item.direccionOpcional;
                 this.Localidad = item.localidad;
                 this.Provincia = item.provincia;
                 this.CodPostal = item.codigoPostal;
@@ -204,7 +188,6 @@ namespace PatientControl.ViewModels
                 this.Diagnostico = item.diagnostico;
                 this.ZonaLesion = item.zonaLesion;
                 this.FechaLesion = item.fechaLesion;
-                this.ArticValorar = item.articValorar;
             }
 
         }
@@ -225,7 +208,6 @@ namespace PatientControl.ViewModels
                 Patient.diagnostico = this.Diagnostico;
                 Patient.zonaLesion = this.ZonaLesion;
                 Patient.fechaLesion = this.FechaLesion;
-                Patient.articValorar = this.ArticValorar;
 
                 await connection.UpdateAsync(Patient);
             }

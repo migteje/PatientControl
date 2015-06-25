@@ -1,4 +1,4 @@
-MainPackage=C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x64\Release\PatientControl_1.2.0.6_Bundle\PatientControl_1.2.0.6_x64.appx
-SymbolPackage=C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\AppPackages\PatientControl_1.2.0.6_Test\PatientControl_1.2.0.6_x64.appxsym
-ResourcePack=C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x64\Release\PatientControl_1.2.0.6_Bundle\PatientControl_1.2.0.6_language-es.appx
-ResourcePack=C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x64\Release\PatientControl_1.2.0.6_Bundle\PatientControl_1.2.0.6_scale-180.appx
+MainPackage=C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x64\Release\PatientControl_1.2.0.9_Bundle\PatientControl_1.2.0.9_x64.appx
+SymbolPackage=C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\AppPackages\PatientControl_1.2.0.9_Test\PatientControl_1.2.0.9_x64.appxsym
+ResourcePack=C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x64\Release\PatientControl_1.2.0.9_Bundle\PatientControl_1.2.0.9_language-es.appx
+ResourcePack=C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x64\Release\PatientControl_1.2.0.9_Bundle\PatientControl_1.2.0.9_scale-180.appx

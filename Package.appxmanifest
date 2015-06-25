@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
-  <Identity Name="10544GIRO.RehabControl" Publisher="CN=5B986934-607C-4FA7-B84B-B2A9CFF78B5B" Version="1.2.0.6" />
+  <Identity Name="10544GIRO.RehabControl" Publisher="CN=5B986934-607C-4FA7-B84B-B2A9CFF78B5B" Version="1.3.0.2" />
   <Properties>
     <DisplayName>PatientControl</DisplayName>
     <PublisherDisplayName>GIRO</PublisherDisplayName>

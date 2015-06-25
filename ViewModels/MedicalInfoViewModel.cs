@@ -50,9 +50,6 @@ namespace PatientControl.ViewModels
 
         public override void OnNavigatedTo(object navigationParameter, NavigationMode navigationMode, Dictionary<string, object> viewModelState)
         {
-             // La coleccion de provincias necesita datos antes de mostrarse
-            PoblarArticulaciones();
-
             if (viewModelState != null)
             {
                 base.OnNavigatedTo(navigationParameter, navigationMode, viewModelState);
@@ -67,31 +64,6 @@ namespace PatientControl.ViewModels
         public override void OnNavigatedFrom(Dictionary<string, object> viewState, bool suspending)
         {
             base.OnNavigatedFrom(viewState, suspending);
-        }
-
-        public void PoblarArticulaciones()
-        {
-            string errorMessage = string.Empty;
-            try
-            {
-                var articulaciones = new List<string> { "Hombro", "Codo"};
-
-                var items = new List<ComboBoxItemValue> { new ComboBoxItemValue() { Id = string.Empty, Value = _resourceLoader.GetString("Articulacion") } };
-                items.AddRange(articulaciones.Select(articulacion => new ComboBoxItemValue() { Id = articulacion, Value = articulacion }));
-                Articulaciones = new ReadOnlyCollection<ComboBoxItemValue>(items);
-
-                _paciente.ArticValorar = Articulaciones.First().Id;
-            }
-            catch (Exception ex)
-            {
-                errorMessage = string.Format(CultureInfo.CurrentCulture, _resourceLoader.GetString("GeneralServiceErrorMessage"),
-                                             Environment.NewLine, ex.Message);
-            }
-
-            if (!string.IsNullOrWhiteSpace(errorMessage))
-            {
-                _dialogService.Show(_resourceLoader.GetString("ErrorServiceUnreachable") + ". " + errorMessage);
-            }
         }
 
         public bool ValidateForm()
