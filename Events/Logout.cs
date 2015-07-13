@@ -8,5 +8,6 @@ namespace PatientControl.Events
 {
     public class Logout : Microsoft.Practices.Prism.PubSubEvents.PubSubEvent<string>
     {
+
     }
 }

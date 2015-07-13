@@ -49,16 +49,7 @@
 				Grid.Column="0"
 				AutomationProperties.IsRequiredForForm="True"
 				Text="{Binding Paciente.Nombre, Mode=TwoWay}">
-                <interactivity:Interaction.Behaviors>
-                    <behaviors:HighlightFormFieldOnErrors PropertyErrors="{Binding BindableValidator.Errors[Nombre]}" />
-                </interactivity:Interaction.Behaviors>
             </TextBox>
-			<TextBlock x:Name="ErrorsFirstName"
-				Style="{StaticResource ErrorMessageStyle}"
-				Grid.Row="1"
-				Grid.Column="0"
-				Text="{Binding BindableValidator.Errors[Nombre], Converter={StaticResource FirstErrorConverter}}"
-				TextWrapping="Wrap" />
 
                 <!-- Last Name -->
             <TextBox x:Name="Apellidos" Header="Apellidos*"
@@ -69,18 +60,8 @@
 				Margin="5,0"
 				Grid.Row="0"
 				Grid.Column="1"
-				Text="{Binding Paciente.Apellidos, Mode=TwoWay}"
-				IsEnabled="{Binding BindableValidator.IsValidationEnabled}">
-                <interactivity:Interaction.Behaviors>
-                    <behaviors:HighlightFormFieldOnErrors PropertyErrors="{Binding BindableValidator.Errors[Apellidos]}" />
-                </interactivity:Interaction.Behaviors>
+				Text="{Binding Paciente.Apellidos, Mode=TwoWay}">
             </TextBox>
-			<TextBlock x:Name="ErrorsApellidos"
-				Style="{StaticResource ErrorMessageStyle}"
-				Grid.Row="1"
-				Grid.Column="1"
-				Text="{Binding BindableValidator.Errors[Apellidos], Converter={StaticResource FirstErrorConverter}}"
-				TextWrapping="Wrap" />
 		</Grid>
 
             <!-- Direccion -->
@@ -107,20 +88,8 @@
 				Grid.Row="0"
 				Grid.Column="0"
 				Grid.ColumnSpan="4"
-				Text="{Binding Paciente.Direccion, Mode=TwoWay}"
-				IsEnabled="{Binding BindableValidator.IsValidationEnabled}">
-                <interactivity:Interaction.Behaviors>
-                    <behaviors:HighlightFormFieldOnErrors PropertyErrors="{Binding BindableValidator.Errors[Direccion]}" />
-                </interactivity:Interaction.Behaviors>
-
+				Text="{Binding Paciente.Direccion, Mode=TwoWay}">
             </TextBox>
-            <TextBlock x:Name="ErrorsDireccion"
-				Style="{StaticResource ErrorMessageStyle}"
-				Grid.Row="1"
-				Grid.Column="0"
-				Grid.ColumnSpan="3"
-				Text="{Binding BindableValidator.Errors[Direccion], Converter={StaticResource FirstErrorConverter}}"
-				TextWrapping="Wrap" />
         </Grid>
 
             <!-- Provincia -->
@@ -157,22 +126,11 @@
 				Grid.Row="1"
 				Grid.Column="0"
 				Text="{Binding Paciente.Localidad, Mode=TwoWay}"
-				IsEnabled="{Binding BindableValidator.IsValidationEnabled}"
 				PlaceholderText="Localidad">
-                <interactivity:Interaction.Behaviors>
-                    <behaviors:HighlightFormFieldOnErrors PropertyErrors="{Binding BindableValidator.Errors[Localidad]}" />
-                </interactivity:Interaction.Behaviors>
-
             </TextBox>
-            <TextBlock x:Name="ErrorsLocalidad"
-				Style="{StaticResource ErrorMessageStyle}"
-				Grid.Row="2"
-				Grid.Column="0"
-				Text="{Binding BindableValidator.Errors[Localidad], Converter={StaticResource FirstErrorConverter}}"
-				TextWrapping="Wrap" />
 
             <!-- Provincia -->
-			<ComboBox x:Name="Provincia"
+            <ComboBox x:Name="Provincia"
 				x:Uid="ProvinciaComboBox"
 				AutomationProperties.AutomationId="ProvinciaComboBox"
 				AutomationProperties.IsRequiredForForm="True"
@@ -183,19 +141,9 @@
 				ItemsSource="{Binding Provincias}"
 				DisplayMemberPath="Value"
 				SelectedValuePath="Id"
-				SelectedValue="{Binding Paciente.Provincia, Mode=TwoWay}"
-				IsEnabled="{Binding BindableValidator.IsValidationEnabled}">
-				<interactivity:Interaction.Behaviors>
-                    <behaviors:HighlightFormFieldOnErrors PropertyErrors="{Binding BindableValidator.Errors[Provincia]}" HighlightStyleName="HighlightComboBoxStyle" OriginalStyleName="BaseComboBoxStyle" />
-                </interactivity:Interaction.Behaviors>
+				SelectedValue="{Binding Paciente.Provincia, Mode=TwoWay}">
 
             </ComboBox>
-			<TextBlock x:Name="ErrorsProvincia"
-				Style="{StaticResource ErrorMessageStyle}"
-				Grid.Row="2"
-				Grid.Column="1"
-				Text="{Binding BindableValidator.Errors[Provincia], Converter={StaticResource FirstErrorConverter}}"
-				TextWrapping="Wrap" />
 
                 <!-- ZipCode -->
             <TextBox x:Name="CodPostal"
@@ -205,21 +153,10 @@
 				Grid.Row="1"
 				Grid.Column="2"
 				Text="{Binding Paciente.CodPostal, Mode=TwoWay}"
-				IsEnabled="{Binding BindableValidator.IsValidationEnabled}"
 				PlaceholderText="Codigo Postal"
 				AutomationProperties.IsRequiredForForm="True"
 				InputScope="Number">
-                <interactivity:Interaction.Behaviors>
-                    <behaviors:HighlightFormFieldOnErrors PropertyErrors="{Binding BindableValidator.Errors[CodPostal]}" />
-                </interactivity:Interaction.Behaviors>
-
             </TextBox>
-			<TextBlock x:Name="ErrorCosPostal"
-				Style="{StaticResource ErrorMessageStyle}"
-				Grid.Row="2"
-				Grid.Column="2"
-				Text="{Binding BindableValidator.Errors[CodPostal], Converter={StaticResource FirstErrorConverter}}"
-				TextWrapping="Wrap" />
 
 		</Grid>
 
@@ -241,19 +178,8 @@
 				Margin="5,0"
 				Grid.Row="0"
 				Text="{Binding Paciente.Telefono, Mode=TwoWay}"
-				IsEnabled="{Binding BindableValidator.IsValidationEnabled}"
 				InputScope="TelephoneNumber">
-                <interactivity:Interaction.Behaviors>
-                    <behaviors:HighlightFormFieldOnErrors PropertyErrors="{Binding BindableValidator.Errors[Telefono]}" />
-                </interactivity:Interaction.Behaviors>
-
             </TextBox>
-			<TextBlock x:Name="ErrorPhone"
-				Style="{StaticResource ErrorMessageStyle}"
-				Grid.Row="1"
-				Grid.Column="0"
-				Text="{Binding BindableValidator.Errors[Telefono], Converter={StaticResource FirstErrorConverter}}"
-				TextWrapping="Wrap" />
 		</Grid>
 	</Grid>
 </UserControl>

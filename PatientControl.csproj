@@ -135,7 +135,7 @@
     <Compile Include="DesignTime\LoginPageViewModel.cs" />
     <Compile Include="DesignTime\MainPageViewModel.cs" />
     <Compile Include="DesignTime\RegistroPageViewModel.cs" />
-    <Compile Include="Events\Login.cs" />
+    <Compile Include="Events\BadRegister.cs" />
     <Compile Include="Events\Logout.cs" />
     <Compile Include="Interfaces\IDatosPageViewModel.cs" />
     <Compile Include="Interfaces\IDialogService.cs" />

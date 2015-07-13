@@ -1093,6 +1093,11 @@ At the time of the exception, the container was:
 					<Value>Editar Direccion</Value>
 				</Candidate>
 			</NamedResource>
+			<NamedResource name="EditarTitle" uri="ms-resource://10544GIRO.RehabControl/Resources/EditarTitle">
+				<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
+					<Value>Editar Paciente</Value>
+				</Candidate>
+			</NamedResource>
 			<NamedResource name="Error" uri="ms-resource://10544GIRO.RehabControl/Resources/Error">
 				<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
 					<Value>Error</Value>
@@ -1200,7 +1205,7 @@ At the time of the exception, the container was:
 			</NamedResource>
 			<NamedResource name="RegistroTitle" uri="ms-resource://10544GIRO.RehabControl/Resources/RegistroTitle">
 				<Candidate qualifiers="Language-ES-ES" isDefault="true" type="String">
-					<Value>Registrar nuevo usuario</Value>
+					<Value>Registrar nuevo paciente</Value>
 				</Candidate>
 			</NamedResource>
 			<NamedResource name="SelectCheckoutData" uri="ms-resource://10544GIRO.RehabControl/Resources/SelectCheckoutData">

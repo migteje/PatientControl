@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PatientControl.Events
 {
-    public class Login : Microsoft.Practices.Prism.PubSubEvents.PubSubEvent<string>
+    public class BadRegister : Microsoft.Practices.Prism.PubSubEvents.PubSubEvent<string>
     {
     }
 }

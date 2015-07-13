@@ -22,16 +22,6 @@ namespace PatientControl.ViewModels
             if (paciente == null) throw new ArgumentNullException("paciente");
             _paciente = paciente;
         }
-        // Reglas para rellenar los campos
-
-        // We allow all Unicode letter characters as well as internal spaces and hypens, as long as these do not occur in sequences.
-        private const string NAMES_REGEX_PATTERN = @"\A\p{L}+([\p{Zs}\-][\p{L}]+)*\z";
-
-        // We allow all Unicode letter and numeric characters as well as internal spaces, as long as these do not occur in sequences.
-        private const string ADDRESS_REGEX_PATTERN = @"\A[\p{L}\p{N}]+([\p{Zs}][\p{L}\p{N}]+)*\z";
-
-        // We allow all Unicode umeric characters and hypens, as long as these do not occur in sequences.
-        private const string NUMBERS_REGEX_PATTERN = @"\A\p{N}+([\p{N}\-][\p{N}]+)*\z";
 
         public int Id
         {
@@ -39,48 +29,36 @@ namespace PatientControl.ViewModels
             set { _paciente.id = value; }
         }
 
-        [Required(ErrorMessageResourceType = typeof(ErrorMessagesHelper), ErrorMessageResourceName = "RequiredErrorMessage")]
-        [RegularExpression(NAMES_REGEX_PATTERN, ErrorMessageResourceType = typeof(ErrorMessagesHelper), ErrorMessageResourceName = "RegexErrorMessage")]
         public string Nombre
         {
             get { return _paciente.nombre; }
             set { _paciente.nombre = value; }
         }
 
-        [Required(ErrorMessageResourceType = typeof(ErrorMessagesHelper), ErrorMessageResourceName = "RequiredErrorMessage")]
-        [RegularExpression(NAMES_REGEX_PATTERN, ErrorMessageResourceType = typeof(ErrorMessagesHelper), ErrorMessageResourceName = "RegexErrorMessage")]
         public string Apellidos
         {
             get { return _paciente.apellidos; }
             set { _paciente.apellidos = value; }
         }
 
-        [Required(ErrorMessageResourceType = typeof(ErrorMessagesHelper), ErrorMessageResourceName = "RequiredErrorMessage")]
-        [RegularExpression(ADDRESS_REGEX_PATTERN, ErrorMessageResourceType = typeof(ErrorMessagesHelper), ErrorMessageResourceName = "RegexErrorMessage")]
         public string Direccion
         {
             get { return _paciente.direccion; }
             set { _paciente.direccion = value; }
         }
 
-        [Required(ErrorMessageResourceType = typeof(ErrorMessagesHelper), ErrorMessageResourceName = "RequiredErrorMessage")]
-        [RegularExpression(ADDRESS_REGEX_PATTERN, ErrorMessageResourceType = typeof(ErrorMessagesHelper), ErrorMessageResourceName = "RegexErrorMessage")]
         public string Provincia
         {
             get { return _paciente.provincia; }
             set { _paciente.provincia = value; }
         }
 
-        [Required(ErrorMessageResourceType = typeof(ErrorMessagesHelper), ErrorMessageResourceName = "RequiredErrorMessage")]
-        [RegularExpression(ADDRESS_REGEX_PATTERN, ErrorMessageResourceType = typeof(ErrorMessagesHelper), ErrorMessageResourceName = "RegexErrorMessage")]
         public string Localidad
         {
             get { return _paciente.localidad; }
             set { _paciente.localidad = value; }
         }
 
-        [Required(ErrorMessageResourceType = typeof(ErrorMessagesHelper), ErrorMessageResourceName = "RequiredErrorMessage")]
-        [RegularExpression(NUMBERS_REGEX_PATTERN, ErrorMessageResourceType = typeof(ErrorMessagesHelper), ErrorMessageResourceName = "ZipCodeRegexErrorMessage")]
         [StringLength(6, MinimumLength = 5, ErrorMessageResourceType = typeof(ErrorMessagesHelper), ErrorMessageResourceName = "ZipCodeLengthInvalidErrorMessage")]
         public string CodPostal
         {
@@ -88,8 +66,6 @@ namespace PatientControl.ViewModels
             set { _paciente.codigoPostal = value; }
         }
 
-        [Required(ErrorMessageResourceType = typeof(ErrorMessagesHelper), ErrorMessageResourceName = "RequiredErrorMessage")]
-        [RegularExpression(NUMBERS_REGEX_PATTERN, ErrorMessageResourceType = typeof(ErrorMessagesHelper), ErrorMessageResourceName = "RegexErrorMessage")]
         public string Telefono
         {
             get { return _paciente.telefono; }
@@ -101,7 +77,6 @@ namespace PatientControl.ViewModels
             get { return _paciente.diagnostico; }
             set { _paciente.diagnostico = value; }
         }
-
 
         public string ZonaLesion
         {
@@ -198,6 +173,28 @@ namespace PatientControl.ViewModels
             await connection.InsertAsync(this._paciente);
         }
 
+        public async Task UpdateDatosPaciente(int id)
+        {
+            SQLiteAsyncConnection connection = new SQLiteAsyncConnection("Paciente.db");
+            var Patient = await connection.Table<Paciente>().Where(x => x.id == id).FirstOrDefaultAsync();
+
+            if (Patient != null)
+            {
+                Patient.nombre = this.Nombre;
+                Patient.apellidos = this.Apellidos;
+                Patient.direccion = this.Direccion;
+                Patient.telefono = this.Telefono;
+                Patient.provincia = this.Provincia;
+                Patient.localidad = this.Localidad;
+                Patient.codigoPostal = this.CodPostal;
+                Patient.diagnostico = this.Diagnostico;
+                Patient.zonaLesion = this.ZonaLesion;
+                Patient.fechaLesion = this.FechaLesion;
+
+                await connection.UpdateAsync(Patient);
+            }
+        }
+
         public async Task UpdateMedicalInfoPaciente(String name)
         {
             SQLiteAsyncConnection connection = new SQLiteAsyncConnection("Paciente.db");
@@ -211,6 +208,28 @@ namespace PatientControl.ViewModels
 
                 await connection.UpdateAsync(Patient);
             }
+        }
+
+        public async Task<bool> DeleteInfoPaciente(int id)
+        {
+            SQLiteAsyncConnection connection = new SQLiteAsyncConnection("Paciente.db");
+            var Patient = await connection.Table<Paciente>().Where(x => x.id == id).FirstOrDefaultAsync();
+
+            if (Patient != null)
+            {
+                await connection.DeleteAsync(Patient);
+this.Nombre = "";
+this.Apellidos = "";
+this.Direccion = "";
+this.Telefono = "";
+this.Provincia = "";
+this.Localidad = "";
+this.CodPostal = "";
+this.Diagnostico = "";
+this.ZonaLesion = "";
+                return true;
+            }
+            return false;
         }
     }
 }

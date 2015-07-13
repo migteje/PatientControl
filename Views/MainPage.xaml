@@ -116,15 +116,35 @@
                 </Style>
             </controls:MultipleSizedGridView.ItemContainerStyle>
         </controls:MultipleSizedGridView>
-        <Grid x:Name="Datos" HorizontalAlignment="Left" Height="127" VerticalAlignment="Top" Width="1346" Margin="10,631,0,0">
-            <TextBlock x:Name="Username" HorizontalAlignment="Left" Margin="0,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="26.667"
+        <Grid x:Name="Datos" HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="1346" Margin="10,631,0,0">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:Name="Username" HorizontalAlignment="Left" Margin="0,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="26.667"
                        Text="{Binding Username}"/>
+                <TextBlock x:Name="Apellidos" HorizontalAlignment="Left" Margin="10,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="26.667"
+                       Text="{Binding Paciente.Apellidos}"/>
+            </StackPanel>
             <Button Content="EDITAR PACIENTE" 
             	VerticalAlignment="Top" 
             	HorizontalAlignment="Right" 
-            	Margin="0,92,755,-3"
+            	Margin="0,130,755,-3"
             	Command="{Binding EditarCommand}" Foreground="White"
                 />
+            <Button x:Name="DeleteButton" Content="ELIMINAR PACIENTE"
+                    Foreground="White" Margin="430,170,750,-3" Width="170" Height="38">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel>
+                            <TextBlock Style="{StaticResource BaseTextBlockStyle}">
+                    ¿Seguro que quiere eliminar al paciente?
+                            </TextBlock>
+                            <Button Margin="0,5,0,0" HorizontalAlignment="Left"
+                                    Command="{Binding EliminarCommand}">
+                                EliminarPaciente
+                            </Button>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+            </Button>
         </Grid>
     </Grid>
 </controls:PageBase>

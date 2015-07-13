@@ -26,8 +26,8 @@ namespace PatientControl.ViewModels
         private readonly IEventAggregator _eventAggregator;
         private readonly IRegistroUserControlViewModel _registroViewModel;
         private readonly IMedicalInfoViewModel _medicalViewModel;
-        private bool _isRegistroInfoInvalid;
-        private bool _isMedicalInfoInvalid;
+        private string _isRegistroInfoInvalid;
+        private string _isMedicalInfoInvalid;
 
         public IRegistroUserControlViewModel RegistroViewModel
         {
@@ -43,14 +43,22 @@ namespace PatientControl.ViewModels
         private readonly INavigationService _navigationService;
 
         [RestorableState]
-        public bool IsRegistroInfoInvalid
+        public string IsRegistroInfoInvalid
         {
             get { return _isRegistroInfoInvalid; }
             private set { SetProperty(ref _isRegistroInfoInvalid, value); }
         }
 
+        private PacienteViewModel _paciente;
+
+        public PacienteViewModel Paciente
+        {
+            get { return _paciente; }
+            set { SetProperty(ref _paciente, value); }
+        }
+
         [RestorableState]
-        public bool IsMedicalInfoInvalid
+        public string IsMedicalInfoInvalid
         {
             get { return _isMedicalInfoInvalid; }
             private set { SetProperty(ref _isMedicalInfoInvalid, value); }
@@ -72,12 +80,16 @@ namespace PatientControl.ViewModels
         {
             if (viewModelState == null) return;
 
-            Title = _resourceLoader.GetString("RegistroTitle");
+            _paciente = (PacienteViewModel)navigationParameter;
+            if (Paciente.Id == 0)
+                Title = _resourceLoader.GetString("RegistroTitle");
+            else Title = _resourceLoader.GetString("EditarTitle");
             if (navigationMode == NavigationMode.New)
             {
                 viewModelState["RegistroViewModel"] = new Dictionary<string, object>();
                 viewModelState["MedicalViewModel"] = new Dictionary<string, object>();
             }
+            
             RegistroViewModel.OnNavigatedTo(navigationParameter, navigationMode, viewModelState);
             MedicalViewModel.OnNavigatedTo(navigationParameter, navigationMode, viewModelState);
             base.OnNavigatedTo(navigationParameter, navigationMode, viewModelState);
@@ -95,32 +107,26 @@ namespace PatientControl.ViewModels
 
         private async Task SaveAsync()
         {
-            IsRegistroInfoInvalid = RegistroViewModel.ValidateForm() == false;
-            IsMedicalInfoInvalid = MedicalViewModel.ValidateForm() == false;
+            IsRegistroInfoInvalid = RegistroViewModel.ValidateForm();
+            IsMedicalInfoInvalid = MedicalViewModel.ValidateForm();
 
-            if (IsRegistroInfoInvalid || IsMedicalInfoInvalid) return;
-            
+            if (!IsRegistroInfoInvalid.Equals("bien") || !IsMedicalInfoInvalid.Equals("bien"))
+            {
+            //    _eventAggregator.GetEvent<Events.BadRegister>().Subscribe(HandleBadRegister);
+                HandleBadRegister("Los siguientes campos necesitan revisión: ");
+                return;
+            }
                 string errorMessage = string.Empty;
-
                 try
                 {
                     if(await ProcessFormAsync())
                     _navigationService.GoBack();
                 }
-                catch (ModelValidationException mvex)
-                {
-                    DisplayValidationErrors(mvex.ValidationResult);
-                }
                 catch (Exception ex)
                 {
                     errorMessage = string.Format(CultureInfo.CurrentCulture, _resourceLoader.GetString("GeneralServiceErrorMessage"), Environment.NewLine, ex.Message);
+                    _dialogService.Show(errorMessage);
                 }
-
-                if (!string.IsNullOrWhiteSpace(errorMessage))
-                {
-                    _dialogService.Show(_resourceLoader.GetString("ErrorServiceUnreachable") + ". " + errorMessage);
-                }
-            
         }
 
         private async Task<bool> ProcessFormAsync()
@@ -141,20 +147,14 @@ namespace PatientControl.ViewModels
             }
         }
 
-        private void DisplayValidationErrors(ModelValidationResult modelValidationResults)
+        private void HandleBadRegister(string value)
         {
-            var errors = new Dictionary<string, ReadOnlyCollection<string>>();
-
-            // Property keys format: address.{Propertyname}
-            foreach (var propkey in modelValidationResults.ModelState.Keys)
-            {
-                string propertyName = propkey.Substring(propkey.IndexOf('.') + 1); // strip off order. prefix
-
-                errors.Add(propertyName, new ReadOnlyCollection<string>(modelValidationResults.ModelState[propkey]));
-            }
-
-            if (errors.Count > 0) RegistroViewModel.BindableValidator.SetAllErrors(errors);
+            if (IsRegistroInfoInvalid.Equals("bien"))
+            _dialogService.Show(value + IsMedicalInfoInvalid);
+            if (IsMedicalInfoInvalid.Equals("bien"))
+            _dialogService.Show(value + IsRegistroInfoInvalid);
+                if (!IsRegistroInfoInvalid.Equals("bien") & !IsMedicalInfoInvalid.Equals("bien"))
+                    _dialogService.Show(value + IsRegistroInfoInvalid + " " + IsMedicalInfoInvalid);
         }
-
     }
 }

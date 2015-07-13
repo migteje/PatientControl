@@ -16,12 +16,11 @@ namespace PatientControl.Interfaces
     {
         [RestorableState]
         PacienteViewModel Paciente { get; set; }
-        BindableValidator BindableValidator { get; }
         IReadOnlyCollection<ComboBoxItemValue> Provincias { get; }
         void OnNavigatedTo(object navigationParameter, NavigationMode navigationMode, Dictionary<string, object> viewState);
         void OnNavigatedFrom(Dictionary<string, object> viewState, bool suspending);
         Task<bool> ProcessFormAsync();
-        bool ValidateForm();
+        string ValidateForm();
         event PropertyChangedEventHandler PropertyChanged;
     }
 }

@@ -540,7 +540,11 @@
     <comment>Error message for when the zip code does not match regex.</comment>
   </data>
   <data name="RegistroTitle" xml:space="preserve">
-    <value>Registrar nuevo usuario</value>
+    <value>Registrar nuevo paciente</value>
     <comment>Titulo para la página de registro de nuevo usuario</comment>
+  </data>
+  <data name="EditarTitle" xml:space="preserve">
+    <value>Editar Paciente</value>
+    <comment>Titulo para cuando Editas un paciente</comment>
   </data>
 </root>

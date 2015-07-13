@@ -21,14 +21,6 @@ namespace PatientControl.ViewModels
     public class RegistroUserControlViewModel: ViewModel, Interfaces.IRegistroUserControlViewModel
     {
         private PacienteViewModel _paciente;
-        private readonly BindableValidator _bindableValidator;
-        public BindableValidator BindableValidator
-        {
-            get
-            {
-                return _bindableValidator;
-            }
-        }
 
         public PacienteViewModel Paciente
         {
@@ -45,11 +37,11 @@ namespace PatientControl.ViewModels
         //private readonly ICheckoutDataRepository _checkoutDataRepository;
         private readonly IResourceLoader _resourceLoader;
         private readonly IDialogService _dialogService;
+        private bool editar = false;
 
         public RegistroUserControlViewModel(IResourceLoader resourceLoader, IDialogService dialogService)
             {
                 _paciente = new PacienteViewModel(new Paciente());
-                _bindableValidator = new BindableValidator(this.Paciente);
                 _resourceLoader = resourceLoader;
                 _dialogService = dialogService;
             }
@@ -64,29 +56,16 @@ namespace PatientControl.ViewModels
                 base.OnNavigatedTo(navigationParameter, navigationMode, viewModelState);
             }
 
-            // Restore the errors collection manually
-            var errorsCollection = RetrieveEntityStateValue<IDictionary<string, ReadOnlyCollection<string>>>("errorsCollection", viewModelState);
-            Debug.WriteLine(viewModelState.Count());
-            if (errorsCollection != null)
-            {
-                _bindableValidator.SetAllErrors(errorsCollection);
-            }
-
             if (navigationMode == NavigationMode.New)
             {
                 _paciente = (PacienteViewModel) navigationParameter;
             }
+            if (Paciente.Id != 0) editar = true;
         }
 
         public override void OnNavigatedFrom(Dictionary<string, object> viewState, bool suspending)
         {
             base.OnNavigatedFrom(viewState, suspending);
-
-            // Store the errors collection manually
-            if (viewState != null)
-            {
-                AddEntityStateValue("errorsCollection", _bindableValidator.GetAllErrors(), viewState);
-            }
         }
 
         public void PoblarProvincias()
@@ -106,41 +85,55 @@ namespace PatientControl.ViewModels
                 Provincias = new ReadOnlyCollection<ComboBoxItemValue>(items);
 
                 // Select the first item on the list
-                // But disable validation first, because we don't want to fire validation at this point
-                _bindableValidator.IsValidationEnabled = false;
                 _paciente.Provincia = Provincias.First().Id;
-                _bindableValidator.IsValidationEnabled = true;
             }
             catch (Exception ex)
             {
                 errorMessage = string.Format(CultureInfo.CurrentCulture, _resourceLoader.GetString("GeneralServiceErrorMessage"),
                                              Environment.NewLine, ex.Message);
             }
-
-            if (!string.IsNullOrWhiteSpace(errorMessage))
-            {
-                _dialogService.Show(_resourceLoader.GetString("ErrorServiceUnreachable") + ". " + errorMessage);
-            }
         }
 
-        public bool ValidateForm()
+        public string ValidateForm()
         {
-            //return _bindableValidator.ValidateProperties();
-            return true;
+            if (Paciente.Nombre == null || Paciente.Nombre.Equals(" ") || Paciente.Nombre.Equals("") || Paciente.Apellidos == null || Paciente.Apellidos.Equals(" ") || Paciente.Apellidos.Equals(""))
+                return "Debes escribir nombre y apellidos correctamente";
+            if (Paciente.CodPostal.Equals("") || Paciente.CodPostal == null)
+                return "El Código Postal debe ser numérico";
+            if (Paciente.Telefono.Equals("") || Paciente.Telefono == null)
+                return "El Teléfono debe ser numérico";
+            if (Paciente.Direccion == null || Paciente.Direccion == "")
+            {
+                Paciente.Direccion = "";
+                return "bien";
+            }
+            if (Paciente.Localidad == null || Paciente.Localidad == "")
+            {
+                Paciente.Localidad = "";
+                return "Escribe la localidad";
+            }
+            if (Paciente.Provincia == null || Paciente.Provincia == "" || Paciente.Provincia == "Provincia")
+            {
+                Paciente.Provincia = "Provincia";
+                return "Selecciona la provincia";
+            }
+            return "bien";
         }
 
         public async Task<bool> ProcessFormAsync()
         {
            if (!await Paciente.DoesDbExist("Paciente.db")) Paciente.CreateDatabase();
-           if (await Paciente.CoincidePaciente()){
+           if (!editar && await Paciente.CoincidePaciente()){
                _dialogService.Show("El Paciente ya existe, revise los datos de nuevo");
                return false;
            }
            else{
-               await Paciente.InsertarNuevoPaciente();
+               if (!editar)
+                   await Paciente.InsertarNuevoPaciente();
+               else 
+                   await Paciente.UpdateDatosPaciente(Paciente.Id);
                return true;
            }
         }
-
     }
 }

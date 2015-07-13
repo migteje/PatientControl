@@ -16,11 +16,10 @@ namespace PatientControl.Interfaces
     {
         [RestorableState]
         PacienteViewModel Paciente { get; set; }
-        IReadOnlyCollection<ComboBoxItemValue> Articulaciones { get; }
         void OnNavigatedTo(object navigationParameter, NavigationMode navigationMode, Dictionary<string, object> viewState);
         void OnNavigatedFrom(Dictionary<string, object> viewState, bool suspending);
         Task ProcessFormAsync();
-        bool ValidateForm();
+        string ValidateForm();
         event PropertyChangedEventHandler PropertyChanged;
     }
 }

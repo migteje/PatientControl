@@ -28,23 +28,13 @@ namespace PatientControl.ViewModels
             get { return _paciente; }
             set { SetProperty(ref _paciente, value); }
         }
-        private IReadOnlyCollection<ComboBoxItemValue> _articulaciones;
-        public IReadOnlyCollection<ComboBoxItemValue> Articulaciones
-        {
-            get { return _articulaciones; }
-            private set { SetProperty(ref _articulaciones, value); }
-        }
 
         //private readonly ICheckoutDataRepository _checkoutDataRepository;
-        private readonly IResourceLoader _resourceLoader;
-        private readonly IDialogService _dialogService;
         public DelegateCommand<string> CheckedCommand { get; private set; }
 
-        public MedicalInfoViewModel(IResourceLoader resourceLoader, IDialogService dialogService)
+        public MedicalInfoViewModel(IResourceLoader resourceLoader)
             {
-                _paciente = new PacienteViewModel(new Paciente());
-                _resourceLoader = resourceLoader;
-                _dialogService = dialogService;
+                Paciente = new PacienteViewModel(new Paciente());
                 this.CheckedCommand = new DelegateCommand<string>(Checked);
             }
 
@@ -66,9 +56,15 @@ namespace PatientControl.ViewModels
             base.OnNavigatedFrom(viewState, suspending);
         }
 
-        public bool ValidateForm()
+        public string ValidateForm()
         {
-            return true;
+            if (Paciente.FechaLesion.Year >= DateTime.Today.Year) 
+                return "La fecha no es correcta";
+            if (Paciente.Diagnostico == " " || Paciente.Diagnostico == null || Paciente.Diagnostico == "")
+                return "El diagnóstico no puede ser nulo";
+            if (Paciente.ZonaLesion == null || Paciente.ZonaLesion == "")
+                return "Necesita seleccionar la zona de la lesión";
+            return "bien";
         }
 
         public async Task ProcessFormAsync()

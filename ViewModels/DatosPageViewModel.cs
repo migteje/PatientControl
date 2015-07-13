@@ -30,11 +30,6 @@ namespace PatientControl.ViewModels
         private string _title = default(string);
         public string Title { get { return _title; } set { SetProperty(ref _title, value); } }
 
-        private string _articulacion = default(string);
-        public string Articulacion { get { return _articulacion; } set { SetProperty(ref _articulacion, value); } }
-        private string _prueba = default(string);
-        public string Prueba { get { return _prueba; } set { SetProperty(ref _prueba, value); } }
-
         private IReadOnlyCollection<Ejercicio> _ejercicios;
         public IReadOnlyCollection<Ejercicio> Ejercicios
         {

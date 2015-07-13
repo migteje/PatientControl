@@ -83,8 +83,8 @@ namespace PatientControl
                 .GetEvent<Events.Logout>()
                 .Publish("Debe de entrar con el nombre válido de un paciente");
             _container.Resolve<IEventAggregator>()
-                .GetEvent<Events.Login>()
-                .Publish("Ha entrado de forma satisfactoria");
+                .GetEvent<Events.BadRegister>()
+                .Publish("Los siguientes campos no son correctos: ");
 
             // Navigate to the initial page
 

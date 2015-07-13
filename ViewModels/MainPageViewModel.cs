@@ -2,6 +2,7 @@
 using Microsoft.Practices.Prism.Mvvm;
 using Microsoft.Practices.Prism.Mvvm.Interfaces;
 using Microsoft.Practices.Prism.PubSubEvents;
+using PatientControl.Interfaces;
 using PatientControl.Models;
 using SQLite;
 using System;
@@ -22,6 +23,8 @@ namespace PatientControl.ViewModels
 
             public IEventAggregator _eventAggregator;
             public INavigationService _navigationService;
+            private readonly IDialogService _dialogService;
+
             private PacienteViewModel _paciente;
             public PacienteViewModel Paciente
             {
@@ -35,11 +38,14 @@ namespace PatientControl.ViewModels
             public string Username { get { return _username; } set { SetProperty(ref _username, value); } }
 
             public DelegateCommand VerDatosCommand { get; private set; }
+            public DelegateCommand EditarCommand { get; private set; }
+            public DelegateCommand EliminarCommand { get; private set; }
 
-            public MainPageViewModel(INavigationService navigationService, IEventAggregator eventAggregator, PacienteViewModel Paciente)
+            public MainPageViewModel(INavigationService navigationService, IEventAggregator eventAggregator, PacienteViewModel Paciente, IDialogService dialogService)
             {
                 _eventAggregator = eventAggregator;
                 _navigationService = navigationService;
+                _dialogService = dialogService;
 
                 RootCategories = new List<CategoriaViewModel>()
                 {
@@ -67,6 +73,8 @@ namespace PatientControl.ViewModels
             {
                 this.Title = "PatientControl";
                 VerDatosCommand = DelegateCommand.FromAsyncHandler(VerDatosAsync);
+                EditarCommand = DelegateCommand.FromAsyncHandler(EditarAsync);
+                EliminarCommand = DelegateCommand.FromAsyncHandler(EliminarAsync);
                 this.Paciente = (PacienteViewModel) navigationParameter;
                 this.Username = Paciente.Nombre;
                 foreach (var cat in RootCategories)
@@ -76,25 +84,45 @@ namespace PatientControl.ViewModels
 
         private async Task VerDatosAsync()
         {
-            await GoToNextPageAsync();
+            await GoToNextPageAsync("Datos");
         }
 
-        private async Task GoToNextPageAsync()
+        private async Task EditarAsync()
+        {
+            await GoToNextPageAsync("Editar");
+        }
+
+        private async Task EliminarAsync()
+        {
+            if (await Paciente.DeleteInfoPaciente(Paciente.Id))
+                _dialogService.Show("El paciente se ha eliminado correctamente");
+            else
+                _dialogService.Show("Ha habido un problema eliminando al paciente");
+            await GoToNextPageAsync("Login");
+        }
+
+        private async Task GoToNextPageAsync(string page)
         {
             // Set up navigate action depending on the application's state
-            var navigateAction = await ResolveNavigationActionAsync();
+            var navigateAction = await ResolveNavigationActionAsync(page);
 
             // Execute the navigate action
             navigateAction();
         }
 
-        private async Task<Action> ResolveNavigationActionAsync()
+        private async Task<Action> ResolveNavigationActionAsync(string nav)
         {
             Action navigateAction = null;
             var navigationServiceReference = _navigationService;
             navigateAction = async () =>
                     {
-                       _navigationService.Navigate(App.Experiences.Datos.ToString(), Paciente);
+                        if (nav.Equals("Datos"))
+                            _navigationService.Navigate(App.Experiences.Datos.ToString(), Paciente);
+                        if (nav.Equals("Login"))
+                            _navigationService.Navigate(App.Experiences.Login.ToString(), null);
+                        if (nav.Equals("Editar"))
+                            _navigationService.Navigate(App.Experiences.Registro.ToString(), Paciente);
+
                     };
             return navigateAction;
         }
