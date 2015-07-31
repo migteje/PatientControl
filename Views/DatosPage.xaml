@@ -41,6 +41,13 @@
             <Setter Property="Foreground" Value="Black"/>
             <Setter Property="FontSize" Value="10"/>
         </Style>
+        
+        <Style x:Key="ButtonCell" TargetType="Button">
+            <Setter Property="Height" Value="15"/>
+            <Setter Property="Margin" Value="5,0,2,0"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="FontSize" Value="10"/>
+        </Style>
 
         <Style x:Key="BorderCell" TargetType="Border">
             <Setter Property="Background" Value="White"/>
@@ -53,16 +60,18 @@
                 <Border Background="{StaticResource BlockBackgroundBrush}"/>
                 <StackPanel Orientation="Horizontal" Background="{StaticResource StackPanelBackgroundBrush}" Width="750"  Height="Auto" HorizontalAlignment="Left">
                     <Border Style="{StaticResource BorderCell}">
-                        <TextBlock Text="{Binding tipo}" Style="{StaticResource TextBlockCell}" FontSize="18.667" Width="260" Margin="5,0,0,0" Height="Auto"/>
+                        <!--Button Content="{Binding Tipo}" Style="{StaticResource ButtonCell}" FontSize="16" Width="260" Margin="5,0,0,0" Height="Auto" BorderThickness="0" 
+                                FontFamily="DengXian" Command="{Binding SelectCommand}" CommandParameter="{Binding Tipo}" /-->   
+                        <TextBlock Text="{Binding Tipo}" Style="{StaticResource TextBlockCell}" FontSize="18.667" Width="260" Margin="5,0,0,0" Height="Auto"/>
                     </Border>
                     <Border Style="{StaticResource BorderCell}">
-                        <TextBlock Text="{Binding angulo}" Style="{StaticResource TextBlockCell}" FontSize="18.667" Width="108" Height="Auto"/>
+                        <TextBlock Text="{Binding Angulo}" Style="{StaticResource TextBlockCell}" FontSize="18.667" Width="108" Height="Auto"/>
                     </Border>
                     <Border Style="{StaticResource BorderCell}">
-                        <TextBlock Text="{Binding repeticiones}" Style="{StaticResource TextBlockCell}" FontSize="18.667" Width="115" Height="Auto"/>
+                        <TextBlock Text="{Binding Repeticiones}" Style="{StaticResource TextBlockCell}" FontSize="18.667" Width="115" Height="Auto"/>
                     </Border>
                     <Border Style="{StaticResource BorderCell}">
-                        <TextBlock Text="{Binding fechaRealizado}" Style="{StaticResource TextBlockCell}" FontSize="18.667" Width="225" Height="Auto"/>
+                        <TextBlock Text="{Binding FechaRealizado}" Style="{StaticResource TextBlockCell}" FontSize="18.667" Width="225" Height="Auto"/>
                     </Border>
                 </StackPanel>
             </Grid>
@@ -96,9 +105,30 @@
             <Button x:Name="backButton"
                           Command="{Binding GoBackCommand, ElementName=pageRoot}"
                           Style="{StaticResource BackButtonStyle}" />
+            <StackPanel Orientation="Vertical">
             <TextBlock x:Name="pageTitle" Text="{Binding Title}" Style="{StaticResource HeaderTextBlockStyle}" 
-                        IsHitTestVisible="false" TextWrapping="NoWrap" Margin="89,0,0,21" Height="72" VerticalAlignment="Bottom" Width="564" HorizontalAlignment="Left"/>
-            <TextBlock x:Name="nombrePaciente" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Paciente.Nombre}" VerticalAlignment="Center" Margin="1067,53,0,36" Height="41" Width="115" FontSize="26.667" TextAlignment="Justify" LineHeight="8" FontWeight="Bold"/>
+                        IsHitTestVisible="false" TextWrapping="NoWrap" Margin="89,0,0,2" Height="72" VerticalAlignment="Bottom" Width="564" HorizontalAlignment="Left"/>
+                <TextBlock x:Name="nombrePaciente"  Margin="89,0,0,21" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Paciente.Nombre}" VerticalAlignment="Top" Height="80" Width="105" FontSize="26.667" TextAlignment="Justify" LineHeight="8" FontWeight="Bold"/>
+            </StackPanel>
+            <StackPanel Grid.Column="1" Margin="650,25,0,0" Orientation="Horizontal">
+                <Button x:Name="MostrarTodo" Content="VER TODO" HorizontalAlignment="Left" VerticalAlignment="Top" Height="80"  Width="120" Command="{Binding SelectCommand}" CommandParameter="todas" Foreground="White" BorderBrush="White"/>
+                <StackPanel Orientation="Vertical">
+                    <Button x:Name="MostrarAb" Content="ABD" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="120" Height="40" Command="{Binding SelectCommand}" CommandParameter="Abduccion Hombro" Foreground="White" BorderBrush="White"/>
+                    <Button x:Name="MostrarAd" Content="ADD" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="120" Height="40" Command="{Binding SelectCommand}" CommandParameter="Aduccion Hombro" Foreground="White" BorderBrush="White"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <Button x:Name="MostrarFlex" Content="HMBR FLEX" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40"  Width="120" Command="{Binding SelectCommand}" CommandParameter="Flexion Hombro" Foreground="White" BorderBrush="White"/>
+                    <Button x:Name="MostrarEx" Content="HMBR EX" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Height="40" Command="{Binding SelectCommand}" CommandParameter="Extension Hombro" Foreground="White" BorderBrush="White"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <Button x:Name="MostrarHorFlex" Content="FLEX HOR" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="120" Height="40" Command="{Binding SelectCommand}" CommandParameter="Flexion Horizontal Hombro" Foreground="White" BorderBrush="White"/>
+                    <Button x:Name="MostrarHorEx" Content="EX HOR" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="120" Height="40" Command="{Binding SelectCommand}" CommandParameter="Extension Horizontal Hombro" Foreground="White" BorderBrush="White"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <Button x:Name="CodFlex" Content="HMBR FLEX" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40"  Width="120" Command="{Binding SelectCommand}" CommandParameter="Flexion Codo" Foreground="White" BorderBrush="White"/>
+                    <Button x:Name="CodEx" Content="HMBR EX" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Height="40" Command="{Binding SelectCommand}" CommandParameter="Extension Codo" Foreground="White" BorderBrush="White"/>
+                </StackPanel>
+            </StackPanel>
         </Grid>
 
         <Grid Margin="10" Grid.Row="1" Grid.ColumnSpan="2">
@@ -106,37 +136,39 @@
                 <RowDefinition Height="82"/>
                 <RowDefinition Height="0"/>
             </Grid.RowDefinitions>
-
-            <StackPanel Grid.Row="0" Orientation="Vertical" Margin="0,0,578,-516" Grid.RowSpan="2">
-                <StackPanel x:Name="Cabeceras" Margin="0" Orientation="Horizontal" HorizontalAlignment="Left" Width="768">
-                    <Border Style="{StaticResource BorderHeader}">
-                        <TextBlock x:Name="pruebaTitle" HorizontalAlignment="Center" Style="{StaticResource TextBlockHeader}" TextWrapping="Wrap" Text="PRUEBA" FontSize="18.667" Width="260" TextAlignment="Center"/>
-                    </Border>
-                    <Border Style="{StaticResource BorderHeader}">
-                        <TextBlock x:Name="angTitle" HorizontalAlignment="Center" Style="{StaticResource TextBlockHeader}" TextWrapping="Wrap" Text="ÁNGULO" VerticalAlignment="Top" FontSize="18.667" Width="109" Margin="0" TextAlignment="Center"/>
-                    </Border>
-                    <Border Style="{StaticResource BorderHeader}">
-                        <TextBlock x:Name="reptTitle" HorizontalAlignment="Center" Style="{StaticResource TextBlockHeader}" TextWrapping="Wrap" Text="REPETICIONES" VerticalAlignment="Top" FontSize="18.667" Width="129" Margin="0" TextAlignment="Center"/>
-                    </Border>
-                    <Border Style="{StaticResource BorderHeader}">
-                        <TextBlock x:Name="repFecha" HorizontalAlignment="Center" Style="{StaticResource TextBlockHeader}" TextWrapping="Wrap" Text="FECHA" VerticalAlignment="Top" FontSize="18.667" Width="249" Margin="0" TextAlignment="Center"/>
-                    </Border>
-                </StackPanel>
-                <ItemsControl Grid.Row="1" 
+                <StackPanel Grid.Row="0" Orientation="Vertical" Margin="0,0,578,-516" Grid.RowSpan="2">
+                    <StackPanel x:Name="Cabeceras" Margin="0" Orientation="Horizontal" HorizontalAlignment="Left" Width="768">
+                        <Border Style="{StaticResource BorderHeader}">
+                            <TextBlock x:Name="pruebaTitle" HorizontalAlignment="Center" Style="{StaticResource TextBlockHeader}" TextWrapping="Wrap" Text="PRUEBA" FontSize="18.667" Width="260" TextAlignment="Center"/>
+                        </Border>
+                        <Border Style="{StaticResource BorderHeader}">
+                            <TextBlock x:Name="angTitle" HorizontalAlignment="Center" Style="{StaticResource TextBlockHeader}" TextWrapping="Wrap" Text="ÁNGULO" VerticalAlignment="Top" FontSize="18.667" Width="109" Margin="0" TextAlignment="Center"/>
+                        </Border>
+                        <Border Style="{StaticResource BorderHeader}">
+                            <TextBlock x:Name="reptTitle" HorizontalAlignment="Center" Style="{StaticResource TextBlockHeader}" TextWrapping="Wrap" Text="REPETICIONES" VerticalAlignment="Top" FontSize="18.667" Width="129" Margin="0" TextAlignment="Center"/>
+                        </Border>
+                        <Border Style="{StaticResource BorderHeader}">
+                            <TextBlock x:Name="FechaTitle" HorizontalAlignment="Center" Style="{StaticResource TextBlockHeader}" TextWrapping="Wrap" Text="FECHA" VerticalAlignment="Top" FontSize="18.667" Width="249" Margin="0" TextAlignment="Center"/>
+                        </Border>
+                    </StackPanel>
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <ItemsControl Grid.Row="1" 
                               ItemsSource="{Binding Ejercicios}"
                               ItemTemplate="{StaticResource DefaultItemDetailTemplate}"/>
+                </ScrollViewer>
             </StackPanel>
-            <Series:Chart 
-            	x:Name="PieChart" 
-            	Title="Pie Chart" 
-            	Margin="773,0,15,-516" Grid.RowSpan="2">
-                <Series:ColumnSeries 
-            		Title="Population" 
+            <ScrollViewer  Grid.RowSpan="2" Margin="773,0,15,-516" HorizontalScrollBarVisibility="Auto">
+                <Series:Chart 
+            	x:Name="Chart" 
+            	Title="Gráfica">
+                    <Series:ColumnSeries
+            		Title="Resumen de Ejercicios" 
             		ItemsSource="{Binding Ejercicios}" 
-            		IndependentValueBinding="{Binding tipo}" 
-            		DependentValueBinding="{Binding angulo}" 
+            		IndependentValueBinding="{Binding FechaRealizado}" 
+            		DependentValueBinding="{Binding Angulo}" 
             		IsSelectionEnabled="True" />
             </Series:Chart>
+            </ScrollViewer>
         </Grid>
     </Grid>
 </controls:PageBase>

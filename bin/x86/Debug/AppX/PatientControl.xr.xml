@@ -18,23 +18,24 @@
     <RootPropertyPathName Name="DiscountedPrice" />
     <RootPropertyPathName Name="Group" />
     <RootPropertyPathName Name="TotalNumberOfItems" />
-    <RootPropertyPathName Name="fechaRealizado" />
-    <RootPropertyPathName Name="repeticiones" />
-    <RootPropertyPathName Name="angulo" />
-    <RootPropertyPathName Name="tipo" />
+    <RootPropertyPathName Name="FechaRealizado" />
+    <RootPropertyPathName Name="Repeticiones" />
+    <RootPropertyPathName Name="Angulo" />
+    <RootPropertyPathName Name="Tipo" />
     <RootPropertyPathName Name="Ejercicios" />
+    <RootPropertyPathName Name="SelectCommand" />
     <RootPropertyPathName Name="Paciente" />
     <RootPropertyPathName Name="Nombre" />
     <RootPropertyPathName Name="GoBackCommand" />
-    <RootPropertyPathName Name="KinectCanvas" />
-    <RootPropertyPathName Name="Bitmap" />
+    <RootPropertyPathName Name="Text" />
+    <RootPropertyPathName Name="CapturaCommand" />
+    <RootPropertyPathName Name="ejercicioGrid" />
     <RootPropertyPathName Name="LadoCommand" />
     <RootPropertyPathName Name="GrabarCommand" />
     <RootPropertyPathName Name="Desactivado" />
     <RootPropertyPathName Name="CheckedCommand" />
     <RootPropertyPathName Name="Activado" />
     <RootPropertyPathName Name="IsSelected" />
-    <RootPropertyPathName Name="Angulo" />
     <RootPropertyPathName Name="Colores" />
     <RootPropertyPathName Name="MasCommand" />
     <RootPropertyPathName Name="MenosCommand" />
@@ -42,6 +43,8 @@
     <RootPropertyPathName Name="PararCommand" />
     <RootPropertyPathName Name="IniciarCommand" />
     <RootPropertyPathName Name="NombrePaciente" />
+    <RootPropertyPathName Name="KinectCanvas" />
+    <RootPropertyPathName Name="Bitmap" />
     <RootPropertyPathName Name="RootCategories" />
     <RootPropertyPathName Name="EliminarCommand" />
     <RootPropertyPathName Name="EditarCommand" />
@@ -71,9 +74,6 @@
       <RootProperty Name="Source" />
       <RootProperty Name="ThemeDictionaries" />
     </RootType>
-    <RootType FullName="PatientControl.Converters.NullToVisibleConverter" />
-    <RootType FullName="PatientControl.Converters.NotNullToVisibleConverter" />
-    <RootType FullName="PatientControl.Converters.FirstErrorConverter" />
     <RootType FullName="PatientControl.Converters.TextToHeaderVisibilityConverter" />
     <RootType FullName="Windows.UI.Xaml.Controls.ItemsPanelTemplate">
       <RootProperty Name="Template" />
@@ -93,6 +93,7 @@
       <RootProperty Name="RowDefinitions" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="ChildrenTransitions" />
+      <RootProperty Name="Name" />
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
       <RootMethod Name="GetRow" />
@@ -265,14 +266,15 @@
       <RootProperty Name="Style" />
       <RootProperty Name="Content" />
       <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="FontSize" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
+      <RootProperty Name="CommandParameter" />
       <RootProperty Name="Foreground" />
-      <RootProperty Name="Flyout" />
       <RootProperty Name="BorderBrush" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Flyout" />
       <RootProperty Name="Background" />
       <RootProperty Name="MinWidth" />
     </RootType>
@@ -282,6 +284,7 @@
       <RootProperty Name="HorizontalScrollMode" />
       <RootProperty Name="VerticalScrollMode" />
       <RootProperty Name="ZoomMode" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="Content" />
       <RootMethod Name="GetIsHorizontalScrollChainingEnabled" />
       <RootMethod Name="SetIsHorizontalScrollChainingEnabled" />
@@ -331,7 +334,7 @@
       <RootProperty Name="Height" />
       <RootProperty Name="Background" />
       <RootProperty Name="Children" />
-      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Shapes.Path">
       <RootProperty Name="Fill" />
@@ -390,7 +393,6 @@
     <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart">
       <RootProperty Name="Title" />
-      <RootProperty Name="Margin" />
       <RootProperty Name="Series" />
     </RootType>
     <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries">

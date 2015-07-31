@@ -21,7 +21,7 @@
         * Row 0 contains the back button and page title
         * Row 1 contains the rest of the page layout
     -->
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" >
+    <Grid Name="ejercicioGrid"  Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.ChildrenTransitions>
             <TransitionCollection>
                 <EntranceThemeTransition/>
@@ -33,8 +33,14 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
+        <Grid Grid.Row="1">
+            <Image Source="{Binding Bitmap}" Stretch="UniformToFill" Margin="0,-140,0,0"/>
+            <Canvas Margin="0,-140,0,0">
+                <ContentPresenter Content="{Binding KinectCanvas}"/>
+            </Canvas>
+        </Grid>
         <!-- Back button and page title -->
-        <Grid Grid.Row="0" Margin="0,0,10,10">
+        <Grid Grid.Row="0" Margin="0,0,0,10" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="120"/>
                 <ColumnDefinition Width="*"/>
@@ -45,19 +51,19 @@
             <TextBlock x:Name="pageTitle" Text="{Binding Title}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
                         IsHitTestVisible="false" TextWrapping="NoWrap" Margin="0,0,872,16" Height="72" VerticalAlignment="Bottom"/>
             <TextBlock x:Name="nombrePaciente" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding NombrePaciente}" VerticalAlignment="Center" Grid.Column="1" Margin="369,59,0,40" Height="41" Width="115" FontSize="26.667" TextAlignment="Justify" LineHeight="8" FontWeight="Bold"/>
-            <StackPanel Grid.Column="1" Margin="484,10,124,10" Orientation="Horizontal">
-                <Button x:Name="Iniciar" Content="INICIAR" HorizontalAlignment="Left" VerticalAlignment="Top" Height="80" Margin="60,15,0,0" Width="190" Command="{Binding IniciarCommand}" Foreground="White"/>
-                <Button x:Name="Parar" Content="PARAR" HorizontalAlignment="Left" Margin="120,15,0,0" VerticalAlignment="Top" Width="190" Height="80" Command="{Binding PararCommand}" Foreground="White"/>
+            <StackPanel Grid.Column="1" Margin="484,10,45,10" Orientation="Horizontal">
+                <Button x:Name="Iniciar" Content="INICIAR" HorizontalAlignment="Left" VerticalAlignment="Top" Height="80" Margin="60,15,0,0" Width="190" Command="{Binding IniciarCommand}" Foreground="White" BorderBrush="White"/>
+                <Button x:Name="Parar" Content="PARAR" HorizontalAlignment="Left" Margin="120,15,0,0" VerticalAlignment="Top" Width="190" Height="80" Command="{Binding PararCommand}" Foreground="White" BorderBrush="White"/>
             </StackPanel>
         </Grid>
 
-        <Grid Margin="10,0,10,10" Grid.Row="1">
-            <StackPanel Grid.ColumnSpan="1" Orientation="Vertical" Margin="0,0,1030,0">
+        <Grid Margin="10,0,10,10" Grid.Row="1" >
+            <StackPanel Grid.ColumnSpan="1" Orientation="Vertical" Margin="-14,-13,1030,-16" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
                 <TextBlock x:Name="repTitle" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18.667" Text="NÚMERO DE REPETICIONES:" Margin="12,11,0,0"/>
                 <StackPanel Orientation="Horizontal" Height="50" Margin="12,0,15,0">
                     <TextBlock x:Name="repeticiones" HorizontalAlignment="Left" Margin="23,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18.667" Width="25" Height="22" TextAlignment="Center" Text="{Binding Repeticion}"/>
-                    <Button x:Name="mas" Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18.667" Width="50" Height="45" Margin="20,0,0,0" Command="{Binding MenosCommand, Mode=TwoWay}"/>
-                    <Button x:Name="menos" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18.667" Width="50" Height="45" Margin="8,0,0,0" Command="{Binding MasCommand, Mode=TwoWay}"/>
+                    <Button x:Name="mas" Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18.667" Width="50" Height="45" Margin="20,0,0,0" Command="{Binding MenosCommand, Mode=TwoWay}" Foreground="White" BorderBrush="White"/>
+                    <Button x:Name="menos" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18.667" Width="50" Height="45" Margin="8,0,0,0" Command="{Binding MasCommand, Mode=TwoWay}" BorderBrush="White" Foreground="White"/>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal" Height="54" Margin="12,17,0,0">
@@ -69,16 +75,20 @@
                     <RadioButton x:Name="Activado" Content="{Binding Activado}" VerticalAlignment="Stretch" Margin="0,0,0,0" Command="{Binding CheckedCommand, Mode=TwoWay}" CommandParameter="Activado" FontSize="18"/>
                     <RadioButton x:Name="Desactivado" Content="{Binding Desactivado}" VerticalAlignment="Stretch" Margin="0,0,0,0" Command="{Binding CheckedCommand, Mode=TwoWay}" CommandParameter="Desactivado" FontSize="18"/>
                 </StackPanel>
-                <Button x:Name="Grabar" Content="GRABAR" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Top" FontSize="18.667" Height="46" Width="140" Command="{Binding GrabarCommand}" Foreground="White"/>
+                <Button x:Name="Grabar" Content="GRABAR" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Top" FontSize="18.667" Height="46" Width="140" Command="{Binding GrabarCommand}" Foreground="White" BorderBrush="White"/>
                 <StackPanel x:Name="Lado"  Height="100" Margin="92,31,0,0">
                     <RadioButton x:Name="Izquierdo" Content="IZQUIERDO" VerticalAlignment="Stretch" Margin="0,0,0,0" Command="{Binding LadoCommand, Mode=TwoWay}" CommandParameter="Izquierdo" FontSize="18"/>
                     <RadioButton x:Name="Derecho" Content="DERECHO" VerticalAlignment="Stretch" Margin="0,0,0,0" Command="{Binding LadoCommand, Mode=TwoWay}" CommandParameter="Derecho" FontSize="18"/>
                 </StackPanel>
+                <StackPanel x:Name="Captura">
+                    <Button Content="CAPTURAR" Height="Auto" HorizontalAlignment="Center" VerticalAlignment="Center"  Command="{Binding CapturaCommand}" CommandParameter="{Binding ejercicioGrid}" BorderBrush="White" Foreground="White"/>
+                    <TextBlock x:Name="guardado" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Width="310" Height="22" TextAlignment="Center" Text="{Binding Text}" Margin="0,0,10,0"/>
+                </StackPanel>
             </StackPanel>
-            <Image Source="{Binding Bitmap}" Stretch="UniformToFill" Margin="333,0,0,0"/>
+            <!--Image Source="{Binding Bitmap}" Stretch="UniformToFill" Margin="333,0,0,0"/>
             <Canvas HorizontalAlignment="Right" Width="1013" Grid.Column="1">
                 <ContentPresenter Content="{Binding KinectCanvas}"/>
-            </Canvas>
+            </Canvas-->
         </Grid>
     </Grid>
 </controls:PageBase>

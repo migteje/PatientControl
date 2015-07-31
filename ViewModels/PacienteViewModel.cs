@@ -59,7 +59,6 @@ namespace PatientControl.ViewModels
             set { _paciente.localidad = value; }
         }
 
-        [StringLength(6, MinimumLength = 5, ErrorMessageResourceType = typeof(ErrorMessagesHelper), ErrorMessageResourceName = "ZipCodeLengthInvalidErrorMessage")]
         public string CodPostal
         {
             get { return _paciente.codigoPostal; }

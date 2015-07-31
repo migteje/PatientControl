@@ -20,6 +20,8 @@ namespace PatientControl.ViewModels
         IEventAggregator _eventAggregator;
         INavigationService _navigationService;
 
+        public DelegateCommand<string> SelectCommand { get; private set; }
+
         private PacienteViewModel _paciente;
         public PacienteViewModel Paciente
         {
@@ -30,8 +32,8 @@ namespace PatientControl.ViewModels
         private string _title = default(string);
         public string Title { get { return _title; } set { SetProperty(ref _title, value); } }
 
-        private IReadOnlyCollection<Ejercicio> _ejercicios;
-        public IReadOnlyCollection<Ejercicio> Ejercicios
+        private IReadOnlyCollection<EjercicioViewModel> _ejercicios;
+        public IReadOnlyCollection<EjercicioViewModel> Ejercicios
         {
             get { return _ejercicios; }
             private set { SetProperty(ref _ejercicios, value); }
@@ -48,6 +50,7 @@ namespace PatientControl.ViewModels
         {
             _eventAggregator = eventAggregator;
             _navigationService = navigationService;
+            this.SelectCommand = new DelegateCommand<string>(Select);
         }
 
         public override async void OnNavigatedTo(object navigationParameter, NavigationMode navigationMode, Dictionary<string, object> viewModelState)
@@ -55,8 +58,13 @@ namespace PatientControl.ViewModels
             this.Paciente = navigationParameter as PacienteViewModel;
             this.Title = "Ver Resultados Paciente";
             this.Ejercicio = new EjercicioViewModel(new Ejercicio());
-            Ejercicios = await Ejercicio.ObtenerEjercicios(Paciente.Id.ToString());
+            Ejercicios = await Ejercicio.ObtenerEjercicios(Paciente.Id.ToString(),"todas");
         }
 
+
+        private async void Select(object parameter)
+        {
+            Ejercicios = await Ejercicio.ObtenerEjercicios(Paciente.Id.ToString(), (String) parameter);
+        }
     }
 }

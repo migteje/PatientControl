@@ -1,0 +1,103 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Name="pageRoot"
+             xmlns:prism="using:Microsoft.Practices.Prism.Mvvm"
+             xmlns:behaviors="using:PatientControl.Behaviors"
+             xmlns:designtime="using:PatientControl.DesignTime"
+             xmlns:controls="using:PatientControl.Controls"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
+             x:Class="PatientControl.Views.MedicalInfo"
+             xmlns:local="using:PatientControl.Views"
+             mc:Ignorable="d">
+  
+    <!-- Page content -->
+	<Grid x:Name="ContentGrid">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+		</Grid.RowDefinitions>
+
+        <!-- Diagnostico -->
+        <Grid x:Name="DiagnósticoGrid"
+			Margin="0,20,0,0"
+			Grid.Row="0" Grid.ColumnSpan="3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <TextBox x:Name="Diagnóstico" Header="Diagnóstico*"
+				x:Uid="Nombre"
+				AutomationProperties.AutomationId="DiagnósticoTextBox"
+				Margin="5,0"              
+				Grid.Row="0"
+				Grid.Column="0"
+				AutomationProperties.IsRequiredForForm="True"
+				Text="{Binding Paciente.Diagnostico, Mode=TwoWay}">
+            </TextBox>
+        </Grid>
+        
+        <!-- Lesion -->
+		<Grid x:Name="LesionGrid"
+			Grid.Row="2" Margin="0,5,0,0">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition />
+				<ColumnDefinition />
+				<ColumnDefinition />
+			</Grid.ColumnDefinitions>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+			</Grid.RowDefinitions>
+
+            <!-- Zona -->
+            <TextBlock x:Name="ZonaLesión"
+				x:Uid="TitleArea"
+				Style="{StaticResource FormTitleStyle}"
+				Margin="5,0,5,-4"
+				Grid.Row="0"
+				Grid.Column="0"
+				Text="Lado afectado*" />
+
+            <StackPanel x:Name="Lado" Grid.Row="1"
+				Grid.Column="0" Margin="0,10,0,0">
+                <RadioButton x:Name="Derecho" VerticalAlignment="Stretch" Margin="0,0,0,0" Content="Derecho" Command="{Binding CheckedCommand, Mode=TwoWay}" CommandParameter="Derecho"/>
+                <RadioButton x:Name="Izquierdo" Content="Izquierdo" VerticalAlignment="Stretch" Margin="0,0,0,0" Command="{Binding CheckedCommand, Mode=TwoWay}" CommandParameter="Izquierdo"/>
+            </StackPanel>
+
+
+		</Grid>
+
+            <!-- Fecha -->
+		<Grid x:Name="FechaGrid"
+			Grid.Row="3">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition />
+			</Grid.ColumnDefinitions>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+			</Grid.RowDefinitions>
+            <DatePicker x:Name="FechaLesion" HorizontalAlignment="Left" VerticalAlignment="Top" Date="{Binding Paciente.FechaLesion, Mode=TwoWay}" Header="Fecha de la lesión*"/>
+		</Grid>
+	</Grid>
+</UserControl>
+

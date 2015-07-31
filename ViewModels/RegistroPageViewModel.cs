@@ -131,20 +131,12 @@ namespace PatientControl.ViewModels
 
         private async Task<bool> ProcessFormAsync()
         {
-            
-            try
-            {
                 if (await RegistroViewModel.ProcessFormAsync())
                 {
                     await MedicalViewModel.ProcessFormAsync();
                     return true;
                 }
                 return false;
-            }
-            catch (ModelValidationException)
-            {
-                return false;
-            }
         }
 
         private void HandleBadRegister(string value)

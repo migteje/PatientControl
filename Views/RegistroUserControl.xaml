@@ -161,15 +161,15 @@
 		</Grid>
 
             <!-- Phone -->
-		<Grid x:Name="PhoneGrid"
+        <Grid x:Name="PhoneGrid"
 			Grid.Row="3">
-			<Grid.ColumnDefinitions>
-				<ColumnDefinition />
-			</Grid.ColumnDefinitions>
-			<Grid.RowDefinitions>
-				<RowDefinition Height="Auto" />
-				<RowDefinition Height="Auto" />
-			</Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
             <TextBox x:Name="Telefono"
 				x:Uid="Telefono"
 				Header="Telefono*"
@@ -180,6 +180,6 @@
 				Text="{Binding Paciente.Telefono, Mode=TwoWay}"
 				InputScope="TelephoneNumber">
             </TextBox>
-		</Grid>
-	</Grid>
+        </Grid>
+    </Grid>
 </UserControl>

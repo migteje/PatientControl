@@ -8,25 +8,25 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>10544GIRO.RehabControl</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\obj\x86\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>6235AEF2ADD46FAB4240B00971BEFBB4198408076FCCD26E25EC0B2B70CB6801</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>10544GIRO.RehabControl_1.3.0.3_x86__nzpycxfgaz78c</RegisteredPackageMoniker>
+    <RegisteredManifestChecksum>787CEB9ABF0B69BA175D00C30E05C97E5EDF11AC21591248825B554ACD479527</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>10544GIRO.RehabControl_2.1.0.0_x86__nzpycxfgaz78c</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>10544GIRO.RehabControl_nzpycxfgaz78c!App</RegisteredUserModeAppID>
     <RegisteredPackageID>10544GIRO.RehabControl</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=5B986934-607C-4FA7-B84B-B2A9CFF78B5B</RegisteredPackagePublisher>
-    <RegisteredVersion>1.3.0.3</RegisteredVersion>
+    <RegisteredVersion>2.1.0.0</RegisteredVersion>
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-07-13T11:46:44.312</Modified>
+      <Modified>2015-07-31T10:51:19.829</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\PatientControl.exe">
       <PackagePath>PatientControl.exe</PackagePath>
-      <Modified>2015-07-13T11:46:39.035</Modified>
+      <Modified>2015-07-31T10:51:17.838</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.Kinect.Toolkit.Input\2.0\References\CommonConfiguration\neutral\Microsoft.Kinect.Toolkit.Input.winmd">
       <PackagePath>Microsoft.Kinect.Toolkit.Input.winmd</PackagePath>
@@ -147,59 +147,59 @@
     <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\Assets\StoreLogo.scale-180.png">
       <PackagePath>Assets\StoreLogo.scale-180.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-03-18T12:25:07.852</Modified>
+      <Modified>2015-07-16T12:47:09.660</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2015-07-13T11:46:38.613</Modified>
+      <Modified>2015-07-31T10:51:17.508</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\Themes\DataTemplates.xbf">
       <PackagePath>Themes\DataTemplates.xbf</PackagePath>
-      <Modified>2015-07-13T11:46:38.629</Modified>
+      <Modified>2015-07-31T10:49:36.752</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\Themes\PControlStyles.xbf">
       <PackagePath>Themes\PControlStyles.xbf</PackagePath>
-      <Modified>2015-07-13T11:46:38.629</Modified>
+      <Modified>2015-07-31T10:49:36.752</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\Views\DatosPage.xbf">
       <PackagePath>Views\DatosPage.xbf</PackagePath>
-      <Modified>2015-07-13T11:46:38.629</Modified>
+      <Modified>2015-07-31T10:49:36.770</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\Views\EjercicioPage.xbf">
       <PackagePath>Views\EjercicioPage.xbf</PackagePath>
-      <Modified>2015-07-13T11:46:38.629</Modified>
+      <Modified>2015-07-31T10:49:36.773</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\Views\MainPage.xbf">
       <PackagePath>Views\MainPage.xbf</PackagePath>
-      <Modified>2015-07-13T11:46:38.629</Modified>
+      <Modified>2015-07-31T10:49:36.776</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\Views\LoginPage.xbf">
       <PackagePath>Views\LoginPage.xbf</PackagePath>
-      <Modified>2015-07-13T11:46:38.629</Modified>
+      <Modified>2015-07-31T10:49:36.797</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\Views\RegistroPage.xbf">
       <PackagePath>Views\RegistroPage.xbf</PackagePath>
-      <Modified>2015-07-13T11:46:38.629</Modified>
+      <Modified>2015-07-31T10:49:36.799</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\Views\MedicalInfo.xbf">
       <PackagePath>Views\MedicalInfo.xbf</PackagePath>
-      <Modified>2015-07-13T11:46:38.644</Modified>
+      <Modified>2015-07-31T10:49:36.803</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\Views\RegistroUserControl.xbf">
       <PackagePath>Views\RegistroUserControl.xbf</PackagePath>
-      <Modified>2015-07-13T11:46:38.644</Modified>
+      <Modified>2015-07-31T10:49:36.805</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\Microsoft.Kinect.Xaml.Controls\Themes\Generic.xbf">
       <PackagePath>Microsoft.Kinect.Xaml.Controls\Themes\Generic.xbf</PackagePath>
-      <Modified>2015-07-13T11:46:38.644</Modified>
+      <Modified>2015-07-31T10:51:17.508</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\Microsoft.Kinect.Xaml.Controls\SpriteSheet.xbf">
       <PackagePath>Microsoft.Kinect.Xaml.Controls\SpriteSheet.xbf</PackagePath>
-      <Modified>2015-07-13T11:46:38.644</Modified>
+      <Modified>2015-07-31T10:51:17.508</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\PatientControl.xr.xml">
       <PackagePath>PatientControl.xr.xml</PackagePath>
-      <Modified>2015-07-10T08:56:38.688</Modified>
+      <Modified>2015-07-31T10:51:17.476</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\packages\WinRTXamlToolkit.Windows.1.8.1.0\lib\netcore451\WinRTXamlToolkit\WinRTXamlToolkit.xr.xml">
       <PackagePath>WinRTXamlToolkit\WinRTXamlToolkit.xr.xml</PackagePath>
@@ -515,7 +515,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Giro\documents\visual studio 2013\Projects\PatientControl.App\PatientControl\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-07-13T11:46:41.038</Modified>
+      <Modified>2015-07-31T10:51:18.185</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

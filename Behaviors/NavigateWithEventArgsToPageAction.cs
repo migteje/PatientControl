@@ -7,6 +7,10 @@ using Windows.UI.Xaml.Media;
 
 namespace PatientControl.Behaviors
 {
+    /// <summary>
+    /// Clase que emplea metodos para permitir el paso de parametros durante
+    /// la navegacion entre pantallas si se emplea el framework Prism
+    /// </summary>
     public class NavigateWithEventArgsToPageAction : DependencyObject, IAction
     {
         public string TargetPage { get; set; }

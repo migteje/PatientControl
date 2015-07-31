@@ -1,4 +1,5 @@
-﻿using Microsoft.Practices.Prism.Mvvm;
+﻿using Microsoft.Practices.Prism.Commands;
+using Microsoft.Practices.Prism.Mvvm;
 using PatientControl.Models;
 using SQLite;
 using System;
@@ -39,24 +40,29 @@ namespace PatientControl.ViewModels
 
         public int ItemPosition { get; set; }
 
-        public async Task<List<Ejercicio>> ObtenerEjercicios(string data){
-            List<Ejercicio> list = new List<Ejercicio>();
+        public async Task<List<EjercicioViewModel>> ObtenerEjercicios(string data, string selected){
+            List<EjercicioViewModel> list = new List<EjercicioViewModel>();
             SQLiteAsyncConnection connection = new SQLiteAsyncConnection("Paciente.db");
-            var result = await connection.QueryAsync<Ejercicio>("Select * FROM Ejercicios WHERE paciente_id = ?", new object[] { data });
+            string query = "";
+            if (selected.Equals("todas"))
+                query = "Select * FROM Ejercicios WHERE paciente_id = ?";
+            else
+                query = "Select * FROM Ejercicios WHERE paciente_id = ? AND tipo LIKE '"+selected+"%'";
+            var result = await connection.QueryAsync<Ejercicio>(query, new object[] { data });
             if (result.Count() == 0) return null;
 
             foreach (var item in result)
             {
-                this.Articulacion = item.articulacion;
-                this.Id = item.id;
-                this.Tipo = item.tipo;
-                this.Paciente_Id = item.paciente_id;
-                this.FechaRealizado = item.fechaRealizado;
-                this.Angulo = item.angulo;
-                this.Repeticiones = item.repeticiones;
-                this.Diferencia = item.diferencia;
-                list.Add(item);
-                Debug.WriteLine(this.Angulo);
+                EjercicioViewModel ej = new EjercicioViewModel(new Ejercicio());
+                ej.Articulacion = item.articulacion;
+                ej.Id = item.id;
+                ej.Tipo = item.tipo;
+                ej.Paciente_Id = item.paciente_id;
+                ej.FechaRealizado = item.fechaRealizado;
+                ej.Angulo = item.angulo;
+                ej.Repeticiones = item.repeticiones;
+                ej.Diferencia = item.diferencia;
+                list.Add(ej);
             }
                 return list;
         }

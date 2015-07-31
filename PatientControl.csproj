@@ -111,22 +111,12 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Behaviors\Behavior.cs" />
-    <Compile Include="Behaviors\BindableValidator.cs" />
-    <Compile Include="Behaviors\HighlightFormFieldOnErrors.cs" />
     <Compile Include="Behaviors\NavigateWithEventArgsToPageAction.cs" />
     <Compile Include="Controls\AutoRotatingGridView.cs" />
     <Compile Include="Controls\ComboBoxItemValue.cs" />
-    <Compile Include="Controls\SuspensionManager.cs" />
     <Compile Include="Controls\MultipleSizedGridView.cs" />
+    <Compile Include="Controls\SuspensionManager.cs" />
     <Compile Include="Controls\PageBase.cs" />
-    <Compile Include="Converters\FirstErrorConverter.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Converters\NotNullToVisibleConverter.cs" />
-    <Compile Include="Converters\NullToVisibleConverter.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Converters\TextToHeaderVisibilityConverter.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -148,8 +138,6 @@
     <Compile Include="Models\Ejercicio.cs" />
     <Compile Include="Controls\ModelValidationResult.cs" />
     <Compile Include="Models\Paciente.cs" />
-    <Compile Include="Services\ErrorMessagesHelper.cs" />
-    <Compile Include="Services\ModelValidationException.cs" />
     <Compile Include="SQLite\SQLite.cs" />
     <Compile Include="SQLite\SQLiteAsync.cs" />
     <Compile Include="ViewModels\CategoriaViewModel.cs" />
